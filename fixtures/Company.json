@@ -1,0 +1,48 @@
+[
+{
+    "model": "company.company",
+    "pk": 1,
+    "fields": {
+        "name": "Anthesis",
+        "organisation_type": "Consulting",
+        "country": 826,
+        "address": "The Future Centre, \r\n9 Newtec Place\r\nMagdalen Road, \r\nOxford",
+        "phone": "+44 (0)1865 250 818",
+        "primary_contact": [
+            "fionaplace"
+        ],
+        "sector": "Consulting",
+        "city": "Oxford",
+        "post_code": "OX4 1RE",
+        "user_signup": "A",
+        "reference": "AMT",
+        "account_manager": [
+            "ali.stanton"
+        ],
+        "default_riskfactors": [
+            3
+        ]
+    }
+},
+{
+    "model": "company.company",
+    "pk": 2,
+    "fields": {
+        "name": "Landmark",
+        "organisation_type": "legal products and data supply to the UK",
+        "country": null,
+        "address": "Landmark Information Group\r\n5-7 Abbey Court\r\nEagle Way",
+        "phone": "+44 (0) 3300 366000",
+        "primary_contact": [
+            "ali.stanton"
+        ],
+        "sector": "",
+        "city": "Exeter",
+        "post_code": "EX2 7HY",
+        "user_signup": "A",
+        "reference": "LAN",
+        "account_manager": null,
+        "default_riskfactors": []
+    }
+}
+]

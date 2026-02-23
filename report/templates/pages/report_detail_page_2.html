@@ -1,0 +1,51 @@
+
+<section class="report-page reference-page">
+    <header class="sub-header bgSet" style="position: absolute; top:-110px; left:0; border-bottom:none;">
+        <div style="margin-left: 60px; margin-top: 40px; padding-bottom: 40px;">
+            <img src="file://core/static/img/report_icon_2.svg" class="sub-page-icon-small  bgSet" alt="Report detail icon">
+            <h1 class="sub-page-title bgSet">Report detail</h1>
+        </div>
+        <div style="width:92%; margin-left:40px; border-bottom: 5px solid #000;"></div>
+    </header>
+    {% include "includes/sub_section.html" with title="Overview of industry(s) and associated ESG risks" %}
+    <div class="mt-3"></div>
+    <div class="ml-4" style="columns: 2; margin: 0; padding: 0; background-clip: content-box; column-gap: 1em;">
+        {% for industry in assessment.industries.all %}
+            <p style="font-size:13.33px; font-family: SourceSansProBold;">{{ industry.name }}</p>
+            <p style="font-size:13.33px; font-family: SourceSansProLight;">
+                {{ industry.description|linebreaksbr }}        
+            </p>
+            <header class="sub-header bgSet" style="position: absolute; top:-110px; left:0; border-bottom:none;">
+                <div style="margin-left: 60px; margin-top: 40px; padding-bottom: 40px;">
+                    <img src="file://core/static/img/report_icon_2.svg" class="sub-page-icon-small  bgSet" alt="Report detail icon">
+                    <h1 class="sub-page-title bgSet">Report detail</h1>
+                </div>
+                <div style="width:92%; margin-left:40px; border-bottom: 5px solid #000;"></div>
+            </header>
+            {% include "includes/page_footer.html" %}
+        {% endfor %}
+    </div>
+
+    <div class="row no-gutters mt-4" style="font-size: 12px;">
+        {% include "includes/sub_section.html" with title="Material risk factors" background="background-orange" %}
+        <ul class="issue-wrapper mt-4 background-light-orange">
+            {% for  key, values in material_risk_source.items %}
+                <li>
+                    <header class="sub-header bgSet" style="position: absolute; top:-110px; left:0; border-bottom:none;">
+                        <div style="margin-left: 60px; margin-top: 40px; padding-bottom: 40px;">
+                            <img src="file://core/static/img/report_icon_2.svg" class="sub-page-icon-small  bgSet" alt="Report detail icon">
+                            <h1 class="sub-page-title bgSet">Report detail</h1>
+                        </div>
+                        <div style="width:92%; margin-left:40px; border-bottom: 5px solid #000;"></div>
+                    </header>
+                    <span style="font-size:13.33px; font-family: SourceSansProBold;">{{ key }}:</spans>
+                    <span style="font-size:13.33px; font-family: SourceSansPro;">
+                        {{ values|join:", " }}
+                    </span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% include "includes/page_footer.html" %}
+</section>

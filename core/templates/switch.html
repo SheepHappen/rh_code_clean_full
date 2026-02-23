@@ -1,0 +1,20 @@
+
+{% load crispy_forms_filters %}
+{% load l10n %}
+
+
+<div id="div_{{ field.auto_id }}" class="form-group col-2">
+    <span class='switch-wrapper pr-0'>
+        <label for="{{ field.id_for_label }}" class="font-semi-bold"  style="margin-top: -3px;">
+            {{ field.label|safe }}
+        </label>
+        <input type="checkbox" class="d-none form-input" name="{{ field.html_name }}" id="id_{{ field.html_name }}_{{ forloop.counter0 }}"  {% if field.value%}checked{%endif%} >
+        <label class="switch ml-3">
+            <input type="checkbox"  data-target="id_{{ field.html_name }}_{{ forloop.counter0 }}" {% if field.value%}checked{%endif%}>
+                <span class="slider round">
+            </span>
+        </label>
+    </span>
+</div>
+
+

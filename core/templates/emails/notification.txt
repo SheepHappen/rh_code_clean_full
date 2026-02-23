@@ -1,0 +1,2 @@
+{{ name }} {{ email }} at  {{ company }} has just registered to activate this user click on following link or paste it to the browser 
+<a href="{{ url }}">{{ url }}</a>

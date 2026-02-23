@@ -1,0 +1,497 @@
+[
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 1,
+    "fields": {
+        "assessment": 14,
+        "issue": "Anti",
+        "recommendation": "Identify what policies, procedures, and initiatives the Company has implemented to identify and mitigate the risks of bribery and related corruption? What training does it provide staff, does it employ third party services such as for whistleblowing and how does it manage its supply chain? The use of third-party sales agents required particular attention."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 2,
+    "fields": {
+        "assessment": 14,
+        "issue": "Data Privacy",
+        "recommendation": "Disclose issues concerning customer privacy, and incidents of losses of customer data and breaches of customer privacy. This can also include data on complaints from regulatory bodies."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 3,
+    "fields": {
+        "assessment": 14,
+        "issue": "Energy Management",
+        "recommendation": "Publication of total annual energy consumed (gigajoules) and percentage renewable (e.g., wind, biomass, solar).\r\nDisclose the organisation's energy consumption data by source along with any policies, plans and initiatives to increase energy efficiency, and develop and disclose a low-carbon energy transition strategy including targets and KPIs."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 4,
+    "fields": {
+        "assessment": 14,
+        "issue": "Gender Inequality",
+        "recommendation": "Diversity at all levels of the business; disclosure of percentage of employees by gender in the board, senior management positions and all other employee positions.\r\nEquality in remuneration, considering ratio of basic salary and remuneration of women to men by employee category and significant locations of operation. If there is a significant difference, explain why there is a difference. \r\nWhether the company systems have policies/programmes promoting equal opportunities (regardless of gender and other diversities) that explicitly extends to the entire value chain.\r\nWhether there is increased access to information and technology for women (women's participation in programs enhancing the use of enabling technologies)."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 5,
+    "fields": {
+        "assessment": 14,
+        "issue": "Recruitment, Development and Retention",
+        "recommendation": "Training provided to employees, with disclosure on average hours of training per year, employee gender and employee category.\r\nType and scope of programs implemented and assistance provided to upgrade employee skills, and whether there are transition assistance programs provided to facilitate continued employability and management of career endings resulting from retirement or termination of employment.\r\nEmployee hires, with disclosure on total number and rate by age group, gender and region. \r\nEmployee turnover, with disclosure on total number and rate by age group, gender and region."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 6,
+    "fields": {
+        "assessment": 14,
+        "issue": "Air Quality",
+        "recommendation": "Carbon management and disclosure of year-on-year trends data for scope, 1, 2 and 3 emissions. If you are unable to account for scope 3 emission, the company should be able to disclose and explain any exclusions.\r\nThe extent of emissions of ozone-depleting substances (ODS).\r\nNOX, SOX, and other significant air emissions.\r\nThe company should seek sector specific guidance on substances which lowers air quality, if material to the business. (For example, for the oil and gas sector, disclose the level of benzene, lead and Sulphur content in fuels)."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 7,
+    "fields": {
+        "assessment": 17,
+        "issue": "Corruption",
+        "recommendation": "Public statement on if and where the company will work against corruption in all its forms, including bribery and extortion.\r\nThe organization states publicly if and where it will work against corruption in all its forms, including bribery and extortion.\r\nIssues related to corruption around company operations, confirmed incidents of corruption, how they have been assessed and actions taken. \r\nCommunication and training on anti-corruption policies and procedures, to include data relating to number, type, location of employee who have been communicated to and received training."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 8,
+    "fields": {
+        "assessment": 17,
+        "issue": "Energy Management",
+        "recommendation": "Publication of total annual energy consumed (gigajoules) and percentage renewable (e.g., wind, biomass, solar).\r\nDisclose the organisation's energy consumption data by source along with any policies, plans and initiatives to increase energy efficiency, and develop and disclose a low-carbon energy transition strategy including targets and KPIs."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 9,
+    "fields": {
+        "assessment": 17,
+        "issue": "Hazardous Materials",
+        "recommendation": "Identify and disclose aspects of the company's operations and supply chain that involve the procurement, use, and storage of hazardous materials, and ensure compliance with relevant national and international regulatory standards (e.g. REACH, GHS, CLP). \r\nDevelop and disclose a sustainable chemicals management strategy, including a proactive substitution strategy with respect to the REACH Candidate List."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 10,
+    "fields": {
+        "assessment": 17,
+        "issue": "Innovation",
+        "recommendation": "Evidence of diversification, technological upgrading and innovation in the business to meet environmental and social demands. This can include issues like resource efficiency, reuse-and recycle as well as responsibility in product design.\r\nActions which have been undertaken to reduce energy requirements for products and services, with data on reduction in energy requirements of sold products/service, and method of calculation. \r\nPercentage of products sold that are collected, reused or recycled.\r\nPercentage of recycled input materials used to manufacture the organization\u2019s primary products and services."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 11,
+    "fields": {
+        "assessment": 17,
+        "issue": "Wastewater and Effluent",
+        "recommendation": "Adherence to relevant water standards, and percent of facilities which do this.\r\nWater discharge and quality, with disclosure by destination in megalitres per year for all facilities.\r\nHazardous and non-hazardous waste by type (e.g. reuse, landfill, incineration, etc.) and disposal method by weight.\r\nIf material to the sector, discuss significant spills, to include location, value and material of spill."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 12,
+    "fields": {
+        "assessment": 24,
+        "issue": "Environmental Compliance",
+        "recommendation": "Monetary value of significant fines and total number of non-monetary sanctions for non-compliance with environmental laws and regulations."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 13,
+    "fields": {
+        "assessment": 24,
+        "issue": "Hazardous Materials",
+        "recommendation": "Identify and disclose aspects of the company's operations and supply chain that involve the procurement, use, and storage of hazardous materials, and ensure compliance with relevant national and international regulatory standards (e.g. REACH, GHS, CLP). \r\nDevelop and disclose a sustainable chemicals management strategy, including a proactive substitution strategy with respect to the REACH Candidate List."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 14,
+    "fields": {
+        "assessment": 24,
+        "issue": "Human Rights",
+        "recommendation": "Infringement on human rights of local communities (e.g. rights of indigenous people), and disclosure of total incidents.\r\nReport the internal and external mechanisms for seeking advice on ethical and lawful behaviour, and matters related to organizational integrity, such as helplines or advice lines.\r\nDisclose details of grievances about human rights impacts filed, addressed, and resolved through formal grievance mechanisms."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 15,
+    "fields": {
+        "assessment": 24,
+        "issue": "Innovation",
+        "recommendation": "Evidence of diversification, technological upgrading and innovation in the business to meet environmental and social demands. This can include issues like resource efficiency, reuse-and recycle as well as responsibility in product design.\r\nActions which have been undertaken to reduce energy requirements for products and services, with data on reduction in energy requirements of sold products/service, and method of calculation. \r\nPercentage of products sold that are collected, reused or recycled.\r\nPercentage of recycled input materials used to manufacture the organization\u2019s primary products and services."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 16,
+    "fields": {
+        "assessment": 24,
+        "issue": "Waste Management",
+        "recommendation": "Hazardous and non-hazardous waste by type (e.g. reuse, landfill, incineration, etc.) and disposal method by weight."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 17,
+    "fields": {
+        "assessment": 25,
+        "issue": "Environmental Compliance",
+        "recommendation": "Monetary value of significant fines and total number of non-monetary sanctions for non-compliance with environmental laws and regulations."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 18,
+    "fields": {
+        "assessment": 25,
+        "issue": "Fuel Management",
+        "recommendation": "Energy consumption from both outside and within the organization, providing information (e.g. fuel types) on both renewable and non-renewable sources in MWh.\r\nEnergy intensity ratio, specific metric used to calculate the ratio and types of energy which have been included in the intensity ratio.  \r\nReduction of overall energy consumption, giving information on types of energy included in the reduction, and calculation method. \r\nHow much fuel, electricity, heat, steam, and cooling in MWh has your organisation purchased and consumed during the reporting year?"
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 19,
+    "fields": {
+        "assessment": 25,
+        "issue": "GHG Emissions",
+        "recommendation": "How the company is monitoring and managing it's greenhouse gas emissions. Has there been disclosure of year-on-year trends for scope 1, 2 and 3 emissions?"
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 20,
+    "fields": {
+        "assessment": 25,
+        "issue": "Health & Safety",
+        "recommendation": "Disclosure of incidents by type and rates of injury,  lost days, absenteeism, and total number of work-related fatalities, along with occupational diseases, by region and gender.\r\nProportion of workers who experience high incidence or high risk of diseases and health hazard related to their occupation. \r\nFor companies with supply chains in countries that experience high levels of HIV, to disclose the proportion of both male and female workers along the value chain that have access to free and voluntary HIV testing (either through their employer or public/community health systems)."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 21,
+    "fields": {
+        "assessment": 25,
+        "issue": "Human Rights",
+        "recommendation": "Infringement on human rights of local communities (e.g. rights of indigenous people), and disclosure of total incidents.\r\nReport the internal and external mechanisms for seeking advice on ethical and lawful behaviour, and matters related to organizational integrity, such as helplines or advice lines.\r\nDisclose details of grievances about human rights impacts filed, addressed, and resolved through formal grievance mechanisms."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 22,
+    "fields": {
+        "assessment": 26,
+        "issue": "Energy Management",
+        "recommendation": "Publication of total annual energy consumed (gigajoules) and percentage renewable (e.g., wind, biomass, solar).\r\nDisclose the organisation's energy consumption data by source along with any policies, plans and initiatives to increase energy efficiency, and develop and disclose a low-carbon energy transition strategy including targets and KPIs."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 23,
+    "fields": {
+        "assessment": 26,
+        "issue": "Hazardous Materials",
+        "recommendation": "Identify and disclose aspects of the company's operations and supply chain that involve the procurement, use, and storage of hazardous materials, and ensure compliance with relevant national and international regulatory standards (e.g. REACH, GHS, CLP). \r\nDevelop and disclose a sustainable chemicals management strategy, including a proactive substitution strategy with respect to the REACH Candidate List."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 24,
+    "fields": {
+        "assessment": 26,
+        "issue": "Health & Safety",
+        "recommendation": "Disclosure of incidents by type and rates of injury,  lost days, absenteeism, and total number of work-related fatalities, along with occupational diseases, by region and gender.\r\nProportion of workers who experience high incidence or high risk of diseases and health hazard related to their occupation. \r\nFor companies with supply chains in countries that experience high levels of HIV, to disclose the proportion of both male and female workers along the value chain that have access to free and voluntary HIV testing (either through their employer or public/community health systems)."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 25,
+    "fields": {
+        "assessment": 26,
+        "issue": "Innovation",
+        "recommendation": "Evidence of diversification, technological upgrading and innovation in the business to meet environmental and social demands. This can include issues like resource efficiency, reuse-and recycle as well as responsibility in product design.\r\nActions which have been undertaken to reduce energy requirements for products and services, with data on reduction in energy requirements of sold products/service, and method of calculation. \r\nPercentage of products sold that are collected, reused or recycled.\r\nPercentage of recycled input materials used to manufacture the organization\u2019s primary products and services."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 26,
+    "fields": {
+        "assessment": 26,
+        "issue": "Water Stress",
+        "recommendation": "Water withdrawal by source (e.g. surface water - wetlands, rivers and lakes), location, and give information on calculation method."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 27,
+    "fields": {
+        "assessment": 27,
+        "issue": "Corruption",
+        "recommendation": "Public statement on if and where the company will work against corruption in all its forms, including bribery and extortion.\r\nThe organization states publicly if and where it will work against corruption in all its forms, including bribery and extortion.\r\nIssues related to corruption around company operations, confirmed incidents of corruption, how they have been assessed and actions taken. \r\nCommunication and training on anti-corruption policies and procedures, to include data relating to number, type, location of employee who have been communicated to and received training."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 28,
+    "fields": {
+        "assessment": 27,
+        "issue": "Energy Management",
+        "recommendation": "Publication of total annual energy consumed (gigajoules) and percentage renewable (e.g., wind, biomass, solar).\r\nDisclose the organisation's energy consumption data by source along with any policies, plans and initiatives to increase energy efficiency, and develop and disclose a low-carbon energy transition strategy including targets and KPIs."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 29,
+    "fields": {
+        "assessment": 27,
+        "issue": "Environmental Compliance",
+        "recommendation": "Monetary value of significant fines and total number of non-monetary sanctions for non-compliance with environmental laws and regulations."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 30,
+    "fields": {
+        "assessment": 27,
+        "issue": "Fuel Management",
+        "recommendation": "Energy consumption from both outside and within the organization, providing information (e.g. fuel types) on both renewable and non-renewable sources in MWh.\r\nEnergy intensity ratio, specific metric used to calculate the ratio and types of energy which have been included in the intensity ratio.  \r\nReduction of overall energy consumption, giving information on types of energy included in the reduction, and calculation method. \r\nHow much fuel, electricity, heat, steam, and cooling in MWh has your organisation purchased and consumed during the reporting year?"
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 31,
+    "fields": {
+        "assessment": 27,
+        "issue": "Innovation",
+        "recommendation": "Evidence of diversification, technological upgrading and innovation in the business to meet environmental and social demands. This can include issues like resource efficiency, reuse-and recycle as well as responsibility in product design.\r\nActions which have been undertaken to reduce energy requirements for products and services, with data on reduction in energy requirements of sold products/service, and method of calculation. \r\nPercentage of products sold that are collected, reused or recycled.\r\nPercentage of recycled input materials used to manufacture the organization\u2019s primary products and services."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 32,
+    "fields": {
+        "assessment": 26,
+        "issue": "Corruption",
+        "recommendation": "Public statement on if and where the company will work against corruption in all its forms, including bribery and extortion.\r\nThe organization states publicly if and where it will work against corruption in all its forms, including bribery and extortion.\r\nIssues related to corruption around company operations, confirmed incidents of corruption, how they have been assessed and actions taken. \r\nCommunication and training on anti-corruption policies and procedures, to include data relating to number, type, location of employee who have been communicated to and received training."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 33,
+    "fields": {
+        "assessment": 27,
+        "issue": "Air Quality",
+        "recommendation": "Carbon management and disclosure of year-on-year trends data for scope, 1, 2 and 3 emissions. If you are unable to account for scope 3 emission, the company should be able to disclose and explain any exclusions.\r\nThe extent of emissions of ozone-depleting substances (ODS).\r\nNOX, SOX, and other significant air emissions.\r\nThe company should seek sector specific guidance on substances which lowers air quality, if material to the business. (For example, for the oil and gas sector, disclose the level of benzene, lead and Sulphur content in fuels)."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 34,
+    "fields": {
+        "assessment": 27,
+        "issue": "Accident and Safety Management",
+        "recommendation": "Management approach for occupational health and safety. This can include initiatives which involve education and training, counselling, measures relating to prevention and risk control for diseases or treatment.\r\nWorkforce represented in formal joint management-worker health and safety committees that help monitor and advise on occupational health and safety programs. The company to disclose percentage of total workforce represented. \r\nOf all full-time employees, numbers relating to type and rates of injury, occupational diseases, lost days, and absenteeism, and total number of work-related fatalities, by region and by gender."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 35,
+    "fields": {
+        "assessment": 28,
+        "issue": "Air Quality",
+        "recommendation": "Carbon management and disclosure of year-on-year trends data for scope, 1, 2 and 3 emissions. If you are unable to account for scope 3 emission, the company should be able to disclose and explain any exclusions.\r\nThe extent of emissions of ozone-depleting substances (ODS).\r\nNOX, SOX, and other significant air emissions.\r\nThe company should seek sector specific guidance on substances which lowers air quality, if material to the business. (For example, for the oil and gas sector, disclose the level of benzene, lead and Sulphur content in fuels)."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 36,
+    "fields": {
+        "assessment": 28,
+        "issue": "Corruption",
+        "recommendation": "Public statement on if and where the company will work against corruption in all its forms, including bribery and extortion.\r\nThe organization states publicly if and where it will work against corruption in all its forms, including bribery and extortion.\r\nIssues related to corruption around company operations, confirmed incidents of corruption, how they have been assessed and actions taken. \r\nCommunication and training on anti-corruption policies and procedures, to include data relating to number, type, location of employee who have been communicated to and received training."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 37,
+    "fields": {
+        "assessment": 28,
+        "issue": "GHG Emissions",
+        "recommendation": "How the company is monitoring and managing it's greenhouse gas emissions. Has there been disclosure of year-on-year trends for scope 1, 2 and 3 emissions?"
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 38,
+    "fields": {
+        "assessment": 28,
+        "issue": "Hazardous Materials",
+        "recommendation": "Identify and disclose aspects of the company's operations and supply chain that involve the procurement, use, and storage of hazardous materials, and ensure compliance with relevant national and international regulatory standards (e.g. REACH, GHS, CLP). \r\nDevelop and disclose a sustainable chemicals management strategy, including a proactive substitution strategy with respect to the REACH Candidate List."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 39,
+    "fields": {
+        "assessment": 28,
+        "issue": "Waste Management",
+        "recommendation": "Hazardous and non-hazardous waste by type (e.g. reuse, landfill, incineration, etc.) and disposal method by weight."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 40,
+    "fields": {
+        "assessment": 28,
+        "issue": "Access to Finance",
+        "recommendation": "Increase the access of small-scale industrial and other enterprises, in particular in developing countries, to financial services, including affordable credit, and their integration into value chains and markets.\r\nHelp strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all.\r\nPromote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 41,
+    "fields": {
+        "assessment": 31,
+        "issue": "Competitive behaviour",
+        "recommendation": "Describe the organization's values, principles, standards and norms of behaviour such as codes of conduct and codes of ethics.\r\nReport the internal and external mechanisms for reporting concerns about unethical or unlawful behaviour, and matters related to organizational integrity, such as escalation through line management, whistleblowing mechanisms or hotlines.\r\nReport the internal and external mechanisms for seeking advice on ethical and lawful behaviour, and matters related to organizational integrity, such as helplines or advice lines.\r\nIdentify and disclose the total number of legal actions for anti-competitive behaviour, anti-trust, and monopoly practices and their outcomes."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 42,
+    "fields": {
+        "assessment": 31,
+        "issue": "Fuel Management",
+        "recommendation": "Energy consumption from both outside and within the organization, providing information (e.g. fuel types) on both renewable and non-renewable sources in MWh.\r\nEnergy intensity ratio, specific metric used to calculate the ratio and types of energy which have been included in the intensity ratio.  \r\nReduction of overall energy consumption, giving information on types of energy included in the reduction, and calculation method. \r\nHow much fuel, electricity, heat, steam, and cooling in MWh has your organisation purchased and consumed during the reporting year?"
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 43,
+    "fields": {
+        "assessment": 31,
+        "issue": "GHG Emissions",
+        "recommendation": "How the company is monitoring and managing it's greenhouse gas emissions. Has there been disclosure of year-on-year trends for scope 1, 2 and 3 emissions?"
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 44,
+    "fields": {
+        "assessment": 31,
+        "issue": "Labour Rights",
+        "recommendation": "Evidence of systems in place to identify significant risk in operations and suppliers for incidents of forced or compulsory labour, and measures to contribute to the elimination of all forms of forced or compulsory labour.\r\nEvidence that the company and its suppliers have consistent practices for informing and/or training workers on their rights under national labour and employment law.\r\nDisclosure on percentage of total and new suppliers that have been screened using labour practices criteria. \r\nIncidents where significant actual and potential negative impacts for labour practices in the supply chain and actions taken."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 45,
+    "fields": {
+        "assessment": 31,
+        "issue": "Water Stress",
+        "recommendation": "Water withdrawal by source (e.g. surface water - wetlands, rivers and lakes), location, and give information on calculation method."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 46,
+    "fields": {
+        "assessment": 11,
+        "issue": "Corruption",
+        "recommendation": "Public statement on if and where the company will work against corruption in all its forms, including bribery and extortion.\r\nThe organization states publicly if and where it will work against corruption in all its forms, including bribery and extortion.\r\nIssues related to corruption around company operations, confirmed incidents of corruption, how they have been assessed and actions taken. \r\nCommunication and training on anti-corruption policies and procedures, to include data relating to number, type, location of employee who have been communicated to and received training."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 47,
+    "fields": {
+        "assessment": 11,
+        "issue": "Employee Engagement, Diversity & Inclusion",
+        "recommendation": "Express commitment to empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status.\r\nDisclose composition of governance bodies and breakdown of employees per employee category according to gender, age group, minority group membership, and other indicators of diversity.\r\nDevelop, implement and disclose policies/programmes promoting equal opportunities (regardless of gender and other diversities) both within the company and extending to the entire value chain.\r\nDescribe policies and practices used to promote economic inclusion when selecting suppliers. Forms of economic inclusion may include: suppliers owned by women; suppliers owned or staffed by members of vulnerable, marginalized or underrepresented social groups; and small and medium sized suppliers."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 48,
+    "fields": {
+        "assessment": 11,
+        "issue": "Energy Management",
+        "recommendation": "Publication of total annual energy consumed (gigajoules) and percentage renewable (e.g., wind, biomass, solar).\r\nDisclose the organisation's energy consumption data by source along with any policies, plans and initiatives to increase energy efficiency, and develop and disclose a low-carbon energy transition strategy including targets and KPIs."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 49,
+    "fields": {
+        "assessment": 11,
+        "issue": "Product Packaging",
+        "recommendation": "Percentage of products sold and their packaging materials that are collected, reused or recycled.\r\nTotal weight or volume of materials that are used to package the organization\u2019s primary products and services, by non-renewable materials used and renewable materials used."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 50,
+    "fields": {
+        "assessment": 11,
+        "issue": "Systemic Risk Management",
+        "recommendation": "Systems which the company is dependent on to operate (e.g. financial, technology) and related risks to business continuity. Additionally, identify the highest level of governance (i.e. board accountability) in managing related risks.\r\nCompanies in the financial sector to report on results of stress tests under adverse economic scenarios, to include measures such as actual and projection loan losses, revenue, net income before taxes, Tier 1 common capital ratio, Tier 1 capital ratio. Companies to also report on liquidity and registered and unregistered assets under management.\r\nCompanies in the telecommunications sectors to report on number of performance issues and service disruptions and total customer downtime. Disclosure shall include a description of each significant performance issue or service disruption and any corrective actions taken to prevent future disruptions."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 51,
+    "fields": {
+        "assessment": 33,
+        "issue": "Competitive behaviour",
+        "recommendation": "Identify what steps the Company has taken to prevent ant-competitive behaviour anti-trust, and monopoly practices and their outcomes. Does it have and communicate codes of conduct and codes of ethics to all staff? Does it have internal and external mechanisms for seeking advice and reporting concerns such as whistleblowing mechanisms or hotlines?"
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 52,
+    "fields": {
+        "assessment": 33,
+        "issue": "Hazardous Materials",
+        "recommendation": "Identify the Company's procurement, use, and storage of hazardous materials. Is it compliant with relevant national and international regulations on overall use (e.g. REACH in the EU), storage and handling, and disposal? Has it developed and disclose a sustainable chemicals management strategy, including a proactive substitution strategy for Substances of Very High Concern (SVHC)."
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 53,
+    "fields": {
+        "assessment": 33,
+        "issue": "Systemic Risk Management",
+        "recommendation": "Identify the policies and systems the Company has implemented to ensure business continuity. Has this been undertaken as a voluntary initiative or a regulatory requirement? Has it identified the systems it is dependent on to operate (e.g. financial, technology)? Does it currently monitor and report on performance or service disruption issues and any corrective actions taken?"
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 54,
+    "fields": {
+        "assessment": 33,
+        "issue": "Waste Management",
+        "recommendation": "Identify the Company's hazardous and non-hazardous waste by type and disposal method (e.g. reuse, recycling, incineration, or landfill). Does it operate in compliance with regulatory requirements? Do these include paying a tax, for instance on packaging waste? Has it put in place measures to minimise the volumes generated, and that going to incineration or landfill?"
+    }
+},
+{
+    "model": "company.assessmentissuerecommendations",
+    "pk": 55,
+    "fields": {
+        "assessment": 33,
+        "issue": "Water Stress",
+        "recommendation": "Identify where the Company sources its water from and whether it has assessed current or future scarcity issues. Determine whether its supply is regulated and whether its uses are in competition with other users (particularly in the local community) and/or to be impacting local ecosystems. Assess whether the Company has put in place measures to minimise its water use."
+    }
+}
+]

@@ -1,0 +1,2185 @@
+[
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 1,
+    "fields": {
+        "name": "Access and Affordability",
+        "slug": "access-and-affordability",
+        "created_date": "2020-06-18T08:44:10.430Z",
+        "description": "This topic assesses inequality in income distribution based on data from household surveys from the United Nations Human Development Index.",
+        "pdf_description": "The Company's ability to ensure equal access to their products and services and that products and services are priced fairly, in particular in the context of underserved markets.",
+        "recommendation": "Identify whether the Company has a strategy, policies and procedures which focus on social, economic and financial inclusion? Does this include both the pricing and availability of its products and services, and the selection of small to medium sized suppliers, and/or owned or staffed by women, members of vulnerable, marginalized or underrepresented social groups?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-31",
+        "notes": "",
+        "active_version": 289,
+        "category": 4,
+        "versions": [
+            289,
+            286,
+            285,
+            284,
+            247,
+            246,
+            245,
+            216,
+            215,
+            211,
+            209,
+            167,
+            164,
+            148,
+            147
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 2,
+    "fields": {
+        "name": "Access to Finance",
+        "slug": "Access_to_finance_agri",
+        "created_date": "2020-06-18T08:44:10.458Z",
+        "description": "This topic evaluates the share of credit (the amount of loans) provided by the private/commercial banking sector to producers in agriculture, forestry and fisheries, including household producers, cooperatives, and agro-businesses.",
+        "pdf_description": "",
+        "recommendation": "Increase the access of small-scale industrial and other enterprises, in particular in developing countries, to financial services, including affordable credit, and their integration into value chains and markets.\r\nHelp strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all.\r\nPromote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-15",
+        "notes": "",
+        "active_version": 169,
+        "category": 1,
+        "versions": [
+            169,
+            69
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 3,
+    "fields": {
+        "name": "Accident and Safety Management",
+        "slug": "health_safety",
+        "created_date": "2020-06-18T08:44:10.481Z",
+        "description": "This topic assesses cases of occupational injury and fatal accidents. Occupational injury is the case of a worker incurring an occupational injury as a result of an occupational accident. A fatal occupational injury is the result of an occupational accident where death occurred within one year from the day of the accident.",
+        "pdf_description": "",
+        "recommendation": "Identify whether the Company has been monitoring and disclosing incidents by type and rates of near misses, injuries, lost days, absenteeism, fatalities, along with occupational diseases and wellbeing issues, including mental health. Identify whether there has been a general decline in incidents and what health, safety and wellbeing management arrangements are in place.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "p",
+        "update_due": "2020-05-15",
+        "notes": "",
+        "active_version": null,
+        "category": 4,
+        "versions": [],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 4,
+    "fields": {
+        "name": "Air Quality",
+        "slug": "air_quality",
+        "created_date": "2020-06-18T08:44:10.504Z",
+        "description": "This topic measures exposure to fine particulate matter, nitrogen dioxide, and percentage of the population burning solid fuel indoors.",
+        "pdf_description": "The Company's direct air quality impacts from its stationary operations (factories, power plants) and vehicles. The Company operates in countries with relatively poor air quality and  significant air pollution.",
+        "recommendation": "Identify whether the Company has been monitoring and reporting its emissions to air and if so, whether these have been generally declining and within any regulatory limits? Does this cover both its point and fugitive emissions? Is such monitoring voluntary or a regulatory requirement? Are any regulatory changes foreseen that will require it to make investments to reduce emissions?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-04-30",
+        "notes": "",
+        "active_version": 252,
+        "category": 2,
+        "versions": [
+            252,
+            251,
+            250,
+            249,
+            248,
+            220,
+            219,
+            218,
+            217,
+            214,
+            146,
+            145,
+            144,
+            41
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 5,
+    "fields": {
+        "name": "Animal Welfare",
+        "slug": "animal_welfare",
+        "created_date": "2020-06-18T08:44:10.528Z",
+        "description": "This topic assesses where the state is failing in its ultimate responsibility/ is complicit in animal welfare/ rights violations.",
+        "pdf_description": "",
+        "recommendation": "",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-09-27",
+        "notes": "",
+        "active_version": 59,
+        "category": 4,
+        "versions": [
+            59
+        ],
+        "applications": [
+            1,
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 6,
+    "fields": {
+        "name": "Anti-bribery",
+        "slug": "anti_bribery",
+        "created_date": "2020-06-18T08:44:10.551Z",
+        "description": "This topic assesses irregular payments and bribes as measured by the WEF Global Competitiveness Index component 1.05.",
+        "pdf_description": "",
+        "recommendation": "Identify what policies, procedures, and initiatives the Company has implemented to identify and mitigate the risks of bribery and related corruption? What training does it provide staff, does it employ third party services such as for whistleblowing and how does it manage its supply chain? The use of third-party sales agents required particular attention.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-09-30",
+        "notes": "",
+        "active_version": 278,
+        "category": 6,
+        "versions": [
+            278,
+            40
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 7,
+    "fields": {
+        "name": "Changing Diets & Obesity",
+        "slug": "changing_diets_and_obesity",
+        "created_date": "2020-06-18T08:44:10.574Z",
+        "description": "This topic measures population prevalence of overweight and obesity in persons aged 18+ using BMI. Body Mass Index (BMI) is a person\u2019s weight in kilograms divided by the square of their height in metres.",
+        "pdf_description": "",
+        "recommendation": "Nature, scope and effectiveness of any programs and practices (in-kind contributions, volunteer initiatives, knowledge transfer, partnerships and product development) that promote access to healthy lifestyles; the prevention of chronic disease; access to healthy, nutritious and affordable food; and improved welfare for communities in need.\r\nPercentage of total sales volume of consumer products, by product category, that contain increased nutritious ingredients like fibre, vitamins, minerals, phytochemicals or functional food additives.\r\nPolicies and practices on antibiotic, anti-inflammatory, hormone, and/or growth promotion treatments.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-14",
+        "notes": "",
+        "active_version": 57,
+        "category": 4,
+        "versions": [
+            57
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 8,
+    "fields": {
+        "name": "Child Labour",
+        "slug": "child_labour",
+        "created_date": "2020-06-18T08:44:10.602Z",
+        "description": "This topic explores the extent to which states regulate child labour, prohibit hazardous working conditions, eliminate the worst forms of child labour and improve access to quality education.",
+        "pdf_description": "",
+        "recommendation": "Identify whether the Company has assessed its operations and supply chain for the significant risk of any incidents of child labour? Are formal systems in place to ensure this is undertaken on a consistent and routine basis? Where required, has it complied with any related regulatory assessment and disclosure requirements?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-11-29",
+        "notes": "",
+        "active_version": 254,
+        "category": 4,
+        "versions": [
+            254,
+            253,
+            221,
+            39
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 9,
+    "fields": {
+        "name": "Civil Liberties",
+        "slug": "civil_liberties",
+        "created_date": "2020-06-18T08:44:10.632Z",
+        "description": "This topic measures levels of political rights and civil liberties. Indicators include: the freedom of expression and belief, associational and organisational rights, rule of law, and personal autonomy and individual rights.",
+        "pdf_description": "",
+        "recommendation": "Protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment.\r\nDo ALL major employers along the value chain demonstrate consistent practices for informing and/or  training workers on their rights under national labour and employment law?\r\nDoes the company system have a policy/code that addresses labour rights and standards along the value chain? If yes: i) Is compliance with this policy promoted by the Company system along the value chain? If so, how?  ii) Do ALL other major employers along the value chain have a policy/code on labour rights and standards? If no, what is the proportion of those who have a policy/code? iii) Are there discrepancies between the Company's and other employers' codes/policies and minimum standards (as recommended by ETI)? If so, what are the discrepancies? \r\nDoes the company system have a policy/code that addresses rights' awareness (including employment conditions) among its workforce? Does the policy/ code extend to the whole value chain? If yes, provide details on the policy commitment and monitoring.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-02-28",
+        "notes": "",
+        "active_version": 38,
+        "category": 4,
+        "versions": [
+            38
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 10,
+    "fields": {
+        "name": "Community Relations",
+        "slug": "community_relations",
+        "created_date": "2020-06-18T08:44:10.656Z",
+        "description": "This topic ranks countries based on expert opinion of public legal empowerment in three key areas affecting environmental decision-making: (1) transparency (2) and (3) justice. it is indicated by Environmental Democracy Index (2015).",
+        "pdf_description": "Management of the relationship between the Company and the communities in which they operate\tThe Company operates in countries with relatively poor  human rights records and/ or ratings.",
+        "recommendation": "Promote the rule of law at the national and international levels and ensure equal access to justice for all.\r\nDisclose details of fines and non-monetary sanctions for non-compliance with laws and voluntary codes concerning, for example, the environment, health and safety, anti-competitive behaviour/ corruption, data privacy, and social impact.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-08-31",
+        "notes": "",
+        "active_version": 290,
+        "category": 4,
+        "versions": [
+            290,
+            49
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 11,
+    "fields": {
+        "name": "Compensation and Benefits",
+        "slug": "compensation",
+        "created_date": "2020-06-18T08:44:10.679Z",
+        "description": "This topic assesses the extent to which pay is related to employee productivity.",
+        "pdf_description": "",
+        "recommendation": "Identify what varying levels of benefits the Company provides, such as life insurance, healthcare, disability coverage, parental leave, stock coverage and retirement provision, depending on seniority and full-time versus temporary or part-time employees? Does the Company negotiate wage and benefits standards through collective agreement?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-10-31",
+        "notes": "",
+        "active_version": 280,
+        "category": 4,
+        "versions": [
+            280,
+            279,
+            37
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 12,
+    "fields": {
+        "name": "Competitive behaviour",
+        "slug": "competitive_behaviour",
+        "created_date": "2020-06-18T08:44:10.716Z",
+        "description": "This topic indicates the strength of (1) corporate ethical behavior; and (2) accountability, such as in the strength of auditing and reporting standards, and the efficacy of corporate boards. It therefore gives a holistic picture of corporate ethical standards in a given country, as derived from WEF's Executive Opinion Survey.",
+        "pdf_description": "The Company's management of legal and social expectation around monopolistic practices, bargaining power, collusion, price fixing and manipulation, and patent and IP protection. The Company operates in countries with relatively poor perceived management of competitive behaviour.",
+        "recommendation": "Identify what steps the Company has taken to prevent ant-competitive behaviour anti-trust, and monopoly practices and their outcomes. Does it have and communicate codes of conduct and codes of ethics to all staff? Does it have internal and external mechanisms for seeking advice and reporting concerns such as whistleblowing mechanisms or hotlines?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-11-30",
+        "notes": "",
+        "active_version": 281,
+        "category": 6,
+        "versions": [
+            281,
+            36
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 13,
+    "fields": {
+        "name": "Conflict and Terrorism",
+        "slug": "conflict_and_terrorism",
+        "created_date": "2020-06-18T08:44:10.750Z",
+        "description": "This topic measures peace as the \"absence of violence and absence of the fear of violence\" and seeks to determine trends in the key drivers of peace over time and the economic impact of violence on the global economy.",
+        "pdf_description": "",
+        "recommendation": "Strengthen relevant national institutions, including through international cooperation, for building capacity at all levels, in particular in developing countries, to prevent violence and combat terrorism and crime.\r\nActions taken to improve performance in relation to content dissemination issues (accessibility and protection of vulnerable audiences and informed decision making) and results obtained.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-06-28",
+        "notes": "",
+        "active_version": 35,
+        "category": 3,
+        "versions": [
+            35
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 14,
+    "fields": {
+        "name": "Business Ethics",
+        "slug": "corruption",
+        "created_date": "2020-06-18T08:44:10.774Z",
+        "description": "This topic measures the levels of perceived public sector corruption in countries around the world. The index draws from 13 data sources from organisations such as the African Development Bank, Bertelsmann Foundation, Freedom House, and the World Bank.",
+        "pdf_description": "The Company's approach to business ethics including fraud, corruption, bribery and other behaviour that may have an ethical component. The Company operates in countries with relatively poor perceived management of business ethics such as corruption, fraud and/or fraud.",
+        "recommendation": "Identify what policies, procedures, and initiatives the Company has implemented to identify and mitigate the risks of fraud, corruption, bribery, and other unethical behaviour? What training does it provide staff, does it employ third party services such as for whistleblowing and how does it manage its supply chain? The use of third-party sales agents required particular attention.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-02",
+        "notes": "",
+        "active_version": 255,
+        "category": 6,
+        "versions": [
+            255,
+            244,
+            243,
+            242,
+            241,
+            223,
+            222,
+            34
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 15,
+    "fields": {
+        "name": "Customer Welfare",
+        "slug": "customer_welfare",
+        "created_date": "2020-06-18T08:44:10.805Z",
+        "description": "This topic determines how sophisticated production processes are, as a measure of product safety.",
+        "pdf_description": "The Company's ability to provide consumers with manufactured products and services that are aligned with societal expectations of fairness, equity, and responsibility.",
+        "recommendation": "Identify whether the Company has had complaints from consumers of its products or services that are related to expectations of fairness, equity, and responsibility? If so, have these now been resolved? Does the Company have policies, procedures and systems that allow customers to provide feedback and that ensure such feedback is monitored and acted upon?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-11-29",
+        "notes": "",
+        "active_version": 282,
+        "category": 4,
+        "versions": [
+            282,
+            51
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 16,
+    "fields": {
+        "name": "Data Privacy",
+        "slug": "cyber_risk",
+        "created_date": "2020-06-18T08:44:10.843Z",
+        "description": "This topic measures the commitment of countries to cybersecurity across five categories: Legal Measures, Technical Measures, Organisational Measures, Capacity Building and Cooperation.",
+        "pdf_description": "",
+        "recommendation": "Identify whether the Company has put in place policies and procedures protecting against incidents of losses and misuses of customer data and breaches of customer privacy? Does the Company comply with all its regulatory obligations in this regard? Has the Company been subject to any regulatory action and/or litigation in this regard?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "o",
+        "update_due": "2020-10-16",
+        "notes": "",
+        "active_version": 42,
+        "category": 4,
+        "versions": [
+            42
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 17,
+    "fields": {
+        "name": "Deforestation",
+        "slug": "tree_cover",
+        "created_date": "2020-06-18T08:44:10.881Z",
+        "description": "This topic measures the level of tree cover loss in areas with greater than 30 percent tree cover from 2001 to 2016.",
+        "pdf_description": "",
+        "recommendation": "By 2020, promote the implementation of sustainable management of all types of forests, halt deforestation, restore degraded forests and substantially increase afforestation and reforestation globally.\r\nRecord of % of all owned, leased and managed forests certified, % of total volume of wood/fibre/products intake certified, amount of land (owned or leased, and managed for production activities or extractive use) disturbed or rehabilitated.\r\nHas the organization made a commitment to reduce or remove deforestation and forest degradation from direct operations and/or supply chain?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-04-30",
+        "notes": "",
+        "active_version": 8,
+        "category": 2,
+        "versions": [
+            8
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 18,
+    "fields": {
+        "name": "Drought Severity",
+        "slug": "drought_severity",
+        "created_date": "2020-06-18T08:44:10.904Z",
+        "description": "This topic measures where droughts are likely to occur, the population and assets exposed, and the vulnerability of the population and assets to adverse effects.",
+        "pdf_description": "",
+        "recommendation": "Does the Company's operations pose a risk of environmental disasters (e.g. drought, water contamination, etc.)? If yes, does the Company engage with communities to mitigate and manage these environmental risks on local communities? \u00a0If yes, provide details, such as the practices or programmes in place, objectives and targets.\u00a0\r\nBy 2030, combat desertification, restore degraded land and soil, including land affected by desertification, drought and floods, and strive to achieve a land degradation-neutral world.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "o",
+        "update_due": "2021-10-29",
+        "notes": "",
+        "active_version": 72,
+        "category": 2,
+        "versions": [
+            72,
+            2
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 19,
+    "fields": {
+        "name": "Ecological Impacts",
+        "slug": "biodiversity",
+        "created_date": "2020-06-18T08:44:10.932Z",
+        "description": "This topic focuses on biodiversity and habitat; comprised of four indicators: (1) natural biome protection, (2) global biome protection, (3) marine protected areas, and (4) critical habitat protection.",
+        "pdf_description": "Management of the Company's impacts on ecosystems and biodiversity through activities. The Company operates in countries with poor perceived performance in habitat conservation and species protection. This may relate to the regulatory framework and/or enforcement of such.",
+        "recommendation": "Identify whether the Company operates sites which are in, or adjacent to, protected areas and areas of high biodiversity value outside protected areas? Does it have biodiversity governance and management policies and practices for operational sites, aimed at prevention, management, and remediation of damage to natural habitats resulting from its operations?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-04-30",
+        "notes": "",
+        "active_version": 283,
+        "category": 2,
+        "versions": [
+            283,
+            33
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 20,
+    "fields": {
+        "name": "Education",
+        "slug": "education",
+        "created_date": "2020-06-18T08:44:10.954Z",
+        "description": "This topic measures education attainment across the world. The index measures (1) mean years of schooling and (2) expected years of schooling.",
+        "pdf_description": "",
+        "recommendation": "By 2030, ensure that all girls and boys complete free, equitable and quality primary and secondary education leading to relevant and effective learning outcomes.\r\nBy 2030, ensure that all girls and boys have access to quality early childhood development, care and pre-primary education so that they are ready for primary education.\r\nEnsure inclusive and equitable quality education and promote lifelong learning opportunities for all. Record average hours of training per year per employee by gender, and by employee category.\r\nBy 2030, ensure equal access for all women and men to affordable and quality technical, vocational and tertiary education, including university.\r\nBy 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship.\r\nBy 2030, ensure that all youth and a substantial proportion of adults, both men and women, achieve literacy and numeracy. Actions taken to empower audiences through media literacy skills development and results obtained.\r\nBy 2020, substantially expand globally the number of scholarships available to developing countries, in particular least developed countries, small island developing States and African countries, for enrolment in higher education, including vocational training and information and communications technology, technical, engineering and scientific programmes, in developed countries and other developing countries.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-14",
+        "notes": "",
+        "active_version": 65,
+        "category": 4,
+        "versions": [
+            65
+        ],
+        "applications": [
+            1,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 21,
+    "fields": {
+        "name": "Emerging Middle Class (Consumption)",
+        "slug": "emerging_middle_class_consumption",
+        "created_date": "2020-06-18T08:44:10.972Z",
+        "description": "This topic measures household final consumption expenditure. This is the market value of all goods and services, including durable products (such as cars, washing machines, and home computers), purchased by households.",
+        "pdf_description": "",
+        "recommendation": "Improve progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10-year framework of programmes on sustainable consumption and production.\r\nPromote public procurement practices that are sustainable, in accordance with national policies and priorities.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-14",
+        "notes": "",
+        "active_version": 61,
+        "category": 4,
+        "versions": [
+            61
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 22,
+    "fields": {
+        "name": "Employee Engagement, Diversity & Inclusion",
+        "slug": "diversity_inclusion",
+        "created_date": "2020-06-18T08:44:10.994Z",
+        "description": "This topic takes into account many different types of diversity including gender, age, ethnicity, disability, country of birth, skills and education, number of hours worked, language, and geographical distribution. It uses Diversity 2011 Index Rankings produced by Oxford Economics.",
+        "pdf_description": "The Company's diversity and inclusion practices as they apply to hiring, employing, and promoting in the workplace. The Company operates in countries with low relative diversity within workplaces.",
+        "recommendation": "Identify whether the Company has put in place policies and initiatives to promote the inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status? Does it monitor this performance both within the company and its supply chain? In addition, identify what steps has the Company taken to monitoring staff satisfaction and engagement?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-01-31",
+        "notes": "",
+        "active_version": 257,
+        "category": 4,
+        "versions": [
+            257,
+            256,
+            230,
+            229,
+            166,
+            32
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 23,
+    "fields": {
+        "name": "Employment",
+        "slug": "employment",
+        "created_date": "2020-06-18T08:44:11.033Z",
+        "description": "This topic measures the proportion of a country's population that is employed. Ages 15 and older are generally considered the working-age population.",
+        "pdf_description": "",
+        "recommendation": "By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship.\r\nPromote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services.\r\nBy 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value. Comparison of benefits provided to full-time employees that are not provided to temporary or part-time employees, by significant locations of operation.\r\nTotal number and rates of new employee hires and employee turnover by age group, gender, and region.\r\nShow proportion of senior management hired from the local community at significant locations of operation.\r\nRecord the total number of permanent vs temporary workers (m/w) along the value chain. i) Considering contractual workers only, the approximate proportion of those who are employed on an annual basis, on a seasonal basis, on a daily basis, and on a piece/task basis. ii) Approximate proportion of workers (m/w) working overtime on a regular basis (disaggregate data by permanent and temporary workers).ii) Frequency of fatigue-related incidents in the workplace (m/w).\r\nDoes the Company system AND all major employers along the value chain have policies stating that hiring, placement, remuneration, advancement, training, discipline, retirement, and termination decisions are based on objective factors and are not connected to gender, age, nationality, ethnicity, sexuality, race, colour, creed, caste, language, mental or physical disabilities, etc.? If yes, how are the policies promoted internally by the Company system and each major employer/organization?\r\nDoes the Company system's business relationships (of those interviewed) perceive the Company system's governance standards to be fair and transparent (on agreed terms of trade, quality standards, and price structure that are shared between actors in the value chain) so that suppliers can inform workers on wages, employment conditions, and the security of their job in the medium term?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-09-27",
+        "notes": "",
+        "active_version": 47,
+        "category": 4,
+        "versions": [
+            47
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 24,
+    "fields": {
+        "name": "Energy Management",
+        "slug": "energy_management",
+        "created_date": "2020-06-18T08:44:11.061Z",
+        "description": "This topic assesses trends in national efforts to reduce carbon emission intensity over time. Represented by the single indicator 'CO2 Emissions - Total' (DCT) in Hsu et al 2018.",
+        "pdf_description": "The Company's indirect (Scope 2) greenhouse gas emissions through management of the use of energy in manufacturing and/or for the provision of products and services. The Company operates in countries with relatively high emissions per capita and therefore future stricter restrictions on emissions could be required with potential business implications.",
+        "recommendation": "Identify whether the Company has been monitoring its energy use and Scope 2 emissions? Are they generally declining? Is this and any reduction targets voluntary or a regulatory requirement? Is it required to trade or pay carbon taxes? Does it publicly report these (and any Scope 1 & 3) emissions in its financial filings (e.g. as per the TCFD) or via initiatives such as the CDP or GRI?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-04-30",
+        "notes": "",
+        "active_version": 263,
+        "category": 2,
+        "versions": [
+            263,
+            262,
+            261,
+            260,
+            259,
+            258,
+            225,
+            224,
+            31
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 25,
+    "fields": {
+        "name": "Energy Security",
+        "slug": "energy_security",
+        "created_date": "2020-06-18T08:44:11.084Z",
+        "description": "This topic ranks countries in terms of their likely ability to provide sustainable energy policies through the 3 dimensions of the energy trilemma: (i) Energy security, (ii) Energy equity, (iii)  Environmental sustainability",
+        "pdf_description": "",
+        "recommendation": "Allowing stakeholder participation in decision making processes related to energy planning and infrastructure development.\r\nBy 2030, achieve the sustainable management and efficient use of natural resources.\r\nAverage generation efficiency of thermal plants by energy source and by regulatory regime.\r\nRecording energy consumption within and outside of the organization.\r\nReduce energy requirements of products and services.\r\nBreak down your total gross global Scope 2 emissions and energy consumption by country/region.\r\nState how much fuel, electricity, heat, steam, and cooling in MWh the organization has purchased and consumed during the reporting year.\r\nMake public total amount invested in renewable energy.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-07-31",
+        "notes": "",
+        "active_version": 30,
+        "category": 3,
+        "versions": [
+            30
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 26,
+    "fields": {
+        "name": "Environmental Compliance",
+        "slug": "environmental_compliance",
+        "created_date": "2020-06-18T08:44:11.108Z",
+        "description": "This topic assesses the extent to which environmental policies foster the protection and sustainable use of natural resources and the management of pollution. Assessment of environmental sustainability requires multi-dimension criteria (i.e. for air, water, waste, conservation management, coastal zones management, natural resources management). To ensure balanced assessments, World Bank staff assesses country policies and institutions by filling out a specific questionnaire.",
+        "pdf_description": "",
+        "recommendation": "Identify whether the Company, in terms of its use of energy and raw materials, operational processes and/or its products, is subject to environmental regulations? If so, is it currently in compliance? Is it aware of new forthcoming regulations, or changes to current regulations, which will impose stricter requirements and require it to invest in abatement equipment or similar?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-14",
+        "notes": "",
+        "active_version": 66,
+        "category": 2,
+        "versions": [
+            66
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 27,
+    "fields": {
+        "name": "Environmental Laws and Regulation",
+        "slug": "environmental_laws",
+        "created_date": "2020-06-18T08:44:11.145Z",
+        "description": "This topic draws from a range of indices from sources such as the Economist Intelligence Unit, World Economic Forum, and Heritage Foundation. Indicators from each source measure perceptions of the ability of the government to formulate and implement sound policies and regulations that permit and promote private sector development.",
+        "pdf_description": "",
+        "recommendation": "Monetary value of significant fines and total number of non-monetary sanctions for non-compliance with environmental laws and regulations.\r\nPromote the rule of law at the national and international levels and ensure equal access to justice for all.\r\nTotal number of incidents of non-compliance with regulations and voluntary codes concerning product and service information and labelling, by type of outcomes.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-14",
+        "notes": "",
+        "active_version": 264,
+        "category": 2,
+        "versions": [
+            264,
+            228,
+            227,
+            226,
+            4
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 28,
+    "fields": {
+        "name": "Flood Occurence",
+        "slug": "flood_occurence",
+        "created_date": "2020-06-18T08:44:11.171Z",
+        "description": "This topic measures the frequency of flooding",
+        "pdf_description": "",
+        "recommendation": "By 2030, combat desertification, restore degraded land and soil, including land affected by desertification, drought and floods, and strive to achieve a land degradation-neutral world.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-14",
+        "notes": "",
+        "active_version": 71,
+        "category": 2,
+        "versions": [
+            71,
+            3
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 29,
+    "fields": {
+        "name": "Food Safety",
+        "slug": "food_safety",
+        "created_date": "2020-06-18T08:44:11.194Z",
+        "description": "This topic explores the nutritional quality of average diets and the food safety environment in each country.",
+        "pdf_description": "",
+        "recommendation": "By 2030, end hunger and ensure access by all people, in particular the poor and people in vulnerable situations, including infants, to safe, nutritious and sufficient food all year round.\r\nPolicies and practices on communication to consumers about ingredients and nutritional information beyond legal requirements.\r\nBy 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5 years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons.\r\nPercentage of total sales volume of consumer products, by product category, that are lowered in saturated fat, trans fats, sodium and added sugars.\r\nBy 2030, double the agricultural productivity and incomes of small-scale food producers, in particular women, indigenous peoples, family farmers, pastoralists and fishers, including through secure and equal access to land, other productive resources and inputs, knowledge, financial services, markets and opportunities for value addition and non-farm employment.\r\nAdopt measures to ensure the proper functioning of food commodity markets and their derivatives and facilitate timely access to market information, including on food reserves, in order to help limit extreme food price volatility.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-10-31",
+        "notes": "",
+        "active_version": 29,
+        "category": 5,
+        "versions": [
+            29
+        ],
+        "applications": [
+            1,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 30,
+    "fields": {
+        "name": "Fuel Management",
+        "slug": "fuel_management",
+        "created_date": "2020-06-18T08:44:11.215Z",
+        "description": "This topic measures supply- and demand-side energy efficiencies and development of energy supply from renewable and other low-carbon sources.",
+        "pdf_description": "",
+        "recommendation": "Energy consumption from both outside and within the organization, providing information (e.g. fuel types) on both renewable and non-renewable sources in MWh.\r\nEnergy intensity ratio, specific metric used to calculate the ratio and types of energy which have been included in the intensity ratio.  \r\nReduction of overall energy consumption, giving information on types of energy included in the reduction, and calculation method. \r\nHow much fuel, electricity, heat, steam, and cooling in MWh has your organisation purchased and consumed during the reporting year?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-10-31",
+        "notes": "",
+        "active_version": 28,
+        "category": 2,
+        "versions": [
+            28
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 31,
+    "fields": {
+        "name": "Future water scarcity",
+        "slug": "water_scarcity_future",
+        "created_date": "2020-06-18T08:44:11.239Z",
+        "description": "This topic measures the extent to which the raw material and source location may be subject to future water stress.",
+        "pdf_description": "",
+        "recommendation": "By 2030, substantially increase water-use efficiency across all sectors and ensure sustainable withdrawals and supply of freshwater to address water scarcity and substantially reduce the number of people suffering from water scarcity.\r\nDoes the Company system have procedures or systems in place to help reduce its footprint on water? (for instance, seeking alternative water sources, such as grey water or rainwater capture systems)?\r\nExtent of impact mitigation of environmental impacts of products and services.\r\nTotal and percentage of withdrawals in water-stressed or water-scarce areas.\r\nWater withdrawals: for the reporting year, provide withdrawal data, in megalitres per year, for the water sources used for all facilities.\r\nNumber of premises under direct control where water saving technologies and water saving awareness campaign are employed in areas facing water scarcity or water stress.\r\nPercentage and total volume of water recycled and reused.\r\nWater consumption: for the reporting year, please provide total water consumption data, across your operations.\r\nBy 2020, protect and restore water-related ecosystems, including mountains, forests, wetlands, rivers, aquifers and lakes. Amount of land (owned or leased, and managed for production activities or extractive use) disturbed or rehabilitated.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "o",
+        "update_due": "2021-01-17",
+        "notes": "",
+        "active_version": null,
+        "category": 2,
+        "versions": [],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 32,
+    "fields": {
+        "name": "Gender Inequality",
+        "slug": "gender_inequality",
+        "created_date": "2020-06-18T08:44:11.265Z",
+        "description": "This topic provides insights into gender disparities around the world. The index is a composite of indicators measuring inequalities between women and men in three categories: (1) reproductive health, (2) empowerment, and (3) the labour market",
+        "pdf_description": "",
+        "recommendation": "Identify whether the Company has put in place policies and initiatives to promote gender diversity at all levels of the business? Does it monitor and disclosure its performance in terms of percentage of employees by gender in the board, senior management positions and all other employee positions? Does it have a legal obligation to report on gender pay gap?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "o",
+        "update_due": "2021-03-31",
+        "notes": "",
+        "active_version": 161,
+        "category": 4,
+        "versions": [
+            161,
+            62
+        ],
+        "applications": [
+            1,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 33,
+    "fields": {
+        "name": "GHG Emissions",
+        "slug": "ghg_emissions",
+        "created_date": "2020-06-18T08:44:11.289Z",
+        "description": "This topic measures Green House Gas Emissions (latest data is 2014).",
+        "pdf_description": "The Company\u2019s direct emission (\"scope 1\") of greenhouse gases (GHG) that contribute to global warming from both stationary operations and vehicles. The Company operates in countries with relatively high emissions per capita and therefore future stricter restrictions on emissions could be required with potential business implications.",
+        "recommendation": "Identify whether the Company has monitored its Scope 1 emissions? Are they generally declining? Are they and any reduction targets voluntary or a regulatory requirement? Is it required to trade or pay carbon taxes? Does it publicly report these (and any Scope 2 & 3) emissions in its financial filings (e.g. as per the TCFD) or via initiatives such as the CDP or GRI?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-06-30",
+        "notes": "",
+        "active_version": 265,
+        "category": 2,
+        "versions": [
+            265,
+            231,
+            27
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 34,
+    "fields": {
+        "name": "Global Peace Index",
+        "slug": "global_peace",
+        "created_date": "2020-06-18T08:44:11.322Z",
+        "description": "This topic measures states and territories according to their level of peacefulness across three themes; the level of safety and security in society; the extend of domestic or international conflict; and the degree of militarization.",
+        "pdf_description": "",
+        "recommendation": "Actions taken to improve performance in relation to content dissemination issues (accessibility and protection of vulnerable audiences and informed decision making) and results obtained.\r\nNumber and nature of responses (feedback/complaints) related to content dissemination, including protection of vulnerable audiences and informed decision making and accessibility, and processes for addressing these responses.\r\nPercentage of security personnel trained in the organization's human rights policies or procedures that are relevant to operations.\r\nDoes the business have an explicit, well-publicized policy of zero tolerance towards gender-based violence and harassment? Is there a confidential complaint procedure?\r\nDoes the business have a policy on the prohibited types of client entertainment (e.g. sex industry) and how does it communicate this policy internally?\r\nMonetary value of significant fines and total number of non-monetary sanctions for non-compliance with laws and regulations.\r\nTotal number of incidents of non-compliance with regulations and voluntary codes concerning marketing communications, including advertising, promotion, and sponsorship, by type of outcomes.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-07-30",
+        "notes": "",
+        "active_version": 26,
+        "category": 3,
+        "versions": [
+            26
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 35,
+    "fields": {
+        "name": "Governance and Rule of Law",
+        "slug": "governance_and_rule_of_law",
+        "created_date": "2020-06-18T08:44:11.352Z",
+        "description": "This topic draws from a range of indices from sources such as the Economist Intelligence Unit, World Economic Forum, and Gallup World Poll. Indicators from each source measure perceptions of the extent to which agents have confidence in and abide by the rules of society, and in particular the quality of contract enforcement, property rights, the police, and the courts, as well as the likelihood of crime and violence.",
+        "pdf_description": "",
+        "recommendation": "Promote the rule of law at the national and international levels and ensure equal access to justice for all.\r\nMonetary value of significant fines and total number of non-monetary sanctions for non-compliance with laws and regulations.\r\nMonetary value of significant fines for non-compliance with laws and regulations concerning the provision and use of products and services.\r\nBy 2030, significantly reduce illicit financial and arms flows, strengthen the recovery and return of stolen assets and combat all forms of organized crime.\r\nBroaden and strengthen the participation of developing countries in the institutions of global governance.\r\nBy 2030, provide legal identity for all, including birth registration.\r\nEnhance policy coherence for sustainable development.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-14",
+        "notes": "",
+        "active_version": 232,
+        "category": 6,
+        "versions": [
+            232,
+            52
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 36,
+    "fields": {
+        "name": "Hazardous Materials",
+        "slug": "haz_materials",
+        "created_date": "2020-06-18T08:44:11.389Z",
+        "description": "This topic seeks to gauge a country's ability to manage hazardous waste using lead exposure as a proxy.",
+        "pdf_description": "The Company's management and use of hazardous materials. The Company operates in countries where levels of hazardous waste management may require improvement. Government steps to manage this could have business implications.",
+        "recommendation": "Identify the Company's procurement, use, and storage of hazardous materials. Is it compliant with relevant national and international regulations on overall use (e.g. REACH in the EU), storage and handling, and disposal? Has it developed and disclose a sustainable chemicals management strategy, including a proactive substitution strategy for Substances of Very High Concern (SVHC).",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-04-30",
+        "notes": "",
+        "active_version": 25,
+        "category": 2,
+        "versions": [
+            25
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 37,
+    "fields": {
+        "name": "Health & Safety",
+        "slug": "safety",
+        "created_date": "2020-06-18T08:44:11.425Z",
+        "description": "This topic assesses reported cases of occupational injury and fatal accidents. Occupational injury is the case of a worker incurring an occupational injury as a result of an occupational accident. A fatal occupational injury is the result of an occupational accident where death occurred within one year from the day of the accident.",
+        "pdf_description": "The Company's ability to maintain a safe and healthy workplace environment for staff, customers and/or other visitors. The Company operates in countries with relatively high levels of fatal and non-fatal occupational injuries per 100,000 workers.",
+        "recommendation": "Disclosure of incidents by type and rates of injury,  lost days, absenteeism, and total number of work-related fatalities, along with occupational diseases, by region and gender.\r\nProportion of workers who experience high incidence or high risk of diseases and health hazard related to their occupation. \r\nFor companies with supply chains in countries that experience high levels of HIV, to disclose the proportion of both male and female workers along the value chain that have access to free and voluntary HIV testing (either through their employer or public/community health systems).",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-08-18",
+        "notes": "",
+        "active_version": 58,
+        "category": 4,
+        "versions": [
+            58
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 38,
+    "fields": {
+        "name": "Human Rights",
+        "slug": "human_rights",
+        "created_date": "2020-06-18T08:44:11.472Z",
+        "description": "This topic assesses whether the state is failing in its ultimate responsibility/is complicit in human rights violations.",
+        "pdf_description": "Management of the relationship between the Company and the communities in which they operate. The Company operates in countries with relatively poor  human rights records and/ or ratings.",
+        "recommendation": "Identify whether the Company\u2019s activities have, or threaten to, infringe on the human rights of local communities? What internal mechanisms are in place to ensure ethical and lawful behaviour? Does these for instance include third party staffed help or advice lines? If grievances have been raised, have they been filed, addressed, and resolved through formal mechanisms?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-08-30",
+        "notes": "",
+        "active_version": 267,
+        "category": 4,
+        "versions": [
+            267,
+            266,
+            233,
+            24
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 39,
+    "fields": {
+        "name": "Income Inequality",
+        "slug": "income_inequality",
+        "created_date": "2020-06-18T08:44:11.497Z",
+        "description": "This topic measures the extent to which the distribution of income or consumption expenditure among individuals or households within an economy deviates from a perfectly equal distribution.",
+        "pdf_description": "",
+        "recommendation": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day.\r\nDo major employers along the value chain and the wider Company system negotiate wage and benefits standards through collective agreement?\r\nDoes the Company have a mechanism/policy/code that seeks to ensure that small-scale suppliers, smallholders and/or distributors are paid a fair price for goods, services, and/or crops supplied to the Company, enabling sustainable trade?\r\nEstimated proportion of workers (m/w) along the value chain who have other jobs to sustain their livelihoods.\u00a0\r\ni) Range of company benefits for permanent vs. part-time contractual workers in low and high seasons; ii) Range of company benefits for full time vs. part time workers (along the value chain); iii) Where it exists and when workers are entitled to it, are they systematically registered for social security?\r\ni) Average wage of workers (disaggregate data by gender (m/w), type of contract, e.g. permanent, contractual or piece-rate, and report difference between low and high season for temporary workers); ii) Compare with both the minimum wage as well as a living wage (m/w); iii) General trend of earnings in recent years in comparison to cost of living (i.e. is it improving, falling, or stable?); iv) Average size of households (i.e. how many people are dependent on earnings).\r\nRatios of standard entry level wage by gender compared to local minimum wage at significant locations of operation.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-06-30",
+        "notes": "",
+        "active_version": 60,
+        "category": 4,
+        "versions": [
+            60
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 40,
+    "fields": {
+        "name": "Product design & lifecycle management",
+        "slug": "innovation",
+        "created_date": "2020-06-18T08:44:11.527Z",
+        "description": "This topic indicates government and private sector efforts to obtain competitive advantage in science and technology. Measured as Gloss domestic expenditures on research and development (R&D), expressed as a percent of GDP.",
+        "pdf_description": "The Company's incorporation of environmental, social, and governance (ESG) considerations in characteristics of products and services provided or sold. The Company operates in countries with relatively low domestic expenditures on research & development. Therefore, innovation is considered less likely to be seen taking place in these geographies.",
+        "recommendation": "Identify how the Company incorporates ESG considerations in characteristics of products and services provided? Issues can include the impact of packaging, distribution, resource intensity in their manufacture and use, and their end-of-life impacts. Do they undertake formal lifecycle assessments? Are there regulations driving such requirements for their product or services?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-14",
+        "notes": "",
+        "active_version": 274,
+        "category": 6,
+        "versions": [
+            274,
+            273,
+            272,
+            56
+        ],
+        "applications": [
+            1,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 41,
+    "fields": {
+        "name": "Innovation: Download speed",
+        "slug": "download_speed",
+        "created_date": "2020-06-18T08:44:11.549Z",
+        "description": "This topic measures download speed. Cisco's \"Cloud Readiness Index\" provides details on the regional and country-level cloud readiness as measured by network performance indicators: download (DL) and upload (UL) in kilobites per second (kbps) and latency in milliseconds (ms).\r\n\r\nThis risk factor is DL only.",
+        "pdf_description": "",
+        "recommendation": "Does the company have activities and/ or plans in place to mitigate risks and challenges posed by limited network access and capacity?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2018-11-30",
+        "notes": "",
+        "active_version": 76,
+        "category": 5,
+        "versions": [
+            76
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 42,
+    "fields": {
+        "name": "Innovation: Latency",
+        "slug": "latency",
+        "created_date": "2020-06-18T08:44:11.571Z",
+        "description": "This topic measures latency. Cisco's \"Cloud Readiness Index\" provides details on the regional and country-level cloud readiness as measured by network preformance indicators: download (DL) and upload (UL) in kilobits per second (kbps) and latency in milliseconds (ms).\r\n\r\nThis risk factor is latency only.",
+        "pdf_description": "",
+        "recommendation": "Does the company have activities and/ or plans in place to mitigate risks and challenges posed by limited network access and capacity?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2018-11-30",
+        "notes": "",
+        "active_version": 74,
+        "category": 5,
+        "versions": [
+            74
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 43,
+    "fields": {
+        "name": "Innovation: Upload Speed",
+        "slug": "upload_speed",
+        "created_date": "2020-06-18T08:44:11.594Z",
+        "description": "This topic measures upload speed. Cisco's \"Cloud Readiness Index\" provides details on the regional and country-level cloud readiness as measured by network preformance indicators: download (DL) and upload (UL) in kilobits per second (kbps) and latency in milliseconds (ms).\r\n\r\nThis risk factor is UL only.",
+        "pdf_description": "",
+        "recommendation": "Does the company have activities and/ or plans in place to mitigate risks and challenges posed by limited network access and capacity?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2018-11-30",
+        "notes": "",
+        "active_version": 75,
+        "category": 5,
+        "versions": [
+            75
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 44,
+    "fields": {
+        "name": "Labour Practices",
+        "slug": "labour_rights",
+        "created_date": "2020-06-18T08:44:11.616Z",
+        "description": "This topic ranks 139 countries against 97 internationally recognised indicators to assess where workers' rights are best protected, in law and in practice.",
+        "pdf_description": "",
+        "recommendation": "Identify whether the Company has assessed its operations and supply chain for evidence of incidents of forced or compulsory labour, and related issues such as low pay and poor working conditions? Has it recognised workers\u2019 rights under national and international labour and employment laws? Are related policies, procedures, and systems in place?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-06-28",
+        "notes": "",
+        "active_version": 269,
+        "category": 4,
+        "versions": [
+            269,
+            268,
+            234,
+            23
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 45,
+    "fields": {
+        "name": "Land use / Conflict",
+        "slug": "land_use",
+        "created_date": "2020-06-18T08:44:11.638Z",
+        "description": "This topic measures land tenure insecurity.",
+        "pdf_description": "",
+        "recommendation": "Land remediated and in need of remediation for the existing or intended land use, according to applicable legal designations.\r\nBy 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance.\r\nBy 2030, provide universal access to safe, inclusive and accessible, green and public spaces, in particular for women and children, older persons and persons with disabilities.\r\nThe extent to which grievance mechanisms were used to resolve disputes relating to land use, customary rights of local communities and indigenous peoples, and the outcomes.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-12-20",
+        "notes": "",
+        "active_version": 22,
+        "category": 4,
+        "versions": [
+            22
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 46,
+    "fields": {
+        "name": "Low Carbon Management",
+        "slug": "low_carbon_management",
+        "created_date": "2020-06-18T08:44:11.670Z",
+        "description": "This topic measures supply- and demand-side energy efficiencies and development of energy supply from renewable and other low-carbon sources.",
+        "pdf_description": "",
+        "recommendation": "Demand-side energy efficiencies and development of energy supply from renewable and other low-carbon sources incorporated under your Scope 1 and 2 emissions.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-09-30",
+        "notes": "",
+        "active_version": 21,
+        "category": 2,
+        "versions": [
+            21
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 47,
+    "fields": {
+        "name": "Macroeconomic Risk",
+        "slug": "macroeconomic_risk",
+        "created_date": "2020-06-18T08:44:11.696Z",
+        "description": "This topic evaluates the stability of the macroeconomic environment, so it does not directly take into account the way in which public accounts are managed by the government.",
+        "pdf_description": "",
+        "recommendation": "Enhance global macroeconomic stability, including through policy coordination and policy coherence.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-10-31",
+        "notes": "",
+        "active_version": 20,
+        "category": 1,
+        "versions": [
+            20
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 48,
+    "fields": {
+        "name": "Management of the Legal & Regulatory Environment",
+        "slug": "regulatory_capture",
+        "created_date": "2020-06-18T08:44:11.719Z",
+        "description": "This topic assesses the perceptions of the quality of public services, the quality of the civil service and the degree of its independence from political pressures, the quality of policy formulation and implementation, and the credibility of the government's commitment to such policies.",
+        "pdf_description": "The Company's approach to engaging with regulators in cases where conflicting interests have the potential for adverse environmental and social impacts. The Company operates in countries with relatively poor perceived quality of public services and policy formulation and implementation; and/or credibility of the government's commitment to such policies.",
+        "recommendation": "Identify the Company\u2019s approach to public policy, including its participation in public policy development and its use of lobbying. Does the Company have rules on and publicly disclose the total monetary value of both financial and in-kind political contributions made directly or indirectly by the organization?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-09-30",
+        "notes": "",
+        "active_version": 270,
+        "category": 6,
+        "versions": [
+            270,
+            235,
+            19
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 49,
+    "fields": {
+        "name": "Market Access",
+        "slug": "market_access",
+        "created_date": "2020-06-18T08:44:11.798Z",
+        "description": "This topic measures the average tariffs imposed by a country or region e.g. European Union on Agricultural + Clothings + Textiles Products from Developing and Least Developed Countries.",
+        "pdf_description": "",
+        "recommendation": "Realize timely implementation of duty-free and quota-free market access on a lasting basis for all least developed countries, consistent with World Trade Organization decisions, including by ensuring that preferential rules of origin applicable to imports from least developed countries are transparent and simple, and contribute to facilitating market access.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-14",
+        "notes": "",
+        "active_version": 67,
+        "category": 1,
+        "versions": [
+            67
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 50,
+    "fields": {
+        "name": "Materials Sourcing",
+        "slug": "materials_sourcing",
+        "created_date": "2020-06-18T08:44:11.824Z",
+        "description": "This topic measures the risk associated with the sourcing of materials.",
+        "pdf_description": "The integration of natural resource scarcity considerations into the Company\u2019s approach to sourcing of materials as well as into product design and manufacturing. The Company operates in countries with low relative enterprise resilience to disruptive events.",
+        "recommendation": "Identify whether the Company has put in policies and initiative to increase the use of recycled and renewable raw materials, reduce the use of key materials (dematerialization), maximise resource efficiency in manufacturing, and R&D investments in substitute materials? Has it sought to recover scarce resources at product end-of-life through take-back programs?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-05-31",
+        "notes": "",
+        "active_version": 18,
+        "category": 2,
+        "versions": [
+            18
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 51,
+    "fields": {
+        "name": "Modern Slavery Government Response",
+        "slug": "modern_slavery_government_response",
+        "created_date": "2020-06-18T08:44:11.847Z",
+        "description": "This topic evaluates the government response to modern slavery, country by country, across: 'survivors are supported', 'criminal justice', 'coordination and accountability', 'attitudes, social systems and institutions' and 'business and government'",
+        "pdf_description": "",
+        "recommendation": "Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms.\r\nOperations and suppliers identified as having significant risk for incidents of forced or compulsory labour, and measures to contribute to the elimination of all forms of forced or compulsory labour.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-12-16",
+        "notes": "",
+        "active_version": 64,
+        "category": 4,
+        "versions": [
+            64
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 52,
+    "fields": {
+        "name": "Modern Slavery Prevalence",
+        "slug": "modern_slavery_prevalence",
+        "created_date": "2020-06-18T08:44:11.907Z",
+        "description": "This topic evaluates the proportion of a national population held in modern slavery, country by country.",
+        "pdf_description": "",
+        "recommendation": "Identify whether the Company has assessed its operations and supply chain for the significant risk of any incidents of forced or compulsory labour? Are formal systems in place to ensure this is undertaken on a consistent and routine basis? Where required, has it complied with any related regulatory assessment and disclosure requirements?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-12-16",
+        "notes": "",
+        "active_version": 48,
+        "category": 4,
+        "versions": [
+            48
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 53,
+    "fields": {
+        "name": "Modern Slavery Vulnerability",
+        "slug": "modern_slavery_vulnerability",
+        "created_date": "2020-06-18T08:44:11.954Z",
+        "description": "This topic evaluates a population's vulnerability to modern slavery by assessing: 'slavery policy', 'human rights', 'development', 'state stability' and 'discrimination'",
+        "pdf_description": "",
+        "recommendation": "Identify elements of the company's operations and supply chain that pose significant risk for incidents of forced or compulsory labour, and disclose measures to contribute to the elimination of all forms of forced or compulsory labour.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-12-16",
+        "notes": "",
+        "active_version": 46,
+        "category": 4,
+        "versions": [
+            46
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 54,
+    "fields": {
+        "name": "Natural Hazard Risk",
+        "slug": "droughts_floods",
+        "created_date": "2020-06-18T08:44:12.011Z",
+        "description": "This topic measures the extent to which the raw material and source location are currently subject to pressures of either floods or droughts.",
+        "pdf_description": "",
+        "recommendation": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries. Record energy consumption outside of & within the organization.\r\nImprove progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10-year framework of programmes on sustainable consumption and production, with developed countries taking the lead.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-05-31",
+        "notes": "",
+        "active_version": 43,
+        "category": 2,
+        "versions": [
+            43
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 55,
+    "fields": {
+        "name": "Nitrogen Use Efficiency",
+        "slug": "nitrogen_use",
+        "created_date": "2020-06-18T08:44:12.063Z",
+        "description": "This topic tracks nitrogen use efficiency to assess how well countries match fertiliser inputs to crops.",
+        "pdf_description": "",
+        "recommendation": "Improve progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10-year framework of programmes on sustainable consumption and production, with developed countries taking the lead.\r\nMaterials used by weight and volume (fertilizers).\r\nDefine nitrogen use efficiency metrics, KPIs and targets, and track and report on performance. Consider membership of relevant initiatives, e.g. UN Global Partnership on Nutrient Management.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-04-30",
+        "notes": "",
+        "active_version": 17,
+        "category": 2,
+        "versions": [
+            17
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 56,
+    "fields": {
+        "name": "Non-communicable Disease",
+        "slug": "non-communicable_disease",
+        "created_date": "2020-06-18T08:44:12.093Z",
+        "description": "This topic measures the probability of dying between exact ages 30 and 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory (%)",
+        "pdf_description": "",
+        "recommendation": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being.\r\nType of injury and rates of injury, occupational diseases, lost days, and absenteeism, and total number of work-related fatalities, by region and by gender.\r\nSupport the research and development of vaccines and medicines for the communicable and non-communicable diseases that primarily affect developing countries, provide access to affordable essential medicines and vaccines, in accordance with the Doha Declaration on the TRIPS Agreement and Public Health, which affirms the right of developing countries to use to the full the provisions in the Agreement on Trade-Related Aspects of Intellectual Property Rights regarding flexibilities to protect public health, and, in particular, provide access to medicines for all.\r\nCommit to not filing for or enforcing patents related to products for the Index Diseases in LDCs, LICs and LMICs.\r\nCommit to and explain your rationale for investing in health infrastructure-related philanthropic projects (outside of the standard value chain) in the Index countries and their relevance to long-term sustainable access to medicine in Index countries.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-05-31",
+        "notes": "",
+        "active_version": 16,
+        "category": 4,
+        "versions": [
+            16
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 57,
+    "fields": {
+        "name": "Pandemic Risk",
+        "slug": "pandemic_risk",
+        "created_date": "2020-06-18T08:44:12.121Z",
+        "description": "This topic evaluates the sum of public and private health expenditure. It covers the provision of health services (preventative and curative), family planning activities, nutrition activities, and emergency aid designated for health but does not include provision of water and sanitation.",
+        "pdf_description": "",
+        "recommendation": "Achieve universal health coverage, including financial risk protection, access to quality essential health-care services and access to safe, effective, quality and affordable essential medicines and vaccines for all.\r\nDo you take into consideration needs-based affordability when making pricing decisions for relevant products targeted at the poorest population segments in relevant countries?\r\nCommit to implement equitable inter-/intra-country pricing models for the products related to the Index Diseases in the Index countries to ensure affordability.\r\nSupport the research and development of vaccines and medicines for the communicable and non-communicable diseases that primarily affect developing countries, provide access to affordable essential medicines and vaccines, in accordance with the Doha Declaration on the TRIPS Agreement and Public Health, which affirms the right of developing countries to use to the full the provisions in the Agreement on Trade-Related Aspects of Intellectual Property Rights regarding flexibilities to protect public health, and, in particular, provide access to medicines for all.\r\nSubstantially increase health financing and the recruitment, development, training and retention of the health workforce in developing countries, especially in least developed countries and small island developing States.\r\nCommit to and explain your rationale for investing in health infrastructure-related philanthropic projects (outside of the standard value chain) in the Index countries and their relevance to long-term sustainable access to medicine in Index countries.\r\nProvide evidence that the company's philanthropic activities (excluding drug donation programmes) are aligned with and support implementation of national health system development plans and stated health priorities in the Index countries.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-02-28",
+        "notes": "",
+        "active_version": 50,
+        "category": 4,
+        "versions": [
+            50
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 58,
+    "fields": {
+        "name": "Physical Impacts of Climate Change",
+        "slug": "climate_change",
+        "created_date": "2020-06-18T08:44:12.205Z",
+        "description": "This topic summarizes a country's vulnerability to climate change and other global challenges in combination with its readiness to improve resilience. It aims to help businesses and the public sector better prioritise investments for a more efficient response to the immediate global challenges ahead.",
+        "pdf_description": "The direct exposure of the Company's assets and operations to actual or potential physical impacts of climate change. The Company operates in countries with relatively high vulnerability to climate disruptions.",
+        "recommendation": "Identify whether the Company has taken specific steps to assess the potential direct exposure of its assets and operations to the physical impacts of climate change? Has this been undertaken as a voluntary initiative or regulatory requirement? Is it in line with the requirements of the Taskforce on Climate related Financial Disclosures (TCFD)? Have mitigating measure been planned?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-04-30",
+        "notes": "",
+        "active_version": 271,
+        "category": 2,
+        "versions": [
+            271,
+            236,
+            1
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 59,
+    "fields": {
+        "name": "Political Risk",
+        "slug": "political_risk",
+        "created_date": "2020-06-18T08:44:12.462Z",
+        "description": "This topic measures the risk of state instability and the pressures that might push states towards the brink of failure.",
+        "pdf_description": "",
+        "recommendation": "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.\r\nTotal value of political contributions by country and recipient/beneficiary.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-04-30",
+        "notes": "",
+        "active_version": 15,
+        "category": 3,
+        "versions": [
+            15
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 60,
+    "fields": {
+        "name": "Prevalance of Migrant Workers",
+        "slug": "prevalance_migrant_workers",
+        "created_date": "2020-06-18T08:44:12.510Z",
+        "description": "This topic assesses the number of foreign citizens (EU and non-EU) as a % of the total population in employment, aged 20-64.",
+        "pdf_description": "",
+        "recommendation": "Protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-15",
+        "notes": "",
+        "active_version": 68,
+        "category": 4,
+        "versions": [
+            68
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 61,
+    "fields": {
+        "name": "Product Packaging",
+        "slug": "packaging",
+        "created_date": "2020-06-18T08:44:12.537Z",
+        "description": "This topic measures the environmental impact of packaging, i.e. amount of plastic packaging material.",
+        "pdf_description": "",
+        "recommendation": "Identify whether the Company manufactures products that are regulated and packaging and/or is regulated as a high-volume user of packaging, potentially requiring payment of taxes. Does it monitor the volume of products sold and/or packaging materials that are used, collected, reused, or recycled? Is it acting to reduce non-renewable, recyclable, or hazardous materials used?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "o",
+        "update_due": "2020-12-31",
+        "notes": "",
+        "active_version": 14,
+        "category": 2,
+        "versions": [
+            14
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 62,
+    "fields": {
+        "name": "Product Quality and Safety",
+        "slug": "product_quality",
+        "created_date": "2020-06-18T08:44:12.561Z",
+        "description": "This topic determines how sophisticated production processes are.",
+        "pdf_description": "The Company's ability to offer manufactured products and services that are safe, reliable, and of a high quality.",
+        "recommendation": "Identify whether the Company has had incidents, or accusations of its products or services resulting in health and safety or environmental impacts and/or non-compliance with related regulations and/or voluntary codes? Did they result in penalties and/or litigation? Does it have policies and procedures to manage quality and safety throughout product and service lifecycles?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-11-29",
+        "notes": "",
+        "active_version": 288,
+        "category": 6,
+        "versions": [
+            288,
+            53
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 63,
+    "fields": {
+        "name": "Recruitment, Development and Retention",
+        "slug": "recruitment",
+        "created_date": "2020-06-18T08:44:12.584Z",
+        "description": "This topic assesses the pressures and measures related to availability of human capital.",
+        "pdf_description": "",
+        "recommendation": "Identify what policies and initiatives the Company has put in place to enhance the development and retention of staff? What programs have been implemented to upgrade employee skills? Are targets placed on minimum training hours? Are employee hires, training, progression, and turnover monitored with disclosure on total number and rate by age, gender and region?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-04-30",
+        "notes": "",
+        "active_version": 275,
+        "category": 4,
+        "versions": [
+            275,
+            237,
+            13
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 64,
+    "fields": {
+        "name": "Resource Nationalism",
+        "slug": "resource_nationalism",
+        "created_date": "2020-06-18T08:44:12.609Z",
+        "description": "This topic measures the quality of governance in the oil, gas and mining sector of 58 countries. The Index identifies critical achievements and challenges in natural resource governance.",
+        "pdf_description": "",
+        "recommendation": "By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance.\r\nNumber and description of significant disputes with local communities and indigenous peoples\u00a0.\r\nNumber of people physically or economically displaced and compensation, broken down by type of project.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-06-28",
+        "notes": "",
+        "active_version": 54,
+        "category": 1,
+        "versions": [
+            54
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 65,
+    "fields": {
+        "name": "Selling Practices and Product Labelling",
+        "slug": "fair_disclosure",
+        "created_date": "2020-06-18T08:44:12.630Z",
+        "description": "This topic evaluates the corporate ethics of companies (ethical behavior in interactions with public officials, politicians, and other firms) by country.",
+        "pdf_description": "",
+        "recommendation": "Identify whether the Company has a clear approach for fair product labelling and disclose of information on sourcing of products/services, content, safe use and disposal? Does it have legal obligations in this regard? Have there been instances of non-compliance concerning product and service information and labelling which have resulted in fines, warnings, and/or litigation?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-01-05",
+        "notes": "",
+        "active_version": 287,
+        "category": 6,
+        "versions": [
+            287,
+            63
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 66,
+    "fields": {
+        "name": "Social Protection",
+        "slug": "social_protection",
+        "created_date": "2020-06-18T08:44:12.651Z",
+        "description": "This topic measures total public social protection expenditure and health expenditure as a percentage of GDP.  The index draws from 7 data sources from organisations such as the African Development Bank, Eurostat, ILO, OCED, and the World Health Organisation.",
+        "pdf_description": "",
+        "recommendation": "Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable\u00a0.\r\nAverage investment for childcare provisions or benefits (per working family) by i) the Company system and ii) other employers in the value chain. \r\nWhat is the business' policy and provision of childcare facilities and how many employees, if any, use this facility?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-14",
+        "notes": "",
+        "active_version": 73,
+        "category": 4,
+        "versions": [
+            73
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 67,
+    "fields": {
+        "name": "Societal Unrest",
+        "slug": "societal_unrest",
+        "created_date": "2020-06-18T08:44:12.673Z",
+        "description": "This topic measures social cohesion and mobility.",
+        "pdf_description": "",
+        "recommendation": "Does the company report on and have explicit policies regarding employee diversity, including at the board level?\r\nDoes the company report on and have explicit policies regarding supplier diversity?\r\nDoes the company provide evidence that it respects and supports the right to freedom of association and the right to collective bargaining?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-01-17",
+        "notes": "",
+        "active_version": 12,
+        "category": 4,
+        "versions": [
+            12
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 68,
+    "fields": {
+        "name": "Supply Chain Management",
+        "slug": "supply_chain",
+        "created_date": "2020-06-18T08:44:12.695Z",
+        "description": "This topic relates to the supply chain itself and comprises three drivers: control of corruption, infrastructure and the quality of local suppliers.",
+        "pdf_description": "The management of environmental, social, and governance risks within a Company's supply chain. The Company operates in countries with low relative supply chain resilience.",
+        "recommendation": "Identify how the Company approaches supply chain management. How does it audit its suppliers\u2019 social and environmental responsibility conformance? Does it monitor both minor and major non-conformance, and associated corrective action rates? Does the Company used third-party tools or participated in industry initiatives to mitigate supply chain risk?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-05-31",
+        "notes": "",
+        "active_version": 277,
+        "category": 6,
+        "versions": [
+            277,
+            276,
+            238,
+            11
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 69,
+    "fields": {
+        "name": "Systemic Risk Management",
+        "slug": "risk_management",
+        "created_date": "2020-06-18T08:44:12.724Z",
+        "description": "This topic comprises of three drivers drawn from FM Global\u2019s proprietary RiskMark\u00ae database: exposure to natural hazard, quality of natural hazard risk management and quality of fire risk management.",
+        "pdf_description": "The Company's contribution to or management of systemic risks resulting from large scale systems collapse of systems upon which our economy and society depend. The Company operates in countries with low relative enterprise resilience to disruptive events.",
+        "recommendation": "Identify the policies and systems the Company has implemented to ensure business continuity. Has this been undertaken as a voluntary initiative or a regulatory requirement? Has it identified the systems it is dependent on to operate (e.g. financial, technology)? Does it currently monitor and report on performance or service disruption issues and any corrective actions taken?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-05-31",
+        "notes": "",
+        "active_version": 10,
+        "category": 6,
+        "versions": [
+            10
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 70,
+    "fields": {
+        "name": "Trafficking",
+        "slug": "trafficking",
+        "created_date": "2020-06-18T08:44:12.751Z",
+        "description": "This topic assesses risk from severe forms of trafficking in persons; sex trafficking in which a commercial sex act is induced by force, fraud, or coercion, or in which the person induced to perform such an act has not attained 18 years of age; or in the recruitment, harbouring, transportation, provision, or obtaining of a person for labour or services, through the use of force, fraud, or coercion for the purpose of subjection to\r\ninvoluntary servitude, peonage, debt bondage, or slavery.",
+        "pdf_description": "",
+        "recommendation": "",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "o",
+        "update_due": "2020-12-16",
+        "notes": "",
+        "active_version": null,
+        "category": 4,
+        "versions": [],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 71,
+    "fields": {
+        "name": "Transition risk",
+        "slug": "transition_risk",
+        "created_date": "2020-06-18T08:44:12.773Z",
+        "description": "This topic uses five indicators to track a country\u2019s progress in reducing three critical greenhouse gases and one climate pollutant, offering a broad gauge of national climate change performance. It is represented by the aggregate variable Climate & Energy (CCE) in Hsu et al 2018, which includes indicators 1) CO2 emissions - total; 2) CO2 emissions - power; 3) CH4 emissions; 4) N20 Emissions; 5) Black carbon emissions.",
+        "pdf_description": "",
+        "recommendation": "Ensure access to affordable, reliable, sustainable and modern energy for all.\r\nPlanned capacity against projected electricity demand over the long term, broken down by energy source, regulatory regime and GHG emissions.\r\nReduction of GHG emissions - statement of strategy for projected energy requirements and decarbonisation of energy supply.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-04-30",
+        "notes": "",
+        "active_version": 9,
+        "category": 2,
+        "versions": [
+            9
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 72,
+    "fields": {
+        "name": "Fair marketing and advertising",
+        "slug": "voice_accountability",
+        "created_date": "2020-06-18T08:44:12.795Z",
+        "description": "This topic assesses the perceptions of the extent to which a country's citizens are able to participate in selecting their government, as well as freedom of expression, freedom of association, and a free media.",
+        "pdf_description": "",
+        "recommendation": "Management approach for fair and ethical marketing.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-15",
+        "notes": "",
+        "active_version": 240,
+        "category": 6,
+        "versions": [
+            240,
+            239,
+            55
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 73,
+    "fields": {
+        "name": "Waste Management",
+        "slug": "waste_management",
+        "created_date": "2020-06-18T08:44:12.816Z",
+        "description": "This topic provides a measure of the performance of municipal solid waste (MSW) management systems at the country level. It amalgamates data on three waste management system aspects to produce a single, comprehensive indicator score, on a per country basis. The three aspects are: 1) per capita MSW generation; 2) MSW collection rates; and 3) MSW disposal methods. Data are adapted from a study by Hoorweg and Bhada-Tata (2012) under the World Bank.",
+        "pdf_description": "The Company's management of both hazardous and non-hazardous solid wastes. The Company operates in countries whose waste management systems may require improvement. Government steps to manage this could have business implications.",
+        "recommendation": "Identify the Company's hazardous and non-hazardous waste by type and disposal method (e.g. reuse, recycling, incineration, or landfill). Does it operate in compliance with regulatory requirements? Do these include paying a tax, for instance on packaging waste? Has it put in place measures to minimise the volumes generated, and that going to incineration or landfill?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2018-11-30",
+        "notes": "",
+        "active_version": 7,
+        "category": 2,
+        "versions": [
+            7
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 74,
+    "fields": {
+        "name": "Wastewater and Effluent",
+        "slug": "waste_and_effluent",
+        "created_date": "2020-06-18T08:44:12.838Z",
+        "description": "This topic measures the proportion of wastewater from households and industrial sources that is treated before it is released into the environment.",
+        "pdf_description": "The Company's management of water resources in manufacturing and/or for the provision of products and services. The Company operates in countries with less developed water management systems and regulations. This might relate to treatment and disposal of wastewater, access to water, water efficiency and/or water scarcity.",
+        "recommendation": "Identify where the Company discharges its wastewater/effluent? Are they to water resources of higher ecological value and/or used by others? Does it monitor and report these? If so, have they been generally declining and within regulatory limits? Is the monitoring voluntary or a regulatory requirement? Are regulatory changes foreseen that will require it to make investments?",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-04-30",
+        "notes": "",
+        "active_version": 6,
+        "category": 2,
+        "versions": [
+            6
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 75,
+    "fields": {
+        "name": "Water Scarcity",
+        "slug": "water_scarcity",
+        "created_date": "2020-06-18T08:44:12.860Z",
+        "description": "This topic measures the extent to which the raw material and source location are subject to observed water stress.",
+        "pdf_description": "",
+        "recommendation": "Water sources used which are significantly affected by withdrawal of water, to include the size of the water source.\r\nBy 2030, substantially increase water-use efficiency across all sectors and ensure sustainable withdrawals and supply of freshwater to address water scarcity and substantially reduce the number of people suffering from water scarcity.\r\nDoes the Company system have procedures or systems in place to help reduce its footprint on water? (for instance, seeking alternative water sources, such as grey water or rainwater capture systems)?\r\nExtent of impact mitigation of environmental impacts of products and services.\r\nTotal and percentage of withdrawals in water-stressed or water-scarce areas.\r\nWater withdrawals: for the reporting year, provide withdrawal data, in megalitres per year, for the water sources used for all facilities.\r\nNumber of premises under direct control where water saving technologies and water saving awareness campaign are employed in areas facing water scarcity or water stress.\r\nPercentage and total volume of water recycled and reused.\r\nWater consumption: for the reporting year, please provide total water consumption data, across your operations.\r\nBy 2020, protect and restore water-related ecosystems, including mountains, forests, wetlands, rivers, aquifers and lakes. Amount of land (owned or leased, and managed for production activities or extractive use) disturbed or rehabilitated.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-03-15",
+        "notes": "",
+        "active_version": 70,
+        "category": 2,
+        "versions": [
+            70,
+            44
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 76,
+    "fields": {
+        "name": "Water Stress",
+        "slug": "water_stress",
+        "created_date": "2020-06-18T08:44:12.882Z",
+        "description": "This topic measures the extent to which the raw material and source location are subject to observed water stress.",
+        "pdf_description": "The Company's access to and management of the water resources required to manufacture its products and/or deliver its services.\tThe Company operates in locations that may be subject to future water stress. Government steps to manage this could have business implications.",
+        "recommendation": "Identify where the Company sources its water from and whether it has assessed current or future scarcity issues. Determine whether its supply is regulated and whether its uses are in competition with other users (particularly in the local community) and/or to be impacting local ecosystems. Assess whether the Company has put in place measures to minimise its water use.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2020-05-30",
+        "notes": "",
+        "active_version": 45,
+        "category": 2,
+        "versions": [
+            45
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 77,
+    "fields": {
+        "name": "Youth Unemployment",
+        "slug": "youth_unemployment",
+        "created_date": "2020-06-18T08:44:12.910Z",
+        "description": "This topic measures the share of the labor force ages 15-24 without work but available for and seeking employment.",
+        "pdf_description": "",
+        "recommendation": "By 2020, substantially reduce the proportion of youth not in employment, education or training.\r\nTotal number and rates of new employee hires and employee turnover by age group, gender, and region.",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "r",
+        "update_due": "2019-03-12",
+        "notes": "",
+        "active_version": 5,
+        "category": 4,
+        "versions": [
+            5
+        ],
+        "applications": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "riskfactor.riskdataset",
+    "pk": 78,
+    "fields": {
+        "name": "MH Test1",
+        "slug": "mh-test1",
+        "created_date": "2020-08-06T13:34:20.859Z",
+        "description": "MH Test1",
+        "pdf_description": "",
+        "recommendation": "",
+        "abbreviated_recommendation": "",
+        "reminder": true,
+        "update_status": "o",
+        "update_due": "2020-09-06",
+        "notes": "",
+        "active_version": null,
+        "category": 1,
+        "versions": [],
+        "applications": [
+            1
+        ]
+    }
+}
+]

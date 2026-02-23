@@ -1,0 +1,129 @@
+{% extends "assessment_base.html" %}
+{% load static crispy_forms_tags tags %}
+
+{% block h1_title %}
+    Key performance indicators & actions
+{% endblock %}
+
+{% block page_intro_text %}
+{% endblock %}
+
+{% block page_button %}
+    <a href="{% url 'kpi_csv_download' assessment.slug %}" class="float-right btn btn-secondary" target="_blank">
+        Download CSV
+    </a>
+{% endblock %}
+
+{% block main_content %}
+    <div class="row" style="margin-top:45px;">
+        <div class="col-12">
+            <div class="card white-card">
+                <div class="card-body">
+                    <div class="container mb-4 mt-3">
+                        <div class="row">
+                            <div class="col-9 pl-0">
+                                <h2 class="card-title mb-3">
+                                    <strong>Details</strong>
+                                </h2>
+                            </div>
+                            <div class="col-3 pr-0">
+                                <div class="float-right">
+                                    <a href="{% url 'company_kpi' assessment.slug %}">
+                                        <i class="far fa-pencil mr-2"></i>Edit
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            {% for kpi in assessment.keyperformanceindicator_set.all %}
+                                <div class="row">
+                                    <p class="col-6 pr-0 pl-0">
+                                        <strong>Aspect</strong><br/>
+                                        {{ kpi.aspect }}
+                                    </p>
+
+                                    <p class="col-6 pr-0 pl-0">
+                                        <strong>KPI</strong><br/>
+                                        {% if kpi.is_kpi %}
+                                            Yes
+                                        {% else %}
+                                            No
+                                        {% endif %}
+                                    </p>
+                                </div>
+                                {% if kpi.detail %}
+                                    <div class="row">
+                                        <p class="col-11 pr-0 pl-0">
+                                            <strong>Detail</strong><br/>
+                                            {{ kpi.detail|show_more_less  }}
+                                        </p>
+                                    </div>
+                                {% endif %}
+                                {% if kpi.sdg_alignment.all or kpi.related_standards_list or kpi.get_status_display %}
+                                    <div class="row">
+                                        {% if kpi.sdg_alignment.all %}
+                                            <div class="col-4 pr-0 pl-0">
+                                                <p class="mb-0"><strong>SDG alignment</strong></p>
+                                                <ul class="list-unstyled">
+                                                    {% for alignment in kpi.sdg_alignment.all %}
+                                                        <li>{{ alignment.text }}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                            </div>
+                                        {% endif %}
+                                        {% if kpi.related_standards_list %}
+                                            <p class="col-4 pr-0 pl-0">
+                                                <strong>Related standard</strong><br/>
+                                                {{ kpi.related_standards_list }}
+                                            </p>
+                                        {% endif %}
+                                        {% if kpi.get_status_display %}
+                                            <p class="col-4 pr-0 pl-0">
+                                                <strong>Status</strong><br/>
+                                                {{ kpi.get_status_display }}
+                                            </p>
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                                {% if kpi.commentary %}
+                                    <div class="row">
+                                        <p class="col-11 pr-0 pl-0">
+                                            <strong>Commentary</strong><br/>
+                                            {{ kpi.commentary|show_more_less }}
+                                        </p>
+                                    </div>
+                                {% endif %}
+                                {% if not forloop.last %}
+                                    <div class='kpi-line-break-list'></div>
+                                {% endif %}
+                            {% endfor %}
+                            <div class="buttonHolder" style="margin-top:60px;">
+                                <a class="btn btn-secondary btn-medium" href="{{ previous_url }}">Previous</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+            $(".read-more").click(function(e) {
+                e.preventDefault();
+                var t = $(this);
+                t.parent().find('.more').removeClass('d-none');
+                t.addClass('d-none');
+            });
+            $(".read-less").click(function(e) {
+                e.preventDefault();
+                var t = $(this);
+                t.parent().parent().find('.more').addClass('d-none');
+                t.parent().parent().find('.read-more').removeClass('d-none');
+            });
+        });
+    </script>
+{% endblock js %}

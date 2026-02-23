@@ -1,0 +1,1847 @@
+[
+{
+    "model": "company.companyassessment",
+    "pk": 1,
+    "fields": {
+        "report_name": "ESG Report",
+        "slug": "esg-report",
+        "date_created": "2020-07-15T08:32:13.213Z",
+        "date_updated": "2020-09-30T17:06:30.532Z",
+        "created_by": [
+            "fionaplace"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Red",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": " ",
+        "report_reference": " /0000",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": "",
+        "company_fund": [],
+        "industries": [
+            4,
+            21,
+            38,
+            58
+        ],
+        "material_risks": [
+            3,
+            4,
+            10,
+            15,
+            16,
+            19,
+            24,
+            26,
+            72,
+            30,
+            33,
+            36,
+            37,
+            44,
+            48,
+            50,
+            40,
+            61,
+            62,
+            65,
+            68,
+            73,
+            74,
+            76
+        ],
+        "countries": [
+            170,
+            218,
+            250,
+            288,
+            356,
+            104
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 2,
+    "fields": {
+        "report_name": "Ali's test report",
+        "slug": "alis-test-report",
+        "date_created": "2020-07-15T12:51:22.054Z",
+        "date_updated": "2020-07-15T12:51:22.054Z",
+        "created_by": [
+            "Tom.Venables"
+        ],
+        "status": "I",
+        "deal_type": "T",
+        "company_name": "Argyll",
+        "company_headquarters": "Brighton",
+        "company_employee_count": 15000,
+        "client_reference": "BVB",
+        "report_reference": "LAN/0000",
+        "website": "http://www.mlc.com.au",
+        "company_description": "Wealth management company",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": "",
+        "company_fund": [
+            2
+        ],
+        "industries": [
+            26,
+            63
+        ],
+        "material_risks": [
+            6,
+            14,
+            11,
+            15,
+            16,
+            17,
+            22,
+            26,
+            72,
+            32,
+            57,
+            58,
+            65,
+            69
+        ],
+        "countries": [
+            30,
+            124,
+            704
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 3,
+    "fields": {
+        "report_name": "ali test",
+        "slug": "ali-test",
+        "date_created": "2020-07-16T14:14:49.922Z",
+        "date_updated": "2020-09-01T09:49:31.912Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "ali test",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": " ",
+        "report_reference": "LAN/0001",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": "",
+        "company_fund": [],
+        "industries": [
+            1,
+            2
+        ],
+        "material_risks": [
+            2,
+            14,
+            16,
+            24,
+            36,
+            37,
+            50,
+            40,
+            62,
+            68,
+            73,
+            74
+        ],
+        "countries": [
+            32,
+            250
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 4,
+    "fields": {
+        "report_name": "Argyll Environmental Test",
+        "slug": "argyll-environmental-test",
+        "date_created": "2020-07-16T14:37:12.414Z",
+        "date_updated": "2020-07-16T14:37:12.414Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Argyll",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": " ",
+        "report_reference": " ",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": null,
+        "company_fund": [],
+        "industries": [
+            11,
+            12
+        ],
+        "material_risks": [
+            2,
+            24,
+            36,
+            50,
+            40,
+            62,
+            68,
+            73,
+            74
+        ],
+        "countries": [
+            906,
+            2
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 5,
+    "fields": {
+        "report_name": "Argyll Environmental Test 2",
+        "slug": "argyll-environmental-test-2",
+        "date_created": "2020-07-20T15:11:20.834Z",
+        "date_updated": "2020-07-20T15:11:20.835Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Argyll",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": " ",
+        "report_reference": " ",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": "",
+        "company_fund": [
+            1
+        ],
+        "industries": [
+            2,
+            10
+        ],
+        "material_risks": [
+            2,
+            14,
+            16,
+            24,
+            36,
+            37,
+            44,
+            50,
+            40,
+            62,
+            68,
+            73,
+            74
+        ],
+        "countries": [
+            756,
+            156,
+            826
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 6,
+    "fields": {
+        "report_name": "Argyll Environmental Test 3",
+        "slug": "argyll-environmental-test-3",
+        "date_created": "2020-07-20T15:38:20.281Z",
+        "date_updated": "2020-07-20T15:38:20.281Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "ali test 2",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": " ",
+        "report_reference": " ",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": null,
+        "company_fund": [],
+        "industries": [
+            1,
+            2
+        ],
+        "material_risks": [
+            2,
+            14,
+            16,
+            24,
+            36,
+            37,
+            50,
+            40,
+            62,
+            68,
+            73,
+            74
+        ],
+        "countries": [
+            784,
+            906
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 7,
+    "fields": {
+        "report_name": "Argyll Environmental Test 11",
+        "slug": "argyll-environmental-test-11",
+        "date_created": "2020-07-21T07:48:17.738Z",
+        "date_updated": "2020-07-21T07:48:17.738Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Argyll test 11",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": " ",
+        "report_reference": " ",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": null,
+        "company_fund": [],
+        "industries": [],
+        "material_risks": [],
+        "countries": [],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 8,
+    "fields": {
+        "report_name": "Argyll Environmental Test 12",
+        "slug": "argyll-environmental-test-12",
+        "date_created": "2020-07-21T15:15:16.758Z",
+        "date_updated": "2020-07-21T15:15:16.760Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Argyll  12",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": " ",
+        "report_reference": " ",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": "",
+        "company_fund": [],
+        "industries": [
+            2
+        ],
+        "material_risks": [
+            14,
+            16,
+            24,
+            36,
+            37,
+            50,
+            40,
+            62,
+            68,
+            73,
+            74
+        ],
+        "countries": [
+            826,
+            840
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 9,
+    "fields": {
+        "report_name": "Argyll Environmental Test 134",
+        "slug": "argyll-environmental-test-134",
+        "date_created": "2020-07-22T15:26:46.244Z",
+        "date_updated": "2020-07-22T15:26:46.244Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Argyll 145",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": " ",
+        "report_reference": " ",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": null,
+        "company_fund": [],
+        "industries": [],
+        "material_risks": [],
+        "countries": [],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 10,
+    "fields": {
+        "report_name": "ali test SPRINT 3",
+        "slug": "ali-test-sprint-3",
+        "date_created": "2020-07-22T15:41:53.196Z",
+        "date_updated": "2020-07-22T15:41:53.196Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "ali test SPRINT 3",
+        "company_headquarters": "UK",
+        "company_employee_count": 300,
+        "client_reference": " ",
+        "report_reference": " ",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": "",
+        "company_fund": [
+            1
+        ],
+        "industries": [
+            1,
+            2
+        ],
+        "material_risks": [
+            14,
+            16,
+            24,
+            36,
+            37,
+            50,
+            40,
+            62,
+            68,
+            73,
+            74
+        ],
+        "countries": [],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 11,
+    "fields": {
+        "report_name": "ESG Report for Yellow",
+        "slug": "esg-report-for-yellow",
+        "date_created": "2020-07-23T13:50:06.818Z",
+        "date_updated": "2020-09-22T09:58:16.155Z",
+        "created_by": [
+            "fionaplace"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Yellow",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "Yellow01",
+        "report_reference": "/0001",
+        "website": null,
+        "company_description": "",
+        "risk_summary": "Based on the available information reviewed (see the References), the Company would be assessed as a Low risk with respect to ESG matters. This reports presents an initial screen of potential ESG issues associated with Yellow based on its industry type and countries of operation; there are likely further specific issues that will be identified by more detailed assessment of its operations.",
+        "issue_extra_description": "",
+        "references": "www.yellow.com",
+        "company_fund": [],
+        "industries": [
+            16,
+            82
+        ],
+        "material_risks": [
+            3,
+            4,
+            6,
+            14,
+            10,
+            12,
+            15,
+            16,
+            22,
+            24,
+            32,
+            33,
+            36,
+            37,
+            38,
+            40,
+            61,
+            62,
+            63,
+            65,
+            68,
+            69,
+            73,
+            74,
+            76
+        ],
+        "countries": [
+            40,
+            46,
+            170,
+            276,
+            250,
+            826,
+            344,
+            356,
+            410,
+            458
+        ],
+        "issues": [
+            14,
+            22,
+            24,
+            61,
+            69
+        ]
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 12,
+    "fields": {
+        "report_name": "Argyll Environmental Test 1000",
+        "slug": "argyll-environmental-test-1000",
+        "date_created": "2020-07-29T09:36:19.460Z",
+        "date_updated": "2020-07-29T09:36:19.460Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Argyll  1000",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": " ",
+        "report_reference": " ",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": null,
+        "company_fund": [],
+        "industries": [
+            2,
+            4
+        ],
+        "material_risks": [
+            14,
+            15,
+            16,
+            19,
+            24,
+            26,
+            30,
+            33,
+            36,
+            37,
+            44,
+            48,
+            50,
+            40,
+            62,
+            68,
+            73,
+            74,
+            76
+        ],
+        "countries": [
+            30
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 13,
+    "fields": {
+        "report_name": "Argyll Environmental Test 1001",
+        "slug": "argyll-environmental-test-1001",
+        "date_created": "2020-07-29T15:24:48.990Z",
+        "date_updated": "2020-07-29T15:24:48.991Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "ali test 132",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "Argyll",
+        "report_reference": "/0011",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": "",
+        "company_fund": [],
+        "industries": [
+            2,
+            4
+        ],
+        "material_risks": [
+            14,
+            15,
+            16,
+            19,
+            24,
+            26,
+            30,
+            33,
+            36,
+            37,
+            44,
+            48,
+            50,
+            40,
+            62,
+            68,
+            73,
+            74,
+            76
+        ],
+        "countries": [
+            30,
+            826
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 14,
+    "fields": {
+        "report_name": "ESG Report for Blue",
+        "slug": "esg-report-for-blue",
+        "date_created": "2020-07-29T19:09:01.032Z",
+        "date_updated": "2020-09-30T16:34:01.068Z",
+        "created_by": [
+            "michael.kelsall"
+        ],
+        "status": "C",
+        "deal_type": "N",
+        "company_name": "Blue",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "Blue/07/2020",
+        "report_reference": "/0003",
+        "website": null,
+        "company_description": "",
+        "risk_summary": "Based on the available information reviewed (see the References), the Company would be assessed as a Low risk with respect to ESG matters. This reports presents an initial screen of potential ESG issues associated with Blue based on its industry type and countries of operation; there are likely further specific issues that will be identified by more detailed assessment of its operations.",
+        "issue_extra_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id ante et massa efficitur hendrerit. Sed et pulvinar ex. Maecenas venenatis lobortis faucibus. In at enim orci. Nam convallis varius odio. Suspendisse semper vehicula nibh, id dapibus nisi pretium venenatis. Phasellus malesuada augue justo, hendrerit ornare velit facilisis vel. Aenean placerat molestie urna, eu tincidunt nunc dictum sed. Sed at fermentum odio, eget efficitur sem. Vestibulum nec fringilla libero. In tristique rutrum mauris, rhoncus interdum odio pellentesque sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+        "references": "www.yelllow.com\nwww.blue.com\nwww.red.com",
+        "company_fund": [],
+        "industries": [
+            1,
+            51
+        ],
+        "material_risks": [
+            4,
+            6,
+            14,
+            12,
+            15,
+            16,
+            24,
+            26,
+            72,
+            32,
+            48,
+            63,
+            76
+        ],
+        "countries": [
+            108,
+            170,
+            218,
+            250,
+            288,
+            410,
+            458,
+            840
+        ],
+        "issues": [
+            4,
+            6,
+            16,
+            24,
+            32,
+            63
+        ]
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 15,
+    "fields": {
+        "report_name": "test",
+        "slug": "test",
+        "date_created": "2020-07-31T10:13:13.519Z",
+        "date_updated": "2020-07-31T10:13:13.519Z",
+        "created_by": [
+            "paul.messenger"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "test",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "test",
+        "report_reference": "/0012",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": null,
+        "company_fund": [],
+        "industries": [],
+        "material_risks": [],
+        "countries": [],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 16,
+    "fields": {
+        "report_name": "test797987987",
+        "slug": "test797987987",
+        "date_created": "2020-07-31T10:21:34.975Z",
+        "date_updated": "2020-07-31T10:21:34.976Z",
+        "created_by": [
+            "paul.messenger"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "test",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "test",
+        "report_reference": "/0013",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": null,
+        "company_fund": [],
+        "industries": [],
+        "material_risks": [],
+        "countries": [],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 17,
+    "fields": {
+        "report_name": "new124",
+        "slug": "new124",
+        "date_created": "2020-07-31T10:22:13.699Z",
+        "date_updated": "2020-07-31T10:22:13.699Z",
+        "created_by": [
+            "paul.messenger"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "test",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "test",
+        "report_reference": "/0013",
+        "website": null,
+        "company_description": "",
+        "risk_summary": "Based on the available information reviewed (see the References), the Company would be assessed as a <QuerySet []> risk with respect to ESG matters. This reports presents an initial screen of potential ESG issues associated with test based on its industry type and countries of operation; there are likely further specific issues that will be identified by more detailed assessment of its operations.",
+        "issue_extra_description": "",
+        "references": "",
+        "company_fund": [],
+        "industries": [
+            1,
+            2
+        ],
+        "material_risks": [
+            14,
+            16,
+            24,
+            26,
+            72,
+            32,
+            36,
+            37,
+            50,
+            40,
+            62,
+            68,
+            73,
+            74
+        ],
+        "countries": [
+            906
+        ],
+        "issues": [
+            14,
+            24,
+            36,
+            40,
+            74
+        ]
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 18,
+    "fields": {
+        "report_name": "Argyll Environmental Test 12345",
+        "slug": "argyll-environmental-test-12345",
+        "date_created": "2020-08-04T13:09:56.695Z",
+        "date_updated": "2020-08-04T13:09:56.695Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Ali stanton",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "1234",
+        "report_reference": "/0015",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": null,
+        "company_fund": [],
+        "industries": [],
+        "material_risks": [],
+        "countries": [],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 19,
+    "fields": {
+        "report_name": "1234",
+        "slug": "1234",
+        "date_created": "2020-08-12T10:20:59.410Z",
+        "date_updated": "2020-08-12T10:20:59.410Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "1234",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "1234",
+        "report_reference": "LAN/0016",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": null,
+        "company_fund": [],
+        "industries": [
+            7,
+            11
+        ],
+        "material_risks": [
+            3,
+            4,
+            6,
+            14,
+            10,
+            12,
+            15,
+            16,
+            19,
+            24,
+            26,
+            30,
+            32,
+            33,
+            36,
+            37,
+            38,
+            44,
+            50,
+            40,
+            62,
+            63,
+            68,
+            69,
+            73,
+            74,
+            76
+        ],
+        "countries": [],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 20,
+    "fields": {
+        "report_name": "landmark report",
+        "slug": "landmark-report",
+        "date_created": "2020-08-13T12:39:00.438Z",
+        "date_updated": "2020-08-13T12:39:00.438Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "landmark",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "landmark 123",
+        "report_reference": "LAN/0017",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": "",
+        "company_fund": [],
+        "industries": [
+            17,
+            25
+        ],
+        "material_risks": [
+            4,
+            6,
+            12,
+            19,
+            24,
+            33,
+            36,
+            37,
+            50,
+            40,
+            62,
+            68,
+            73,
+            74,
+            76
+        ],
+        "countries": [
+            156,
+            826
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 21,
+    "fields": {
+        "report_name": "MH TEST",
+        "slug": "mh-test",
+        "date_created": "2020-08-14T08:54:05.398Z",
+        "date_updated": "2020-08-14T08:54:05.398Z",
+        "created_by": [
+            "mandy.hawkins"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "MH TEST",
+        "company_headquarters": null,
+        "company_employee_count": 4000,
+        "client_reference": "MH TEST",
+        "report_reference": "LAN/0018",
+        "website": null,
+        "company_description": "TEST",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": null,
+        "company_fund": [
+            2
+        ],
+        "industries": [],
+        "material_risks": [],
+        "countries": [],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 22,
+    "fields": {
+        "report_name": "ESG Review",
+        "slug": "esg-review",
+        "date_created": "2020-08-28T16:07:02.410Z",
+        "date_updated": "2020-09-09T13:01:18.888Z",
+        "created_by": [
+            "Tom.Venables"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Repsol",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "N/A",
+        "report_reference": "Test Checklist",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": "",
+        "company_fund": [],
+        "industries": [
+            67,
+            68,
+            70,
+            83
+        ],
+        "material_risks": [
+            3,
+            4,
+            6,
+            14,
+            10,
+            12,
+            19,
+            24,
+            26,
+            30,
+            33,
+            36,
+            37,
+            38,
+            48,
+            50,
+            40,
+            68,
+            73,
+            74,
+            76
+        ],
+        "countries": [
+            20,
+            6,
+            156,
+            10,
+            218,
+            328,
+            360,
+            368,
+            380,
+            434,
+            504,
+            458,
+            598,
+            643,
+            840,
+            862
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 23,
+    "fields": {
+        "report_name": "test 1/9/20",
+        "slug": "test-1920",
+        "date_created": "2020-09-01T10:43:32.366Z",
+        "date_updated": "2020-09-01T10:44:14.810Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "test 1/9/20",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "test 1/9/20",
+        "report_reference": "LAN/0020",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": "",
+        "company_fund": [],
+        "industries": [
+            19
+        ],
+        "material_risks": [
+            15,
+            30,
+            40,
+            62
+        ],
+        "countries": [
+            300
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 24,
+    "fields": {
+        "report_name": "Brown",
+        "slug": "a",
+        "date_created": "2020-09-07T13:42:29.639Z",
+        "date_updated": "2020-09-08T10:44:44.985Z",
+        "created_by": [
+            "Ben.Shepherd"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Brown",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "Brown",
+        "report_reference": "/0004",
+        "website": null,
+        "company_description": "",
+        "risk_summary": "Based on the available information reviewed (see the References), the Company would be assessed as a Moderate risk with respect to ESG matters. This reports presents an initial screen of potential ESG issues associated with A based on its industry type and countries of operation; there are likely further specific issues that will be identified by more detailed assessment of its operations.",
+        "issue_extra_description": "",
+        "references": "",
+        "company_fund": [],
+        "industries": [
+            2,
+            5,
+            7,
+            11
+        ],
+        "material_risks": [
+            3,
+            4,
+            6,
+            14,
+            10,
+            12,
+            15,
+            16,
+            19,
+            24,
+            26,
+            30,
+            32,
+            33,
+            36,
+            37,
+            38,
+            44,
+            50,
+            40,
+            62,
+            63,
+            68,
+            69,
+            73,
+            74,
+            76
+        ],
+        "countries": [
+            20,
+            62,
+            58,
+            756,
+            384,
+            162,
+            732,
+            231
+        ],
+        "issues": [
+            26,
+            36,
+            38,
+            40,
+            73
+        ]
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 25,
+    "fields": {
+        "report_name": "Orange",
+        "slug": "orange",
+        "date_created": "2020-09-07T14:03:08.499Z",
+        "date_updated": "2020-09-07T14:22:48.479Z",
+        "created_by": [
+            "Ben.Shepherd"
+        ],
+        "status": "I",
+        "deal_type": "T",
+        "company_name": "Orange",
+        "company_headquarters": "ABC",
+        "company_employee_count": 1000,
+        "client_reference": "Orange",
+        "report_reference": "/0005",
+        "website": null,
+        "company_description": "",
+        "risk_summary": "Based on the available information reviewed (see the References), the Company would be assessed as a Low risk with respect to ESG matters. This reports presents an initial screen of potential ESG issues associated with Orange based on its industry type and countries of operation; there are likely further specific issues that will be identified by more detailed assessment of its operations.",
+        "issue_extra_description": "",
+        "references": "",
+        "company_fund": [
+            1
+        ],
+        "industries": [
+            6,
+            7,
+            14,
+            19
+        ],
+        "material_risks": [
+            3,
+            4,
+            5,
+            6,
+            14,
+            10,
+            12,
+            15,
+            16,
+            19,
+            24,
+            26,
+            30,
+            32,
+            33,
+            36,
+            37,
+            38,
+            44,
+            50,
+            40,
+            62,
+            63,
+            68,
+            69,
+            73,
+            74,
+            76
+        ],
+        "countries": [
+            784,
+            266,
+            826,
+            796,
+            764,
+            581,
+            840,
+            905
+        ],
+        "issues": [
+            26,
+            30,
+            33,
+            37,
+            38
+        ]
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 26,
+    "fields": {
+        "report_name": "Green",
+        "slug": "green",
+        "date_created": "2020-09-07T14:44:12.935Z",
+        "date_updated": "2020-09-21T10:01:18.097Z",
+        "created_by": [
+            "Ben.Shepherd"
+        ],
+        "status": "I",
+        "deal_type": "T",
+        "company_name": "Green",
+        "company_headquarters": "GReen",
+        "company_employee_count": 3,
+        "client_reference": "greEEn",
+        "report_reference": "/0006",
+        "website": null,
+        "company_description": "",
+        "risk_summary": "Based on the available information reviewed (see the References), the Company would be assessed as a Low risk with respect to ESG matters. This reports presents an initial screen of potential ESG issues associated with Green based on its industry type and countries of operation; there are likely further specific issues that will be identified by more detailed assessment of its operations.",
+        "issue_extra_description": "A B C D E F G H I J K L M N O P Q",
+        "references": "Green Green Green Green Green",
+        "company_fund": [
+            1
+        ],
+        "industries": [
+            2,
+            75,
+            79
+        ],
+        "material_risks": [
+            3,
+            4,
+            6,
+            14,
+            12,
+            16,
+            24,
+            30,
+            33,
+            36,
+            37,
+            50,
+            40,
+            62,
+            63,
+            68,
+            73,
+            74
+        ],
+        "countries": [
+            46,
+            120,
+            170,
+            276,
+            218,
+            818,
+            250,
+            826,
+            288,
+            356,
+            380,
+            458
+        ],
+        "issues": [
+            14,
+            24,
+            36,
+            37,
+            40,
+            76
+        ]
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 27,
+    "fields": {
+        "report_name": "Indigo",
+        "slug": "indigo",
+        "date_created": "2020-09-07T15:02:27.515Z",
+        "date_updated": "2020-09-08T12:00:44.485Z",
+        "created_by": [
+            "Ben.Shepherd"
+        ],
+        "status": "I",
+        "deal_type": "P",
+        "company_name": "Indigo",
+        "company_headquarters": null,
+        "company_employee_count": 1,
+        "client_reference": "indiGO",
+        "report_reference": "/0007",
+        "website": null,
+        "company_description": "",
+        "risk_summary": "Based on the available information reviewed (see the References), the Company would be assessed as a Moderate risk with respect to ESG matters. This reports presents an initial screen of potential ESG issues associated with Indigo based on its industry type and countries of operation; there are likely further specific issues that will be identified by more detailed assessment of its operations.",
+        "issue_extra_description": "A B C D E F G H I J K L M N O P Q",
+        "references": "",
+        "company_fund": [],
+        "industries": [
+            35,
+            36,
+            38,
+            42
+        ],
+        "material_risks": [
+            3,
+            6,
+            14,
+            11,
+            12,
+            15,
+            16,
+            19,
+            24,
+            26,
+            72,
+            30,
+            32,
+            33,
+            36,
+            37,
+            44,
+            48,
+            50,
+            40,
+            61,
+            62,
+            63,
+            65,
+            68,
+            73,
+            74,
+            76
+        ],
+        "countries": [
+            58,
+            180,
+            140,
+            178,
+            384,
+            10,
+            818,
+            732,
+            231,
+            404,
+            504,
+            562,
+            566,
+            148,
+            834,
+            710,
+            716
+        ],
+        "issues": [
+            3,
+            4,
+            14,
+            24,
+            26,
+            30,
+            40
+        ]
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 28,
+    "fields": {
+        "report_name": "ESG Review -Green",
+        "slug": "esg-review-green",
+        "date_created": "2020-09-08T15:34:38.908Z",
+        "date_updated": "2020-09-29T15:14:13.529Z",
+        "created_by": [
+            "Tom.Venables"
+        ],
+        "status": "C",
+        "deal_type": "N",
+        "company_name": "Green",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "N/A",
+        "report_reference": "Test",
+        "website": null,
+        "company_description": "",
+        "risk_summary": "Based on the available information reviewed (see the References), the Company would be assessed as a Low risk with respect to ESG matters. This reports presents an initial screen of potential ESG issues associated with Green based on its industry type and countries of operation; there are likely further specific issues that will be identified by more detailed assessment of its operations.",
+        "issue_extra_description": "It is recommended that",
+        "references": "",
+        "company_fund": [],
+        "industries": [
+            2,
+            75,
+            79
+        ],
+        "material_risks": [
+            3,
+            4,
+            6,
+            14,
+            12,
+            16,
+            24,
+            30,
+            33,
+            36,
+            37,
+            50,
+            40,
+            62,
+            63,
+            68,
+            73,
+            74
+        ],
+        "countries": [
+            46,
+            120,
+            170,
+            276,
+            218,
+            818,
+            250,
+            826,
+            288,
+            356,
+            380,
+            458
+        ],
+        "issues": [
+            2,
+            4,
+            14,
+            33,
+            36,
+            73
+        ]
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 29,
+    "fields": {
+        "report_name": "ESG Review - Green",
+        "slug": "esg-review-green-2",
+        "date_created": "2020-09-09T07:34:14.675Z",
+        "date_updated": "2020-09-09T07:34:14.675Z",
+        "created_by": [
+            "Tom.Venables"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Green",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "N/A",
+        "report_reference": "Test",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": null,
+        "company_fund": [],
+        "industries": [],
+        "material_risks": [],
+        "countries": [],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 30,
+    "fields": {
+        "report_name": "test 09/09",
+        "slug": "test-0909",
+        "date_created": "2020-09-09T09:37:01.839Z",
+        "date_updated": "2020-09-09T09:47:34.038Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Lanbdmark 1",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "123456",
+        "report_reference": "LAN/0023",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": "",
+        "company_fund": [],
+        "industries": [
+            2,
+            4
+        ],
+        "material_risks": [
+            14,
+            15,
+            16,
+            19,
+            24,
+            26,
+            30,
+            33,
+            36,
+            37,
+            44,
+            48,
+            50,
+            40,
+            62,
+            68,
+            73,
+            74,
+            76
+        ],
+        "countries": [
+            156,
+            250,
+            826
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 31,
+    "fields": {
+        "report_name": "Argyll Environmental Test 19/09",
+        "slug": "argyll-environmental-test-1909",
+        "date_created": "2020-09-16T13:23:12.508Z",
+        "date_updated": "2020-09-16T13:33:06.918Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "Demo",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "Demo",
+        "report_reference": "LAN/0024",
+        "website": null,
+        "company_description": "",
+        "risk_summary": "Based on the available information reviewed (see the References), the Company would be assessed as a Moderate risk with respect to ESG matters. This reports presents an initial screen of potential ESG issues associated with Demo based on its industry type and countries of operation; there are likely further specific issues that will be identified by more detailed assessment of its operations.",
+        "issue_extra_description": "",
+        "references": "",
+        "company_fund": [],
+        "industries": [
+            4,
+            6
+        ],
+        "material_risks": [
+            3,
+            4,
+            6,
+            12,
+            15,
+            19,
+            24,
+            26,
+            30,
+            33,
+            37,
+            44,
+            48,
+            50,
+            62,
+            68,
+            76
+        ],
+        "countries": [
+            30,
+            156,
+            250
+        ],
+        "issues": [
+            12,
+            30,
+            33,
+            44,
+            76
+        ]
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 32,
+    "fields": {
+        "report_name": "New JD tester",
+        "slug": "new-jd-tester",
+        "date_created": "2020-09-24T18:19:43.900Z",
+        "date_updated": "2020-09-24T18:20:28.023Z",
+        "created_by": [
+            "james.dobbin"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "JEdward Holdings",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "JED Test",
+        "report_reference": "LAN/0025",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": null,
+        "company_fund": [
+            2
+        ],
+        "industries": [
+            51
+        ],
+        "material_risks": [
+            6,
+            14,
+            12,
+            15,
+            16,
+            24,
+            72,
+            32,
+            48,
+            63,
+            76
+        ],
+        "countries": [
+            710
+        ],
+        "issues": []
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 33,
+    "fields": {
+        "report_name": "ESG Portfolio Test",
+        "slug": "esg-portfolio-test",
+        "date_created": "2020-09-29T15:00:28.588Z",
+        "date_updated": "2020-09-29T16:05:01.259Z",
+        "created_by": [
+            "Tom.Venables"
+        ],
+        "status": "C",
+        "deal_type": "N",
+        "company_name": "Ingram Micro Test",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "Test",
+        "report_reference": "LAN/0026",
+        "website": null,
+        "company_description": "",
+        "risk_summary": "Based on the available information reviewed (see the References), the Company would be assessed as a Low risk with respect to ESG matters. This reports presents an initial screen of potential ESG issues associated with Ingram Micro Test based on its industry type and countries of operation; there are likely further specific issues that will be identified by more detailed assessment of its operations.",
+        "issue_extra_description": "",
+        "references": "Company website: https://corp.ingrammicro.com/About-Us.aspx\nManagement Presentation, October 2018",
+        "company_fund": [],
+        "industries": [
+            30,
+            82
+        ],
+        "material_risks": [
+            6,
+            12,
+            16,
+            22,
+            24,
+            32,
+            36,
+            40,
+            61,
+            63,
+            68,
+            69,
+            73,
+            74,
+            76
+        ],
+        "countries": [
+            40,
+            156,
+            276,
+            218,
+            818,
+            348,
+            360,
+            380,
+            422,
+            484,
+            512,
+            604,
+            608,
+            586,
+            616,
+            840,
+            704
+        ],
+        "issues": [
+            12,
+            36,
+            69,
+            73,
+            76
+        ]
+    }
+},
+{
+    "model": "company.companyassessment",
+    "pk": 34,
+    "fields": {
+        "report_name": "test 29/09",
+        "slug": "test-2909",
+        "date_created": "2020-09-29T15:05:00.793Z",
+        "date_updated": "2020-09-29T15:08:33.992Z",
+        "created_by": [
+            "ali.stanton"
+        ],
+        "status": "I",
+        "deal_type": "N",
+        "company_name": "test company",
+        "company_headquarters": null,
+        "company_employee_count": null,
+        "client_reference": "124567",
+        "report_reference": "LAN/0027",
+        "website": null,
+        "company_description": "",
+        "risk_summary": null,
+        "issue_extra_description": null,
+        "references": null,
+        "company_fund": [],
+        "industries": [
+            1,
+            2
+        ],
+        "material_risks": [
+            4,
+            14,
+            16,
+            24,
+            26,
+            72,
+            32,
+            36,
+            37,
+            50,
+            40,
+            62,
+            68,
+            73,
+            74
+        ],
+        "countries": [
+            248,
+            120,
+            332
+        ],
+        "issues": []
+    }
+}
+]

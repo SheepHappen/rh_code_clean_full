@@ -1,0 +1,297 @@
+{% extends "assessment_base.html" %}
+{% load static crispy_forms_tags tags %}
+
+{% block main_content %}
+<div class="row" style="margin-top:45px;">
+    <div class="col-12">
+        <div class="card white-card">
+            <div class="card-body">
+                <div class="container mb-4 mt-3">
+                    <div class="row">
+                        <div class="col-6 pl-0">
+                            <h2 class="card-title mb-3">
+                                Document checklist
+                            </h2>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <div class="float-right" style="margin-top: 14px;">
+                                <span class='form-group pl-0 pr-0 col-xs-2 col-md-2 switch-wrapper'>
+                                    <label class="font-semi-bold">Answer questions via file upload</label>
+                                    <label class="switch ml-3">
+                                        <input type="checkbox" class="toggle-form">
+                                        <span class="slider round">
+                                        </span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 pl-0"></div>
+                        <div class="col-6 pr-0">
+                            <div class="float-right" style="margin-top: 14px;">
+                                <span class='form-group pl-0 pr-0 col-xs-2 col-md-2 switch-wrapper'>
+                                    <label class="font-semi-bold">Use optional questions</label>
+                                    <label class="switch ml-3">
+                                        <input type="checkbox" class="toggle-optional">
+                                        <span class="slider round">
+                                        </span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row file-upload d-none">
+                        <div class="col-12 pl-0 pr-0">
+                            <div class='intro-text' style="width:100%;">
+                                <a class="btn btn-secondary ml-2 float-right required-only" href="{% url 'document_checklist_download' assessment.slug 'required' %}">Download spreadsheet</a>
+                                <a class="btn btn-secondary ml-2 float-right optional-plus d-none" href="{% url 'document_checklist_download' assessment.slug 'optional' %}">Download spreadsheet</a>
+                                Download the spreadsheet. Once you have completed the questions you are going to answer, return to this page and
+                                upload the file using the section. This can be done multiple times. Each upload will overwrite all questions.
+                                To manually answer the questions, toggle "Answer questions via file upload" to off.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manual-questions mt-4">
+                        {% include "includes/question_section_headers.html" %}
+                        <div class="tab-border"></div>
+                        <form id="documentChecklistForm" action="{% url 'company_assessment_document_checklist' assessment.slug %}" method="POST">
+                            {% csrf_token %}
+                            <p class="no-mandatory-questions-msg d-none">No mandatory questions</p>
+                            {% include "includes/environmental_questions.html" with questions=environmental_questions %}
+                            {% include "includes/social_questions.html" with questions=social_questions %}
+                            {% include "includes/governance_questions.html" with questions=governance_questions %}
+                            <p class="mt-4 mb-4"></p>
+                            <div class="row pt-4 mt-4 is-optional" style="width: 100%;">
+                                <div class="col-10"></div>
+                                <div class="col pr-0">
+                                    <span class='switch-wrapper'>
+                                        <label class="font-semi-bold">show ESG score</label>
+                                        <label class="switch ml-3">
+                                            <input type="checkbox" class="toggle-counter">
+                                            <span class="slider round">
+                                            </span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row rev-counter-wrapper no-gutters">
+                                <div class="col">
+                                    <div class="rev-counter" style="width:450px;height:225px;font-size:1em;">
+                                        <img src="{% static "img/rev/rev_counter.png" %}" class="rev-dial">
+                                        <img src="{% static "img/rev/rev_needle.png" %}" class="rev-needle">
+                                        <img src="{% static "img/rev/rev_cover.png" %}" class="rev-cover">
+                                        <div class="rev-text"></div>
+                                        <div class="rev-text-subtext"><strong>ESG SCORE</strong></div>
+                                        <div class="rev-dot" style="transform:rotate(153deg)"><span style="transform:rotate(-153deg)">1</span></div>
+                                        <div class="rev-dot" style="transform:rotate(137deg)"><span style="transform:rotate(-137deg)">2</span></div>
+                                        <div class="rev-dot 3-number-cirle" style="transform:rotate({{ width }}deg)"><span class="3-number">3</span></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <ul class="number-list-wrapper">
+                                        <li>Market Leading</li>
+                                        <li>Best Practice</li>
+                                        <li>Based on current due-dilligence (<span class='due-dilligence-complete'>{{ rev_counter_score }}</span>% complete)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row key-answer-count" style="width: 100%;">
+                                <div class="col-12 d-flex flex-row">
+                                    <div class="answer-counter"><span id="answer-count-text">{{ answer_count.0 }}</span>/{{ answer_count.1 }}</div>
+                                    <div class="answer-counter-text">Key ESG management indicators identified</div>
+                                </div>
+                            </div>
+                            <div class="buttonHolder" style="margin-top:60px;">
+                                <input type="submit" name="Next" value="Next" class="btn btn-primary btn-medium submitDocumentQuestions" id="submit-id-submit">
+                                <a class="btn btn-secondary  btn-medium ml-2" href="{% url 'company_management_questions' assessment.slug %}">Previous</a>
+                            </div>
+                        </form>
+                    </div>
+                    <table id="records" class="table mt-4 mb-4 d-none">
+                        <thead>
+                            <tr>
+                                <th class="column-header" style="width: 20%">Questions Failed to upload</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <form id="fileUpload" action="{% url 'company_assessment_document_checklist' assessment.slug %}" method="POST" enctype="multipart/form-data" style="margin-top:55px;">
+                        {% csrf_token %}
+                        <div class="row file-upload d-none">
+                            <div id="drop-area">
+                                <div class="card-body" style="margin-top: 40px;">
+                                    <p class="drop-icon">
+                                        <i class="fal fa-2x fa-cloud-upload" style="color:#e98300;"></i>
+                                    </p>
+                                    <div class="card-text">
+                                        <p class="card-sub-heading mb-0" style="opacity: 1;">
+                                            Drop file here or <a class="btn btn-tertiary open-file-dialog pl-0" href="#">
+                                                Browse
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class="upload-management-file-instructions">
+                                        Upload the spreadsheet containing the answered questions. We can only accept a xlsx file.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dropzone" class="d-none">
+                            <div id="template-preview">
+                                <div class="dz-preview dz-file-preview well" id="dz-preview-template">
+                                    <div class="dz-image">
+                                        <i class="fal fa-file-spreadsheet fa-3x icon"></i>
+                                    </div>
+                                    <div class="dz-details">
+                                        <div class="dz-filename">
+                                            <span data-dz-name></span>
+                                            <div class="dz-size">(<span data-dz-size></span>)</div>
+                                        </div>
+                                    </div>
+                                    <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <input id="file-input" type="file" name="file" class="d-none" />
+                        <input type="submit" class="d-none">
+                    </form>
+                    <div id="toast-container" class="failed-import" style="position: relative !important; cursor: default;">
+                        <div class="toast toast-error password-email-sent" style="background-color: #fef3f5 !important;" aria-live="polite">
+                            <div class="toast-message ">Upload Failed Please try again</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="{% static "js/question_header.js" %}"></script>
+<script src="{% static "js/question_section.js" %}"></script>
+<script src="{% static "js/file_upload.js" %}"></script>
+<script>
+    $(document).ready(function() {
+        var notesMaxCharacters = 200;
+        $('.rev-counter-wrapper').hide();
+
+        $('.reset-answers').click(function() {
+             $(this).parent().prevUntil(':not(.document-answer)', '.document-answer').each(function() {
+                $(this).find('.document-faux-radio').removeClass('selected');
+                $(this).removeClass('document-active');
+                $(this).find('input[type="radio"]').prop('checked', false);
+            })
+            $(this).parent().hide();
+            updateKeyQuestionCount()
+        });
+        $( ".document-answer" ).click(function() {
+            $(this).nextAll('.reset-answer-item:first').css('display', 'inline-block');
+        });
+        var calculateCharactersRemaining = function(item) {
+            var charactersRemaining;
+            if ($(item).val().length) {
+                charactersRemaining = notesMaxCharacters - $(item).val().length;
+            } else {
+                charactersRemaining = notesMaxCharacters;
+            }
+            return charactersRemaining;
+        }
+
+        var updateKeyQuestionCount = function() {
+            $('#answer-count-text').text($('.document-answer.key-question-answer input[type="radio"]:checked').length);
+        }
+
+        $('.document-answer').click(updateKeyQuestionCount);
+
+        $(".notes-area").focus(function() {
+            if ($(this).hasClass('notes-inputting') == false) {
+                $(this).addClass('notes-inputting');
+                $(this).after("<span class='note-input-count'>" + calculateCharactersRemaining(this) + " characters remaining</span>");
+                $(this).css('margin-bottom', 10 + 'px');
+            }
+        })
+        $(".notes-area").focusout(function() {
+            $(this).removeClass('notes-inputting');
+            $(this).next('span').remove();
+        })
+
+        $(".notes-area").on('change keyup paste', function() {
+            if ($(this).val().length > 200) {
+                $(this).val($(this).val().slice(0, -1))
+            } else {
+                var charactersRemainingText = calculateCharactersRemaining(this) + " characters remaining"
+                $(this).next('span').text(charactersRemainingText)
+            }
+        });
+
+        $('input:checkbox').change(function() {
+            if ($(this).hasClass('toggle-counter')) {
+                var self = this;
+                var target = $(this).attr('name');
+                if ($(self).is(':checked')) {
+                    $('.slider').on('transitionend webkitTransitionEnd oTransitionEnd', function() {
+                        $('.slider').addClass('slider-on');
+                    });
+                    var form = $('#documentChecklistForm');
+                    $.ajax({
+                        type: "POST",
+                        url: form.attr('action'),
+                        data: form.serialize(),
+                        success: function(data) {
+                            $('.rev-text').text(data.revCounter + '%');
+                            $('.rev-needle').css({
+                                'transform': 'rotate(' + data.pin + 'deg)'
+                            });
+                            $('.due-dilligence-complete').text(data.percentageComplete);
+                            $('.3-number-cirle').css({
+                                'transform': 'rotate(' + data.pin + 2 + 'deg)'
+                            });
+                            $('.3-number').css({
+                                'transform': 'rotate(-' + data.pin + 'deg)'
+                            });
+                            $('.rev-counter-wrapper').show();
+                        }
+                    });
+                } else {
+                    $('.slider').on('transitionend webkitTransitionEnd oTransitionEnd', function() {
+                        $('.slider').removeClass('slider-on');
+                    });
+                    $('.rev-counter-wrapper').hide();
+                }
+            }
+        });
+
+        $('.progress-link').on('click touch', function(event) {
+            var form = $('#documentChecklistForm');
+            $.ajax({
+                type: "POST",
+                url: form.attr('action'),
+                data: form.serialize(),
+                success: function(data) {
+
+                }
+            });
+        });
+
+        updateKeyQuestionCount();
+        // var saving = true;
+        // $('.js-view-report').on('click touch', function (event) {
+        //     if (saving) {
+        //         event.preventDefault();
+        //         var form = $('#documentChecklistForm');
+        //         $.ajax({
+        //             type: "POST",
+        //             url: form.attr('action'),
+        //             data: form.serialize(),
+        //             success: function(data) {
+
+        //             }
+        //         });
+        //         saving = false;
+        //         $( ".js-view-report" ).click();
+        //     }
+        // });
+    });
+</script>
+{% endblock js %}

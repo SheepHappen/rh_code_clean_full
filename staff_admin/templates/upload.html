@@ -1,0 +1,23 @@
+{% extends "staff_base.html" %}
+{% load static crispy_forms_tags %}
+
+{% block main_content %}
+    {% if records %}
+        {% include "includes/preview.html" %}
+    {% else %}
+        <h1>Upload New Data</h1>
+        <p>All fields marked * are mandatory</p>
+        <form method="POST" id='download-data' action="{% url 'country_template_download' %}"  enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="submit" value="Download Template" class="btn btn-secondary btn-medium">
+        </form>
+        <form action="{% url 'upload' %}" method="POST" enctype="multipart/form-data" style="margin-top:55px;">
+            {% crispy form %}
+            <button class="btn btn-primary" name="validate" type="submit">Generate Preview</button>
+        </form>
+    {% endif %}
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/staff_admin_upload.js' %}"></script>
+{% endblock %}

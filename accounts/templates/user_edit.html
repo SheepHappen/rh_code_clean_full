@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static tags crispy_forms_tags  %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-10">
+            <div class="page-heading">
+                <h1>Profile</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:15px;"></div>
+    <div class="row" style="margin-top:15px;">
+        <div class="col-12">
+            <div class="card white-card">
+                <div class="card-body">
+                    <h2 class="card-title mb-3">
+                        Details
+                    </h2>
+                    <div class="container" style="padding-left: 0;">
+                        <form method="POST" action="{% url 'profile-edit' %}"  enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <div><a href="{% url 'account_change_password' %}">Change password</a></div>
+                            <br>
+                            <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i> Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

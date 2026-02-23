@@ -1,0 +1,82 @@
+{% load static i18n %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-KJQ8W4J');
+        </script>
+        <!-- End Google Tag Manager -->
+        <style>
+            @font-face {
+                font-family: 'SourceSansPro';
+                src: local('SourceSansPro'),
+                url('file://core/static/fonts/source_sans_pro/SourceSansPro-Regular.ttf') format("truetype");
+            }
+            @font-face {
+                font-family: 'SourceSansProLight';
+                src: local('SourceSansProLight'),
+                url('file://core/static/fonts/source_sans_pro/SourceSansPro-Light.ttf') format("truetype");
+            }
+            @font-face {
+                font-family: 'SourceSansProBold';
+                src: local('SourceSansProBold'),
+                url('file://core/static/fonts/source_sans_pro/SourceSansPro-Bold.ttf') format("truetype");
+            }
+            @font-face {
+                font-family: 'SourceSansProSemiBold';
+                src: local('SourceSansProSemiBold'),
+                url('file://core/static/fonts/source_sans_pro/SourceSansPro-SemiBold.ttf') format("truetype");
+            }
+        </style>
+    </head>
+    <body>
+        {% include "pages/front_cover.html" %}
+        {% if document_checklist_answered or rev_score %}
+            {% include "pages/executive_summary_page_2.html" %}
+        {% endif %}
+        {% if risk_list %}
+            {% include "pages/recommendations_page_1.html" %}
+        {% endif %}
+        {% if document_checklist_answered or rev_score %}
+            {% include "pages/recommendations_page_3.html" %}
+        {% endif %}
+        {% include "pages/report_detail_page_1.html" %}
+        {% if assessment.industries.all or material_risk_source %}
+            {% include "pages/report_detail_page_2.html" %}
+        {% endif %}
+        {% if top_5_impacts %}
+            {% include "pages/risk_assessment_page_1.html" %}
+        {% endif %}
+        {% if top_5_countries %}
+            {% include "pages/risk_assessment_page_2.html" %}
+        {% endif %}
+        {% if risk_matrix %}
+            {% include "pages/risk_assessment_page_3.html" %}
+        {% endif %}
+        {% if management_questions_answered %}
+            {% include "pages/esg_management_page_1.html" %}
+        {% endif %}
+        {% if document_checklist_answered or rev_score %}
+            {% include "pages/esg_management_page_2.html" %}
+        {% endif %}
+        {% include "pages/references_page_1.html" %}
+        {% if assessment.material_risks.all %}
+            {% include "pages/risk_factor_summaries.html" %}
+        {% endif %}
+        {% include "pages/contacts.html" %}
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJQ8W4J"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    </body>
+</html>

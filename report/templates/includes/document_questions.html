@@ -1,0 +1,19 @@
+<div class="mb-3" style="margin-top: 15px; font-size: 13.333px; font-family: SourceSansProBold;">{{ heading }}</div>
+<table style="width:100%; font-size: 13.333px; font-family: SourceSansProLight;">
+    <tr>
+        {% for question in questions %}
+            {% if question.pdf_display_name %}
+                <tr>
+                    <td style="padding: 0">{{ question.pdf_display_name }}</td>
+                    <td style="padding: 0">
+                        <div>
+                            <div class="{% if question.answer == question.answer_text %}on{% else %}off{% endif %}-circle">
+                                {% if question.answer == 'Y' %}YES{% elif question.answer == 'N' %}NO{% else %}NO EVIDENCE{% endif %}
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </tr>
+</table>

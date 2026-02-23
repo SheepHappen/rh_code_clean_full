@@ -1,0 +1,57 @@
+
+<section id="recommendations-page-1" class="report-page reference-page">
+    <header class="page-header" style="margin-left: 40px; width: 93%; position: absolute; top:-110px; left:0; border-bottom:none;">
+        <h1 class="page-title">Key recommendations</h1>
+	    <img src="file://core/static/img/recommendations_icon.svg" class="heading-icon" alt="Recommendations page 1 icon">
+    </header>
+    {% if risk_list %}
+        {% if not other_issues_list %}
+            {% include "includes/sub_section.html" with smallerTitle='True' title="Recommendations are based on the top 5 key impacts" %}
+            <div class="mt-4"></div>
+            {% for recommendation in risk_list %}
+                <div class="row no-gutters">
+                    <div class="issue-wrapper mb-0 pb-0 mt-0 pt-0">
+                        <div class="issue-text mb-0 pb-0" style="font-family: SourceSansProBold;"> {{ forloop.counter }}. {{ recommendation.risk }}</div>
+                        <div class="issue-text mt-0 pt-0">{{ recommendation.text }}</div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endif %}
+    <div class="container mt-4">
+        <div class="row">
+            {% if risk_list %}
+                {% if other_issues_list %}
+                    <div class="col">
+                        {% include "includes/sub_section.html" with smallerTitle='True' title="Recommendations are based on the top 5 key impacts" %}
+                        <div class="mt-4"></div>
+                        {% for recommendation in risk_list %}
+                            <div class="row no-gutters">
+                                <div class="issue-wrapper mb-0 pb-0 mt-0 pt-0">
+                                    <div class="issue-text mb-0 pb-0" style="font-family: SourceSansProBold;"> {{ forloop.counter }}. {{ recommendation.risk }} {{ recommendation.score }}</div>
+                                    <div class="issue-text mt-0 pt-0">{{ recommendation.text|truncatechars:540 }}</div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endif %}
+            {% if other_issues_list %}
+                <div class="col">
+                    {% include "includes/sub_section.html" with smallerTitle='True' title="Other issues for consideration" %}
+                    <div class="mt-4"></div>
+                    {% for recommendation in other_issues_list %}
+                        <div class="row no-gutters">
+                            <div class="issue-wrapper mb-0 pb-0 mt-0 pt-0">
+                                <div class="issue-text mb-0 pb-0" style="font-family: SourceSansProBold;"> {{ forloop.counter }}. {{ recommendation.risk }}</div>
+                                <div class="issue-text mt-0 pt-0">{{ recommendation.text|truncatechars:540 }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    {% include "includes/page_footer.html"  %}
+</section>

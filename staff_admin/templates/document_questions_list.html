@@ -1,0 +1,134 @@
+{% extends "staff_base.html" %}
+{% load static crispy_forms_tags %}
+
+{% block main_content %}
+    <div class="row">
+        <div class="col-8">
+            <div class="page-heading">
+                <h1>Document checklist questions</h1>
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <a href="{% url 'document_question_create' %}" class="btn btn-secondary float-right mb-4">Add Question</a>
+                <div class="dropdown d-inline-block  float-right">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-upload"></span> Bulk Upload Questions
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item import user-invite-dialog" data-action="import" href="javascript:void(0)"><span class="fa fa-fw fa-file-excel"></span>Upload</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{% static "templates/document_checklist_import_template.xlsx" %}" target="_blank"><span class="fa fa-fw fa-download"></span> Download Template</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table id="records" class="question-table table" style="width:100%">
+        <thead>
+            <tr>
+                <th class="column-header" style="width:30%">Question</th>
+                <th class="column-header">Category</th>
+                <th class="column-header">Company</th>
+                <th class="column-header"></th>
+                <th class="column-header"></th>
+            </tr>
+        </thead>
+    </table>
+
+    <form action="{% url 'document_questions_list' %}" method="post" id="import-form" class='d-none' enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="spreadsheet">
+        <input type="hidden" name="action" value="">
+    </form>
+
+    <div id="deleteDocumentQuestion" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-2 modal-icon-wrapper">
+                        <i class="fal fa-exclamation-circle warning fa-3x modal-icon"></i>
+                    </div>
+                    <div class="col-10">
+                        <h5 class="modal-title">Delete Question?</h5>
+                        <p class="modal-text">This action cannot be reversed </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
+                    <a href=# type="button" class="btn btn-primary delete-me">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+
+            $("#import-form input:file").change(function() {
+                $("#import-form").submit();
+            });
+
+            $(".dropdown-item.import").click(function(e) {
+                e.preventDefault();
+                $("#import-form [name=action]").val($(this).attr("data-action"));
+                $("#import-form :file").click();
+            });
+
+            $('#records').on('click', 'a.editor_remove', function (e) {
+                e.preventDefault();
+                var data = table.row($(this).closest('tr')).data();
+                var url = "{% url 'document_question_delete' 123 %}";
+
+                $('#deleteDocumentQuestion').modal('show');
+                $('#deleteDocumentQuestion').find('.delete-me').attr('href' , url.replace('123', data.link));
+            });
+
+            $('#deleteDocumentQuestion').modal({ show: false})
+
+            var table = $('#records').DataTable({
+                dom: 'r',
+                ajax: "{% url 'document_questions_list_table' %}",
+                paging: false,
+                columns: [
+                    {
+                        "data": "text",
+                        render: $.fn.dataTable.render.text(),
+                    },
+                    {
+                        "data": "category",
+                        render: $.fn.dataTable.render.text(),
+                    },
+                    {
+                        "data": "company",
+                        render: $.fn.dataTable.render.text(),
+                    },
+                    {
+                        data: "link",
+                        className: "center",
+                        render: function(data, type) {
+                            return "<a href=# class='btn btn-primary editor_remove'>Delete</a>"
+                        }
+                    },
+                    {
+                        data: 'edit',
+                        className: "center",
+                    }
+
+                ],
+                columnDefs: [{
+                    "targets": 3,
+                    "orderable": false
+                }],
+                createdRow: function ( row, data, index ) {
+                    $(row).addClass('row-text-item')
+                },
+            });
+
+        });
+    </script>
+{% endblock js %}
+

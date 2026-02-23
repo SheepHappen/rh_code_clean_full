@@ -1,0 +1,339 @@
+{% extends "base.html" %}
+{% load static  %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-10">
+            <div class="page-heading">
+                <h1>Portfolio manager</h1>
+                <div class='intro-text'>Surface key issues within your portfolio. Search by material issues and corresponding key policies to address issues of concern and elevate ESG maturity score.</div>
+            </div>
+        </div>
+        {% if has_assessments %}
+            <div class="col-2">
+                <form method="POST" id='download-data' action="{% url 'portfolio_table' %}?export=yes"  enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input id="export-document" type="hidden" name="document_select_filter">
+                    <input id="export-risk" type="hidden" name="risk_select_filter">
+                    <input id="export-company" type="hidden" name="company_select_filter">
+                    <input id="export-fund" type="hidden" name="fund_select_filter">
+                    <input type="submit" value="Download spreadsheet" class="btn btn-secondary btn-medium ml-2 float-right">
+                </form>
+            </div>
+        {% endif %}
+    </div>
+    {% if initial_card_text %}
+        <div class="row" style="margin-top:45px;">
+            <div class="col-12">
+                {% include "includes/initial-card.html" with info=initial_card_text %}
+            </div>
+        </div>
+    {% endif %}
+    {% if has_assessments %}
+        <div class="row portfolio-select-wrapper" style="margin-top:45px;">
+            <div class="form-group col-xs-2 col-md-2">
+                <label for="companies" class="control-label font-semi-bold">Company</label>
+                <select class="company-select table_update form-control">
+                    <option value='all_companies'>All companies</option>
+                    {% for slug, company in companies %}
+                        <option value="{{ slug }}">{{ company }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group col-xs-2 col-md-2 pl-0 pr-0">
+                <label for="funds" class="control-label font-semi-bold">Fund</label>
+                <select class="fund-select table_update form-control">
+                    <option value='all_funds'>All funds</option>
+                    {% for fund in funds %}
+                        <option value="{{ fund.slug }}">{{ fund.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group col-xs-2 col-md-2 pl-0 pr-0" style="margin-left: 15px;">
+                <label for="Risk factor" class="control-label font-semi-bold">Risk factor</label>
+                <select class="risk-select table_update form-control">
+                    <option value='all_risks'>N/A</option>
+                    {% for risk in risk_factors %}
+                        <option value="{{ risk }}">{{ risk }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group col-xs-2 col-md-2 pl-0 pr-0" style="margin-left: 15px;">
+                <label for="documents" class="control-label font-semi-bold">Document(s)</label>
+                <select class="document-select table_update form-control">
+                    <option value='all_documents'>All documents</option>
+                    {% for document in document_questions %}
+                        <option value="{{ document }}">{{ document }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-12">
+                <div class="card white-card">
+                    <div class="card-body" style="padding:0!important;">
+                        <div class="card-text table-responsive">
+                            <table id="records" class="table portfolio-table" style="width:100%; padding-top: 6px;">
+                                <thead style="background-color: #fff !important;">
+                                    <tr>
+                                        <th style=" border-bottom: none; width: 15%;">
+                                            <span class="sort-up column-header-portfolio">Company</span>
+                                            <a tabindex="0"  type="button" class="portfolio-popover-icon data_order_popover" data-content="company assessed" title="Company" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="">
+                                                <i class="fal question-mark fa-question-circle"></i>
+                                            </a>
+                                        </th>
+                                        <th class="pl-0" style="border-bottom: none;">
+                                            <span class="sort-inactive column-header-portfolio">Fund</span>
+                                            <a tabindex="0"  type="button" class="data_order_popover" data-content="fund the company is assigned to" title="Fund"  data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="">
+                                                <i class="fal question-mark fa-question-circle"></i>
+                                            </a>
+                                        </th>
+                                        <th class=" pl-0" style=" border-bottom: none;">
+                                            <span class="sort-inactive column-header-portfolio">ESG Score</span>
+                                            <a tabindex="0"  type="button" class="data_order_popover" data-content="overall risk management proficiency score derived from the document checklist" title="ESG Score" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="">
+                                                <i class="fal question-mark fa-question-circle"></i>
+                                            </a>
+                                        </th>
+                                        <th class="pl-0" style=" border-bottom: none;">
+                                            <span class="sort-inactive column-header-portfolio">Inherent risk</span>
+                                            <a tabindex="0"  type="button" class="data_order_popover" data-content="overall industry / country combined risk score" title="Inherent risk" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="">
+                                                <i class="fal question-mark fa-question-circle"></i>
+                                            </a>
+                                        </th>
+                                        <th class=" pl-0" style=" border-bottom: none;">
+                                            <span class="sort-inactive column-header-portfolio">Risk factor</span>
+                                            <a tabindex="0"  type="button" class="data_order_popover"   data-content="name of risk factor" title="Risk factor" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="">
+                                                <i class="fal question-mark fa-question-circle"></i>
+                                            </a>
+                                        </th>
+                                        <th class="pl-0" style=" border-bottom: none;">
+                                            <span class=" sort-inactive column-header-portfolio">Document status</span>
+                                            <a tabindex="0"  type="button" class="data_order_popover" data-content="indicates whether the company has the policy listed (yes, no, no evidence)" title="Document status" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="">
+                                                <i class="fal question-mark fa-question-circle"></i>
+                                            </a>
+                                        </th>
+                                        <th class="pl-0" style=" border-bottom: none;">
+                                            <span class=" sort-inactive column-header-portfolio">KPIs</span>
+                                            <a tabindex="0"  type="button" class="data_order_popover" data-content="Indicates number of KPIs set and whether they have been achieved" title="KPIs"  data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="">
+                                                <i class="fal question-mark fa-question-circle"></i>
+                                            </a>
+
+                                        <th class="pl-0" style=" border-bottom: none;">
+                                            <span class=" sort-inactive column-header-portfolio">Actions</span>
+                                            <a tabindex="0"  type="button" class="data_order_popover" data-content="Indicates number of Actions set and whether they have been achieved" title="Actions"  data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="">
+                                                <i class="fal question-mark fa-question-circle"></i>
+                                            </a>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="pagination d-flex justify-content-center">
+                                        <span class="step-links text-justify">
+                                            <span class="prev d-none mr-4">
+                                                <button class="first-page paginate-update" data-next='1'><i class="fal mr-1 fa-chevron-left"></i>first</button>
+                                                <button class="prev-page ml-3 paginate-update" data-next=''>previous</button>
+                                            </span>
+
+                                            <span class="current d-none mr-4">
+                                                Page <span id="currentPage"></span> of <span id="totalPages"></span>
+                                            </span>
+
+                                            <span class="next d-none">
+                                                <button class="next-page mr-3 paginate-update" data-next=''>next</button>
+                                                <button class="final-page paginate-update" data-next=''>last <i class="fal ml-1 fa-chevron-right"></i></button>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class="far fa-5x d-none spinner"></i>
+    {% endif %}
+{% endblock content %}
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+            $('.far').addClass('fa-spinner fa-spin');
+            $('.far').removeClass('d-none');
+            if ($('.portfolio-select-wrapper').length > 0) {
+                $(".column-header-portfolio").click( function(e) {
+                    var target = $(e.target);
+                    var targClass = target[0].className.split(' ');
+                    if ('column-header-portfolio' == targClass[0]) {
+                        targClass = targClass[1];
+                    } else {
+                        targClass = targClass[0]
+                    }
+                    if (targClass == 'sort-inactive') {
+                        $(target).addClass('marked');
+                        $('.column-header-portfolio').addClass('sort-inactive').removeClass('sort-up').removeClass('sort-down');
+                        $(target).removeClass('marked').addClass('sort-up').removeClass('sort-inactive');
+                    } else {
+                        if (targClass == 'sort-up') {
+                            $(target).removeClass('sort-up').addClass('sort-down');
+                            $(target).find( 'span' ).removeClass('sort-up').addClass('sort-down');
+                        } else {
+                            $(target).removeClass('sort-down').addClass('sort-up');
+                            $(target).find( 'span' ).removeClass('sort-down').addClass('sort-up');
+                        }
+                    }
+                });
+
+                $('body').addClass('portfolio-page');
+                $('.table_update').select2();
+
+                $('.table_update').one('select2:open', function(e) {
+                    $('input.select2-search__field').prop('placeholder', 'Start typing to search…');
+                });
+                var updatePagination = function (json) {
+                    if (json.total_pages && json.page_num) {
+                        $('#totalPages').text(json.total_pages);
+                        $('#currentPage').text(json.page_num);
+                        $('.current').removeClass('d-none');
+
+                        var nextPage = parseInt(json.page_num) + 1;
+                        var prevPage = parseInt(json.page_num) - 1;
+
+                        if (nextPage <= parseInt(json.total_pages)) {
+                            $('.next-page').attr('data-next', nextPage)
+                            $('.final-page').attr('data-next', json.total_pages)
+                            $('.next').removeClass('d-none');
+                        }
+
+                        if ( parseInt(json.page_num) > 1 && prevPage >= 1) {
+                            $('.prev').removeClass('d-none');
+                            $('.prev-page').attr('data-next', prevPage)
+                        }
+                    }
+
+                }
+                var updateTable = function (page='no') {
+                    var document = $('.document-select').val();
+                    var risk = $('.risk-select').val();
+                    var company = $('.company-select').val();
+                    var fund = $('.fund-select').val()
+                    $('.far').addClass('fa-spinner fa-spin');
+                    $('.far').removeClass('d-none');
+
+                    data = {
+                        'document_select_filter': document,
+                        'risk_select_filter': risk,
+                        'company_select_filter': company,
+                        'fund_select_filter': fund,
+                    }
+                    $('#export-company').val(company);
+                    $('#export-document').val(document);
+                    $('#export-risk').val(risk);
+                    $('#export-fund').val(fund);
+                    if (page !== 'no') {
+                        data['page'] = page
+                    }
+                    $.ajax({
+                        url: "{% url 'portfolio_table' %}",
+                        type: "get",
+                        data: data
+                    }).done(function(data) {
+                        updatePagination(data)
+                        table.clear();
+                        table.rows.add(data.data).draw();
+                        $('.far').removeClass('fa-spinner fa-spin');
+                        $('.far').addClass('d-none');
+                    });
+                }
+
+                $('.paginate-update').on('click tap', function (e) {
+                    updateTable(page=$(this).attr('data-next'));
+                });
+
+                $('.table_update').change(function() {
+                    updateTable();
+                });
+
+                var table = $('#records').DataTable({
+                    dom: 'r',
+                    ajax: "{% url 'portfolio_table' %}",
+                    paging: false,
+                    columns: [
+                        { "data": "company" },
+                        { "data": "fund", render: $.fn.dataTable.render.text()},
+                        {
+                            "data": "esg_score",
+                            render: $.fn.dataTable.render.text(),
+                        },
+                        {
+                            "data": "inherent_risk",
+                            render: $.fn.dataTable.render.text(),
+                        },
+                        {
+                            "data": "risk_factor",
+                            render: $.fn.dataTable.render.text(),
+                        },
+                        {
+                            "data": "document_status",
+                            render: $.fn.dataTable.render.text(),
+                        },
+                        {
+                            "data": "kpi",
+                            render: $.fn.dataTable.render.text(),
+                        },
+                        {
+                            "data": "action",
+                            render: $.fn.dataTable.render.text(),
+                        },
+                    ],
+                    "aoColumns": [{ "sType": "rank",  "bSortable": true }],
+                    columnDefs: [
+                        { type: 'rank', targets: 3 }
+                    ],
+                    "initComplete": function( settings, json ) {
+                        updatePagination(json)
+                        $('.far').removeClass('fa-spinner fa-spin');
+                        $('.far').addClass('d-none');
+                    },
+                    "language": {
+                        "loadingRecords": '',
+                    }
+                });
+                var getRank = function(name) {
+                    var rankNumber;
+
+                    if (name == "Very Low") {
+                        rankNumber = 1;
+                    } else if (name == "Low") {
+                        rankNumber = 2;
+                    } else if (name == "Moderate") {
+                        rankNumber = 3;
+                    } else if (name == "High") {
+                        rankNumber = 4;
+                    } else if (name == "Extreme") {
+                        rankNumber = 5;
+                    } else {
+                        rankNumber = 0;
+                    }
+                    return rankNumber;
+                }
+
+                jQuery.fn.dataTableExt.oSort["rank-desc"] = function (x, y) {
+                    if ( getRank(x) < getRank(y) ) {
+                        return -1;
+                    }
+                    return 1;
+                };
+
+                jQuery.fn.dataTableExt.oSort["rank-asc"] = function (x, y) {
+                    if ( getRank(x) > getRank(y) ) {
+                        return -1;
+                    }
+                    return 1;
+                }
+            }
+        });
+    </script>
+{% endblock js %}

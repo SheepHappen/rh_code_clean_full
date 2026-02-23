@@ -1,0 +1,188 @@
+{% extends "assessment_base.html" %}
+{% load static crispy_forms_tags %}
+
+{% block h1_title %}
+    Key performance indicators & actions
+{% endblock %}
+{% block page_intro_text %}
+{% endblock %}
+
+{% block main_content %}
+    <div class="row kpi-update-page" style="margin-top:45px;">
+        <div class="col-12">
+            <div class="card white-card">
+                <div class="card-body">
+                    <div class="container mb-4 mt-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <form id="kpiForm" class="kpi-formset" action="{% url 'company_kpi' assessment.slug %}" method="POST" style="width: 100%;">
+                                    {% csrf_token %}
+                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                        <tbody>
+                                            {% for form in kpi_forms.forms %}
+                                                <tr class="kpi-form">
+                                                    <td>
+                                                        <div class="row mb-1">
+                                                            {{ form.id }}
+                                                            <input type="hidden" id="assessment" name="assessment" value="{{ assessment.pk }}">
+                                                            <div class="col-10 form-group mb-0 pb-0 pl-0 pr-0">
+                                                                <label class="">Aspect</label>
+                                                                {{ form.aspect }}
+                                                            </div>
+                                                            <div class="col-2 pr-0 pl-0">
+                                                                <div id="div_{{ form.is_kpi.auto_id }}" class="form-group text-right mt-4 pt-2 mr-3">
+                                                                    <label for="{{ form.is_kpi.id_for_label }}" class="font-semi-bold align-top mt-2 pt-1">
+                                                                        {{ form.is_kpi.label }}
+                                                                    </label>
+                                                                    <input type="checkbox" class="d-none form-input toggle-check" name="{{ form.is_kpi.html_name }}" id="id_{{ form.is_kpi.html_name }}"  {% if form.is_kpi.value%}checked{%endif%} >
+                                                                    <label class="switch ml-3 mt-3">
+                                                                        <input type="checkbox" class="is-kpi-checkbox" data-target="id_{{ form.is_kpi.html_name }}" {% if form.is_kpi.value %}checked{%endif%}>
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-1">
+                                                            <div class="col-12 form-group mb-0 pb-0 pl-0">
+                                                                {{ form.detail|as_crispy_field }}
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 form-group mb-0 pb-0 pl-0">
+                                                                <label class="">SDG alignment</label>
+                                                                {{ form.sdg_alignment }}
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 form-group mb-0 pb-0 pl-0">
+                                                                <label class="">Related standard</label>
+                                                                {{ form.related_standard }}
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-10 form-group mb-0 pb-0 pl-0 pr-0">
+                                                                <label class="">Status</label>
+                                                                {{ form.status }}
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-1">
+                                                            <div class="col-12 form-group mb-0 pb-0 pl-0">
+                                                                {{ form.commentary|as_crispy_field }}
+                                                            </div>
+                                                        </div>
+
+                                                        <div class='kpi-line-break'></div>
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                    {{ kpi_forms.management_form }}
+                                    <div class="buttonHolder" style="margin-top:120px;">
+                                        <input type="submit" name="Update" value="Update" class="btn btn-primary btn-medium mr-2" id="submit-id-submit">
+                                        <a class="btn btn-secondary btn-medium form-filled" href="{{ previous_url }}">Cancel</a>
+                                        <a class="btn btn-secondary btn-medium form-empty" href="{{ previous_url }}">Previous</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+            var selectObj = {
+                width:'99%',
+                placeholder:'Type to find',
+            };
+            var selectObj2 = {
+                width:'99%',
+                placeholder:'Please select',
+            };
+
+            $('.kpi-formset tbody tr').formset({
+                addText: '+ Add KPI ',
+                addCssClass: 'form-add-row',
+                added: function($row) {
+                    $('#id_form-'+$row[0].rowIndex+'-aspect').select2(selectObj2).val('').trigger('change');
+                    $('#id_form-'+$row[0].rowIndex+'-sdg_alignment').select2(selectObj).val('').trigger('change');
+                    $('#id_form-'+$row[0].rowIndex+'-related_standard').select2(selectObj).val('').trigger('change');
+                    $('#id_form-'+$row[0].rowIndex+'-status').select2(selectObj).val('').trigger('change');
+                    var checkboxID = $row.find('input:checkbox').first().attr('id');
+                    console.log(checkboxID)
+                    console.log($row.find('input:checkbox'))
+                    $row.find('input:checkbox').each(function() {
+                        if($(this).attr('data-target')) {
+                            $(this).attr('data-target', checkboxID);
+                        }
+                    });
+                    $('.delete-row').hide();
+                }
+            });
+
+            $('.delete-row').hide();
+
+            $("select:visible[id*='status']").each(function() {
+                $('#' + $(this).attr('id')).select2(selectObj2);
+            });
+
+            $("select:visible[id*='related_standard']").each(function() {
+                $('#' + $(this).attr('id')).select2(selectObj);
+            });
+
+            $("select:visible[id*='sdg_alignment']").each(function() {
+                $('#' + $(this).attr('id')).select2(selectObj);
+            });
+
+            $("select:visible[id*='aspect']").each(function() {
+                $('#' + $(this).attr('id')).select2(selectObj2);
+            });
+
+            $(document).on('click', '.is-kpi-checkbox', function() {
+                var target = $(this).attr('data-target');
+                console.log(target)
+                if ($(this).is(':checked')) {
+                    $('#' + target).prop('checked', true);
+                } else {
+                    $('#' + target).prop('checked', false);
+                }
+            });
+
+            var determineButtonsVisibility = function(input_class) {
+                var filled = false;
+                var inputClass = '.form-input';
+
+                if (input_class) {
+                    inputClass = input_class;
+                }
+
+                $(inputClass).each(function() {
+                    if ($(this).val() && $(this).val() !== 'on' && $(this).val() !== 'off' && $(this).val().length !== 0) {
+                        filled = true;
+                    }
+                });
+
+                if (filled) {
+                    $('.form-filled').show();
+                    $('.form-empty').hide();
+                } else {
+                    $('.form-filled').hide();
+                    $('.form-empty').show();
+                }
+            }
+
+            $('.textarea').change(function() {
+                determineButtonsVisibility('textarea');
+            });
+            $('.form-input').change(function() {
+                determineButtonsVisibility();
+            });
+            determineButtonsVisibility();
+        });
+    </script>
+{% endblock js %}

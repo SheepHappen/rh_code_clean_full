@@ -1,0 +1,22 @@
+[
+{
+    "model": "company.companyfund",
+    "pk": 1,
+    "fields": {
+        "company": 1,
+        "name": "fund 1",
+        "slug": "fund-1",
+        "enabled": true
+    }
+},
+{
+    "model": "company.companyfund",
+    "pk": 2,
+    "fields": {
+        "company": 2,
+        "name": "Argyll",
+        "slug": "argyll",
+        "enabled": true
+    }
+}
+]

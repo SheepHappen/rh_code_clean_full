@@ -1,0 +1,9 @@
+{% if scobj..profile.avatar %}
+    <img class="{{ imgclass }}" src="{{ scobj.search_icon }}" alt="{{ scobj.search_initials }} profile image">
+{% else %}
+    <div class="usr-avatar {{ scope }} {% if imgclass %}{{ imgclass }}{% endif %}" style="font-size:inherit">
+        <div>
+            <div>{{ scobj.search_initials }}</div>
+        </div>
+    </div>
+{% endif %}

@@ -1,0 +1,24 @@
+<li class="document-answer mb-3
+    {% if not is_required %} is-optional {% endif %}
+    {% if question.answer %} has-answer {% endif %}
+    {% if question.is_key_question and question.answer_text == answer %} key-question-answer {% endif %}"
+>
+    <div class="row" style="height: 50px;">
+        <div class="col-2 pl-0  radio-card-wrapper">
+            <div class="document-faux-radio">
+                <input type="radio" id="{{ question.id }}{{answer}}" name="{{ question.id }}" value="{{ answer }}"  {% if  question.answer == answer %}checked=checked{% endif %}>
+            </div>
+        </div>
+        <div class="col-10 pl-0">
+            <label class="document-label">
+                {% if answer == 'Y' %}
+                    Yes
+                {% elif answer == 'N' %}
+                    No
+                {% else %}
+                    No evidence
+                {% endif %}
+            </label>
+        </div>
+    </div>
+</li>

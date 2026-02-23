@@ -1,0 +1,268 @@
+{% extends "base.html" %}
+{% load static  %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <div class="page-heading">
+                <h1>
+                    Welcome, {{ request.user.first_name }}
+                </h1>
+                <div>Your Dashboard</div>
+            </div>
+        </div>
+        {% if assessments %}
+            <div class="col">
+                <a class="float-right btn btn-secondary btn-medium" href="{% url 'company_assessment_key_detail' %}">
+                    New assessment
+                </a>
+            </div>
+        {% endif %}
+    </div>
+    <div class="row" style="margin-top:45px;">
+        <div class="col-lg-5 col-xs-12">
+            <div class="card white-card mb-0" style="height: 211px;">
+                <div class="card-body">
+                    <h2 class="card-title mb-3">
+                        Getting Started
+                    </h2>
+                    <ul class="list-group">
+                        <li class="list-group-item custom-list-item"><a href="{% url 'company_assessment_key_detail' %}" class="btn-tertiary"><i class="fal fa-rocket mr-2"></i>Company assessment</a></li>
+                        <li class="list-group-item custom-list-item">
+                            <!-- <a href="/" class="btn-tertiary"><i class="fal fa-info-circle mr-2"></i>Help and support</a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-xs-12">
+            <div class="card white-card">
+                <div class="card-body">
+                    <h2 class="card-title mb-3">
+                        Your Account Manager
+                    </h2>
+                    <div class="container" style="padding-left: 0;">
+                        <div class="row">
+                            <div class="col-sm" style="margin-top: 10px; padding-left: 0;">
+                                {% if account_manager.avatar %}
+                                    <span class="user-avatar-big float-left">
+                                        <div style="margin-top: 4px; z-index: 0;">
+                                            <img class="img-fluid img-rounded" src="{{ account_manager.avatar.url }}" alt="{{ account_manager.user.username }} headshot">
+                                        </div>
+                                    </span>
+                                {% else %}
+                                    <div class="user-avatar-big float-left">
+                                        <div class="no-image-placeholder">
+                                            {{ account_manager_initials }}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                <div class='user-details-wrapper'>
+                                    <span class="text-nowrap manager-name">{{ account_manager.get_full_name }}</span>
+                                    {% if account_manager.job_title %}
+                                        <span class="job-title">{{ account_manager.job_title }}</span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class='silver-vertical-line'></div>
+                            <div class="col-sm">
+                                <ul class="list-group">
+                                    <li class="list-group-item custom-list-item text-nowrap">
+                                        {% if account_manager.email %}
+                                            <a href="mailto:{{ account_manager.email }}">
+                                                <i class="fal fa-envelope mr-2"></i>
+                                                {{ account_manager.email }}
+                                            </a>
+                                        {% else %}
+                                            <i class="fal fa-envelope mr-2"></i>
+                                            n/a
+                                        {% endif %}
+                                    </li>
+                                    <li class="list-group-item custom-list-item text-nowrap">
+                                        {% if account_manager.userprofile.phone_number %}
+                                            <a href="tel:{{ account_manager.userprofile.phone_number }}">
+                                                <i class="fal fa-phone mr-2"></i>
+                                                {{ account_manager.userprofile.phone_number }}
+                                            </a>
+                                        {% else %}
+                                            <i class="fal fa-phone mr-2"></i>
+                                            n/a
+                                        {% endif %}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-xs-12">
+            {% include "includes/info-card.html" with colour='green' count=assessment_location_count text='Locations' icon='fa-map-marker-alt' %}
+        </div>
+        <div class="col-lg-4 col-xs-12">
+            {% include "includes/info-card.html" with colour='purple' count=assessment_industry_count text='Industries' icon='fa-chart-pie-alt' %}
+        </div>
+        <div class="col-lg-4 col-xs-12">
+            {% include "includes/info-card.html" with colour='red' count=assessments.count text='Company assessments' icon='fa-briefcase' %}
+        </div>
+    </div>
+    {% if not assessments %}
+        <div class="row">
+            <div class="col-12">
+                {% include "includes/initial-card.html" with btn_url='company_assessment_key_detail' info=initial_card_text %}
+            </div>
+        </div>
+    {% else %}
+        <div class="row">
+            <div class="col-12">
+                <div class="card white-card">
+                    <div class="card-body" style="padding:0!important;">
+                        <div class="container mt-4">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="card-title" style="margin-left: 7px;">
+                                        Assessment manager <div class="mobile-mid">({{ assessments.count }})</div>
+                                    </h2>
+                                </div>
+                                <div class="col pr-0">
+                                    <div class="row" style="float: right;">
+                                        <div class="col pl-0 pr-2">
+                                            <div class="search-box-wrapper">
+                                                <form id="assessment-filter" method="GET" action="{% url 'dashboard' %}"  enctype="multipart/form-data">
+                                                    {% csrf_token %}
+                                                    <input class="search-box" name="searchTerm" placeholder="Search" value="{% if search_term %}{{ search_term }}{% endif %}" type="search" />
+                                                    {% if sort_by %}
+                                                        <input type="hidden" name="sortBy" value="{{ sort_by }}">
+                                                    {% endif %}
+                                                    <button class="d-none" type="submit"></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col pl-0 pr-0">
+                                            <form id="select-filter" method="GET" action="{% url 'dashboard' %}"  enctype="multipart/form-data">
+                                                {% if search_term %}
+                                                    <input type="hidden" name="searchTerm" value="{{ search_term }}">
+                                                {% endif %}
+                                                <select class="table-select" style="width: 112px" name="sortBy">
+                                                    <option></option>
+                                                    {% for option in sort_options %}
+                                                        <option value="{{ option }}" {% if sort_by and sort_by == option %}selected{% endif %}>{{ option }}</option>
+                                                    {% endfor %}
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-text table-responsive">
+                            <table id="records" class="table">
+                                <thead style="background-color: #fff !important;">
+                                    <tr>
+                                        <th class="column-header-regular" style="width: 1%"></th>
+                                        <th class="column-header-regular" style="width: 30%">Company</th>
+                                        <th class="column-header-regular" style="width: 20%">Date modified</th>
+                                        <th class="column-header-regular" style="width: 20%">Status</th>
+                                        <th class="column-header-regular" style="width: 20%">PDF</th>
+                                        <th class="column-header-regular" style="width: 20%">Add to fund</th>
+                                        <!-- <th class="column-header-regular" style="width: 20%"></th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for assessment in assessments %}
+                                        <tr>
+                                            <td class="row-text-item"></td>
+                                            <td class="row-text-item">
+                                                <a  href="{% url 'assessment_resume' assessment.slug %}">
+                                                    {{ assessment.company_name }}
+                                                </a>
+                                            </td>
+                                            <td class="row-text-item">{{ assessment.date_updated }}</td>
+                                            <td class="row-text-item">{{ assessment.get_status_display }}</td>
+                                            <td>
+                                                <a href="{% url 'report_view' assessment.slug %}" class="btn btn-secondary btn-sm" target="_blank">
+                                                    View pdf
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <select data-url="{% url 'add_fund_to_assessment' %}" data-assessment="{{ assessment.id }}" class="fund-select" style="width: 100%">
+                                                    <option>None</option>
+                                                    {% for fund in funds %}
+                                                        <option value="{{ fund.id }}" {% if fund == assessment.company_fund %}selected{% endif %}>{{ fund }}</option>
+                                                    {% endfor %}
+                                                </select>
+                                            </td>
+                                            <!-- <td>
+                                                <a href="{% url 'company_version' assessment.slug %}">
+                                                    Versions
+                                                </a>
+                                            </td> -->
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+</div>
+{% endblock content %}
+
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+            $('body').addClass('dashboard-page');
+            $('.table-search-filer').select2({
+                placeholder: "Search",
+            })
+
+            $('.table-select').select2({
+                placeholder: "Select",
+                minimumResultsForSearch: -1
+            });
+
+            $('.fund-select').select2({
+                placeholder: "None",
+            });
+
+            $('#assessment-filter').on('change', ':input', function(e) {
+                $('#assessment-filter').submit();
+            });
+            $('#select-filter').on('change keyup paste', ':input', function(e) {
+                $('#select-filter').submit();
+            });
+
+            $('.fund-select').change(function() {
+                var selectedFund = $(this).val();
+                if ('None' == selectedFund) {
+                    selectedFund = 'delete-me'
+                }
+                if ('Select' !== selectedFund) {
+                    $.ajax({
+                        type: "POST",
+                        url: $(this).attr('data-url'),
+                        data:  {
+                            selectedFund: selectedFund,
+                            assessment: $(this).attr('data-assessment')
+                        },
+                        statusCode: {
+                            404: function(xhr) {
+                                alert( "Item not found" );
+                            }
+                        },
+                        beforeSend : function(jqXHR, settings) {
+                            var token = '{{ csrf_token }}';
+                            jqXHR.setRequestHeader("x-csrftoken", token);
+                        },
+                        complete: function(response) {},
+                    });
+                }
+            });
+        });
+    </script>
+{% endblock js %}

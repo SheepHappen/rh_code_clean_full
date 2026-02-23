@@ -1,0 +1,14 @@
+<div class="sub-section {% if background %} {{ background }} {% endif %}">
+	<h2 class="{% if smallerTitle %} sub-section-title-sm {% else %} sub-section-title {% endif %}">
+		{% if counter %}
+			{{ counter }}.
+		{% endif %}
+		{% if icon %}
+			<img src="{{ icon }}" class="sub-page-icon-tiny" alt="{{ title }} icon">
+		{% endif %}
+		{{ title }}
+		{% if question_count %}
+			({{ question_count }})
+		{% endif %}
+	</h2>
+</div>

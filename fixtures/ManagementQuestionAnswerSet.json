@@ -1,0 +1,6074 @@
+[
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 1,
+    "fields": {
+        "assessment": 1,
+        "question": 1,
+        "answer": "No",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 2,
+    "fields": {
+        "assessment": 1,
+        "question": 2,
+        "answer": "No",
+        "insufficient": true,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 3,
+    "fields": {
+        "assessment": 1,
+        "question": 3,
+        "answer": "Yes, for Scope 1 & 2",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 4,
+    "fields": {
+        "assessment": 1,
+        "question": 4,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 5,
+    "fields": {
+        "assessment": 1,
+        "question": 5,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 6,
+    "fields": {
+        "assessment": 1,
+        "question": 7,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 7,
+    "fields": {
+        "assessment": 1,
+        "question": 8,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 8,
+    "fields": {
+        "assessment": 1,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 9,
+    "fields": {
+        "assessment": 1,
+        "question": 17,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 10,
+    "fields": {
+        "assessment": 1,
+        "question": 21,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 11,
+    "fields": {
+        "assessment": 1,
+        "question": 22,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 12,
+    "fields": {
+        "assessment": 1,
+        "question": 23,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 13,
+    "fields": {
+        "assessment": 1,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 14,
+    "fields": {
+        "assessment": 1,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 15,
+    "fields": {
+        "assessment": 1,
+        "question": 28,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 16,
+    "fields": {
+        "assessment": 1,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 17,
+    "fields": {
+        "assessment": 1,
+        "question": 35,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 18,
+    "fields": {
+        "assessment": 1,
+        "question": 36,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 19,
+    "fields": {
+        "assessment": 1,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 20,
+    "fields": {
+        "assessment": 1,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 21,
+    "fields": {
+        "assessment": 1,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 22,
+    "fields": {
+        "assessment": 1,
+        "question": 44,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 23,
+    "fields": {
+        "assessment": 1,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 24,
+    "fields": {
+        "assessment": 2,
+        "question": 33,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 25,
+    "fields": {
+        "assessment": 2,
+        "question": 3,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 26,
+    "fields": {
+        "assessment": 2,
+        "question": 36,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 27,
+    "fields": {
+        "assessment": 2,
+        "question": 35,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 28,
+    "fields": {
+        "assessment": 2,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 29,
+    "fields": {
+        "assessment": 2,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 30,
+    "fields": {
+        "assessment": 2,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 31,
+    "fields": {
+        "assessment": 2,
+        "question": 25,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 32,
+    "fields": {
+        "assessment": 2,
+        "question": 28,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 33,
+    "fields": {
+        "assessment": 2,
+        "question": 31,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 34,
+    "fields": {
+        "assessment": 2,
+        "question": 4,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 35,
+    "fields": {
+        "assessment": 2,
+        "question": 7,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 36,
+    "fields": {
+        "assessment": 2,
+        "question": 8,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 37,
+    "fields": {
+        "assessment": 2,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 38,
+    "fields": {
+        "assessment": 2,
+        "question": 44,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 39,
+    "fields": {
+        "assessment": 2,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 40,
+    "fields": {
+        "assessment": 2,
+        "question": 5,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 41,
+    "fields": {
+        "assessment": 2,
+        "question": 6,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 42,
+    "fields": {
+        "assessment": 2,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 43,
+    "fields": {
+        "assessment": 2,
+        "question": 42,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 44,
+    "fields": {
+        "assessment": 2,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 45,
+    "fields": {
+        "assessment": 2,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 46,
+    "fields": {
+        "assessment": 2,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 47,
+    "fields": {
+        "assessment": 2,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 48,
+    "fields": {
+        "assessment": 2,
+        "question": 30,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 49,
+    "fields": {
+        "assessment": 3,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 50,
+    "fields": {
+        "assessment": 3,
+        "question": 33,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 51,
+    "fields": {
+        "assessment": 3,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 52,
+    "fields": {
+        "assessment": 3,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 53,
+    "fields": {
+        "assessment": 3,
+        "question": 4,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 54,
+    "fields": {
+        "assessment": 3,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 55,
+    "fields": {
+        "assessment": 3,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 56,
+    "fields": {
+        "assessment": 3,
+        "question": 5,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 57,
+    "fields": {
+        "assessment": 3,
+        "question": 6,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 58,
+    "fields": {
+        "assessment": 3,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 59,
+    "fields": {
+        "assessment": 3,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 60,
+    "fields": {
+        "assessment": 3,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 61,
+    "fields": {
+        "assessment": 3,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 62,
+    "fields": {
+        "assessment": 3,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 63,
+    "fields": {
+        "assessment": 5,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 64,
+    "fields": {
+        "assessment": 5,
+        "question": 33,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 65,
+    "fields": {
+        "assessment": 5,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 66,
+    "fields": {
+        "assessment": 5,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 67,
+    "fields": {
+        "assessment": 5,
+        "question": 4,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 68,
+    "fields": {
+        "assessment": 5,
+        "question": 7,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 69,
+    "fields": {
+        "assessment": 5,
+        "question": 8,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 70,
+    "fields": {
+        "assessment": 5,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 71,
+    "fields": {
+        "assessment": 5,
+        "question": 44,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 72,
+    "fields": {
+        "assessment": 5,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 73,
+    "fields": {
+        "assessment": 5,
+        "question": 5,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 74,
+    "fields": {
+        "assessment": 5,
+        "question": 6,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 75,
+    "fields": {
+        "assessment": 5,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 76,
+    "fields": {
+        "assessment": 5,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 77,
+    "fields": {
+        "assessment": 5,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 78,
+    "fields": {
+        "assessment": 5,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 79,
+    "fields": {
+        "assessment": 5,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 80,
+    "fields": {
+        "assessment": 8,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 81,
+    "fields": {
+        "assessment": 8,
+        "question": 33,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 82,
+    "fields": {
+        "assessment": 8,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 83,
+    "fields": {
+        "assessment": 8,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 84,
+    "fields": {
+        "assessment": 8,
+        "question": 4,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 85,
+    "fields": {
+        "assessment": 8,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 86,
+    "fields": {
+        "assessment": 8,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 87,
+    "fields": {
+        "assessment": 8,
+        "question": 5,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 88,
+    "fields": {
+        "assessment": 8,
+        "question": 6,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 89,
+    "fields": {
+        "assessment": 8,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 90,
+    "fields": {
+        "assessment": 8,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 91,
+    "fields": {
+        "assessment": 8,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 92,
+    "fields": {
+        "assessment": 8,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 93,
+    "fields": {
+        "assessment": 8,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 94,
+    "fields": {
+        "assessment": 10,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 95,
+    "fields": {
+        "assessment": 10,
+        "question": 33,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 96,
+    "fields": {
+        "assessment": 10,
+        "question": 20,
+        "answer": "Argrpgjrgktpohjtgpohnjtphjthdgthgtpoht",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 97,
+    "fields": {
+        "assessment": 10,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 98,
+    "fields": {
+        "assessment": 10,
+        "question": 50,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 99,
+    "fields": {
+        "assessment": 10,
+        "question": 4,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 100,
+    "fields": {
+        "assessment": 10,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 101,
+    "fields": {
+        "assessment": 10,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 102,
+    "fields": {
+        "assessment": 10,
+        "question": 5,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 103,
+    "fields": {
+        "assessment": 10,
+        "question": 6,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 104,
+    "fields": {
+        "assessment": 10,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 105,
+    "fields": {
+        "assessment": 10,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 106,
+    "fields": {
+        "assessment": 10,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 107,
+    "fields": {
+        "assessment": 10,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 108,
+    "fields": {
+        "assessment": 10,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 109,
+    "fields": {
+        "assessment": 13,
+        "question": 32,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 110,
+    "fields": {
+        "assessment": 13,
+        "question": 33,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 111,
+    "fields": {
+        "assessment": 13,
+        "question": 1,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 112,
+    "fields": {
+        "assessment": 13,
+        "question": 3,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 113,
+    "fields": {
+        "assessment": 13,
+        "question": 36,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 114,
+    "fields": {
+        "assessment": 13,
+        "question": 35,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 115,
+    "fields": {
+        "assessment": 13,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 116,
+    "fields": {
+        "assessment": 13,
+        "question": 2,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 117,
+    "fields": {
+        "assessment": 13,
+        "question": 50,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 118,
+    "fields": {
+        "assessment": 13,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 119,
+    "fields": {
+        "assessment": 13,
+        "question": 21,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 120,
+    "fields": {
+        "assessment": 13,
+        "question": 22,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 121,
+    "fields": {
+        "assessment": 13,
+        "question": 23,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 122,
+    "fields": {
+        "assessment": 13,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 123,
+    "fields": {
+        "assessment": 13,
+        "question": 28,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 124,
+    "fields": {
+        "assessment": 13,
+        "question": 4,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 125,
+    "fields": {
+        "assessment": 13,
+        "question": 7,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 126,
+    "fields": {
+        "assessment": 13,
+        "question": 8,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 127,
+    "fields": {
+        "assessment": 13,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 128,
+    "fields": {
+        "assessment": 13,
+        "question": 44,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 129,
+    "fields": {
+        "assessment": 13,
+        "question": 17,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 130,
+    "fields": {
+        "assessment": 13,
+        "question": 51,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 131,
+    "fields": {
+        "assessment": 13,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 132,
+    "fields": {
+        "assessment": 13,
+        "question": 5,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 133,
+    "fields": {
+        "assessment": 13,
+        "question": 6,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 134,
+    "fields": {
+        "assessment": 13,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 135,
+    "fields": {
+        "assessment": 13,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 136,
+    "fields": {
+        "assessment": 13,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 137,
+    "fields": {
+        "assessment": 13,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 138,
+    "fields": {
+        "assessment": 13,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 139,
+    "fields": {
+        "assessment": 14,
+        "question": 24,
+        "answer": "No",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 140,
+    "fields": {
+        "assessment": 14,
+        "question": 2,
+        "answer": "No",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 141,
+    "fields": {
+        "assessment": 14,
+        "question": 21,
+        "answer": "No",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 142,
+    "fields": {
+        "assessment": 14,
+        "question": 17,
+        "answer": "Yes, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id ante et massa efficitur hendrerit. Sed et pulvinar ex. Maecenas venenatis lobortis faucibus. In at enim orci. ",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 143,
+    "fields": {
+        "assessment": 14,
+        "question": 10,
+        "answer": "Nam convallis varius odio. Suspendisse semper vehicula nibh, id dapibus nisi pretium venenatis. ",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 144,
+    "fields": {
+        "assessment": 14,
+        "question": 26,
+        "answer": "Phasellus malesuada augue justo, hendrerit ornare velit facilisis vel. ",
+        "insufficient": true,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 145,
+    "fields": {
+        "assessment": 14,
+        "question": 9,
+        "answer": "Aenean placerat molestie urna, eu tincidunt nunc dictum sed. ",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 146,
+    "fields": {
+        "assessment": 14,
+        "question": 34,
+        "answer": "Nam tempor eu ligula quis aliquam. Donec metus arcu, gravida nec lacus quis, aliquam gravida orci. ",
+        "insufficient": true,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 147,
+    "fields": {
+        "assessment": 14,
+        "question": 6,
+        "answer": "Vivamus eros nisl, tempor id pretium et, ultrices at tellus. Quisque congue lectus tortor, at ultricies felis condimentum eget. ",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 148,
+    "fields": {
+        "assessment": 14,
+        "question": 41,
+        "answer": "Curabitur fermentum fringilla neque, eget tempor orci maximus at.",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 149,
+    "fields": {
+        "assessment": 14,
+        "question": 45,
+        "answer": "Fusce porttitor tellus a erat ullamcorper rutrum. Vivamus vulputate bibendum nisi, eu imperdiet nibh dapibus sed.",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 150,
+    "fields": {
+        "assessment": 14,
+        "question": 46,
+        "answer": "Nulla facilisi. ",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 151,
+    "fields": {
+        "assessment": 14,
+        "question": 27,
+        "answer": "Duis ac mi eget lacus faucibus dictum. ",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 152,
+    "fields": {
+        "assessment": 17,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 153,
+    "fields": {
+        "assessment": 17,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 154,
+    "fields": {
+        "assessment": 17,
+        "question": 28,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 155,
+    "fields": {
+        "assessment": 17,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 156,
+    "fields": {
+        "assessment": 17,
+        "question": 54,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 157,
+    "fields": {
+        "assessment": 17,
+        "question": 4,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 158,
+    "fields": {
+        "assessment": 17,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 159,
+    "fields": {
+        "assessment": 17,
+        "question": 9,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 160,
+    "fields": {
+        "assessment": 17,
+        "question": 10,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 161,
+    "fields": {
+        "assessment": 17,
+        "question": 26,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 162,
+    "fields": {
+        "assessment": 17,
+        "question": 51,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 163,
+    "fields": {
+        "assessment": 17,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 164,
+    "fields": {
+        "assessment": 17,
+        "question": 5,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 165,
+    "fields": {
+        "assessment": 17,
+        "question": 6,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 166,
+    "fields": {
+        "assessment": 17,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 167,
+    "fields": {
+        "assessment": 17,
+        "question": 41,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 168,
+    "fields": {
+        "assessment": 17,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 169,
+    "fields": {
+        "assessment": 17,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 170,
+    "fields": {
+        "assessment": 17,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 171,
+    "fields": {
+        "assessment": 17,
+        "question": 45,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 172,
+    "fields": {
+        "assessment": 17,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 173,
+    "fields": {
+        "assessment": 2,
+        "question": 54,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 174,
+    "fields": {
+        "assessment": 2,
+        "question": 51,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 175,
+    "fields": {
+        "assessment": 2,
+        "question": 9,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 176,
+    "fields": {
+        "assessment": 2,
+        "question": 10,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 177,
+    "fields": {
+        "assessment": 2,
+        "question": 11,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 178,
+    "fields": {
+        "assessment": 2,
+        "question": 17,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 179,
+    "fields": {
+        "assessment": 2,
+        "question": 26,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 180,
+    "fields": {
+        "assessment": 2,
+        "question": 41,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 181,
+    "fields": {
+        "assessment": 2,
+        "question": 45,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 182,
+    "fields": {
+        "assessment": 20,
+        "question": 1,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 183,
+    "fields": {
+        "assessment": 20,
+        "question": 3,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 184,
+    "fields": {
+        "assessment": 20,
+        "question": 36,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 185,
+    "fields": {
+        "assessment": 20,
+        "question": 35,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 186,
+    "fields": {
+        "assessment": 20,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 187,
+    "fields": {
+        "assessment": 20,
+        "question": 50,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 188,
+    "fields": {
+        "assessment": 20,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 189,
+    "fields": {
+        "assessment": 20,
+        "question": 21,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 190,
+    "fields": {
+        "assessment": 20,
+        "question": 54,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 191,
+    "fields": {
+        "assessment": 20,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 192,
+    "fields": {
+        "assessment": 20,
+        "question": 25,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 193,
+    "fields": {
+        "assessment": 20,
+        "question": 31,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 194,
+    "fields": {
+        "assessment": 20,
+        "question": 4,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 195,
+    "fields": {
+        "assessment": 20,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 196,
+    "fields": {
+        "assessment": 20,
+        "question": 51,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 197,
+    "fields": {
+        "assessment": 20,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 198,
+    "fields": {
+        "assessment": 20,
+        "question": 5,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 199,
+    "fields": {
+        "assessment": 20,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 200,
+    "fields": {
+        "assessment": 20,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 201,
+    "fields": {
+        "assessment": 20,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 202,
+    "fields": {
+        "assessment": 11,
+        "question": 33,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 203,
+    "fields": {
+        "assessment": 11,
+        "question": 2,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 204,
+    "fields": {
+        "assessment": 11,
+        "question": 3,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 205,
+    "fields": {
+        "assessment": 11,
+        "question": 35,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 206,
+    "fields": {
+        "assessment": 11,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 207,
+    "fields": {
+        "assessment": 11,
+        "question": 14,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 208,
+    "fields": {
+        "assessment": 11,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 209,
+    "fields": {
+        "assessment": 11,
+        "question": 53,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 210,
+    "fields": {
+        "assessment": 11,
+        "question": 21,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 211,
+    "fields": {
+        "assessment": 11,
+        "question": 54,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 212,
+    "fields": {
+        "assessment": 11,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 213,
+    "fields": {
+        "assessment": 11,
+        "question": 25,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 214,
+    "fields": {
+        "assessment": 11,
+        "question": 56,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 215,
+    "fields": {
+        "assessment": 11,
+        "question": 28,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 216,
+    "fields": {
+        "assessment": 11,
+        "question": 31,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 217,
+    "fields": {
+        "assessment": 11,
+        "question": 4,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 218,
+    "fields": {
+        "assessment": 11,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 219,
+    "fields": {
+        "assessment": 11,
+        "question": 9,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 220,
+    "fields": {
+        "assessment": 11,
+        "question": 10,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 221,
+    "fields": {
+        "assessment": 11,
+        "question": 12,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 222,
+    "fields": {
+        "assessment": 11,
+        "question": 17,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 223,
+    "fields": {
+        "assessment": 11,
+        "question": 18,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 224,
+    "fields": {
+        "assessment": 11,
+        "question": 57,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 225,
+    "fields": {
+        "assessment": 11,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 226,
+    "fields": {
+        "assessment": 11,
+        "question": 5,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 227,
+    "fields": {
+        "assessment": 11,
+        "question": 6,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 228,
+    "fields": {
+        "assessment": 11,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 229,
+    "fields": {
+        "assessment": 11,
+        "question": 59,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 230,
+    "fields": {
+        "assessment": 11,
+        "question": 42,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 231,
+    "fields": {
+        "assessment": 11,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 232,
+    "fields": {
+        "assessment": 11,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 233,
+    "fields": {
+        "assessment": 11,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 234,
+    "fields": {
+        "assessment": 11,
+        "question": 58,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 235,
+    "fields": {
+        "assessment": 11,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 236,
+    "fields": {
+        "assessment": 11,
+        "question": 30,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 237,
+    "fields": {
+        "assessment": 23,
+        "question": 22,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 238,
+    "fields": {
+        "assessment": 23,
+        "question": 23,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 239,
+    "fields": {
+        "assessment": 23,
+        "question": 56,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 240,
+    "fields": {
+        "assessment": 23,
+        "question": 54,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 241,
+    "fields": {
+        "assessment": 23,
+        "question": 17,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 242,
+    "fields": {
+        "assessment": 23,
+        "question": 57,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 243,
+    "fields": {
+        "assessment": 23,
+        "question": 51,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 244,
+    "fields": {
+        "assessment": 23,
+        "question": 60,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 245,
+    "fields": {
+        "assessment": 23,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 246,
+    "fields": {
+        "assessment": 23,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 247,
+    "fields": {
+        "assessment": 23,
+        "question": 58,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 248,
+    "fields": {
+        "assessment": 23,
+        "question": 59,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 249,
+    "fields": {
+        "assessment": 24,
+        "question": 2,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 250,
+    "fields": {
+        "assessment": 24,
+        "question": 3,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 251,
+    "fields": {
+        "assessment": 24,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 252,
+    "fields": {
+        "assessment": 24,
+        "question": 21,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 253,
+    "fields": {
+        "assessment": 24,
+        "question": 22,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 254,
+    "fields": {
+        "assessment": 24,
+        "question": 23,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 255,
+    "fields": {
+        "assessment": 24,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 256,
+    "fields": {
+        "assessment": 24,
+        "question": 25,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 257,
+    "fields": {
+        "assessment": 24,
+        "question": 28,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 258,
+    "fields": {
+        "assessment": 24,
+        "question": 31,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 259,
+    "fields": {
+        "assessment": 24,
+        "question": 32,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 260,
+    "fields": {
+        "assessment": 24,
+        "question": 33,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 261,
+    "fields": {
+        "assessment": 24,
+        "question": 35,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 262,
+    "fields": {
+        "assessment": 24,
+        "question": 36,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 263,
+    "fields": {
+        "assessment": 24,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 264,
+    "fields": {
+        "assessment": 24,
+        "question": 52,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 265,
+    "fields": {
+        "assessment": 24,
+        "question": 53,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 266,
+    "fields": {
+        "assessment": 24,
+        "question": 54,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 267,
+    "fields": {
+        "assessment": 24,
+        "question": 56,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 268,
+    "fields": {
+        "assessment": 24,
+        "question": 4,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 269,
+    "fields": {
+        "assessment": 24,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 270,
+    "fields": {
+        "assessment": 24,
+        "question": 7,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 271,
+    "fields": {
+        "assessment": 24,
+        "question": 9,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 272,
+    "fields": {
+        "assessment": 24,
+        "question": 10,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 273,
+    "fields": {
+        "assessment": 24,
+        "question": 8,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 274,
+    "fields": {
+        "assessment": 24,
+        "question": 44,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 275,
+    "fields": {
+        "assessment": 24,
+        "question": 12,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 276,
+    "fields": {
+        "assessment": 24,
+        "question": 17,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 277,
+    "fields": {
+        "assessment": 24,
+        "question": 18,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 278,
+    "fields": {
+        "assessment": 24,
+        "question": 57,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 279,
+    "fields": {
+        "assessment": 24,
+        "question": 60,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 280,
+    "fields": {
+        "assessment": 24,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 281,
+    "fields": {
+        "assessment": 24,
+        "question": 5,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 282,
+    "fields": {
+        "assessment": 24,
+        "question": 6,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 283,
+    "fields": {
+        "assessment": 24,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 284,
+    "fields": {
+        "assessment": 24,
+        "question": 59,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 285,
+    "fields": {
+        "assessment": 24,
+        "question": 42,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 286,
+    "fields": {
+        "assessment": 24,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 287,
+    "fields": {
+        "assessment": 24,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 288,
+    "fields": {
+        "assessment": 24,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 289,
+    "fields": {
+        "assessment": 24,
+        "question": 58,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 290,
+    "fields": {
+        "assessment": 24,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 291,
+    "fields": {
+        "assessment": 24,
+        "question": 30,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 292,
+    "fields": {
+        "assessment": 25,
+        "question": 2,
+        "answer": "fbdbvxb",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 293,
+    "fields": {
+        "assessment": 25,
+        "question": 3,
+        "answer": "no no no no no no yes",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 294,
+    "fields": {
+        "assessment": 25,
+        "question": 20,
+        "answer": "",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 295,
+    "fields": {
+        "assessment": 25,
+        "question": 21,
+        "answer": "vvvv",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 296,
+    "fields": {
+        "assessment": 25,
+        "question": 22,
+        "answer": "",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 297,
+    "fields": {
+        "assessment": 25,
+        "question": 23,
+        "answer": "",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 298,
+    "fields": {
+        "assessment": 25,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 299,
+    "fields": {
+        "assessment": 25,
+        "question": 25,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 300,
+    "fields": {
+        "assessment": 25,
+        "question": 28,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 301,
+    "fields": {
+        "assessment": 25,
+        "question": 31,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 302,
+    "fields": {
+        "assessment": 25,
+        "question": 32,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 303,
+    "fields": {
+        "assessment": 25,
+        "question": 33,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 304,
+    "fields": {
+        "assessment": 25,
+        "question": 35,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 305,
+    "fields": {
+        "assessment": 25,
+        "question": 36,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 306,
+    "fields": {
+        "assessment": 25,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 307,
+    "fields": {
+        "assessment": 25,
+        "question": 52,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 308,
+    "fields": {
+        "assessment": 25,
+        "question": 53,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 309,
+    "fields": {
+        "assessment": 25,
+        "question": 54,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 310,
+    "fields": {
+        "assessment": 25,
+        "question": 56,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 311,
+    "fields": {
+        "assessment": 25,
+        "question": 4,
+        "answer": "",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 312,
+    "fields": {
+        "assessment": 25,
+        "question": 39,
+        "answer": "",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 313,
+    "fields": {
+        "assessment": 25,
+        "question": 7,
+        "answer": "",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 314,
+    "fields": {
+        "assessment": 25,
+        "question": 9,
+        "answer": "",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 315,
+    "fields": {
+        "assessment": 25,
+        "question": 10,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 316,
+    "fields": {
+        "assessment": 25,
+        "question": 8,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 317,
+    "fields": {
+        "assessment": 25,
+        "question": 44,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 318,
+    "fields": {
+        "assessment": 25,
+        "question": 12,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 319,
+    "fields": {
+        "assessment": 25,
+        "question": 17,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 320,
+    "fields": {
+        "assessment": 25,
+        "question": 18,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 321,
+    "fields": {
+        "assessment": 25,
+        "question": 57,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 322,
+    "fields": {
+        "assessment": 25,
+        "question": 60,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 323,
+    "fields": {
+        "assessment": 25,
+        "question": 61,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 324,
+    "fields": {
+        "assessment": 25,
+        "question": 34,
+        "answer": "oui",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 325,
+    "fields": {
+        "assessment": 25,
+        "question": 5,
+        "answer": "si",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 326,
+    "fields": {
+        "assessment": 25,
+        "question": 6,
+        "answer": "onde voce morar",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 327,
+    "fields": {
+        "assessment": 25,
+        "question": 38,
+        "answer": "voce pode repetir\n",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 328,
+    "fields": {
+        "assessment": 25,
+        "question": 59,
+        "answer": "mais devagar, por favor",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 329,
+    "fields": {
+        "assessment": 25,
+        "question": 42,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 330,
+    "fields": {
+        "assessment": 25,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 331,
+    "fields": {
+        "assessment": 25,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 332,
+    "fields": {
+        "assessment": 25,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 333,
+    "fields": {
+        "assessment": 25,
+        "question": 58,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 334,
+    "fields": {
+        "assessment": 25,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 335,
+    "fields": {
+        "assessment": 25,
+        "question": 30,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 336,
+    "fields": {
+        "assessment": 26,
+        "question": 89,
+        "answer": "bnvcj",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 337,
+    "fields": {
+        "assessment": 27,
+        "question": 33,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 338,
+    "fields": {
+        "assessment": 27,
+        "question": 35,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 339,
+    "fields": {
+        "assessment": 27,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 340,
+    "fields": {
+        "assessment": 27,
+        "question": 53,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 341,
+    "fields": {
+        "assessment": 27,
+        "question": 89,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 342,
+    "fields": {
+        "assessment": 27,
+        "question": 7,
+        "answer": "",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 343,
+    "fields": {
+        "assessment": 27,
+        "question": 8,
+        "answer": "",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 344,
+    "fields": {
+        "assessment": 27,
+        "question": 9,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 345,
+    "fields": {
+        "assessment": 27,
+        "question": 10,
+        "answer": "",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 346,
+    "fields": {
+        "assessment": 27,
+        "question": 44,
+        "answer": "",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 347,
+    "fields": {
+        "assessment": 27,
+        "question": 12,
+        "answer": "",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 348,
+    "fields": {
+        "assessment": 27,
+        "question": 60,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 349,
+    "fields": {
+        "assessment": 26,
+        "question": 33,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 350,
+    "fields": {
+        "assessment": 26,
+        "question": 35,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 351,
+    "fields": {
+        "assessment": 26,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 352,
+    "fields": {
+        "assessment": 26,
+        "question": 53,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 353,
+    "fields": {
+        "assessment": 26,
+        "question": 25,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 354,
+    "fields": {
+        "assessment": 26,
+        "question": 31,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 355,
+    "fields": {
+        "assessment": 26,
+        "question": 12,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 356,
+    "fields": {
+        "assessment": 28,
+        "question": 35,
+        "answer": "",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 357,
+    "fields": {
+        "assessment": 28,
+        "question": 37,
+        "answer": "Yes",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 358,
+    "fields": {
+        "assessment": 28,
+        "question": 72,
+        "answer": "No evidence ",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 359,
+    "fields": {
+        "assessment": 28,
+        "question": 75,
+        "answer": "No evidence",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 360,
+    "fields": {
+        "assessment": 28,
+        "question": 76,
+        "answer": "Yes",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 361,
+    "fields": {
+        "assessment": 28,
+        "question": 77,
+        "answer": "yes",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 362,
+    "fields": {
+        "assessment": 28,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 363,
+    "fields": {
+        "assessment": 28,
+        "question": 22,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 364,
+    "fields": {
+        "assessment": 28,
+        "question": 23,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 365,
+    "fields": {
+        "assessment": 28,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 366,
+    "fields": {
+        "assessment": 28,
+        "question": 25,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 367,
+    "fields": {
+        "assessment": 28,
+        "question": 56,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 368,
+    "fields": {
+        "assessment": 28,
+        "question": 31,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 369,
+    "fields": {
+        "assessment": 28,
+        "question": 54,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 370,
+    "fields": {
+        "assessment": 28,
+        "question": 80,
+        "answer": "Yes",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 371,
+    "fields": {
+        "assessment": 28,
+        "question": 57,
+        "answer": "yes ",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 372,
+    "fields": {
+        "assessment": 28,
+        "question": 51,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 373,
+    "fields": {
+        "assessment": 28,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 374,
+    "fields": {
+        "assessment": 28,
+        "question": 60,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 375,
+    "fields": {
+        "assessment": 28,
+        "question": 65,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 376,
+    "fields": {
+        "assessment": 28,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 377,
+    "fields": {
+        "assessment": 28,
+        "question": 68,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 378,
+    "fields": {
+        "assessment": 28,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 379,
+    "fields": {
+        "assessment": 28,
+        "question": 59,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 380,
+    "fields": {
+        "assessment": 28,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 381,
+    "fields": {
+        "assessment": 28,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 382,
+    "fields": {
+        "assessment": 28,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 383,
+    "fields": {
+        "assessment": 28,
+        "question": 84,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 384,
+    "fields": {
+        "assessment": 28,
+        "question": 86,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 385,
+    "fields": {
+        "assessment": 28,
+        "question": 58,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 386,
+    "fields": {
+        "assessment": 28,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 387,
+    "fields": {
+        "assessment": 28,
+        "question": 62,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 388,
+    "fields": {
+        "assessment": 28,
+        "question": 63,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 389,
+    "fields": {
+        "assessment": 30,
+        "question": 1,
+        "answer": "",
+        "insufficient": false,
+        "priority": true
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 390,
+    "fields": {
+        "assessment": 30,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 391,
+    "fields": {
+        "assessment": 30,
+        "question": 21,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 392,
+    "fields": {
+        "assessment": 30,
+        "question": 22,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 393,
+    "fields": {
+        "assessment": 30,
+        "question": 23,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 394,
+    "fields": {
+        "assessment": 30,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 395,
+    "fields": {
+        "assessment": 30,
+        "question": 28,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 396,
+    "fields": {
+        "assessment": 30,
+        "question": 35,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 397,
+    "fields": {
+        "assessment": 30,
+        "question": 36,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 398,
+    "fields": {
+        "assessment": 30,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 399,
+    "fields": {
+        "assessment": 30,
+        "question": 50,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 400,
+    "fields": {
+        "assessment": 30,
+        "question": 54,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 401,
+    "fields": {
+        "assessment": 30,
+        "question": 56,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 402,
+    "fields": {
+        "assessment": 30,
+        "question": 71,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 403,
+    "fields": {
+        "assessment": 30,
+        "question": 72,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 404,
+    "fields": {
+        "assessment": 30,
+        "question": 74,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 405,
+    "fields": {
+        "assessment": 30,
+        "question": 75,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 406,
+    "fields": {
+        "assessment": 30,
+        "question": 76,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 407,
+    "fields": {
+        "assessment": 30,
+        "question": 77,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 408,
+    "fields": {
+        "assessment": 30,
+        "question": 78,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 409,
+    "fields": {
+        "assessment": 30,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 410,
+    "fields": {
+        "assessment": 30,
+        "question": 8,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 411,
+    "fields": {
+        "assessment": 30,
+        "question": 44,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 412,
+    "fields": {
+        "assessment": 30,
+        "question": 80,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 413,
+    "fields": {
+        "assessment": 30,
+        "question": 81,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 414,
+    "fields": {
+        "assessment": 30,
+        "question": 17,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 415,
+    "fields": {
+        "assessment": 30,
+        "question": 57,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 416,
+    "fields": {
+        "assessment": 30,
+        "question": 60,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 417,
+    "fields": {
+        "assessment": 30,
+        "question": 51,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 418,
+    "fields": {
+        "assessment": 30,
+        "question": 65,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 419,
+    "fields": {
+        "assessment": 30,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 420,
+    "fields": {
+        "assessment": 30,
+        "question": 68,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 421,
+    "fields": {
+        "assessment": 30,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 422,
+    "fields": {
+        "assessment": 30,
+        "question": 59,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 423,
+    "fields": {
+        "assessment": 30,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 424,
+    "fields": {
+        "assessment": 30,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 425,
+    "fields": {
+        "assessment": 30,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 426,
+    "fields": {
+        "assessment": 30,
+        "question": 84,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 427,
+    "fields": {
+        "assessment": 30,
+        "question": 86,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 428,
+    "fields": {
+        "assessment": 30,
+        "question": 58,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 429,
+    "fields": {
+        "assessment": 30,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 430,
+    "fields": {
+        "assessment": 30,
+        "question": 62,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 431,
+    "fields": {
+        "assessment": 30,
+        "question": 63,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 432,
+    "fields": {
+        "assessment": 22,
+        "question": 1,
+        "answer": "",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 433,
+    "fields": {
+        "assessment": 22,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 434,
+    "fields": {
+        "assessment": 22,
+        "question": 21,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 435,
+    "fields": {
+        "assessment": 22,
+        "question": 22,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 436,
+    "fields": {
+        "assessment": 22,
+        "question": 23,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 437,
+    "fields": {
+        "assessment": 22,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 438,
+    "fields": {
+        "assessment": 22,
+        "question": 25,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 439,
+    "fields": {
+        "assessment": 22,
+        "question": 28,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 440,
+    "fields": {
+        "assessment": 22,
+        "question": 31,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 441,
+    "fields": {
+        "assessment": 22,
+        "question": 35,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 442,
+    "fields": {
+        "assessment": 22,
+        "question": 36,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 443,
+    "fields": {
+        "assessment": 22,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 444,
+    "fields": {
+        "assessment": 22,
+        "question": 50,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 445,
+    "fields": {
+        "assessment": 22,
+        "question": 54,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 446,
+    "fields": {
+        "assessment": 22,
+        "question": 56,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 447,
+    "fields": {
+        "assessment": 22,
+        "question": 71,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 448,
+    "fields": {
+        "assessment": 22,
+        "question": 72,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 449,
+    "fields": {
+        "assessment": 22,
+        "question": 74,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 450,
+    "fields": {
+        "assessment": 22,
+        "question": 75,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 451,
+    "fields": {
+        "assessment": 22,
+        "question": 76,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 452,
+    "fields": {
+        "assessment": 22,
+        "question": 77,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 453,
+    "fields": {
+        "assessment": 22,
+        "question": 78,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 454,
+    "fields": {
+        "assessment": 22,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 455,
+    "fields": {
+        "assessment": 22,
+        "question": 80,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 456,
+    "fields": {
+        "assessment": 22,
+        "question": 18,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 457,
+    "fields": {
+        "assessment": 22,
+        "question": 82,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 458,
+    "fields": {
+        "assessment": 22,
+        "question": 57,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 459,
+    "fields": {
+        "assessment": 22,
+        "question": 51,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 460,
+    "fields": {
+        "assessment": 22,
+        "question": 60,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 461,
+    "fields": {
+        "assessment": 22,
+        "question": 65,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 462,
+    "fields": {
+        "assessment": 22,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 463,
+    "fields": {
+        "assessment": 22,
+        "question": 68,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 464,
+    "fields": {
+        "assessment": 22,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 465,
+    "fields": {
+        "assessment": 22,
+        "question": 59,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 466,
+    "fields": {
+        "assessment": 22,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 467,
+    "fields": {
+        "assessment": 22,
+        "question": 46,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 468,
+    "fields": {
+        "assessment": 22,
+        "question": 84,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 469,
+    "fields": {
+        "assessment": 22,
+        "question": 86,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 470,
+    "fields": {
+        "assessment": 22,
+        "question": 27,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 471,
+    "fields": {
+        "assessment": 22,
+        "question": 62,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 472,
+    "fields": {
+        "assessment": 22,
+        "question": 58,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 473,
+    "fields": {
+        "assessment": 31,
+        "question": 1,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 474,
+    "fields": {
+        "assessment": 31,
+        "question": 21,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 475,
+    "fields": {
+        "assessment": 31,
+        "question": 22,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 476,
+    "fields": {
+        "assessment": 31,
+        "question": 23,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 477,
+    "fields": {
+        "assessment": 31,
+        "question": 24,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 478,
+    "fields": {
+        "assessment": 31,
+        "question": 25,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 479,
+    "fields": {
+        "assessment": 31,
+        "question": 28,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 480,
+    "fields": {
+        "assessment": 31,
+        "question": 31,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 481,
+    "fields": {
+        "assessment": 31,
+        "question": 35,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 482,
+    "fields": {
+        "assessment": 31,
+        "question": 36,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 483,
+    "fields": {
+        "assessment": 31,
+        "question": 37,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 484,
+    "fields": {
+        "assessment": 31,
+        "question": 50,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 485,
+    "fields": {
+        "assessment": 31,
+        "question": 54,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 486,
+    "fields": {
+        "assessment": 31,
+        "question": 56,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 487,
+    "fields": {
+        "assessment": 31,
+        "question": 71,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 488,
+    "fields": {
+        "assessment": 31,
+        "question": 72,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 489,
+    "fields": {
+        "assessment": 31,
+        "question": 74,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 490,
+    "fields": {
+        "assessment": 31,
+        "question": 75,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 491,
+    "fields": {
+        "assessment": 31,
+        "question": 76,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 492,
+    "fields": {
+        "assessment": 31,
+        "question": 77,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 493,
+    "fields": {
+        "assessment": 31,
+        "question": 78,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 494,
+    "fields": {
+        "assessment": 31,
+        "question": 39,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 495,
+    "fields": {
+        "assessment": 31,
+        "question": 8,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 496,
+    "fields": {
+        "assessment": 31,
+        "question": 44,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 497,
+    "fields": {
+        "assessment": 31,
+        "question": 80,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 498,
+    "fields": {
+        "assessment": 31,
+        "question": 81,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 499,
+    "fields": {
+        "assessment": 31,
+        "question": 17,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 500,
+    "fields": {
+        "assessment": 31,
+        "question": 57,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 501,
+    "fields": {
+        "assessment": 31,
+        "question": 60,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 502,
+    "fields": {
+        "assessment": 31,
+        "question": 51,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 503,
+    "fields": {
+        "assessment": 31,
+        "question": 34,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 504,
+    "fields": {
+        "assessment": 31,
+        "question": 38,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 505,
+    "fields": {
+        "assessment": 31,
+        "question": 15,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 506,
+    "fields": {
+        "assessment": 31,
+        "question": 84,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 507,
+    "fields": {
+        "assessment": 31,
+        "question": 86,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 508,
+    "fields": {
+        "assessment": 31,
+        "question": 59,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 509,
+    "fields": {
+        "assessment": 31,
+        "question": 63,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 510,
+    "fields": {
+        "assessment": 31,
+        "question": 58,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 511,
+    "fields": {
+        "assessment": 1,
+        "question": 89,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 512,
+    "fields": {
+        "assessment": 1,
+        "question": 60,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 513,
+    "fields": {
+        "assessment": 11,
+        "question": 89,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 514,
+    "fields": {
+        "assessment": 33,
+        "question": 1,
+        "answer": "No evidence apparent from the sources reviewed.",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 515,
+    "fields": {
+        "assessment": 33,
+        "question": 37,
+        "answer": "According to the 2018 Sustainability Report, \"We currently rely on the outcomes of second-party audits [such as the Responsible Business Alliance, and suppliers] and limited risk screenings to evaluate child labor risk in our own operations. We have yet to implement a process for the evaluation of suppliers.\"\nSome auditing is therefore not undertaken, but not by the Company themselves and not against the Company's\nown code of conduct.",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 516,
+    "fields": {
+        "assessment": 33,
+        "question": 72,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 517,
+    "fields": {
+        "assessment": 33,
+        "question": 73,
+        "answer": "According to the 2018 Sustainability Report, \"We\u2019ve not yet developed a strategic approach to responsible\nshipping materials management, although some of our facilities have implemented material efficiency projects\"\nAs of 2018 it is understood that no targets were in place for packaging efficiency, although cardboard quantities\nwere partially being tracked.",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 518,
+    "fields": {
+        "assessment": 33,
+        "question": 74,
+        "answer": "According to the Company website \"We don\u2019t actively manage water use, but many of the buildings we occupy\nare equipped with water-saving devices. We participated in CDP\u2019s supply chain water security reporting process.\nOur 2018 CDP water score was C (Awareness), aligning with sector and regional averages. An awareness of the\nissue therefore exists within the Company, however evidence of progressive improvement in efficiency was\nnot identified.",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 519,
+    "fields": {
+        "assessment": 33,
+        "question": 77,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 520,
+    "fields": {
+        "assessment": 33,
+        "question": 14,
+        "answer": "According to the 2018 Sustainability Report, \"We\u2019ve not yet developed a strategic approach to responsible\nshipping materials management, although some of our facilities have implemented material efficiency projects\"\nAs of 2018 it is understood that no targets were in place for packaging efficiency, although cardboard quantities\nwere partially being tracked.",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 521,
+    "fields": {
+        "assessment": 33,
+        "question": 50,
+        "answer": "No evidence apparent from the sources reviewed.",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 522,
+    "fields": {
+        "assessment": 33,
+        "question": 20,
+        "answer": "According to the 2018 Sustainability Report, \"Our environmental stewardship policy outlines numerous strategies for the minimization of waste at our facilities. Sites with environmental management system certifications may adopt targets that exceed the corporate minimum reduction of 5 percent per year. \" Further detail on data and targets is given in the report and waste is understood to be a key focus area for the CSR team.",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 523,
+    "fields": {
+        "assessment": 33,
+        "question": 21,
+        "answer": "Partial evidence apparent from the sources reviewed. According to the Company website \"Water isn\u2019t a material issue for us based on our latest materiality assessment, but we expect that water scarcity in some regions will eventually have an impact on our upstream supply chain. \" An awareness of the issue therefore exists within the Company, however evidence of a carbon reduction policy or management system was not identified.",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 524,
+    "fields": {
+        "assessment": 33,
+        "question": 54,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 525,
+    "fields": {
+        "assessment": 33,
+        "question": 24,
+        "answer": "Various energy data and metrics are given on the Company website and within the annual sustainability report. Furthermore, an annual submission is made to the CDP, detailing energy management and resulting emissions.",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 526,
+    "fields": {
+        "assessment": 33,
+        "question": 56,
+        "answer": "The Company publishes CDP responses on its website, including CDP Supply Chain Climate Change which includes detailed GHG emissions data.",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 527,
+    "fields": {
+        "assessment": 33,
+        "question": 9,
+        "answer": "The composition of governance bodies is stated within the annual sustainability report (board of directors comprised 5 men and 1 woman as of 2018).",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 528,
+    "fields": {
+        "assessment": 33,
+        "question": 10,
+        "answer": "The composition of governance bodies is stated within the annual sustainability report (board of directors\ncomprised 5 men and 1 woman as of 2018).",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 529,
+    "fields": {
+        "assessment": 33,
+        "question": 51,
+        "answer": "According to the 2018 Sustainability Report, \"Learning and development (L&D) is a corporate function at Ingram\nMicro. We continue to consult a cohort of L&D professionals to facilitate best practices and approaches to learning, but each country has its own approach based on needs and resources. We\u2019ve developed and maintain administrative policies for our online learning management system and make all tools available to our countries of operation. For our leadership development track, our corporate L&D team works with our global leadership team to identify individuals for the program\". \"We evaluate total and per capita training hours, regional participation, overall participation rates and participation by gender in tuition reimbursement programs, and the rate of performance reviews. \"",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 530,
+    "fields": {
+        "assessment": 33,
+        "question": 57,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 531,
+    "fields": {
+        "assessment": 33,
+        "question": 60,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 532,
+    "fields": {
+        "assessment": 33,
+        "question": 34,
+        "answer": "According to the 2018 Sustainability Report, some sites hold environmental management system certifications, although this is not mandated at a group level.",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 533,
+    "fields": {
+        "assessment": 33,
+        "question": 66,
+        "answer": "No evidence apparent from the sources reviewed.",
+        "insufficient": true,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 534,
+    "fields": {
+        "assessment": 33,
+        "question": 68,
+        "answer": "According to the 2018 Sustainability Report, in 2018, \"we promoted entrepreneurship, innovation and creativity Through the international Comet Competition in partnership with MassChallenge. The competition awards USD 5,000,000 in funding to 60 independent start-up software vendors across five continents\". Furthermore, the Company is a member of the Association for innovation, business excellence, services and technology (AIBEST).",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 535,
+    "fields": {
+        "assessment": 33,
+        "question": 67,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 536,
+    "fields": {
+        "assessment": 33,
+        "question": 38,
+        "answer": "According to the 2018 Sustainability Report, during 2018 \"we solidified plans to launch a pilot program with an industry leading provider of supplier sustainability assessments by mid-2019 and set a target to assess 100 key suppliers by year-end 2019. \" The intention was to use the outcome of this initial assessment to shape the management approach going forward however it is not clear if this has subsequently happened or what form it has taken. Furthermore, while all suppliers are required to adhere to applicable laws and regulations in the standard supplier agreement, no broadly applicable\nrequirements for social and environmental conduct beyond compliance are mandated.",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 537,
+    "fields": {
+        "assessment": 33,
+        "question": 42,
+        "answer": "According to the 2018 Sustainability Report, there is no board level oversight of the CSR program and no dedicated executive role, \"but we evaluate the structure and effectiveness of our CSR organization annually. The senior CSR manager provides periodic program updates to a seven-member, cross-functional executive leadership committee\".",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 538,
+    "fields": {
+        "assessment": 33,
+        "question": 13,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 539,
+    "fields": {
+        "assessment": 33,
+        "question": 84,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 540,
+    "fields": {
+        "assessment": 33,
+        "question": 86,
+        "answer": "According to the 2018 Sustainability Report, during 2018 \"we solidified plans to launch a pilot program with an industry leading provider of supplier sustainability assessments by mid-2019 and set a target to assess 100 key suppliers by year-end 2019. \" The intention was to use the outcome of this initial assessment to shape the management approach going forward however it is not clear if this has subsequently happened or what form it has taken. Furthermore, while all suppliers are required to adhere to applicable laws and regulations in the standard supplier agreement, no broadly applicable\nrequirements for social and environmental conduct beyond compliance are mandated.",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 541,
+    "fields": {
+        "assessment": 33,
+        "question": 58,
+        "answer": "None reported in the 2018 Sustainability Report.",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 542,
+    "fields": {
+        "assessment": 33,
+        "question": 30,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 543,
+    "fields": {
+        "assessment": 33,
+        "question": 59,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 544,
+    "fields": {
+        "assessment": 14,
+        "question": 25,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 545,
+    "fields": {
+        "assessment": 14,
+        "question": 31,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 546,
+    "fields": {
+        "assessment": 14,
+        "question": 89,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 547,
+    "fields": {
+        "assessment": 14,
+        "question": 12,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 548,
+    "fields": {
+        "assessment": 1,
+        "question": 33,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 549,
+    "fields": {
+        "assessment": 1,
+        "question": 20,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 550,
+    "fields": {
+        "assessment": 1,
+        "question": 53,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 551,
+    "fields": {
+        "assessment": 1,
+        "question": 25,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+},
+{
+    "model": "company.managementquestionanswerset",
+    "pk": 552,
+    "fields": {
+        "assessment": 1,
+        "question": 31,
+        "answer": "",
+        "insufficient": false,
+        "priority": false
+    }
+}
+]

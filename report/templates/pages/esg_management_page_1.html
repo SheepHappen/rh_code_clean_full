@@ -1,0 +1,16 @@
+
+<section id="management-questions" class="report-page">
+    {% if environmental_questions %}
+        {% include "includes/management_questions_table.html" with questions=environmental_questions title='Environmental' background="background-green"  icon="background-green" icon='file://core/static/img/environmental_icon_white.svg' %}
+    {% endif %}
+
+    {% if social_questions %}
+        {% include "includes/management_questions_table.html" with margin=True questions=social_questions title='Social'  background="social-heading" icon='file://core/static/img/social_icon_white.svg' %}
+    {% endif %}
+
+    {% if governance_questions %}
+        {% include "includes/management_questions_table.html" with margin=True questions=governance_questions title='Governance' background="governance-heading" icon='file://core/static/img/governance_icon_white.svg' %}
+    {% endif %}
+
+    {% include "includes/page_footer.html" %}
+</section>

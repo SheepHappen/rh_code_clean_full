@@ -1,0 +1,580 @@
+{% extends "base.html" %}
+{% load static  %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <div class="page-heading">
+                <h1>Screening tool</h1>
+                <div class='intro-text'>Quickly screen industries and geographies to understand likely material ESG risks.</div>
+            </div>
+        </div>
+    </div>
+    <form style="margin-top:45px;">
+        <div class="row">
+            <div class="col-12">
+                <div class="card white-card">
+                    <div class="card-body">
+                        <h2 class="card-title mb-3">
+                            Comparison type
+                        </h2>
+                        <div class="container" style="padding-top:15px;">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card white-card radio-card  sector-comparison-wrapper comparison" data-select="sector">
+                                        <div class="row">
+                                            <div class="col-2 radio-card-wrapper sector-comparison" id="sector-comparison">
+                                                <div class="faux-radio" data-group="radio-test">
+                                                    <input type="radio" class="btn-radio" name="comparison" value="sector">
+                                                </div>
+                                            </div>
+                                            <div class="col-10 radio-card-wrapper pr-5">
+                                                <div class="card-body">
+                                                    <h2 class="card-title-small" style="margin-bottom: 0;">
+                                                        Industry comparison
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card white-card radio-card geo-comparison-wrapper comparison" data-select="geo">
+                                        <div class="row">
+                                            <div class="col-2 radio-card-wrapper radio-input geo-comparison" id="geo-comparison">
+                                                <div class="faux-radio" data-group="radio-test">
+                                                    <input type="radio" class="btn-radio" name="comparison" value="geo">
+                                                </div>
+                                            </div>
+                                            <div class="col-10 radio-card-wrapper pr-5">
+                                                <div class="card-body">
+                                                    <h2 class="card-title-small" style="margin-bottom: 0;">
+                                                        Geographical comparison
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:15px;">
+            <div class="col-12">
+                <div class="card white-card">
+                    <div class="card-body">
+                        <h2 class="card-title mb-3" id='risk-selection-title'>
+                            Industries and risk factors
+                        </h2>
+                        <div class="show-countries d-none">
+                            <div class="mb-2 font-weight-bold">Countries <span class="btn-tertiary btn countries-clear-all">clear all</span></div>
+                            <select class="country" name="country_selections[]" multiple="multiple" style="width:100%;">
+                                {% for country in countries %}
+                                    <option value="{{ country }}">{{ country }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="show-industries">
+                            <div class="mb-2 font-weight-bold">Industries <span class="btn-tertiary btn industries-clear-all">clear all</span></div>
+                            <select class="industries" name="industry_selections[]" multiple="multiple" style="width:100%;">
+                                {% for industry in industries %}
+                                    <option class="industries_data" value="{{ industry }}">{{ industry }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="mb-2 font-weight-bold mt-3">Risk factors <span class="btn-tertiary btn riskfactor-clear-all">clear all</span></div>
+                        <select id="id_risk_factor" class="risk_factors" name="risk_selections[]" multiple="multiple" style="width:100%;">
+                            {% for risk in risks %}
+                                <option id="risk_factor" class="risks_data" value="{{ risk }}">{{ risk }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row show-table" style="margin-top:15px;">
+            <div class="col-12">
+                <div class="card white-card">
+                    <div class="card-body pl-0 pr-0">
+                        <h2 class="card-title mb-3" style="margin-left: 40px; margin-top: 15px;">
+                            Comparison table
+                        </h2>
+                        <div class="card-text table-responsive" style="margin-top: 20px;">
+                            <table id="records" class="table table-scroll">
+                                <thead></thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                        <form action="{% url 'screening_download' %}" method="POST" enctype="multipart/form-data" style="margin-left:12px; margin-bottom: 0;"></form>
+                        <form method="POST" id='download-data' action="{% url 'screening_download' %}"  enctype="multipart/form-data" style='margin-bottom: 0;'>
+                            {% csrf_token %}
+                            <input id="risk_ids" type="hidden" name="risk_id[]">
+                            <input id="industry_ids" type="hidden" name="industry_ids[]">
+                            <input id="country_ids" type="hidden" name="country_ids[]">
+                            <input type="submit" value="Download spreadsheet" class="btn btn-no-decoration" style="margin-left: 30px; margin-top: 10px; margin-bottom: 0;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="riskInfoModel" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="model-description"></div>
+                  </div>
+                <div class="modal-footer">
+                    <div class="risk-source"></div>
+                    <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='risk_description_url d-none'>{% url 'risk_description' %}</div>
+{% endblock content %}
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+            $('.sector-comparison-wrapper').addClass("radio-active");
+            $('.sector-comparison-wrapper').find('.faux-radio').addClass('selected');
+            $('#country_ids').val();
+            $('#risk_ids').val();
+            $('#industry_ids').val();
+            $('.industries').val();
+            $('.risk_factors').val();
+            $('.country').val();
+            $(".show-table").hide();
+            $('.riskfactor-clear-all').hide();
+            $('.industries-clear-all').hide();
+            $('.countries-clear-all').hide();
+
+            var htmlEncode = function (str) {
+                if (str) {
+                    return str.replace(/<\/?[^>]+(>|$)/g, "");
+                }
+            };
+
+            function formatSelectedIndustry(state) {
+                var newState = state.text.split('_');
+
+                return $(
+                    '<span>' +
+                        htmlEncode(newState[0]) +
+                        '<span class="ml-3 inactive">' +
+                            htmlEncode(newState[1]) +
+                        '</span>' +
+                    '</span>'
+                );
+            };
+            function formatSelectedIndustryTemplate(state, container) {
+                state.selected = true;
+                var newState = state.text.split("_");
+                return htmlEncode(newState[0])
+            };
+            $('.industries').select2({
+                placeholder:'Type to begin searching',
+                templateResult: formatSelectedIndustry,
+                templateSelection: formatSelectedIndustryTemplate,
+                maximumSelectionLength: 5,
+                ajax: {
+                    url: "{% url 'industry_options' %}",
+                    dataType: 'json',
+                    type: "GET",
+                    data: function (params) {
+                        return {
+                            p: params.term,
+                            page: params.page
+                        };
+                    },
+                    processResults: function (data, params) {
+                        return {
+                            results: data.industries,
+                        };
+                    },
+                },
+            });
+            function formatSelected(state, container) {
+                state.selected = true;
+                var oldRisk = $('#risk_ids').val() + ','
+                $('#risk_ids').val(oldRisk + state.id);
+                var newState = state.text.split(",");
+                container.attr('data-risk-id', state.id)
+                if (newState.length == 1 || !newState[0].includes("risk-")) {
+                    container.addClass('user-added');
+                    if (newState[0] == 'None') {
+                        return  $(
+                            '<span>' +
+                                "<i class='fad fa-user-alt white mr-2'></i>" +
+                                htmlEncode(newState[1]) +
+                            '</span>'
+                        );
+                    } else {
+                        return  $(
+                            '<span>' +
+                                "<i class='fad fa-user-alt white mr-2'></i>" +
+                                htmlEncode(newState[0]) +
+                            '</span>'
+                        );
+                    }
+                }
+                var colour = htmlEncode(newState[0]);
+                var title = htmlEncode(newState[1]);
+                container.addClass(colour);
+                state.title = title;
+                return $(
+                    '<span>' +
+                        title +
+                    '</span>'
+                );
+            };
+            $('.risk_factors').select2({
+                placeholder:'Type to begin searching',
+                templateSelection: formatSelected,
+                ajax: {
+                    url: "{% url 'risk_options' %}",
+                    dataType: 'json',
+                    type: "GET",
+                    data: function (params) {
+                        var excludeList = [];
+                        $('.select2-selection__choice').each(function() {
+                            if($(this).attr('data-risk-id')) {
+                                excludeList.push($(this).attr('data-risk-id'));
+                            }
+                        });
+                        return {
+                            p: params.term,
+                            page: params.page,
+                            exclude: excludeList,
+                        };
+                    },
+                    processResults: function (data, params) {
+                        return {
+                            results: data.risks,
+                        };
+                    },
+                },
+            });
+            $(document).on('click', '.select2-selection__choice', function(e) {
+                var target = $(e.target);
+                if (!'select2-selection__choice__remove' == target[0].className) {
+                    $('#id_risk_factor').select2("close");
+                    var risk_id = $(this).attr('data-risk-id');
+                    if (risk_id) {
+                        $.ajax({
+                            type: "POST",
+                            url: '{% url "risk_description" %}',
+                            data:  {
+                                risk_id: risk_id,
+                                industry: $('#id_industries').val()
+                            },
+                            beforeSend : function(jqXHR, settings) {
+                                var token = '{{ csrf_token }}';
+                                jqXHR.setRequestHeader("x-csrftoken", token);
+                            },
+                        }).done(function( response ) {
+                            $('#riskInfoModel').modal('show');
+                            $('.modal-title').text(response.name);
+                            $('.model-description').text(response.short_description);
+                            $('.risk-source').text(response.source);
+                        });
+                    }
+                }
+            });
+
+            var popOverSettings = {
+                placement: 'right',
+                container: 'td',
+                trigger: 'focus',
+                selector: '[rel="popover"]', //Sepcify the selector here
+            };
+
+            $('body').popover(popOverSettings);
+
+            var destroyTable = function(tableClass) {
+                $(tableClass).find("thead").empty();
+                $(tableClass).find("tbody").empty();
+            };
+            var buildHeaders = function(tableClass, headData) {
+                $(tableClass).find("thead").append("<tr>");
+                $(tableClass).find("thead").find('tr').last().append('<th  style="width: 0.1%"></th>');
+                $(tableClass).find("thead").find('tr').last().append('<th class="column-header font-semi-bold" style="width: 1%">' + 'Risk Factor' + '</th>');
+                $(tableClass).find("thead").find('tr').last().append('<th  style="width: 3%"></th>');
+                $.each(headData, function(index, value) {
+                    $(tableClass).find("thead").find('tr').last().append('<th class="column-header text-center font-semi-bold" style="width: 2%">' + htmlEncode(value) + '</th>');
+                });
+            };
+            var addRiskScores = function(headers, tableRow, risk, type) {
+                var width = '150px;';
+                if (headers.length > 3) {
+                    width = '100px;';
+                }
+                $.each(headers, function(index, header) {
+                    var added = false;
+
+                    for (var i = 2; i < risk.length; i++) {
+                        var TableType;
+                        if (type == 'industry') {
+                            TableType = risk[i].industry;
+                        } else {
+                            TableType = risk[i].country;
+                        }
+                        if (header == TableType) {
+                            if (risk[i].score && risk[i].score == 0 || risk[i].score > 0) {
+                                if (risk[i].risk_colour) {
+                                    if ("#ffe72f" == risk[i].risk_colour) {
+                                        tableRow.append(
+                                            "<td class='row-text-item'>" +
+                                                "<div class='risk-score' style='background-color:" + "#ffe72f" + "!important; width:" + width +"'>" +
+                                                risk[i].score +
+                                                "</div>" +
+                                            "</td>"
+                                        );
+                                    } else {
+                                        tableRow.append(
+                                            "<td class='row-text-item'>" +
+                                                "<div class='risk-score risk-score-colour' style='background-color:" +  risk[i].risk_colour + "!important; width:" + width +"'>" +
+                                                risk[i].score +
+                                                "</div>" +
+                                            "</td>"
+                                        );
+                                    }
+                                } else {
+                                    tableRow.append(
+                                        "<td class='row-text-item'>" +
+                                            "<div class='risk-score  risk-score-colour risk-dark-green' style=width:" + width +">" +
+                                            risk[i].score +
+                                            "</div>" +
+                                        "</td>"
+                                    );
+                                }
+                                added = true;
+                            }
+                            break;
+                        }
+                    }
+                    if (!added) {
+                        tableRow.append(
+                            "<td class='row-text-item'>" +
+                                "<div class='risk-score  risk-score-colour risk-grey' style=width:" + width +">" +
+                                    'N/A' +
+                                "</div>" +
+                            "</td>"
+                        );
+                    }
+                });
+            };
+            var addRiskAndPopover = function(risk, tableClass, tableRow) {
+                tableRow.append(
+                    "<td >" + "</td>"
+                );
+                tableRow.append(
+                    "<td class='row-text-item'>" +
+                        "<span class='risk-name'>" +
+                            htmlEncode(risk[0]) +
+                        "</span>" +
+                    "</td>"
+                );
+                var popOver = "<td>" +
+                    "<a rel='popover' class='popButton' tabindex='0' data-title='' data-content=''>" +
+                        "<i class='fal question-mark fa-question-circle'></i>" +
+                    "</a>" +
+                "</td>";
+                tableRow.append(popOver);
+                var popOverElement = $(tableClass).find("tbody").find('a').last();
+                popOverElement.attr("data-title", risk[0]);
+                popOverElement.attr("data-content", risk[1]);
+            };
+            var buildIndustryTable = function() {
+                setIndustryDownload();
+                $.ajax({
+                    type: 'GET',
+                    url: "{% url 'industry_comparison_table' %}",
+                    data:  {
+                        selected_industries: $('.industries').val(),
+                        selected_risks: $('.risk_factors').val(),
+                    },
+                }).done(function( response ) {
+                    var tableClass = '.table';
+                    destroyTable(tableClass);
+                    buildHeaders(tableClass, response.t_head_data);
+                    $.each(response.t_body_data, function(index, value) {
+                        $('.table > tbody').append("<tr>");
+                        var tableRow = $(".table  > tbody").find("tr").last();
+                        addRiskAndPopover(value, tableClass, tableRow);
+                        addRiskScores(response.t_head_data, tableRow, value, 'industry');
+                    });
+                    $(".show-table").show();
+                });
+            };
+            var buildGeoGraphicTable = function() {
+                if ($('.country').val().length == 0 ) {
+                    $(".show-table").hide();
+                } else {
+                    setCountryDownload();
+                    $.ajax({
+                        type: "GET",
+                        url: "{% url 'geographic_comparison_table' %}",
+                        dataType: 'json',
+                        data:  {
+                            countries: $('.country').val(),
+                            risks: $('.risk_factors').val()
+                        },
+                    }).done(function( response ) {
+                        var tableClass = '.table';
+                        destroyTable(tableClass);
+                        buildHeaders(tableClass, response.t_head_data);
+                        $.each(response.t_body_data, function(index, value) {
+                            $('.table > tbody').append("<tr>");
+                            var tableRow = $(".table > tbody").find("tr").last();
+
+                            addRiskAndPopover(value, tableClass, tableRow);
+                            addRiskScores(response.t_head_data, tableRow, value, 'country');
+                        });
+                        $(".show-table").show();
+                    });
+                }
+            };
+
+            var setIndustryDownload = function () {
+                $('#country_ids').val('');
+                $('#risk_ids').val($('.risk_factors').val());
+                $('#industry_ids').val($('.industries').val());
+            }
+            var setCountryDownload = function () {
+                $('#industry_ids').val('');
+                $('#risk_ids').val($('.risk_factors').val());
+                $('#country_ids').val($('.country').val());
+            }
+
+            var removeRisks = function () {
+                var existingRisks = $('.risk_factors').select2('data');
+                $( existingRisks ).each(function() {
+                    var newState = this.text.split(",");
+                    if (newState.length > 1) {
+                        $(".risk_factors option[value=" + this.id + "]").remove();
+                    }
+                });
+            }
+
+            $('.industries').change(function() {
+                if ($('.industries').val().length == 0 ) {
+                    removeRisks();
+                    $(".show-table").hide();
+                    $('.industries-clear-all').hide();
+                } else {
+                    $('.industries-clear-all').show();
+                    $.ajax({
+                        type: "POST",
+                        url: "{% url 'industry_select' %}",
+                        data:  {
+                            industry: $(this).val(),
+                        },
+                        beforeSend : function(jqXHR, settings) {
+                            var token = '{{ csrf_token }}';
+                            jqXHR.setRequestHeader("x-csrftoken", token);
+                        },
+                        complete: function(response) {
+                            removeRisks();
+                            $.map(response.responseJSON.risks ,function(option) {
+                                if ($('.risk_factors').find("option[value='" + option.id + "']").length) {
+                                    $(".risk_factors option[value=" + option.id + "]").remove();
+                                }
+                                var newOption = new Option(option.text, option.id, true, true);
+                                $('.risk_factors').append(newOption).trigger('change.select2');
+                            });
+                            setTimeout(buildIndustryTable, 1000);
+                            $('.riskfactor-clear-all').show();
+                        },
+                    })
+                };
+            });
+
+            $('.country').change(function() {
+                if ($('.country').val().length == 0) {
+                    $(".show-table").hide();
+                    $('.countries-clear-all').hide();
+
+                } else {
+                    $('.countries-clear-all').show();
+                    if ($('.risk_factors').val().length > 0) {
+                        setTimeout(buildGeoGraphicTable, 1000);
+                    }
+                }
+            });
+
+            $('.risk_factors').change(function() {
+                if ($('.risk_factors').val().length > 0) {
+                    $('.riskfactor-clear-all').show();
+                    if ($('.sector-comparison-wrapper').hasClass("radio-active")) {
+                            setTimeout(buildIndustryTable, 1000);
+                    } else {
+                        setTimeout(buildGeoGraphicTable, 1000);
+                    }
+                } else {
+                    $('.riskfactor-clear-all').hide();
+                    $(".show-table").hide();
+                }
+            });
+
+            $('input[type=radio][name=comparison]').change(function() {
+                $('input[name="comparison"]').each(function () {
+                    if ($(this).is(':checked')) {
+                        $(this).parent().parent().parent().parent().addClass('radio-active');
+                        $(this).parent().addClass('selected');
+                    } else {
+                        $(this).parent().parent().parent().parent().removeClass('radio-active');
+                        $(this).parent().removeClass('selected');
+                    }
+                });
+                if ($(this).parent().parent().parent().parent().attr("data-select") =="sector") {
+                    $(".show-countries").addClass('d-none');
+                    $(".show-industries").removeClass('d-none');
+                    $('#risk-selection-title').text('Industries and risk factors');
+                    if ($('.industries').val().length == 0 ) {
+                        $(".show-table").hide();
+                    } else {
+                        if ($('.risk_factors').val().length > 0) {
+                            setTimeout(buildIndustryTable, 1000);
+                        }
+                    }
+                }
+                if ($(this).parent().parent().parent().parent().attr("data-select") =="geo") {
+                    $(".show-countries").removeClass('d-none');
+                    $('.country').select2({
+                        placeholder: "Type to begin searching"
+                    });
+                    $(".show-industries").addClass('d-none');
+                    $('#risk-selection-title').text('Countries and risk factors');
+                    if ($('.country').val().length == 0 ) {
+                        $(".show-table").hide();
+                    } else {
+                        if ($('.risk_factors').val().length > 0) {
+                            setTimeout(buildGeoGraphicTable, 1000);
+                        }
+                    }
+                }
+            });
+
+            $('.riskfactor-clear-all').on('click tap', function() {
+                $('.risk_factors').val(null).trigger('change');
+            });
+            $('.industries-clear-all').on('click tap', function() {
+                $('.industries').val(null).trigger('change');
+            });
+            $('.countries-clear-all').on('click tap', function() {
+                $('.country').val(null).trigger('change');
+            });
+        });
+    </script>
+{% endblock js %}

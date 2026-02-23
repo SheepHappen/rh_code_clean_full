@@ -1,0 +1,65 @@
+[
+    {
+       "model":"kpi.relatedstandard",
+       "pk":"0edb287c-4b28-4718-88c2-c7d3743571cd",
+       "fields":{
+          "text":"EU Disclosure Regulations"
+       }
+    },
+    {
+       "model":"kpi.relatedstandard",
+       "pk":"2ccb640c-f702-404c-a781-5994469bfd35",
+       "fields":{
+          "text":"GRESB"
+       }
+    },
+    {
+       "model":"kpi.relatedstandard",
+       "pk":"41cac783-cf42-4f16-8d52-15de898d7edc",
+       "fields":{
+          "text":"World Economic Forum"
+       }
+    },
+    {
+       "model":"kpi.relatedstandard",
+       "pk":"43aee84d-9c2d-4672-9fc4-2788adbb049a",
+       "fields":{
+          "text":"UN Global Compact"
+       }
+    },
+    {
+       "model":"kpi.relatedstandard",
+       "pk":"4af2872a-4a4f-4e6c-80d4-1ec7878bf1d1",
+       "fields":{
+          "text":"SDGs"
+       }
+    },
+    {
+       "model":"kpi.relatedstandard",
+       "pk":"66ffc0bb-1e2b-446e-ad90-0c3fc868fed0",
+       "fields":{
+          "text":"UN PRI"
+       }
+    },
+    {
+       "model":"kpi.relatedstandard",
+       "pk":"a030929e-bec9-4a80-9a92-975d7146740a",
+       "fields":{
+          "text":"SASB"
+       }
+    },
+    {
+       "model":"kpi.relatedstandard",
+       "pk":"aaebffe8-35ab-497e-8e02-2b6d2deeec55",
+       "fields":{
+          "text":"Global Reporting Initiative"
+       }
+    },
+    {
+       "model":"kpi.relatedstandard",
+       "pk":"eca686a8-6c47-4943-8d55-3f780bbbddc5",
+       "fields":{
+          "text":"TCFD"
+       }
+    }
+ ]

@@ -1,0 +1,100 @@
+
+    <section  id="p{{ page_id }}" class="report-page">
+        {% include "includes/main_header.html" with title="Executive summary" icon='file://core/static/img/executive_summary_icon.svg' %}
+
+        <div class="row mt-4 mb-4 no-gutters">
+            {% include "includes/sub_section.html" with title="Inherent risk overview" %}
+
+            {% include "includes/risk_circle.html" with page="key-impact-page" %}
+            <div style="margin-top: -13%; margin-left: 203px; width: 750px; font-size: 13.33px; font-family: SourceSansProLight;">
+                {{ company_name }} would inherently be considered to represent a {{ threshold }} risk with respect to ESG matters. This is based on the potential ESG risks associated with its industries and countries of operation.
+                <p style="font-family: SourceSansPro; font-size: 13.33px;">See our recommendations on page <a class="plain-page-link" href="#recommendations-page-1"></a>.</p>
+            </div>
+        </div>
+
+        {% include "includes/sub_section.html" with title="Country/Industry ESG issues" %}
+        <div class="row no-gutters leftMargin">
+            <div class="col mt-4 ml-4">
+                <div style="font-family: SourceSansProBold; font-size: 13.33px;">Combined key impacts</div>
+                <div style="font-family: SourceSansProLight; font-size: 13.33px;">Expected ESG issues associated with the industry and countries of operation combined.</div>
+                <p style="font-family: SourceSansPro; font-size: 13.33px;">See full breakdown of issues on page <a class="plain-page-link" href="#key-impact-page"></a>.</p>
+                <p><a class="btn btn-link view-page-link" href="#key-impact-page"></a></p>
+            </div>
+            <div class="col mt-4 ml-4">
+                <div style="font-family: SourceSansProBold; font-size: 13.33px;">Relative country risk</div>
+                <div style="font-family: SourceSansProLight; font-size: 13.33px;">
+                    Countries expected to present higher risks based on the key risk issues associated
+                    with industries.
+                </div>
+                <p style="font-family: SourceSansPro; font-size: 13.33px;">See full breakdown of issues on page <a class="plain-page-link" href="#country-risk-page"></a>.</p>
+                <p><a class="btn btn-link view-page-link" href="#country-risk-page"></a></p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            {% if top_5_impacts %}
+                <div class="bar-labels mr-2" style="margin-left: -30px; font-size: 13px;">
+                    {% for record in top_5_impacts %}
+                        <div class="bar-label">{{ record.name }}</div>
+                    {% endfor %}
+                </div>
+                <div style="width: 390px; margin-left: -5px;">
+                    <div class="bar-chart">
+                        <div class="bars">
+                            <div class="bar-line"></div>
+                            <div class="bar-line"></div>
+                            <div class="bar-line"></div>
+                            <div class="bar-line"></div>
+                            <div class="bar-line"></div>
+                            <div class="bar-xlabel">0</div>
+                            <div class="bar-xlabel">2</div>
+                            <div class="bar-xlabel">4</div>
+                            <div class="bar-xlabel">6</div>
+                            <div class="bar-xlabel">8</div>
+                            <div class="bar-xlabel">10</div>
+
+                            {% for record in top_5_impacts %}
+                                <div class="bar">
+                                    {% widthratio record.score 10 100 as width %}
+                                    <div class="bar-value" style="background-color:{{ record.colour }}; width:{{ width }}%"></div>
+                                    <span  class="bar-value-score">{{ record.score|floatformat:1 }}</span>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            {% if top_5_countries %}
+                <div class="bar-labels mr-2" style="margin-left: -30px; font-size: 13px;">
+                    {% for record in top_5_countries %}
+                        <div class="bar-label">{{ record.name }}</div>
+                    {% endfor %}
+                </div>
+                <div style=" width: 330px; margin-left: -5px;">
+                    <div class="bar-chart">
+                        <div class="bars">
+                            <div class="bar-line"></div>
+                            <div class="bar-line"></div>
+                            <div class="bar-line"></div>
+                            <div class="bar-line"></div>
+                            <div class="bar-line"></div>
+                            <div class="bar-xlabel">0</div>
+                            <div class="bar-xlabel">2</div>
+                            <div class="bar-xlabel">4</div>
+                            <div class="bar-xlabel">6</div>
+                            <div class="bar-xlabel">8</div>
+                            <div class="bar-xlabel">10</div>
+
+                            {% for record in top_5_countries %}
+                                <div class="bar">
+                                    {% widthratio record.score 10 100 as width %}
+                                    <div class="bar-value" style="background-color:{{ record.colour }}; width:{{ width }}%"></div>
+                                    <span  class="bar-value-score">{{ record.score|floatformat:1 }}</span>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+        {% include "includes/page_footer.html" %}
+    </section>

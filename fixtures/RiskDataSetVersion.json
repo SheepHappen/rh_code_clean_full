@@ -1,0 +1,3772 @@
+[
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 1,
+    "fields": {
+        "created_date": "2020-06-18T08:46:30.827Z",
+        "name": "2019_12_climate_change",
+        "reference": "ND-GAIN Country Index. Notre Dame Global Adaptation Initiative (ND-GAIN); Climate Change Adaptation Program of the University of Notre Dame's Environmental Change initiative (ND-ECI). 2017 data, release 2019.",
+        "url": "https://gain.nd.edu/our-work/country-index/",
+        "description": "Summarizes a country's vulnerability to climate change and other global challenges in combination with its readiness to improve resilience. It aims to help businesses and the public sector better prioritise investments for a more efficient response to the immediate global challenges ahead.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 2,
+    "fields": {
+        "created_date": "2020-06-18T08:46:30.902Z",
+        "name": "2019_11_drought",
+        "reference": "Rutger Willem Hofste, Samantha Kuzma, Sara Walker, Edwin H. Sutanudjaja, Marc F.P. Bierkens, Marijn J.M. Kuijper, Marta Faneca Sanchez, Rens Van Beek, Yoshihide Wada, Sandra Galvis Rodri\u0301guez and Paul Reig (2019). Aqueduct 3.0: Updated Decision-Relevant Global Water Risk Indicators. World Resources Institute, Washington DC. Drought Risk Indicator.",
+        "url": "http://www.wri.org/resources/data-sets/aqueduct-country-and-river-basin-rankings",
+        "description": "Measures where droughts are likely to occur, the population and assets exposed, and the vulnerability of the population and assets to adverse effects.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 3,
+    "fields": {
+        "created_date": "2020-06-18T08:46:30.935Z",
+        "name": "2019_11_flooding",
+        "reference": "Rutger Willem Hofste, Samantha Kuzma, Sara Walker, Edwin H. Sutanudjaja, Marc F.P. Bierkens, Marijn J.M. Kuijper, Marta Faneca Sanchez, Rens Van Beek, Yoshihide Wada, Sandra Galvis Rodri\u0301guez and Paul Reig (2019). Aqueduct 3.0: Updated Decision-Relevant Global Water Risk Indicators. World Resources Institute, Washington DC.",
+        "url": "https://www.wri.org/publication/aqueduct-30",
+        "description": "Frequency of flooding",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 4,
+    "fields": {
+        "created_date": "2020-06-18T08:46:30.951Z",
+        "name": "2019_11_environmental_laws",
+        "reference": "Daniel Kaufmann, Aart Kraay, and Massimo Mastruzzi, \"Worldwide Governance Indicators,\" Washington, DC: World Bank, 2017.",
+        "url": "http://info.worldbank.org/governance/wgi/index.aspx#reports",
+        "description": "Draws from a range of indices from sources such as the Economist Intelligence Unit, World Economic Forum, and Heritage Foundation. Indicators from each source measure perceptions of the ability of the government to formulate and implement sound policies and regulations that permit and promote private sector development.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 5,
+    "fields": {
+        "created_date": "2020-06-18T08:46:30.970Z",
+        "name": "2019_11_youth_unemployemnt",
+        "reference": "World Bank 2018. Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate) (2017 data).Worldwide Development Indicators. Washington, DC.",
+        "url": "http://data.worldbank.org/indicator/SL.UEM.1524.ZS",
+        "description": "The share of the labor force ages 15-24 without work but available for and seeking employment.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 6,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.001Z",
+        "name": "2019_11_waste_effluent",
+        "reference": "Angel Hsu, Jay Emerson, Laura Johnson, Omar Malik, Marc Levy, Jason D. Schwartz, Malanding Jaiteh, et al., \"2018 Environmental Performance Index: Full Report and Analysis,\" New Haven, CT: Yale Center for Environmental Law & Policy, 2018.",
+        "url": "http://epi.yale.edu/our-methods/water-resources",
+        "description": "Measures the proportion of wastewater from households and industrial sources that is treated before it is released into the environment.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 7,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.030Z",
+        "name": "2019_11_waste_management",
+        "reference": "Daniel Hoornweg and Perinaz Bhada-Tata (2012). \"What a Waste - A Global Review of Solid Waste Management\". Urban Development Series Knowledge Papers, World Bank, Washington DC.",
+        "url": "https://siteresources.worldbank.org/INTURBANDEVELOPMENT/Resources/336387-1334852610766/What_a_Waste2012_Final.pdf",
+        "description": "Provides a measure of the performance of municipal solid waste (MSW) management systems at the country level. It amalgamates data on three waste management system aspects to produce a single, comprehensive indicator score, on a per country basis. The three aspects are: 1) per capita MSW generation; 2) MSW collection rates; and 3) MSW disposal methods. Data are adapted from a study by Hoorweg and Bhada-Tata (2012) under the World Bank.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 8,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.061Z",
+        "name": "2019_11_deforestation",
+        "reference": "Angel Hsu, Jay Emerson, Laura Johnson, Omar Malik, Marc Levy, Jason D. Schwartz, Malanding Jaiteh, et al., 2018 Environmental Performance Index: Full Report and Analysis. Tree Cover Loss. New Haven, CT: Yale Center for Environmental Law & Policy, 2018.",
+        "url": "http://epi.yale.edu/",
+        "description": "Measure of tree cover loss in areas with greater than 30 percent tree cover from 2001 to 2016.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 9,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.097Z",
+        "name": "2019_11_transition_risk",
+        "reference": "Angel Hsu, Jay Emerson, Laura Johnson, Omar Malik, Marc Levy, Jason D. Schwartz, Malanding Jaiteh, et al., 2018.  \"Environmental Performance Index: Full Report and Analysis.\" Climate & Energy. New Haven, CT: Yale Centre for Environmental Law & Policy, 2018.",
+        "url": "https://epi.envirocenter.yale.edu/2018-epi-report/climate-and-energy",
+        "description": "Uses five indicators to track a country\u2019s progress in reducing three critical greenhouse gases and one climate pollutant, offering a broad gauge of national climate change performance. It is represented by the aggregate variable Climate & Energy (CCE) in Hsu et al 2018, which includes indicators 1) CO2 emissions - total; 2) CO2 emissions - power; 3) CH4 emissions; 4) N20 Emissions; 5) Black carbon emissions.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 10,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.129Z",
+        "name": "2019_11_systemic_risk",
+        "reference": "FM Global Resilience Index, 2019. FM Global & Pentland Analytics. Resilience Index Data: Risk Quality Score.",
+        "url": "https://www.fmglobal.com/research-and-resources/tools-and-resources/resilienceindex/explore-the-data/?",
+        "description": "Comprises of three drivers drawn from FM Global\u2019s proprietary RiskMark\u00ae database: exposure to natural hazard, quality of natural hazard risk management and quality of fire risk management.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 11,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.150Z",
+        "name": "2019_11_supply_chain",
+        "reference": "FM Global Resilience Index, 2019. FM Global & Pentland Analytics. Resilience Index Data: Supply Chain Score.",
+        "url": "https://www.fmglobal.com/research-and-resources/tools-and-resources/resilienceindex/explore-the-data/?",
+        "description": "This factor relates to the supply chain itself and comprises three drivers: control of corruption, infrastructure and the quality of local suppliers.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 12,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.174Z",
+        "name": "2019_11_societal_unrest",
+        "reference": "Fabien Bertho, 2016. \"Society's capacity to mobilise\", French Development Agency (AFD) and the Directorate General of the Treasury (DG Tresor): Institutional Profile Database -  CEPII. Indicator A901.",
+        "url": "http://www.cepii.fr/institutions/EN/ipd.asp",
+        "description": "Measures social cohesion and mobility.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 13,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.190Z",
+        "name": "2019_11_recruitment",
+        "reference": "J. J. Messner, et al. 2019. Fragile States Index Annual Report 2019. The Fund for Peace, Washington, DC. E3: Human Flight and Brain Drain.",
+        "url": "https://fragilestatesindex.org/",
+        "description": "Assesses the pressures and measures related to availability of human capital.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 14,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.206Z",
+        "name": "2019_11_product_packaging",
+        "reference": "Kaza, Silpa; Yao, Lisa C.; Bhada-Tata, Perinaz; Van Woerden, Frank. 2018. What a Waste 2.0: A Global Snapshot of Solid Waste Management to 2050. Urban Development;. Washington, DC: World Bank.",
+        "url": "https://openknowledge.worldbank.org/handle/10986/30317",
+        "description": "Measure of the the environmental impact of packaging, i.e. amount of plastic packaging material.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 15,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.221Z",
+        "name": "2019_11_political_risk",
+        "reference": "Measures the risk of state instability and the pressures that might push states towards the brink of failure.",
+        "url": "https://fundforpeace.org/2019/04/10/fragile-states-index-2019/",
+        "description": "Measures the risk of state instability and the pressures that might push states towards the brink of failure.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 16,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.235Z",
+        "name": "2019_11_noncomunicable_disease",
+        "reference": "Global Health Observatory Data Repository, World Health Organisation, Geneva, Switzerland, 2018. Data by country, Risk of premature death from target NCDs, Both sexes, 2016.",
+        "url": "http://apps.who.int/gho/data/node.main.A857?lang=en",
+        "description": "Probability of dying between exact ages 30 and 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory (%)",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 17,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.250Z",
+        "name": "2019_11_nitrogen_use",
+        "reference": "Angel Hsu, Jay Emerson, Laura Johnson, Omar Malik, Marc Levy, Jason D. Schwartz, Malanding Jaiteh, et al., 2018 Environmental Performance Index: Full Report and Analysis. Sustainable Nitrogen Management. New Haven, CT: Yale Center for Environmental Law & Policy, 2018.",
+        "url": "https://epi.envirocenter.yale.edu/2018-epi-report/agriculture",
+        "description": "Tracks nitrogen use efficiency to assess how well countries match fertilizer inputs to crops.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 18,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.265Z",
+        "name": "2019_11_materials_sourcing",
+        "reference": "FM Global Resilience Index, 2019. FM Global & Pentland Analytics. Resilience Index Data: Overall Score.",
+        "url": "https://www.fmglobal.com/research-and-resources/tools-and-resources/resilienceindex/explore-the-data/?",
+        "description": "Risk associated with the sourcing of materials.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 19,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.280Z",
+        "name": "2019_11_mgmt_legal_regulatory",
+        "reference": "Daniel Kaufmann, Aart Kraay, and Massimo Mastruzzi, 2018. \"Worldwide Governance Indicators.\" World Bank, Washington, DC, USA. Government Effectiveness.",
+        "url": "http://info.worldbank.org/governance/wgi/#home",
+        "description": "Assesses the perceptions of the quality of public services, the quality of the civil service and the degree of its independence from political pressures, the quality of policy formulation and implementation, and the credibility of the government's commitment to such policies.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 20,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.303Z",
+        "name": "2019_11_macroeconomic_risk",
+        "reference": "Klaus Schwab, \"The Global Competitiveness Report 2018.\" World Economic Forum, Geneva, Switzerland., 2018. Pillar 4: Macroeconomic stability.",
+        "url": "http://reports.weforum.org/global-competitiveness-report-2018/",
+        "description": "Evaluates the stability of the macroeconomic environment, so it does not directly take into account the way in which public accounts are managed by the government.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 21,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.324Z",
+        "name": "2019_11_fuel_management",
+        "reference": "Energy Trilemma Index 2019, World Energy Council, London, United Kingdom. Environmental Sustainability Index.",
+        "url": "https://www.worldenergy.org/publications/entry/world-energy-trilemma-index-2019",
+        "description": "Measures supply- and demand-side energy efficiencies and development of energy supply from renewable and other low-carbon sources.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 22,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.340Z",
+        "name": "2019_11_land_use_conflict",
+        "reference": "Fabien Bertho, \"Land tenure insecurity\", French Development Agency (AFD) and the Directorate General of the Treasury (DG Tresor): Institutional Profile Database -  CEPII, 2016.",
+        "url": "http://www.cepii.fr/institutions/EN/ipd.asp",
+        "description": "Measures land tenure insecurity.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 23,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.354Z",
+        "name": "2019_11_labour_rights",
+        "reference": "2019 ITUC Global Rights Index. The International Trade Union Confederation (ITUC), Geneva, Switzerland, 2019.",
+        "url": "https://www.ituc-csi.org/rights-index-2019",
+        "description": "Ranks 139 countries against 97 internationally recognised indicators to assess where workers' rights are best protected, in law and in practice.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 24,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.369Z",
+        "name": "2019_11_human_rights",
+        "reference": "J. J. Messner, et al. 2019. Fragile States Index Annual Report 2019. The Fund for Peace, Washington, DC. P3: Human Rights and Rule of Law.",
+        "url": "https://fragilestatesindex.org/",
+        "description": "Assesses whether the state is failing in its ultimate responsibility/is complicit in human rights violations.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 25,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.385Z",
+        "name": "2019_11__hazardous_materials",
+        "reference": "Angel Hsu, Jay Emerson, Laura Johnson, Omar Malik, Marc Levy, Jason D. Schwartz, Malanding Jaiteh, et al., \"2018 Environmental Performance Index: Full Report and Analysis.\" Lead Exposure. New Haven, CT: Yale Center for Environmental Law & Policy, 2018.",
+        "url": "https://epi.envirocenter.yale.edu/2018-epi-report/heavy-metals",
+        "description": "Seeks to gauge a country's ability to manage hazardous waste using lead exposure as a proxy.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 26,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.401Z",
+        "name": "2019_11_global_peace",
+        "reference": "Global Peace Index 2019: Measuring Peace in a Complex World. Institute for Economics & Peace, Sydney.",
+        "url": "https://reliefweb.int/report/world/global-peace-index-2019#targetText=This%20is%20the%20thirteenth%20edition,leading%20measure%20of%20global%20peacefulness.",
+        "description": "measures states and territories according to their level of peacefulness across three themes; the level of safety and security in society; the extend of domestic or international conflict; and the degree of militarization.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 27,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.414Z",
+        "name": "2019_11_ghg_emissions",
+        "reference": "CO2 emissions (metric tons per capita), 2014. Carbon Dioxide Information Analysis Center. Environmental Sciences Division, Oak Ridge National Laboratory, Tennessee, United States. Accessed March 2019.",
+        "url": "https://data.worldbank.org/indicator/EN.ATM.CO2E.PC",
+        "description": "Green house gas emissions (latest data is 2014).",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 28,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.428Z",
+        "name": "2019_11_fuel_management",
+        "reference": "Energy Trilemma Index 2019, World Energy Council, London, United Kingdom. Environmental Sustainability Index.",
+        "url": "https://www.worldenergy.org/publications/entry/world-energy-trilemma-index-2019",
+        "description": "Measures supply- and demand-side energy efficiencies and development of energy supply from renewable and other low-carbon sources.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 29,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.453Z",
+        "name": "2019_11_food_safety",
+        "reference": "The Economist Intelligence Unit, Global Food Safety Index, 2018. Quality & Safety Pillar.",
+        "url": "https://foodsecurityindex.eiu.com/",
+        "description": "Explores the nutritional quality of average diets and the food safety environment in each country.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 30,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.476Z",
+        "name": "2019_11_energy_security",
+        "reference": "World Energy Council, 2019. Energy Trilemma Index. London, United Kingdom. Index component: Energy security.",
+        "url": "https://www.worldenergy.org/publications/entry/world-energy-trilemma-index-2019",
+        "description": "Ranks countries in terms of their likely ability to provide sustainable energy policies through the 3 dimensions of the energy trilemma:\ni) Energy security: the effective management of primary energy supply from domestic and external sources, the reliability of energy infrastructure, and the ability of participating energy companies to meet current and future demand.\nii) Energy equity: the accessibility and affordability of energy supply across the population.\niii)  Environmental sustainability: the achievement of supply and demand-side energy efficiencies and the development of energy supply from renewable and other low-carbon sources.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 31,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.499Z",
+        "name": "2019_11_energy_management",
+        "reference": "Angel Hsu, Jay Emerson, Laura Johnson, Omar Malik, Marc Levy, Jason D. Schwartz, Malanding Jaiteh, et al., \"2018 Environmental Performance Index: Full Report and Analysis,\" New Haven, CT: Yale Center for Environmental Law & Policy, 2018.",
+        "url": "https://epi.envirocenter.yale.edu/2018-epi-report/climate-and-energy",
+        "description": "Assesses trends in national efforts to reduce carbon emission intensity over time. Represented by the single indicator 'CO2 Emissions - Total' (DCT) in Hsu et al 2018.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 32,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.523Z",
+        "name": "2019_11_employee_engagement",
+        "reference": "\"The Global Diversity Report: An annual guide to measure global employee diversity\" Oxford Economics, UK, 2011.",
+        "url": "https://images.forbes.com/forbesinsights/StudyPDFs/global_diversity_rankings_2012.pdf",
+        "description": "Uses Diversity 2011 Index Rankings produced by Oxford Economics. The index is comprehensive and takes into account many different types of diversity including gender, age, ethnicity, disability, country of birth, skills and education, number of hours worked, language, and geographical distribution.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 33,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.541Z",
+        "name": "2019_11_ecological_impacts",
+        "reference": "Angel Hsu, Jay Emerson, Laura Johnson, Omar Malik, Marc Levy, Jason D. Schwartz, Malanding Jaiteh, et al., 2018 Environmental Performance Index: Full Report and Analysis. Biodiversity & Habitat. New Haven, CT: Yale Center for Environmental Law & Policy, 2018.",
+        "url": "https://epi.envirocenter.yale.edu/2018-epi-report/water-resources",
+        "description": "Focuses on biodiversity and habitat; comprises of four indicators: (1) natural biome protection, (2) global biome protection, (3) marine protected areas, and (4) critical habitat protection.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 34,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.557Z",
+        "name": "2019_11_corruption",
+        "reference": "Corruption Perceptions Index 2018, Berlin: Transparency International, Jan 2019.",
+        "url": "https://www.transparency.org/cpi2018",
+        "description": "Measures the levels of perceived public sector corruption in countries around the world. The index draws from 13 data sources from organizations such as the African Development Bank, Bertelsmann Foundation, Freedom House, and the World Bank.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 35,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.571Z",
+        "name": "2019_11_conflict__terrorism",
+        "reference": "Global Peace Index 2019: Measuring Peace in a Complex World. Institute for Economics & Peace, Sydney.",
+        "url": "https://reliefweb.int/report/world/global-peace-index-2019#targetText=This%20is%20the%20thirteenth%20edition,leading%20measure%20of%20global%20peacefulness.",
+        "description": "Measures peace as the \"absence of violence and absence of the fear of violence\" and seeks to determine trends in the key drivers of peace over time and the economic impact of violence on the global economy.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 36,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.602Z",
+        "name": "2019_11_competitive_behaviour",
+        "reference": "Klaus Schwab, \"The Global Competitiveness Report 2018.\" World Economic Forum, Geneva, Switzerland, 2018. Pillar 1.G. Corporate governance.",
+        "url": "http://reports.weforum.org/global-competitiveness-report-2018/",
+        "description": "WEF Global Competitiveness Index component 1.B. Private institutions. This component indicates the strength of (1) corporate ethical behavior; and (2) accountability, such as in the strength of auditing and reporting standards, and the efficacy of corporate boards. It therefore gives a holistic picture of corporate ethical standards in a given country, as derived from WEF's Executive Opinion Survey.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 37,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.634Z",
+        "name": "2019_11_compensation",
+        "reference": "Klaus Schwab. The Global Competitiveness Report 2018. World Economic Forum, Geneva, Switzerland., 2018. Pillar 8.10. Pay and productivity.",
+        "url": "http://reports.weforum.org/global-competitiveness-report-2018/",
+        "description": "Assesses the extent to which pay is related to employee productivity.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 38,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.654Z",
+        "name": "2019_11_civil_liberties",
+        "reference": "Freedom House. Freedom in the World 2019.",
+        "url": "https://freedomhouse.org/report/freedom-world/freedom-world-2019",
+        "description": "Measures levels of political rights and civil liberties. Indicators include: the freedom of expression and belief, associational and organizational rights, rule of law, and personal autonomy and individual rights.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 39,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.679Z",
+        "name": "2019-11_child_labour",
+        "reference": "Children's Rights and Business Atlas 2018, Children's Rights in the Workplace Index, Unicef & Global Child Forum.",
+        "url": "https://www.childrensrightsatlas.org/country-data/workplace/",
+        "description": "Explores the extent to which states regulate child labour, prohibit hazardous working conditions, eliminate the worst forms of child labour and improve access to quality education.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 40,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.700Z",
+        "name": "2019_11_anti_bribery",
+        "reference": "Klaus Schwab, \"The Global Competitiveness Report 2018.\" World Economic Forum, Geneva, Switzerland, 2018. Pillar 1.14: Incidence of corruption.",
+        "url": "http://reports.weforum.org/global-competitiveness-report-2018/competitiveness-rankings/#series=TRANSPARENCYCPI",
+        "description": "WEF Global Competitiveness Index component 1.05 Irregular payments and bribes.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 41,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.718Z",
+        "name": "2019_11_air_quality",
+        "reference": "Angel Hsu, Jay Emerson, Laura Johnson, Omar Malik, Marc Levy, Jason D. Schwartz, Malanding Jaiteh, et al., 2018 Environmental Performance Index: Full Report and Analysis. Air Quality. New Haven, CT: Yale Center for Environmental Law & Policy, 2018.",
+        "url": "https://epi.envirocenter.yale.edu/2018-epi-report/air-quality",
+        "description": "Measures exposure to fine particulate matter, nitrogen dioxide, and percentage of the population burning solid fuel indoors.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 42,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.732Z",
+        "name": "2019_11_data_priv",
+        "reference": "Global Cybersecurity Index (GCI) 2018/19. International Telecommunications Union (ITU) 2019.",
+        "url": "https://www.itu.int/en/ITU-D/Cybersecurity/Pages/global-cybersecurity-index.aspx",
+        "description": "Measures the commitment of countries to cybersecurity across five categories: Legal Measures, Technical Measures, Organizational Measures, Capacity Building and Cooperation.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 43,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.754Z",
+        "name": "2019_10_natural_hazard_risk",
+        "reference": "FM Global Resilience Index, 2019. FM Global & Pentland Analytics. Resilience Index Data: Risk Quality: Exposure to Natural Hazard.",
+        "url": "https://www.fmglobal.com/research-and-resources/tools-and-resources/resilienceindex/explore-the-data/?",
+        "description": "The proportion of a country's area devoted to economic activities that is exposed to at least one natural hazard: wind, flood, or earthquake.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 44,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.774Z",
+        "name": "2019_10_water_scarcity",
+        "reference": "Rutger Willem Hofste, Samantha Kuzma, Sara Walker, Edwin H. Sutanudjaja, Marc F.P. Bierkens, Marijn J.M. Kuijper, Marta Faneca Sanchez, Rens Van Beek, Yoshihide Wada, Sandra Galvis Rodri\u0301guez and Paul Reig (2019). Aqueduct 3.0: Updated Decision-Relevant Global Water Risk Indicators. World Resources Institute, Washington DC. Baseline Water Stress Indicator.",
+        "url": "http://www.wri.org/resources/data-sets/aqueduct-country-and-river-basin-rankings",
+        "description": "A measure of the extent to which the raw material and source location are subject to observed water stress.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 45,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.790Z",
+        "name": "2019_10_Water_stress",
+        "reference": "Rutger Willem Hofste, Samantha Kuzma, Sara Walker, Edwin H. Sutanudjaja, Marc F.P. Bierkens, Marijn J.M. Kuijper, Marta Faneca Sanchez, Rens Van Beek, Yoshihide Wada, Sandra Galvis Rodri\u0301guez and Paul Reig (2019). Aqueduct 3.0: Updated Decision-Relevant Global Water Risk Indicators. World Resources Institute, Washington DC. Baseline Water Stress Indicator.",
+        "url": "http://www.wri.org/resources/data-sets/aqueduct-country-and-river-basin-rankings",
+        "description": "A measure of the extent to which the raw material and source location are subject to observed water stress.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 46,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.802Z",
+        "name": "2018_modern_slavery_vuln",
+        "reference": "Walk Free Foundation. Global Slavery Index 2018. Vulnerability component.",
+        "url": "http://www.globalslaveryindex.org/",
+        "description": "Evaluates a population's vulnerability to modern slavery by assessing: 'slavery policy', 'human rights', 'development', 'state stability' and 'discrimination'.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 47,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.816Z",
+        "name": "2018_12_employment",
+        "reference": "Employment to population ratio, 15+, total (%) (modeled ILO estimate). Worldwide Development Indicators, Washington, DC: World Bank, 2018.",
+        "url": "http://data.worldbank.org/indicator/SL.EMP.TOTL.SP.ZS/countries",
+        "description": "The proportion of a country's population that is employed. Ages 15 and older are generally considered the working-age population.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 48,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.829Z",
+        "name": "2018_11b",
+        "reference": "Global Slavery Index 2018. Walk Free Foundation.",
+        "url": "https://www.globalslaveryindex.org/2018/data/maps/#prevalence",
+        "description": "Evaluates the proportion of a national population held in modern slavery, country by country",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 49,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.848Z",
+        "name": "2018_06",
+        "reference": "Jessie Worker and Lalanath de Silva, 2015. \"The Environmental Democracy Index.\" The Access Initiative and the World Resources Institute, Washington, DC.",
+        "url": "http://www.environmentaldemocracyindex.org/rank-countries#3",
+        "description": "Indicated by the Environmental Democracy Index (2015), which ranks countries based on expert opinion of public legal empowerment in three key areas affecting environmental decision-making: (1) transparency (i.e., the right to freely access information on environmental quality and problems), (2) participation (i.e., the right to participate meaningfully in decision-making), and (3) justice (i.e., the right to seek enforcement of environmental laws or compensation for harm).",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 50,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.877Z",
+        "name": "2018_02",
+        "reference": "\"Health expenditure, total (% of GDP).\" Worldwide Development Indicators\", Washington, DC: World Bank, 2017.",
+        "url": "http://apps.who.int/nha/database/Select/Indicators/en",
+        "description": "The sum of public and private health expenditure. It covers the provision of health services (preventative and curative), family planning activities, nutrition activities, and emergency aid designated for health but does not include provision of water and sanitation.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 51,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.900Z",
+        "name": "2017_11",
+        "reference": "The Global Competitiveness Report 2017\u20132018. Production Process Sophistication. World Economic Forum.",
+        "url": "http://reports.weforum.org/global-competitiveness-index-2017-2018/competitiveness-rankings/#series=EOSQ120",
+        "description": "Determines how sophisticated production processes are, as a measure of product safety.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 52,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.914Z",
+        "name": "2017_11",
+        "reference": "Daniel Kaufmann, Aart Kraay, and Massimo Mastruzzi (2017). Rule of Law. Worldwide Governance Indicators. Washington, DC: World Bank.",
+        "url": "http://info.worldbank.org/governance/wgi/index.aspx#home",
+        "description": "Draws from a range of indices from sources such as the Economist Intelligence Unit, World Economic Forum, and Gallup World Poll. Indicators from each source measure perceptions of the extent to which agents have confidence in and abide by the rules of society, and in particular the quality of contract enforcement, property rights, the police, and the courts, as well as the likelihood of crime and violence.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 53,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.927Z",
+        "name": "2017_11",
+        "reference": "Production Process Sophistication, World Economic Forum. \"The Global Competitiveness Report 2017\u20132018\".",
+        "url": "http://reports.weforum.org/global-competitiveness-index-2017-2018/competitiveness-rankings/#series=EOSQ120",
+        "description": "Determines how sophisticated production processes are.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 54,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.941Z",
+        "name": "2017_11",
+        "reference": "\"2017 Resource Governance Index\", Natural Resource Governance Institute (NRGI), New York.",
+        "url": "https://resourcegovernanceindex.org/data/both/issue?region=global",
+        "description": "Measures the quality of governance in the oil, gas and mining sector of 58 countries. The Index identifies critical achievements and challenges in natural resource governance.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 55,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.954Z",
+        "name": "2017_11",
+        "reference": "Daniel Kaufmann, Aart Kraay, and Massimo Mastruzzi, \"Worldwide Governance Indicators,\" Washington, DC: World Bank, 2017.",
+        "url": "http://info.worldbank.org/governance/wgi/index.aspx#home",
+        "description": "Assesses the perceptions of the extent to which a country's citizens are able to participate in selecting their government, as well as freedom of expression, freedom of association, and a free media.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 56,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.967Z",
+        "name": "2017_11",
+        "reference": "Research and development expenditure (% of GDP). World Bank Development Indicators 2017, United Nations Educational, Scientific, and Cultural Organization (UNESCO) Institute for Statistics.",
+        "url": "https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS",
+        "description": "Gloss domestic expenditures on research and development (R&D), expressed as a percent of GDP. Indicates government and private sector efforts to obtain competitive advantage in science and technology.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 57,
+    "fields": {
+        "created_date": "2020-06-18T08:46:31.981Z",
+        "name": "2017_10",
+        "reference": "\"Prevalence of obesity among adults, BMI \u2265 30, age-standardized. Estimates by country\", Obesity (body mass index age 18+), Global Health Observatory Data Repository, Geneva, Switzerland: World Health Organisation, 2016.",
+        "url": "http://apps.who.int/gho/data/view.main.CTRY2450A?lang=en",
+        "description": "Body Mass Index (BMI) is a person\u2019s weight in kilograms divided by the square of their height in metres. Here it is used to measure population prevalence of overweight and obesity in persons aged 18+.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 58,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.017Z",
+        "name": "2017_10",
+        "reference": "Worldwide Governance Indicators. 2015. World Bank. 2017.\nHealth expenditure, total (% of GDP). 2017. World Bank. 2017.\nRatifications by Country. 2016. International Labour Organization (ILO). 2017.\nLife expectancy at birth, total (years). 2017. World Bank. 2017.\nNon-fatal occupational injuries per 100,000 workers by sex and migrant status null. 2017. ILOSTAT. 2017.\nFatal occupational injuries per 100,000 workers by sex and migrant status null. 2017. ILOSTAT. 2017.",
+        "url": "http://info.worldbank.org/governance/wgi/index.aspx#home",
+        "description": "Assesses reported cases of occupational injury and fatal accidents. Occupational injury is the case of a worker incurring an occupational injury as a result of an occupational accident. A fatal occupational injury is the result of an occupational accident where death occurred within one year from the day of the accident.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 59,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.037Z",
+        "name": "2017_09",
+        "reference": "Animal Protection Index, World Animal Protection, 2017.",
+        "url": "http://api.worldanimalprotection.org/",
+        "description": "Assesses where the state is failing in its ultimate responsibility/ is complicit in animal welfare/ rights violations.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 60,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.057Z",
+        "name": "2017_08",
+        "reference": "Source: World Bank (2017). \"World Development Indicators 2017 (2014-2017).\" Washington, D.C.: World Bank. Accessed August, 2017.",
+        "url": "https://data.worldbank.org/indicator/SI.POV.GINI",
+        "description": "Measures the extent to which the distribution of income or consumption expenditure among individuals or households within an economy deviates from a perfectly equal distribution.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 61,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.076Z",
+        "name": "2017_08",
+        "reference": "\"Household final consumption expenditure per capita (constant 2010 US$),\" \"Worldwide Development Indicators,\" Washington, DC: World Bank, 2017.",
+        "url": "https://data.worldbank.org/indicator/NE.CON.PRVT.PC.KD",
+        "description": "Household final consumption expenditure is the market value of all goods and services, including durable products (such as cars, washing machines, and home computers), purchased by households.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 62,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.096Z",
+        "name": "2017_06",
+        "reference": "United Nations Development Programme, \"Human Development Report 2016 | Sustaining Human Progress: Reducing Vulnerabilities and Building Resilience,\" New York: United Nations, 2016.",
+        "url": "http://hdr.undp.org/en/data#",
+        "description": "Provides insights into gender disparities around the world. The index is a composite of indicators measuring inequalities between women and men in three categories: (1) reproductive health, (2) empowerment, and (3) the labor market",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 63,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.114Z",
+        "name": "2017_05",
+        "reference": "Worldwide Governance Indicators; 2015 The World Bank Group.",
+        "url": "http://info.worldbank.org/governance/wgi/index.aspx#home",
+        "description": "Assessment of the corporate ethics of companies (ethical behavior in interactions with public officials, politicians, and other firms) by country.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 64,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.130Z",
+        "name": "2017_04",
+        "reference": "Walk Free Foundation. Global Slavery Index 2016.",
+        "url": "http://www.globalslaveryindex.org/",
+        "description": "Evaluates the government response to modern slavery, country by country, across: 'survivors are supported', 'criminal justice', 'coordination and accountability', 'attitudes, social systems and institutions' and 'business and government'",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 65,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.144Z",
+        "name": "2017_04",
+        "reference": "United Nations Development Programme, \"Human Development Report 2014 | Sustaining Human Progress: Reducing Vulnerabilities and Building Resilience,\" New York: United Nations, 2014.",
+        "url": "http://theglobalobservatory.org/2015/04/catalogue-indices-maps/#UnitedNationsEducation",
+        "description": "measures education attainment across the world. The index measures (1) mean years of schooling and (2) expected years of schooling.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 66,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.158Z",
+        "name": "2017_02",
+        "reference": "\"Policies and Institutions for Environmental Sustainability\", Country Policy and Institutional Assessment (CPIA): Washington, DC: The World Bank, 2010. Accessed July 2015.",
+        "url": "https://openknowledge.worldbank.org/handle/10986/13547",
+        "description": "Assesses the extent to which environmental policies foster the protection and sustainable use of natural resources and the management of pollution. Assessment of environmental sustainability requires multi-dimension criteria (i.e. for air, water, waste, conservation management, coastal zones management, natural resources management). To ensure balanced assessments, World Bank staff assesses country policies and institutions by filling out a specific questionnaire.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 67,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.173Z",
+        "name": "2016-08",
+        "reference": "Millennium Development Goals: Database of official indicators for monitoring progress toward Millennium Development Goals. 2016.",
+        "url": "http://databank.worldbank.org/data/home.aspx",
+        "description": "Measures the average tariffs imposed by a country or region e.g. European Union on Agricultural Products from Developing and Least Developed Countries.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 68,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.200Z",
+        "name": "2016-08",
+        "reference": "Eurostat 2016. Eurostat: Population on 1 January by age, sex and broad group of citizenship [migr_pop2ctz]; Employment rates of population aged 20\u201364, by groups of country of citizenship and sex, 2015.",
+        "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=File:Employment_rates_of_population_aged_20%E2%80%9364,_by_groups_of_country_of_citizenship_and_sex,_2015.png&oldid=290623",
+        "description": "Assess the number of foreign citizens (EU and non-EU) as a % of the total population in employment, aged 20-64.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 69,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.216Z",
+        "name": "2016-08",
+        "reference": "FAOStat 2016. Credit to Agriculture.",
+        "url": "http://fenix.fao.org/faostat/beta/en/#data/IC",
+        "description": "Evaluates the share of credit (the amount of loans) provided by the private/commercial banking sector to producers in agriculture, forestry and fisheries, including household producers, cooperatives, and agro-businesses.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 70,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.230Z",
+        "name": "potatoes_with_territory",
+        "reference": "",
+        "url": "",
+        "description": "",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 71,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.257Z",
+        "name": "potatoes_with_territory",
+        "reference": "",
+        "url": "",
+        "description": "",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 72,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.280Z",
+        "name": "potatoes_with_territory",
+        "reference": "",
+        "url": "",
+        "description": "",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 73,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.299Z",
+        "name": "latest_as_of_2016-04-28",
+        "reference": "\"Public social protection expenditure, 1990 to latest available year (percentage of GDP).\" International Labour Organisation, Social Protection, Data and Indicators. Accessed July 2015.",
+        "url": "http://www.social-protection.org/gimi/gess/ShowTheme.action?th.themeId=10",
+        "description": "Measures total public social protection expenditure and health expenditure as a percentage of GDP.  The index draws from 7 data sources from organizations such as the African Development Bank, Eurostat, ILO, OCED, and the World Health Organisation.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 74,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.313Z",
+        "name": "2015",
+        "reference": "\"Cisco Cloud Readiness Tool\" Cisco, 2015.",
+        "url": "http://www.cisco.com/c/en/us/solutions/service-provider/cloud-readiness-tool/index.html",
+        "description": "provides details on the regional and country-level cloud readiness as measured by network preformance indicators: download (DL) and upload (UL) in kilobits per second (kbps) and latency in milliseconds (ms).\n\nThis Risk factor: latency only.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 75,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.325Z",
+        "name": "2015",
+        "reference": "\"Cisco Cloud Readiness Tool\" Cisco, 2015.",
+        "url": "http://www.cisco.com/c/en/us/solutions/service-provider/cloud-readiness-tool/index.html",
+        "description": "Provides details on the regional and country-level cloud readiness as measured by network performance indicators: download (DL) and upload (UL) in kilobytes per second (kbps) and latency in milliseconds (ms).\n\nThis Risk factor: UL only.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 76,
+    "fields": {
+        "created_date": "2020-06-18T08:46:32.337Z",
+        "name": "2015",
+        "reference": "\"Cisco Cloud Readiness Tool\" Cisco, 2015.",
+        "url": "http://www.cisco.com/c/en/us/solutions/service-provider/cloud-readiness-tool/index.html",
+        "description": "Provides details on the regional and country-level cloud readiness as measured by network preformance indicators: download (DL) and upload (UL) in kilobits per second (kbps) and latency in milliseconds (ms).\n\nThis Risk Factor: DL only.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 77,
+    "fields": {
+        "created_date": "2020-06-18T08:53:12.970Z",
+        "name": "2020_06_18_mortgage_finance",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 78,
+    "fields": {
+        "created_date": "2020-06-18T08:53:13.063Z",
+        "name": "2020_06_18_electrical_electronic",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 79,
+    "fields": {
+        "created_date": "2020-06-18T08:53:13.151Z",
+        "name": "2020_06_18_gaming",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 80,
+    "fields": {
+        "created_date": "2020-06-18T08:53:13.195Z",
+        "name": "2020_06_18_hotels",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 81,
+    "fields": {
+        "created_date": "2020-06-18T08:53:13.290Z",
+        "name": "2020_06_18_meat_poultry_dairy",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 82,
+    "fields": {
+        "created_date": "2020-06-18T08:53:13.411Z",
+        "name": "2020_06_18_road_trans",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 83,
+    "fields": {
+        "created_date": "2020-06-18T08:53:13.465Z",
+        "name": "2020_06_18_automobiles",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 84,
+    "fields": {
+        "created_date": "2020-06-18T08:53:13.543Z",
+        "name": "2020_06_18_marine_trans",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 85,
+    "fields": {
+        "created_date": "2020-06-18T08:53:13.628Z",
+        "name": "2020_06_18_oil_gas_exploration",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 86,
+    "fields": {
+        "created_date": "2020-06-18T08:53:13.762Z",
+        "name": "2020_06_18_appliance_manufacturing",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 87,
+    "fields": {
+        "created_date": "2020-06-18T08:53:13.825Z",
+        "name": "2020_06_18_car_rentals",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 88,
+    "fields": {
+        "created_date": "2020-06-18T08:53:13.864Z",
+        "name": "2020_06_18_building_products_furnishings",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 89,
+    "fields": {
+        "created_date": "2020-06-18T08:53:13.917Z",
+        "name": "2020_06_18_waste_management",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 90,
+    "fields": {
+        "created_date": "2020-06-18T08:53:14.071Z",
+        "name": "2020_06_18_toys_sporting_goods",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 91,
+    "fields": {
+        "created_date": "2020-06-18T08:53:14.126Z",
+        "name": "2020_06_18_healthcare_del",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 92,
+    "fields": {
+        "created_date": "2020-06-18T08:53:14.242Z",
+        "name": "2020_06_18_pulp_paper_products",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 93,
+    "fields": {
+        "created_date": "2020-06-18T08:53:14.317Z",
+        "name": "2020_06_18_water_utilities",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 94,
+    "fields": {
+        "created_date": "2020-06-18T08:53:14.368Z",
+        "name": "2020_06_18_apparel_accessories_footwear",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 95,
+    "fields": {
+        "created_date": "2020-06-18T08:53:14.414Z",
+        "name": "2020_06_18_iron",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 96,
+    "fields": {
+        "created_date": "2020-06-18T08:53:14.541Z",
+        "name": "2020_06_18_insurance",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 97,
+    "fields": {
+        "created_date": "2020-06-18T08:53:14.651Z",
+        "name": "2020_06_18_auto_parts",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 98,
+    "fields": {
+        "created_date": "2020-06-18T08:53:14.750Z",
+        "name": "2020_06_18_wind_energy",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 99,
+    "fields": {
+        "created_date": "2020-06-18T08:53:14.805Z",
+        "name": "2020_06_18_hardware",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 100,
+    "fields": {
+        "created_date": "2020-06-18T08:53:14.912Z",
+        "name": "2020_06_18_oil_gas_refining",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 101,
+    "fields": {
+        "created_date": "2020-06-18T08:53:15.001Z",
+        "name": "2020_06_18_semiconductors",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 102,
+    "fields": {
+        "created_date": "2020-06-18T08:53:15.110Z",
+        "name": "2020_06_18_electric_utilities",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 103,
+    "fields": {
+        "created_date": "2020-06-18T08:53:15.251Z",
+        "name": "2020_06_18_drug_retailers_convenience",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 104,
+    "fields": {
+        "created_date": "2020-06-18T08:53:15.365Z",
+        "name": "2020_06_18_software_it",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 105,
+    "fields": {
+        "created_date": "2020-06-18T08:53:15.504Z",
+        "name": "2020_06_18_managed_care",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 106,
+    "fields": {
+        "created_date": "2020-06-18T08:53:15.576Z",
+        "name": "2020_06_18_processed_foods",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 107,
+    "fields": {
+        "created_date": "2020-06-18T08:53:15.673Z",
+        "name": "2020_06_18_gas_utilities",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 108,
+    "fields": {
+        "created_date": "2020-06-18T08:53:15.724Z",
+        "name": "2020_06_18_consumer_finance",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 109,
+    "fields": {
+        "created_date": "2020-06-18T08:53:15.798Z",
+        "name": "2020_06_18_homebuilders",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 110,
+    "fields": {
+        "created_date": "2020-06-18T08:53:15.887Z",
+        "name": "2020_06_18_investment_banking",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 111,
+    "fields": {
+        "created_date": "2020-06-18T08:53:15.960Z",
+        "name": "2020_06_18_telecomms",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 112,
+    "fields": {
+        "created_date": "2020-06-18T08:53:16.028Z",
+        "name": "2020_06_18_multiline_specialty",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 113,
+    "fields": {
+        "created_date": "2020-06-18T08:53:16.117Z",
+        "name": "2020_06_18_restaurants",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 114,
+    "fields": {
+        "created_date": "2020-06-18T08:53:16.285Z",
+        "name": "2020_06_18_tobacco",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 115,
+    "fields": {
+        "created_date": "2020-06-18T08:53:16.402Z",
+        "name": "2020_06_18_aerospace_defense",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 116,
+    "fields": {
+        "created_date": "2020-06-18T08:53:16.516Z",
+        "name": "2020_06_18_agricultural_products",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 117,
+    "fields": {
+        "created_date": "2020-06-18T08:53:16.624Z",
+        "name": "2020_06_18_biofuels",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 118,
+    "fields": {
+        "created_date": "2020-06-18T08:53:16.742Z",
+        "name": "2020_06_18_securities_commodities",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 119,
+    "fields": {
+        "created_date": "2020-06-18T08:53:16.828Z",
+        "name": "2020_06_18_electronic_manufacturing",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 120,
+    "fields": {
+        "created_date": "2020-06-18T08:53:16.894Z",
+        "name": "2020_06_18_air_freight",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 121,
+    "fields": {
+        "created_date": "2020-06-18T08:53:16.950Z",
+        "name": "2020_06_18_solar_energy",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 122,
+    "fields": {
+        "created_date": "2020-06-18T08:53:17.052Z",
+        "name": "2020_06_18_food_retailers_distributors",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 123,
+    "fields": {
+        "created_date": "2020-06-18T08:53:17.181Z",
+        "name": "2020_06_18_rail_trans",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 124,
+    "fields": {
+        "created_date": "2020-06-18T08:53:17.246Z",
+        "name": "2020_06_18_industrial_machinery_goods",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 125,
+    "fields": {
+        "created_date": "2020-06-18T08:53:17.308Z",
+        "name": "2020_06_18_household_personal",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 126,
+    "fields": {
+        "created_date": "2020-06-18T08:53:17.419Z",
+        "name": "2020_06_18_cruise_liners",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 127,
+    "fields": {
+        "created_date": "2020-06-18T08:53:17.544Z",
+        "name": "2020_06_18_non_alcoholic_bev",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 128,
+    "fields": {
+        "created_date": "2020-06-18T08:53:17.676Z",
+        "name": "2020_06_18_fuel_cells_industrial",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 129,
+    "fields": {
+        "created_date": "2020-06-18T08:53:17.785Z",
+        "name": "2020_06_18_biotechnology",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 130,
+    "fields": {
+        "created_date": "2020-06-18T08:53:17.950Z",
+        "name": "2020_06_18_real_estate",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 131,
+    "fields": {
+        "created_date": "2020-06-18T08:53:18.001Z",
+        "name": "2020_06_18_chemicals",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 132,
+    "fields": {
+        "created_date": "2020-06-18T08:53:18.114Z",
+        "name": "2020_06_18_commercial_banks",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 133,
+    "fields": {
+        "created_date": "2020-06-18T08:53:18.233Z",
+        "name": "2020_06_18_airlines",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 134,
+    "fields": {
+        "created_date": "2020-06-18T08:53:18.370Z",
+        "name": "2020_06_18_engineering_construction",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 135,
+    "fields": {
+        "created_date": "2020-06-18T08:53:18.552Z",
+        "name": "2020_06_18_media_production",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 136,
+    "fields": {
+        "created_date": "2020-06-18T08:53:18.602Z",
+        "name": "2020_06_18_containers_packaging",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 137,
+    "fields": {
+        "created_date": "2020-06-18T08:53:18.718Z",
+        "name": "2020_06_18_oil_gas_midstream",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 138,
+    "fields": {
+        "created_date": "2020-06-18T08:53:18.801Z",
+        "name": "2020_06_18_alcoholic_bev",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 139,
+    "fields": {
+        "created_date": "2020-06-18T08:53:18.883Z",
+        "name": "2020_06_18_internet_media",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 140,
+    "fields": {
+        "created_date": "2020-06-18T08:53:18.990Z",
+        "name": "2020_06_18_healthcare_dist",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 141,
+    "fields": {
+        "created_date": "2020-06-18T08:53:19.044Z",
+        "name": "2020_06_18_metals_mining",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 142,
+    "fields": {
+        "created_date": "2020-06-18T08:53:19.152Z",
+        "name": "2020_06_18_coal",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 143,
+    "fields": {
+        "created_date": "2020-06-18T08:53:19.257Z",
+        "name": "2020_06_18_oil_gas_services",
+        "reference": null,
+        "url": null,
+        "description": null,
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 144,
+    "fields": {
+        "created_date": "2020-06-22T11:09:38.153Z",
+        "name": "2020_06_22_air_quality",
+        "reference": "fgfdg",
+        "url": "",
+        "description": "fdgfdg",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 145,
+    "fields": {
+        "created_date": "2020-06-22T11:11:41.352Z",
+        "name": "2020_06_22111141_air_quality",
+        "reference": "fgfdg",
+        "url": "",
+        "description": "fdgfdg",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 146,
+    "fields": {
+        "created_date": "2020-06-22T11:13:23.162Z",
+        "name": "2020_06_22111323_air_quality",
+        "reference": "fgfdg",
+        "url": "",
+        "description": "fdgfdg",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 147,
+    "fields": {
+        "created_date": "2020-06-22T11:36:41.713Z",
+        "name": "2020_06_22_access-and-affordability",
+        "reference": "test",
+        "url": "",
+        "description": "test",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 148,
+    "fields": {
+        "created_date": "2020-06-23T09:24:59.521Z",
+        "name": "2020_06_23_access-and-affordability",
+        "reference": "",
+        "url": "",
+        "description": "kugjhg",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 149,
+    "fields": {
+        "created_date": "2020-06-23T15:22:29.218Z",
+        "name": "2020_06_23152229_household",
+        "reference": "Testing - Household industry setup",
+        "url": "",
+        "description": "Testing - Household industry setup",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 150,
+    "fields": {
+        "created_date": "2020-06-23T15:22:41.755Z",
+        "name": "2020_06_23152241_household",
+        "reference": "Testing - Household industry setup",
+        "url": "",
+        "description": "Testing - Household industry setup",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 151,
+    "fields": {
+        "created_date": "2020-06-23T15:22:51.749Z",
+        "name": "2020_06_23152251_household",
+        "reference": "Testing - Household industry setup",
+        "url": "",
+        "description": "Testing - Household industry setup",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 152,
+    "fields": {
+        "created_date": "2020-06-23T15:24:14.037Z",
+        "name": "2020_06_23152414_household",
+        "reference": "Test",
+        "url": "",
+        "description": "Assesses...",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 153,
+    "fields": {
+        "created_date": "2020-06-24T09:28:14.826Z",
+        "name": "2020_06_24092814_household",
+        "reference": "Testing 24th of June",
+        "url": "",
+        "description": "Testing 24th of June",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 154,
+    "fields": {
+        "created_date": "2020-06-24T10:01:23.471Z",
+        "name": "2020_06_24100123_household",
+        "reference": "fkjsdlfj",
+        "url": "",
+        "description": "Testing 24th of June",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 155,
+    "fields": {
+        "created_date": "2020-06-24T10:11:20.613Z",
+        "name": "2020_06_24101120_household",
+        "reference": "sd",
+        "url": "",
+        "description": "sd",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 156,
+    "fields": {
+        "created_date": "2020-06-24T10:22:05.227Z",
+        "name": "2020_06_24102205_household",
+        "reference": "Test",
+        "url": "",
+        "description": "Assesses...",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 157,
+    "fields": {
+        "created_date": "2020-06-24T10:26:00.572Z",
+        "name": "2020_06_24102600_household",
+        "reference": "Test",
+        "url": "",
+        "description": "Assesses...",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 158,
+    "fields": {
+        "created_date": "2020-06-24T10:30:24.119Z",
+        "name": "2020_06_24103024_household",
+        "reference": "Test",
+        "url": "",
+        "description": "Assesses...",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 159,
+    "fields": {
+        "created_date": "2020-06-24T10:32:01.142Z",
+        "name": "2020_06_24103201_household",
+        "reference": "Test",
+        "url": "",
+        "description": "Assesses...",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 160,
+    "fields": {
+        "created_date": "2020-06-24T10:39:30.221Z",
+        "name": "2020_06_24103930_household",
+        "reference": "Test",
+        "url": "",
+        "description": "Test",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 161,
+    "fields": {
+        "created_date": "2020-07-08T08:31:36.458Z",
+        "name": "2020_07_08_gender_inequality",
+        "reference": "Test",
+        "url": "http://www.anthesisgroup.com",
+        "description": "Test",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 162,
+    "fields": {
+        "created_date": "2020-07-08T11:57:54.103Z",
+        "name": "2020_07_08115754_household",
+        "reference": "Ali test",
+        "url": "",
+        "description": "Ali test",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 163,
+    "fields": {
+        "created_date": "2020-07-08T11:59:02.922Z",
+        "name": "2020_07_08115902_household",
+        "reference": "Ali test",
+        "url": "",
+        "description": "Ali test",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 164,
+    "fields": {
+        "created_date": "2020-07-08T15:46:27.441Z",
+        "name": "2020_07_08_access-and-affordability",
+        "reference": "",
+        "url": "",
+        "description": "Test 8/7",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 165,
+    "fields": {
+        "created_date": "2020-07-08T15:51:38.102Z",
+        "name": "2020_07_08155138_household",
+        "reference": "",
+        "url": "",
+        "description": "Test 8/7",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 166,
+    "fields": {
+        "created_date": "2020-07-14T13:46:54.346Z",
+        "name": "2020_07_14_diversity_inclusion",
+        "reference": "Ali test",
+        "url": "http://www.anthesisgroup.com",
+        "description": "Ali test",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 167,
+    "fields": {
+        "created_date": "2020-07-14T13:50:05.801Z",
+        "name": "2020_07_14_access-and-affordability",
+        "reference": "ali test",
+        "url": "http://www.anthesisgroup.com",
+        "description": "ali test",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 168,
+    "fields": {
+        "created_date": "2020-07-14T13:54:26.430Z",
+        "name": "2020_07_14135426_household",
+        "reference": "ali test",
+        "url": "",
+        "description": "ali test",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 169,
+    "fields": {
+        "created_date": "2020-07-14T13:59:32.237Z",
+        "name": "2020_07_14_Access_to_finance_agri",
+        "reference": "ali test 1",
+        "url": "http://www.anthesisgroup.com",
+        "description": "ali test 1",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 170,
+    "fields": {
+        "created_date": "2020-07-31T08:31:24.871Z",
+        "name": "2020_07_31083124_advertising_marketing",
+        "reference": "advertising_marketing",
+        "url": "",
+        "description": "Advertising & Marketing",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 171,
+    "fields": {
+        "created_date": "2020-07-31T08:35:40.226Z",
+        "name": "2020_07_31083540_airports",
+        "reference": "Airports",
+        "url": "",
+        "description": "airports",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 172,
+    "fields": {
+        "created_date": "2020-07-31T08:37:53.378Z",
+        "name": "2020_07_31083753_asset_management",
+        "reference": "Asset Management",
+        "url": "",
+        "description": "asset_management",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 173,
+    "fields": {
+        "created_date": "2020-07-31T08:47:54.293Z",
+        "name": "2020_07_31084754_cable_satellite",
+        "reference": "Cable & Satellite",
+        "url": "",
+        "description": "cable_satillite",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 174,
+    "fields": {
+        "created_date": "2020-07-31T08:50:46.027Z",
+        "name": "2020_07_31085046_commercial_printing",
+        "reference": "Commercial Printing",
+        "url": "",
+        "description": "commercial_printing",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 175,
+    "fields": {
+        "created_date": "2020-07-31T08:52:50.247Z",
+        "name": "2020_07_31085250_construction_materials",
+        "reference": "Construction",
+        "url": "",
+        "description": "construction",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 176,
+    "fields": {
+        "created_date": "2020-07-31T08:54:49.538Z",
+        "name": "2020_07_31085449_ecommerce",
+        "reference": "e-commerce",
+        "url": "",
+        "description": "ecommerce",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 177,
+    "fields": {
+        "created_date": "2020-07-31T08:56:19.948Z",
+        "name": "2020_07_31085619_education",
+        "reference": "Education",
+        "url": "",
+        "description": "education",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 178,
+    "fields": {
+        "created_date": "2020-07-31T08:58:18.873Z",
+        "name": "2020_07_31085818_facilities_management",
+        "reference": "Facilities Management",
+        "url": "",
+        "description": "facilities_management",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 179,
+    "fields": {
+        "created_date": "2020-07-31T08:59:55.088Z",
+        "name": "2020_07_31085955_forestry_logging",
+        "reference": "Forestry & Logging",
+        "url": "",
+        "description": "forestry_logging",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 180,
+    "fields": {
+        "created_date": "2020-07-31T09:46:36.876Z",
+        "name": "2020_07_31094636_leisure",
+        "reference": "Leisure",
+        "url": "",
+        "description": "leisure",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 181,
+    "fields": {
+        "created_date": "2020-07-31T09:48:36.599Z",
+        "name": "2020_07_31094836_marine_ports",
+        "reference": "Marine ports and related services",
+        "url": "",
+        "description": "marine_ports",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 182,
+    "fields": {
+        "created_date": "2020-07-31T09:50:21.385Z",
+        "name": "2020_07_31095021_medical_equipment",
+        "reference": "Medical equipment",
+        "url": "",
+        "description": "medical_equipment",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 183,
+    "fields": {
+        "created_date": "2020-07-31T09:52:34.561Z",
+        "name": "2020_07_31095234_pharmaceuticals",
+        "reference": "Pharmaceuticals",
+        "url": "",
+        "description": "pharmaceuticals",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 184,
+    "fields": {
+        "created_date": "2020-07-31T09:54:28.437Z",
+        "name": "2020_07_31095428_mixed_support",
+        "reference": "Mixed Support Services",
+        "url": "",
+        "description": "mixed_support",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 185,
+    "fields": {
+        "created_date": "2020-07-31T09:54:28.538Z",
+        "name": "2020_07_31095428_pharmaceuticals",
+        "reference": "Mixed Support Services",
+        "url": "",
+        "description": "mixed_support",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 186,
+    "fields": {
+        "created_date": "2020-07-31T09:56:52.229Z",
+        "name": "2020_07_31095652_security-services",
+        "reference": "Security Services",
+        "url": "",
+        "description": "security_services",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 187,
+    "fields": {
+        "created_date": "2020-07-31T09:58:10.860Z",
+        "name": "2020_07_31095810_security-services",
+        "reference": "Security services",
+        "url": "",
+        "description": "security-services",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 188,
+    "fields": {
+        "created_date": "2020-07-31T09:59:25.750Z",
+        "name": "2020_07_31095925_professional_serv",
+        "reference": "Professional services",
+        "url": "",
+        "description": "professional_serv",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 189,
+    "fields": {
+        "created_date": "2020-07-31T10:03:01.750Z",
+        "name": "2020_07_31100301_pharmaceuticals",
+        "reference": "Pharmaceuticals",
+        "url": "",
+        "description": "pharmaceuticals",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 190,
+    "fields": {
+        "created_date": "2020-07-31T10:29:14.763Z",
+        "name": "2020_07_31102914_electronic_manufacturing",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "electronic_manufacturing",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 191,
+    "fields": {
+        "created_date": "2020-07-31T10:47:26.328Z",
+        "name": "2020_07_31104726_electronic_manufacturing",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "electronic_manufacturing",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 192,
+    "fields": {
+        "created_date": "2020-07-31T10:49:36.705Z",
+        "name": "2020_07_31104936_electronic_manufacturing",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "electronic_manufacturing",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 193,
+    "fields": {
+        "created_date": "2020-07-31T10:49:46.667Z",
+        "name": "2020_07_31104946_electronic_manufacturing",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "electronic_manufacturing",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 194,
+    "fields": {
+        "created_date": "2020-07-31T10:50:23.005Z",
+        "name": "2020_07_31105023_electronic_manufacturing",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "electronic_manufacturing",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 195,
+    "fields": {
+        "created_date": "2020-07-31T10:52:56.378Z",
+        "name": "2020_07_31105256_electronic_manufacturing",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "hardware",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 196,
+    "fields": {
+        "created_date": "2020-07-31T10:53:39.358Z",
+        "name": "2020_07_31105339_hardware",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "hardware",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 197,
+    "fields": {
+        "created_date": "2020-07-31T10:56:52.242Z",
+        "name": "2020_07_31105652_internet_media",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "internet_media",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 198,
+    "fields": {
+        "created_date": "2020-07-31T10:58:50.052Z",
+        "name": "2020_07_31105850_oil_gas_refining",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "o&g_refining",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 199,
+    "fields": {
+        "created_date": "2020-07-31T11:04:37.557Z",
+        "name": "2020_07_31110437_oil_gas_exploration",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "oil_gas_exploration",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 200,
+    "fields": {
+        "created_date": "2020-07-31T11:07:39.521Z",
+        "name": "2020_07_31110739_oil_gas_midstream",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "oil_gas_midstream",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 201,
+    "fields": {
+        "created_date": "2020-07-31T11:15:56.962Z",
+        "name": "2020_07_31111556_automobiles",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "automobiles",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 202,
+    "fields": {
+        "created_date": "2020-07-31T11:18:08.355Z",
+        "name": "2020_07_31111808_auto_parts",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "autoparts",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 203,
+    "fields": {
+        "created_date": "2020-07-31T11:20:47.907Z",
+        "name": "2020_07_31112047_tobacco",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "tobacco",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 204,
+    "fields": {
+        "created_date": "2020-07-31T11:22:42.251Z",
+        "name": "2020_07_31112242_mortgage_finance",
+        "reference": "Anthesis",
+        "url": "",
+        "description": "mortgage_finance",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 205,
+    "fields": {
+        "created_date": "2020-07-31T11:23:40.438Z",
+        "name": "2020_07_31112340_mortgage_finance",
+        "reference": "Anthesis",
+        "url": "",
+        "description": "mortgage_finance",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 206,
+    "fields": {
+        "created_date": "2020-07-31T11:25:10.669Z",
+        "name": "2020_07_31112510_insurance",
+        "reference": "Anthesis",
+        "url": "",
+        "description": "insurance",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 207,
+    "fields": {
+        "created_date": "2020-07-31T11:27:17.361Z",
+        "name": "2020_07_31112717_insurance",
+        "reference": "Anthesis",
+        "url": "",
+        "description": "insurance",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 208,
+    "fields": {
+        "created_date": "2020-07-31T11:30:21.516Z",
+        "name": "2020_07_31113021_electronic_manufacturing",
+        "reference": "https://materiality.sasb.org/",
+        "url": "",
+        "description": "electronic_manufacturing",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 209,
+    "fields": {
+        "created_date": "2020-08-06T14:31:04.928Z",
+        "name": "2020_08_06_access-and-affordability",
+        "reference": "",
+        "url": "",
+        "description": "Measures abcdefg",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 210,
+    "fields": {
+        "created_date": "2020-08-06T14:55:51.713Z",
+        "name": "2020_08_06145551_household",
+        "reference": "MH Test1",
+        "url": "",
+        "description": "Mearures nopqr",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 211,
+    "fields": {
+        "created_date": "2020-09-01T10:55:26.408Z",
+        "name": "2020_09_01_access-and-affordability",
+        "reference": "",
+        "url": "",
+        "description": "test",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 212,
+    "fields": {
+        "created_date": "2020-09-01T15:09:34.554Z",
+        "name": "2020_09_01150934_airports",
+        "reference": "Airports",
+        "url": "",
+        "description": "Airports",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 213,
+    "fields": {
+        "created_date": "2020-09-01T15:15:03.638Z",
+        "name": "2020_09_01151503_oil_gas_midstream",
+        "reference": "Oil & Gas Midstream",
+        "url": "",
+        "description": "Oil & Gas Midstream",
+        "relates_to": "I",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 214,
+    "fields": {
+        "created_date": "2020-09-08T09:45:06.826Z",
+        "name": "2020_09_08_air_quality",
+        "reference": "c",
+        "url": "https://epi.envirocenter.yale.edu/2018-epi-report/air-quality",
+        "description": "c",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 215,
+    "fields": {
+        "created_date": "2020-09-08T14:48:47.678Z",
+        "name": "2020_09_08_access-and-affordability",
+        "reference": "Brauer, M. et al. 2017, for the Global Burden of Disease Study 2017",
+        "url": "https://databank.worldbank.org/reports.aspx?source=2&series=EN.ATM.PM25.MC.ZS",
+        "description": "This topic describes air quality impacts resulting from stationary (factories, power plants) and mobile sources (trucks, delivery vehicles, planes) as well as industrial emissions. Relevant airborne pollutants include, but are not limited, to NOx, SOx, VOCs, heavy metals, particulate matter, and chlorofluorocarbons.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 216,
+    "fields": {
+        "created_date": "2020-09-09T10:19:34.781Z",
+        "name": "2020_09_09_access-and-affordability",
+        "reference": "World Bank, Development Research Group. Data are based on primary household survey data obtained from government statistical agencies and World Bank country departments",
+        "url": "https://data.worldbank.org/indicator/SI.POV.GINI",
+        "description": "This topic addresses companies' ability to ensure equal access to their products and services and that products and services are priced fairly, in particular in the context of underserved markets. Issues include those related to universal needs such as access to health care, financial services, education, and telecommunications.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 217,
+    "fields": {
+        "created_date": "2020-09-16T12:36:13.995Z",
+        "name": "2020_09_16_air_quality",
+        "reference": "Testing on 16th of Sept",
+        "url": "http://www.anthesisgroup.com",
+        "description": "Testing on 16th of September",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 218,
+    "fields": {
+        "created_date": "2020-09-24T18:01:41.611Z",
+        "name": "2020_09_24_air_quality",
+        "reference": "Brauer, M. et al. 2017, for the Global Burden of Disease Study 2017",
+        "url": "https://databank.worldbank.org/reports.aspx?source=2&series=EN.ATM.PM25.MC.ZS",
+        "description": "Topic measures pm2.5 air pollution, population exposed to levels exceeding WHO guideline value (9%of total)",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 219,
+    "fields": {
+        "created_date": "2020-09-24T18:04:05.505Z",
+        "name": "2020_09_24180405_air_quality",
+        "reference": "Brauer, M. et al. 2017, for the Global Burden of Disease Study 2017",
+        "url": "https://databank.worldbank.org/reports.aspx?source=2&series=EN.ATM.PM25.MC.ZS",
+        "description": "Topic measures pm2.5 air pollution, population exposed to levels exceeding WHO guideline value (9%of total)",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 220,
+    "fields": {
+        "created_date": "2020-09-24T18:07:06.418Z",
+        "name": "2020_09_24180706_air_quality",
+        "reference": "Brauer, M. et al. 2017, for the Global Burden of Disease Study 2017",
+        "url": "https://databank.worldbank.org/reports.aspx?source=2&series=EN.ATM.PM25.MC.ZS",
+        "description": "This topic measures the % population exposed to levels exceeding WHO guideline values (9% of total) for pm2.5 air pollution",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 221,
+    "fields": {
+        "created_date": "2020-09-24T18:17:03.735Z",
+        "name": "2020_09_24_child_labour",
+        "reference": "Children's Rights and Business Atlas 2018, Children's Rights in the Workplace Index, Unicef & Global Child Forum.",
+        "url": "https://www.childrensrightsatlas.org/country-data/workplace/",
+        "description": "Topic explores the extent to which states regulate child labour, prohibit hazardous working conditions, eliminate the worst forms of child labour and improve access to quality education.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 222,
+    "fields": {
+        "created_date": "2020-09-24T18:32:28.975Z",
+        "name": "2020_09_24_corruption",
+        "reference": "Corruption Perceptions Index 2019, Berlin: Transparency International, Jan 2020.",
+        "url": "https://www.transparency.org/en/cpi/2019/results",
+        "description": "Topic measures the levels of perceived public sector corruption for 180 countries around the world. The index draws from 13 data sources from organizations such as the African Development Bank, Bertelsmann Foundation, Freedom House, and the World Bank.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 223,
+    "fields": {
+        "created_date": "2020-09-24T18:38:38.748Z",
+        "name": "2020_09_24183838_corruption",
+        "reference": "Corruption Perceptions Index 2019, Berlin: Transparency International, Jan 2020.",
+        "url": "https://www.transparency.org/en/cpi/2019/results",
+        "description": "Topic measures the levels of perceived public sector corruption for 180 countries around the world. The index draws from 13 data sources from organizations such as the African Development Bank, Bertelsmann Foundation, Freedom House, and the World Bank.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 224,
+    "fields": {
+        "created_date": "2020-09-24T18:43:14.809Z",
+        "name": "2020_09_24_energy_management",
+        "reference": "IEA Statistics \u00a9 OECD/IEA 2014;\u00a0iea.org/stats/index.asp",
+        "url": "https://data.worldbank.org/indicator/EG.USE.COMM.GD.PP.KD",
+        "description": "Measure of energy use (kg of oil equivalent) per $1,000 GDP (constant 2017 PPP)",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 225,
+    "fields": {
+        "created_date": "2020-09-24T18:43:39.161Z",
+        "name": "2020_09_24184339_energy_management",
+        "reference": "IEA Statistics \u00a9 OECD/IEA 2014;\u00a0iea.org/stats/index.asp",
+        "url": "https://data.worldbank.org/indicator/EG.USE.COMM.GD.PP.KD",
+        "description": "Measure of energy use (kg of oil equivalent) per $1,000 GDP (constant 2017 PPP)",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 226,
+    "fields": {
+        "created_date": "2020-09-24T18:48:14.692Z",
+        "name": "2020_09_24_environmental_laws",
+        "reference": "Daniel Kaufmann, Aart Kraay, and Massimo Mastruzzi, \"Worldwide Governance Indicators,\" Washington, DC: World Bank, 2020. Dataset: Regulatory Quality, 2017.",
+        "url": "https://databank.worldbank.org/reports.aspx?source=worldwide-governance-indicators",
+        "description": "Topic captures perceptions of the ability of the government to formulate and implement sound policies and regulations that permit and promote private sector development.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 227,
+    "fields": {
+        "created_date": "2020-09-24T18:49:37.262Z",
+        "name": "2020_09_24184937_environmental_laws",
+        "reference": "Daniel Kaufmann, Aart Kraay, and Massimo Mastruzzi, \"Worldwide Governance Indicators,\" Washington, DC: World Bank, 2020. Dataset: Regulatory Quality, 2017.",
+        "url": "https://databank.worldbank.org/reports.aspx?source=worldwide-governance-indicators",
+        "description": "Topic captures perceptions of the ability of the government to formulate and implement sound policies and regulations that permit and promote private sector development.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 228,
+    "fields": {
+        "created_date": "2020-09-24T18:54:03.017Z",
+        "name": "2020_09_24185402_environmental_laws",
+        "reference": "Daniel Kaufmann, Aart Kraay, and Massimo Mastruzzi, \"Worldwide Governance Indicators,\" Washington, DC: World Bank, 2020. Dataset: Regulatory Quality, 2017.",
+        "url": "https://databank.worldbank.org/reports.aspx?source=worldwide-governance-indicators",
+        "description": "Topic captures perceptions of the ability of the government to formulate and implement sound policies and regulations that permit and promote private sector development.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 229,
+    "fields": {
+        "created_date": "2020-09-24T18:59:19.295Z",
+        "name": "2020_09_24_diversity_inclusion",
+        "reference": "United Nations Development Programme, \"Human Development Report 2016. Human Development for Everyone,\" New York: United Nations, 2016.",
+        "url": "http://hdr.undp.org/en/content/gender-inequality-index-gii",
+        "description": "Topic provides insights into gender disparities around the world. The index is a composite of indicators measuring inequalities between women and men in three categories: (1) reproductive health, (2) empowerment, and (3) the labour market",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 230,
+    "fields": {
+        "created_date": "2020-09-24T19:00:39.016Z",
+        "name": "2020_09_24190038_diversity_inclusion",
+        "reference": "United Nations Development Programme, \"Human Development Report 2016. Human Development for Everyone,\" New York: United Nations, 2016.",
+        "url": "http://hdr.undp.org/en/content/gender-inequality-index-gii",
+        "description": "Topic provides insights into gender disparities around the world. The index is a composite of indicators measuring inequalities between women and men in three categories: (1) reproductive health, (2) empowerment, and (3) the labour market",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 231,
+    "fields": {
+        "created_date": "2020-09-24T19:05:06.394Z",
+        "name": "2020_09_24_ghg_emissions",
+        "reference": "Carbon Dioxide Information Analysis Centre. Environmental Sciences Division, Oak Ridge National Laboratory, Tennessee, United States. 2018.",
+        "url": "https://data.worldbank.org/indicator/EN.ATM.CO2E.PC",
+        "description": "Topic measures CO2 emissions (in metric tons per capita) from the principal sources (burning of fossil fuels and cement production).",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 232,
+    "fields": {
+        "created_date": "2020-09-24T19:11:21.999Z",
+        "name": "2020_09_24_governance_and_rule_of_law",
+        "reference": "Daniel Kaufmann, Aart Kraay, and Massimo Mastruzzi, \"Worldwide Governance Indicators,\" Washington, DC: World Bank, 2020. Dataset: Rule of Law, 2017.",
+        "url": "https://databank.worldbank.org/reports.aspx?source=worldwide-governance-indicators",
+        "description": "Topic measures perceptions of the extent to which agents have confidence in and abide by the rules of society, and in particular the quality of contract enforcement, property rights, the police, and the courts, as well as the likelihood of crime and violence.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 233,
+    "fields": {
+        "created_date": "2020-09-24T19:14:01.082Z",
+        "name": "2020_09_24_human_rights",
+        "reference": "J. J. Messner, et al. 2020. Fragile States Index Annual Report 2020. The Fund for Peace, Washington, DC. P3: Human Rights and Rule of Law.",
+        "url": "https://fragilestatesindex.org/",
+        "description": "Assesses whether the state is failing in its ultimate responsibility to protect human rights/ is complicit in human rights violations.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 234,
+    "fields": {
+        "created_date": "2020-09-24T19:17:38.444Z",
+        "name": "2020_09_24_labour_rights",
+        "reference": "2020 ITUC Global Rights Index. The International Trade Union Confederation (ITUC), Geneva, Switzerland, 2020.",
+        "url": "https://www.ituc-csi.org/ituc-global-rights-index-2020",
+        "description": "Ranks 139 countries against 97 internationally recognised indicators to assess where workers' rights are best protected, in law and in practice.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 235,
+    "fields": {
+        "created_date": "2020-09-24T19:34:34.083Z",
+        "name": "2020_09_24_regulatory_capture",
+        "reference": "Daniel Kaufmann, Aart Kraay, and Massimo Mastruzzi, \"Worldwide Governance Indicators,\" Washington, DC: World Bank, 2020. Dataset: Government Effectiveness, 2017.",
+        "url": "https://databank.worldbank.org/reports.aspx?source=worldwide-governance-indicators",
+        "description": "Assesses the perceptions of the quality of public services, the quality of the civil service and the degree of its independence from political pressures, the quality of policy formulation and implementation, and the credibility of the government's commitment to such policies.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 236,
+    "fields": {
+        "created_date": "2020-09-24T19:37:34.371Z",
+        "name": "2020_09_24_climate_change",
+        "reference": "ND-GAIN Country Index. Notre Dame Global Adaptation Initiative (ND-GAIN); Climate Change Adaptation Program of the University of Notre Dame's Environmental Change initiative (ND-ECI). 2017 data, release 2019.",
+        "url": "http://index.gain.org/ranking",
+        "description": "Summarizes a country's vulnerability to climate change and other global challenges in combination with its readiness to improve resilience. It aims to help businesses and the public sector better prioritise investments for a more efficient response to the immediate global challenges ahead.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 237,
+    "fields": {
+        "created_date": "2020-09-24T19:43:45.218Z",
+        "name": "2020_09_24_recruitment",
+        "reference": "The Fund for Peace, Washington, DC. P3: Human Rights and Rule of Law.",
+        "url": "https://fragilestatesindex.org/",
+        "description": "Assesses whether the state is failing in its ultimate responsibility to protect human rights/ is complicit in human rights violations.\tJ. J. Messner, et al. 2020. Fragile States Index Annual Report 2020.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 238,
+    "fields": {
+        "created_date": "2020-09-24T19:50:27.831Z",
+        "name": "2020_09_24_supply_chain",
+        "reference": "Arvis, Jean-Fran\u00e7ois; Ojala, Lauri; Wiederer, Christina; Shepherd, Ben; Raj, Anasuya; Dairabayeva, Karlygash; Kiiski, Tuomas. 2018. Connecting to Compete 2018 : Trade Logistics in the Global Economy. World Bank, Washington, DC. \u00a9 World Bank. https://openknowledge.worldbank.org/handle/10986/29971",
+        "url": "https://data.worldbank.org/indicator/LP.LPI.INFR.XQ",
+        "description": "Topic measures the quality of Infrastructure \u2013 Logistics Performance index: Quality of trade and transport-related infrastructure (1=low to 5=high)",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 239,
+    "fields": {
+        "created_date": "2020-09-24T19:56:36.132Z",
+        "name": "2020_09_24_voice_accountability",
+        "reference": "Daniel Kaufmann, Aart Kraay, and Massimo Mastruzzi, \"Worldwide Governance Indicators,\" Washington, DC: World Bank, 2020. Dataset: Regulatory Quality, 2017.",
+        "url": "https://databank.worldbank.org/reports.aspx?source=worldwide-governance-indicators",
+        "description": "Topic assesses the perceptions of the extent to which a country's citizens are able to participate in selecting their government, as well as freedom of expression, freedom of association, and a free media.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 240,
+    "fields": {
+        "created_date": "2020-09-24T19:58:19.119Z",
+        "name": "2020_09_24195819_voice_accountability",
+        "reference": "Daniel Kaufmann, Aart Kraay, and Massimo Mastruzzi, \"Worldwide Governance Indicators,\" Washington, DC: World Bank, 2020. Dataset: Regulatory Quality, 2017.",
+        "url": "https://databank.worldbank.org/reports.aspx?source=worldwide-governance-indicators",
+        "description": "Topic assesses the perceptions of the extent to which a country's citizens are able to participate in selecting their government, as well as freedom of expression, freedom of association, and a free media.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 241,
+    "fields": {
+        "created_date": "2020-09-25T09:35:24.069Z",
+        "name": "2020_09_25_corruption",
+        "reference": "Corruption Perceptions Index 2019, Berlin: Transparency International, Jan 2020.",
+        "url": "https://www.transparency.org/en/cpi/2019/results",
+        "description": "Topic measures the levels of perceived public sector corruption for 180 countries around the world. The index draws from 13 data sources from organisations such as the African Development Bank, Bertelsmann Foundation, Freedom House, and the World Bank.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 242,
+    "fields": {
+        "created_date": "2020-09-25T09:35:51.126Z",
+        "name": "2020_09_25093551_corruption",
+        "reference": "Corruption Perceptions Index 2019, Berlin: Transparency International, Jan 2020.",
+        "url": "https://www.transparency.org/en/cpi/2019/results",
+        "description": "Topic measures the levels of perceived public sector corruption for 180 countries around the world. The index draws from 13 data sources from organisations such as the African Development Bank, Bertelsmann Foundation, Freedom House, and the World Bank.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 243,
+    "fields": {
+        "created_date": "2020-09-25T09:48:06.415Z",
+        "name": "2020_09_25094806_corruption",
+        "reference": "IEA Statistics \u00a9 OECD/IEA 2014;\u00a0iea.org/stats/index.asp",
+        "url": "https://data.worldbank.org/indicator/EG.USE.COMM.GD.PP.KD",
+        "description": "Energy use (kg of oil equivalent) per $1,000 GDP (constant 2017 PPP);  Energy use per PPP GDP is the kilogram of oil equivalent of energy use per constant PPP GDP. Energy use refers to use of primary energy before transformation to other end-use fuels, which is equal to indigenous production plus imports and stock changes, minus exports and fuels supplied to ships and aircraft engaged in international transport. PPP GDP is gross domestic product converted to 2017 constant international dollars using purchasing power parity rates. An international dollar has the same purchasing power over GDP as a U.S. dollar has in the United States",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 244,
+    "fields": {
+        "created_date": "2020-09-25T09:49:36.691Z",
+        "name": "2020_09_25094936_corruption",
+        "reference": "IEA Statistics \u00a9 OECD/IEA 2014;\u00a0iea.org/stats/index.asp",
+        "url": "https://data.worldbank.org/indicator/EG.USE.COMM.GD.PP.KD",
+        "description": "Energy use (kg of oil equivalent) per $1,000 GDP (constant 2017 PPP);  Energy use per PPP GDP is the kilogram of oil equivalent of energy use per constant PPP GDP. Energy use refers to use of primary energy before transformation to other end-use fuels, which is equal to indigenous production plus imports and stock changes, minus exports and fuels supplied to ships and aircraft engaged in international transport. PPP GDP is gross domestic product converted to 2017 constant international dollars using purchasing power parity rates. An international dollar has the same purchasing power over GDP as a U.S. dollar has in the United States",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 245,
+    "fields": {
+        "created_date": "2020-09-30T08:53:03.890Z",
+        "name": "2020_09_30_access-and-affordability",
+        "reference": "k",
+        "url": "",
+        "description": "k",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 246,
+    "fields": {
+        "created_date": "2020-09-30T11:05:46.486Z",
+        "name": "2020_09_30110546_access-and-affordability",
+        "reference": "World Bank, Development Research Group. Data are based on primary household survey data obtained from government statistical agencies and World Bank country departments.",
+        "url": "https://data.worldbank.org/indicator/SI.POV.GINI",
+        "description": "Topic assesses inequality in income distribution based on data from household surveys from the Human Development Index.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 247,
+    "fields": {
+        "created_date": "2020-09-30T11:06:27.016Z",
+        "name": "2020_09_30110626_access-and-affordability",
+        "reference": "World Bank, Development Research Group. Data are based on primary household survey data obtained from government statistical agencies and World Bank country departments.",
+        "url": "https://data.worldbank.org/indicator/SI.POV.GINI",
+        "description": "Topic assesses inequality in income distribution based on data from household surveys from the Human Development Index.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 248,
+    "fields": {
+        "created_date": "2020-09-30T11:10:58.033Z",
+        "name": "2020_09_30_air_quality",
+        "reference": "Brauer, M. et al. 2017, for the Global Burden of Disease Study 2017",
+        "url": "https://databank.worldbank.org/reports.aspx?source=2&series=EN.ATM.PM25.MC.ZS",
+        "description": "Topic assess % of total population exposed to levels exceeding WHO guideline value for pm2.5 air pollution.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 249,
+    "fields": {
+        "created_date": "2020-09-30T11:11:06.343Z",
+        "name": "2020_09_30111106_air_quality",
+        "reference": "Brauer, M. et al. 2017, for the Global Burden of Disease Study 2017",
+        "url": "https://databank.worldbank.org/reports.aspx?source=2&series=EN.ATM.PM25.MC.ZS",
+        "description": "Topic assess % of total population exposed to levels exceeding WHO guideline value for pm2.5 air pollution.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 250,
+    "fields": {
+        "created_date": "2020-09-30T11:12:14.197Z",
+        "name": "2020_09_30111214_air_quality",
+        "reference": "Brauer, M. et al. 2017, for the Global Burden of Disease Study 2017",
+        "url": "https://databank.worldbank.org/reports.aspx?source=2&series=EN.ATM.PM25.MC.ZS",
+        "description": "Topic assess % of total population exposed to levels exceeding WHO guideline value for pm2.5 air pollution.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 251,
+    "fields": {
+        "created_date": "2020-09-30T11:14:49.891Z",
+        "name": "2020_09_30111449_air_quality",
+        "reference": "Brauer, M. et al. 2017, for the Global Burden of Disease Study 2017.",
+        "url": "https://databank.worldbank.org/reports.aspx?source=2&series=EN.ATM.PM25.MC.ZS",
+        "description": "Topic measures % of total population exposed to levels exceeeding WHO guideline value for pm2.5 air pollution.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 252,
+    "fields": {
+        "created_date": "2020-09-30T11:19:25.726Z",
+        "name": "2020_09_30111925_air_quality",
+        "reference": "Brauer, M. et al. 2017, for the Global Burden of Disease Study 2017.",
+        "url": "https://databank.worldbank.org/reports.aspx?source=2&series=EN.ATM.PM25.MC.ZS",
+        "description": "% of total population exposed to levels exceeeding WHO guideline value for pm2.5 air pollution.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 253,
+    "fields": {
+        "created_date": "2020-09-30T11:21:18.273Z",
+        "name": "2020_09_30_child_labour",
+        "reference": "Children's Rights and Business Atlas 2018, Children's Rights in the Workplace Index, Unicef & Global Child Forum.",
+        "url": "https://www.childrensrightsatlas.org/country-data/workplace/",
+        "description": "Topic measures the extent to which states regulate child labour and provide decent work for young workers, parents and caregivers.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 254,
+    "fields": {
+        "created_date": "2020-09-30T11:24:19.667Z",
+        "name": "2020_09_30112419_child_labour",
+        "reference": "Children's Rights and Business Atlas 2018, Children's Rights in the Workplace Index, Unicef & Global Child Forum.",
+        "url": "https://www.childrensrightsatlas.org/country-data/workplace/",
+        "description": "Topic measures the extent to which states regulate child labour and provide decent work for young workers, parents and caregivers.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 255,
+    "fields": {
+        "created_date": "2020-09-30T11:29:54.761Z",
+        "name": "2020_09_30_corruption",
+        "reference": "Corruption Perceptions Index 2019, Berlin: Transparency International, Jan 2020.",
+        "url": "https://www.transparency.org/en/cpi/2019/results",
+        "description": "Topic measures the levels of perceived public sector corruption for 180 countries around the world. The index draws from 13 data sources from organizations such as the African Development Bank, Bertelsmann Foundation, Freedom House, and the World Bank.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 256,
+    "fields": {
+        "created_date": "2020-09-30T11:32:36.898Z",
+        "name": "2020_09_30_diversity_inclusion",
+        "reference": "United Nations Development Programme, \"Human Development Report 2016. Human Development for Everyone,\" New York: United Nations, 2016.",
+        "url": "http://hdr.undp.org/en/content/gender-inequality-index-gii",
+        "description": "Topic provides insights into gender disparities around the world. The index is a composite of indicators measuring inequalities between women and men in three categories: (1) reproductive health, (2) empowerment, and (3) the labour market.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 257,
+    "fields": {
+        "created_date": "2020-09-30T11:37:41.815Z",
+        "name": "2020_09_30113741_diversity_inclusion",
+        "reference": "United Nations Development Programme, \"Human Development Report 2016. Human Development for Everyone,\" New York: United Nations, 2016.",
+        "url": "http://hdr.undp.org/en/content/gender-inequality-index-gii",
+        "description": "Topic provides insights into gender disparities around the world. The index is a composite of indicators measuring inequalities between women and men in three categories: (1) reproductive health, (2) empowerment, and (3) the labour market.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 258,
+    "fields": {
+        "created_date": "2020-09-30T11:40:00.654Z",
+        "name": "2020_09_30_energy_management",
+        "reference": "International Energy Agency Statistics \u00a9 OECD/IEA 2014;\u00a0iea.org/stats/index.asp",
+        "url": "https://data.worldbank.org/indicator/EG.USE.COMM.GD.PP.KD",
+        "description": "Topic measures energy use (kg of oil equivalent) per $1,000 GDP (constant 2017 PPP).",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 259,
+    "fields": {
+        "created_date": "2020-09-30T11:41:43.015Z",
+        "name": "2020_09_30114142_energy_management",
+        "reference": "International Energy Agency Statistics \u00a9 OECD/IEA 2014;\u00a0iea.org/stats/index.asp",
+        "url": "https://data.worldbank.org/indicator/EG.USE.COMM.GD.PP.KD",
+        "description": "Topic measures energy use (kg of oil equivalent) per $1,000 GDP (constant 2017 PPP).",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 260,
+    "fields": {
+        "created_date": "2020-09-30T11:43:39.776Z",
+        "name": "2020_09_30114339_energy_management",
+        "reference": "International Energy Agency Statistics \u00a9 OECD/IEA 2014;\u00a0iea.org/stats/index.asp",
+        "url": "https://data.worldbank.org/indicator/EG.USE.COMM.GD.PP.KD",
+        "description": "Topic measures energy use (kg of oil equivalent) per $1,000 GDP (constant 2017 PPP).",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 261,
+    "fields": {
+        "created_date": "2020-09-30T11:44:49.574Z",
+        "name": "2020_09_30114449_energy_management",
+        "reference": "International Energy Agency Statistics \u00a9 OECD/IEA 2014;\u00a0iea.org/stats/index.asp",
+        "url": "https://data.worldbank.org/indicator/EG.USE.COMM.GD.PP.KD",
+        "description": "Topic measures energy use (kg of oil equivalent) per $1,000 GDP (constant 2017 PPP).",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 262,
+    "fields": {
+        "created_date": "2020-09-30T11:45:05.299Z",
+        "name": "2020_09_30114505_energy_management",
+        "reference": "International Energy Agency Statistics \u00a9 OECD/IEA 2014;\u00a0iea.org/stats/index.asp",
+        "url": "https://data.worldbank.org/indicator/EG.USE.COMM.GD.PP.KD",
+        "description": "Topic measures energy use (kg of oil equivalent) per $1,000 GDP (constant 2017 PPP).",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 263,
+    "fields": {
+        "created_date": "2020-09-30T11:47:00.405Z",
+        "name": "2020_09_30114700_energy_management",
+        "reference": "International Energy Agency Statistics \u00a9 OECD/IEA 2014;\u00a0iea.org/stats/index.asp",
+        "url": "https://data.worldbank.org/indicator/EG.USE.COMM.GD.PP.KD",
+        "description": "Topic measures energy use (kg of oil equivalent) per $1,000 GDP (constant 2017 PPP).",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 264,
+    "fields": {
+        "created_date": "2020-09-30T11:51:02.374Z",
+        "name": "2020_09_30_environmental_laws",
+        "reference": "Daniel Kaufmann, Aart Kraay, and Massimo Mastruzzi, \"Worldwide Governance Indicators,\" Washington, DC: World Bank, 2020. Dataset: Regulatory Quality, 2017.",
+        "url": "https://databank.worldbank.org/reports.aspx?source=worldwide-governance-indicators",
+        "description": "Topic captures perceptions of the ability of the government to formulate and implement sound policies and regulations that permit and promote private sector development.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 265,
+    "fields": {
+        "created_date": "2020-09-30T11:52:30.585Z",
+        "name": "2020_09_30_ghg_emissions",
+        "reference": "Carbon Dioxide Information Analysis Centre. Environmental Sciences Division, Oak Ridge National Laboratory, Tennessee, United States. 2018.",
+        "url": "https://data.worldbank.org/indicator/EN.ATM.CO2E.PC",
+        "description": "Measures CO2 emissions (in metric tons per capita) from the principal sources (burning of fossil fuels and cement production).",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 266,
+    "fields": {
+        "created_date": "2020-09-30T11:55:58.055Z",
+        "name": "2020_09_30_human_rights",
+        "reference": "J. J. Messner, et al. 2020. Fragile States Index Annual Report 2020. The Fund for Peace, Washington, DC. P3: Human Rights and Rule of Law.",
+        "url": "https://fragilestatesindex.org/",
+        "description": "Topic assesses whether the state is failing in its ultimate responsibility to protect human rights/ is complicit in human rights violations.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 267,
+    "fields": {
+        "created_date": "2020-09-30T11:57:56.883Z",
+        "name": "2020_09_30115756_human_rights",
+        "reference": "J. J. Messner, et al. 2020. Fragile States Index Annual Report 2020. The Fund for Peace, Washington, DC. P3: Human Rights and Rule of Law.",
+        "url": "https://fragilestatesindex.org/",
+        "description": "Assesses whether the state is failing in its ultimate responsibility to protect human rights/ is complicit in human rights violations.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 268,
+    "fields": {
+        "created_date": "2020-09-30T12:00:50.696Z",
+        "name": "2020_09_30_labour_rights",
+        "reference": "2020 ITUC Global Rights Index. The International Trade Union Confederation (ITUC), Geneva, Switzerland, 2020.",
+        "url": "https://www.ituc-csi.org/ituc-global-rights-index-2020",
+        "description": "Topic asesses countries against 97 internationally recognised indicators to assess where workers' rights are best protected, in law and in practice.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 269,
+    "fields": {
+        "created_date": "2020-09-30T12:03:07.521Z",
+        "name": "2020_09_30120307_labour_rights",
+        "reference": "2020 ITUC Global Rights Index. The International Trade Union Confederation (ITUC), Geneva, Switzerland, 2020.",
+        "url": "https://www.ituc-csi.org/ituc-global-rights-index-2020",
+        "description": "Topic assesses countries against 97 internationally recognized indicators to assess where workers' rights are best protected, in law and in practice.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 270,
+    "fields": {
+        "created_date": "2020-09-30T12:06:35.796Z",
+        "name": "2020_09_30_regulatory_capture",
+        "reference": "Daniel Kaufmann, Aart Kraay, and Massimo Mastruzzi, \"Worldwide Governance Indicators,\" Washington, DC: World Bank, 2020. Dataset: Government Effectiveness, 2017.",
+        "url": "https://databank.worldbank.org/reports.aspx?source=worldwide-governance-indicators",
+        "description": "Topic assesses the perceptions of the quality of public services, the quality of the civil service and the degree of its independence from political pressures, the quality of policy formulation and implementation, and the credibility of the government's commitment to such policies.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 271,
+    "fields": {
+        "created_date": "2020-09-30T12:08:33.803Z",
+        "name": "2020_09_30_climate_change",
+        "reference": "ND-GAIN Country Index. Notre Dame Global Adaptation Initiative (ND-GAIN); Climate Change Adaptation Program of the University of Notre Dame's Environmental Change initiative (ND-ECI). 2017 data, release 2019.",
+        "url": "http://index.gain.org/ranking",
+        "description": "Summarizes a country's vulnerability to climate change and other global challenges in combination with its readiness to improve resilience. It aims to help businesses and the public sector better prioritize investments for a more efficient response to the immediate global challenges ahead.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 272,
+    "fields": {
+        "created_date": "2020-09-30T12:12:16.073Z",
+        "name": "2020_09_30_innovation",
+        "reference": "Research and development expenditure (% of GDP). World Bank Development Indicators 2016 (United Nations Educational, Scientific, and Cultural Organization (UNESCO) Institute for Statistics).",
+        "url": "http://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS",
+        "description": "Topic measures gross domestic expenditures on research and development (R&D), expressed as a percent of GDP. Indicates government and private sector efforts to obtain competitive advantage in science and technology.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 273,
+    "fields": {
+        "created_date": "2020-09-30T12:15:26.517Z",
+        "name": "2020_09_30121526_innovation",
+        "reference": "Research and development expenditure (% of GDP). World Bank Development Indicators 2016 (United Nations Educational, Scientific, and Cultural Organization (UNESCO) Institute for Statistics).",
+        "url": "http://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS",
+        "description": "Topic measures gross domestic expenditures on research and development (R&D), expressed as a percent of GDP. Indicates government and private sector efforts to obtain competitive advantage in science and technology.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 274,
+    "fields": {
+        "created_date": "2020-09-30T12:18:19.101Z",
+        "name": "2020_09_30121819_innovation",
+        "reference": "Research and development expenditure (% of GDP). World Bank Development Indicators 2016 (United Nations Educational, Scientific, and Cultural Organization (UNESCO) Institute for Statistics.).",
+        "url": "http://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS",
+        "description": "Gloss domestic expenditures on research and development (R&D), expressed as a percent of GDP. Indicates government and private sector efforts to obtain competitive advantage in science and technology.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 275,
+    "fields": {
+        "created_date": "2020-09-30T12:21:13.247Z",
+        "name": "2020_09_30_recruitment",
+        "reference": "J. J. Messner, et al. 2020. Fragile States Index Annual Report 2020. The Fund for Peace, Washington, DC. P3: Human Rights and Rule of Law.",
+        "url": "https://fragilestatesindex.org/",
+        "description": "Topic assesses the pressures and measures related to availability of human capital.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 276,
+    "fields": {
+        "created_date": "2020-09-30T12:24:23.831Z",
+        "name": "2020_09_30_supply_chain",
+        "reference": "Arvis, Jean-Fran\u00e7ois; Ojala, Lauri; Wiederer, Christina; Shepherd, Ben; Raj, Anasuya; Dairabayeva, Karlygash; Kiiski, Tuomas. 2018. Connecting to Compete 2018 : Trade Logistics in the Global Economy. World Bank, Washington, DC. \u00a9 World Bank. https://openknowledge.worldbank.org/handle/10986/29971",
+        "url": "https://data.worldbank.org/indicator/LP.LPI.INFR.XQ",
+        "description": "Topic measures the quality of Infrastructure \u2013 Logistics Performance index: Quality of trade and transport-related infrastructure (1=low to 5=high)",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 277,
+    "fields": {
+        "created_date": "2020-09-30T12:26:05.253Z",
+        "name": "2020_09_30122605_supply_chain",
+        "reference": "Arvis, Jean-Fran\u00e7ois; Ojala, Lauri; Wiederer, Christina; Shepherd, Ben; Raj, Anasuya; Dairabayeva, Karlygash; Kiiski, Tuomas. 2018. Connecting to Compete 2018 : Trade Logistics in the Global Economy. World Bank, Washington, DC. \u00a9 World Bank.",
+        "url": "https://data.worldbank.org/indicator/LP.LPI.INFR.XQ",
+        "description": "Topic measures the quality of Infrastructure \u2013 Logistics Performance index: Quality of trade and transport-related infrastructure (1=low to 5=high)",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 278,
+    "fields": {
+        "created_date": "2020-09-30T12:29:20.938Z",
+        "name": "2020_09_30_anti_bribery",
+        "reference": "World Bank, Enterprise Surveys (http://www.enterprisesurveys.org/).",
+        "url": "http://wdi.worldbank.org/table/5.2",
+        "description": "Bribery Incidence (5 of firms) per country; Bribery incidence is the percentage of firms experiencing at least one bribe payment request across 6 public transactions dealing with utilities access, permits, licenses, and taxes.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 279,
+    "fields": {
+        "created_date": "2020-09-30T18:54:34.929Z",
+        "name": "2020_09_30_compensation",
+        "reference": "International Monetary Fund, Government Finance Statistics Yearbook and data files.",
+        "url": "https://data.worldbank.org/indicator/GC.XPN.COMP.ZS",
+        "description": "The topic compensation of employees (% of expense) consists of all payments in cash, as well as in kind (such as food and housing), to employees in return for services rendered, and government contributions to social insurance schemes such as social security and pensions that provide benefits to employees.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 280,
+    "fields": {
+        "created_date": "2020-09-30T18:56:12.649Z",
+        "name": "2020_09_30185612_compensation",
+        "reference": "International Monetary Fund, Government Finance Statistics Yearbook and data files.",
+        "url": "https://data.worldbank.org/indicator/GC.XPN.COMP.ZS",
+        "description": "The topic compensation of employees (% of expense) consists of all payments in cash, as well as in kind (such as food and housing), to employees in return for services rendered, and government contributions to social insurance schemes such as social security and pensions that provide benefits to employees.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 281,
+    "fields": {
+        "created_date": "2020-09-30T19:00:03.941Z",
+        "name": "2020_09_30_competitive_behaviour",
+        "reference": "World Bank, Doing Business project",
+        "url": "http://www.doingbusiness.org/",
+        "description": "Topic measures business extent of disclosure index (0=less disclosure to 10=more disclosure); Disclosure index measures the extent to which investors are protected through disclosure of ownership and financial information. The index ranges from 0 to 10, with higher values indicating more disclosure.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 282,
+    "fields": {
+        "created_date": "2020-09-30T19:04:29.001Z",
+        "name": "2020_09_30_customer_welfare",
+        "reference": "Wroth, David & Han, Ahreum. (2016). 205 The UL Safety Index: quantifying safety around the world. Injury Prevention. 22. A75.1-A75. 10.1136/injuryprev-2016-042156.205.",
+        "url": "",
+        "description": "Topic assesses the state of safety amongst countries is complex, leading to poor prioritisation of resources amongst safety professionals and policy makers. The UL Safety Index is a quantification of relative safety based on societal influences and unintentional death and injury.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 283,
+    "fields": {
+        "created_date": "2020-09-30T19:08:22.240Z",
+        "name": "2020_09_30_biodiversity",
+        "reference": "Chen, Chen & Noble, Ian & Hellmann, Jessica & Coffee, J. & Murillo, M. & Chawla, Nitesh. (2015). University of Notre Dame Global Adaptation Index Country Index Technical Report.",
+        "url": "https://gain.nd.edu/our-work/country-index/rankings/).",
+        "description": "Ecosystem services index (0=low vulnerability 10=greater vulnerability); the score of Ecosystem services captures the vulnerability of natural capital to climate change, the ecological resources that humans rely upon to support lives and livelihoods. Indicators include: projected change of biome distribution, projected change of marine biodiversity, natural capital dependency, ecological footprint, protected biome, and engagement in international environmental conventions.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 284,
+    "fields": {
+        "created_date": "2020-09-30T19:09:39.143Z",
+        "name": "2020_09_30190939_access-and-affordability",
+        "reference": "Chen, Chen & Noble, Ian & Hellmann, Jessica & Coffee, J. & Murillo, M. & Chawla, Nitesh. (2015). University of Notre Dame Global Adaptation Index Country Index Technical Report.",
+        "url": "https://gain.nd.edu/our-work/country-index/rankings/",
+        "description": "Infrastructure index (0=low vulnerability 10=greater vulnerability); The Infrastructure score captures the vulnerability of coastal and energy infrastructure to climate change, primarily general preparedness to climate-related natural disasters, coastal hazards, and energy supply challenges. Indicators include projected change of hydropower generation capacity, projected change of sea level rise impacts, dependency on imported energy, population living under 5m above sea level, electricity access, and disaster preparedness.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 285,
+    "fields": {
+        "created_date": "2020-09-30T19:12:11.037Z",
+        "name": "2020_09_30191210_access-and-affordability",
+        "reference": "Chen, Chen & Noble, Ian & Hellmann, Jessica & Coffee, J. & Murillo, M. & Chawla, Nitesh. (2015). University of Notre Dame Global Adaptation Index Country Index Technical Report.",
+        "url": "https://gain.nd.edu/our-work/country-index/rankings/",
+        "description": "Infrastructure index (0=low vulnerability 10=greater vulnerability); The Infrastructure score captures the vulnerability of coastal and energy infrastructure to climate change, primarily general preparedness to climate-related natural disasters, coastal hazards, and energy supply challenges. Indicators include projected change of hydropower generation capacity, projected change of sea level rise impacts, dependency on imported energy, population living under 5m above sea level, electricity access, and disaster preparedness.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 286,
+    "fields": {
+        "created_date": "2020-09-30T19:17:24.815Z",
+        "name": "2020_09_30191724_access-and-affordability",
+        "reference": "Wroth, David & Han, Ahreum. (2016). 205 The UL Safety Index: quantifying safety around the world. Injury Prevention. 22. A75.1-A75. 10.1136/injuryprev-2016-042156.205.",
+        "url": "",
+        "description": "Topic quantifying the relative safety based on societal influences and unintentional death and injury.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 287,
+    "fields": {
+        "created_date": "2020-09-30T19:20:50.872Z",
+        "name": "2020_09_30_fair_disclosure",
+        "reference": "Worldwide governance indicators.",
+        "url": "https://databank.worldbank.org/source/worldwide-governance-indicators",
+        "description": "Voice and Accountability Index (0=lowest ranking, 10= highest rank); Voice and Accountability captures perceptions of the extent to which a country's citizens are able to participate in selecting their government, as well as freedom of expression, freedom of association, and a free media. Percentile rank indicates the country's rank among all countries covered by the aggregate indicator. Percentile ranks have been adjusted to correct for changes over time in the composition of the countries covered by the WGI.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 288,
+    "fields": {
+        "created_date": "2020-09-30T19:24:16.677Z",
+        "name": "2020_09_30_product_quality",
+        "reference": "Wroth, David & Han, Ahreum. (2016). 205 The UL Safety Index: quantifying safety around the world. Injury Prevention. 22. A75.1-A75. 10.1136/injuryprev-2016-042156.205.",
+        "url": "https://www.researchgate.net/publication/307616691_205_The_UL_Safety_Index_quantifying_safety_around_the_world",
+        "description": "Assessing the state of safety amongst countries is complex, leading to poor prioritisation of resources amongst safety professionals and policy makers. The UL Safety Index is a quantification of relative safety based on societal influences and unintentional death and injury.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 289,
+    "fields": {
+        "created_date": "2020-09-30T19:27:07.833Z",
+        "name": "2020_09_30192707_access-and-affordability",
+        "reference": "Chen, Chen & Noble, Ian & Hellmann, Jessica & Coffee, J. & Murillo, M. & Chawla, Nitesh. (2015). University of Notre Dame Global Adaptation Index Country Index Technical Report.",
+        "url": "https://gain.nd.edu/our-work/country-index/rankings/",
+        "description": "Readiness index (0=high readiness 10=low readiness); Readiness measures a country\u2019s ability to leverage investments and convert them to adaptation actions. ND-GAIN measures overall readiness by considering three components \u2013 economic readiness, governance readiness and social readiness.",
+        "relates_to": "C",
+        "created_by": null
+    }
+},
+{
+    "model": "riskfactor.riskdatasetversion",
+    "pk": 290,
+    "fields": {
+        "created_date": "2020-09-30T19:31:57.248Z",
+        "name": "2020_09_30_community_relations",
+        "reference": "Jessie Worker and Lalanath de Silva, 2015. \"The Environmental Democracy Index.\" The Access Initiative and the World Resources Institute, Washington, DC.",
+        "url": "http://www.environmentaldemocracyindex.org/rank-countries#3",
+        "description": "Measures public legal empowerment in environmental decision-making from the perspective of 1)  transparency; 2) participation; 3) justice.",
+        "relates_to": "C",
+        "created_by": null
+    }
+}
+]

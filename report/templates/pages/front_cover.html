@@ -1,0 +1,168 @@
+
+<div id="front-cover-header">
+	<img src="file://core/static/img/report_front_cover_title.png" id='front-cover-title'>
+	<img src="file://core/static/img/pdf-top-right-logo.png" id='front-cover-top-right-title'>
+</div>
+<div class="container">
+	<div class="row no-gutters">
+		<div class="col-9-5">
+			<header class="mb-2" id="banner">
+				<div style="font-size:12px; font-family: SourceSansProLight;">REPORT SUBJECT:</div>
+				<div id="banner-item">
+					<h1 style="font-size:35px;">
+						<span style="margin-left: 20px; top: 0.6em; position: relative; font-family: SourceSansProLight;">
+							{{ company_name|truncatechars:37 }}
+						</span>
+					</h1>
+					<span style="font-size: 15px; top: -1.50em; right: 3em; position: absolute;">
+						{% include "includes/risk_circle.html" with page="key-impact-page" %}
+					</span>
+				</div>
+			</header>
+			<div class="row mt-2 pt-2" style="height: 450px;">
+				<div class="column-mid mt-4">
+					<div class="report-details ml-4">
+						<div class="ml-3 left-section">
+							<div class="ml-4">
+								<span class="front-cover-section-heading">
+									Inherent risk<span style="margin-left: 5px; margin-right: 5px; border-left: thin solid #000;"></span>
+									<span style="font-size: 13px;" class="see-page-link-grey" href="#key-impact-page"></span>
+								</span>
+								<div style="color: #808080; font-size: 12px;">
+									{{ company_name }} would inherently represent {{ threshold.text_in_sentence }} risk with respect to ESG matters. This
+									is based on the potential ESG risks associated
+									with its industries and countries of operation.
+								</div>
+								<a class="btn btn-link mt-2" href="#key-impact-page">CLICK HERE</a>
+								{% if management_questions_answered %}
+									<div class="front-cover-section-heading mt-3">
+										Information review<span style="margin-left: 5px; margin-right: 5px; border-left: thin solid #000;"></span>
+										<span style="font-size: 13px;" class="see-page-link-grey" href="#management-questions"></span>
+									</div>
+									<div style="color: #808080; font-size: 12px;">
+										We have reviewed relevant publically available
+										information with respect to ESG matters.
+									</div>
+									<a class="btn btn-link mt-2" href="#management-questions">CLICK HERE</a>
+								{% endif %}
+								{% if document_checklist_answered or rev_score %}
+									<div class="front-cover-section-heading mt-3">
+										ESG maturity score<span style="margin-left: 5px; margin-right: 5px; border-left: thin solid #000;"></span>
+										<span style="font-size: 13px;" class="see-page-link-grey" href="#document-checklist"></span>
+									</div>
+									<div style="color: #808080; font-size: 12px;">
+										Based on current levels of diligence.
+									</div>
+									<a class="btn btn-link mt-2" href="#document-checklist">CLICK HERE</a>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column-mid mt-4">
+					<div class="report-details ml-4">
+						<div class="front-cover-section-heading">
+							Combined key impacts<span style="margin-left: 5px; margin-right: 5px; border-left: thin solid #000;"></span>
+							<span style="font-size: 13px;" class="see-page-link-grey" href="#key-impact-page"></soan>
+						</div>
+						<div style="color: #808080; font-size: 12px;">
+							Expected ESG issues associated with the sector
+							and countries of operation combined.
+							<ol style="margin-left: -25px; margin-top: 10px;">
+								{% for record in top_5_impacts %}
+									<li>{{ record.name }}</li>
+								{% endfor %}
+							</ol>
+						</div>
+						<a class="btn btn-link" href="#key-impact-page">CLICK HERE</a>
+
+						{% if rev_score %}
+							<div class="rev-counter" style="width:300px;height:150px;font-size:1em;  margin-left: -20px; margin-top: 3rem;">
+								{% widthratio rev_score 100 180 as width %}
+								<img src="file://core/static/img/rev/rev_counter.png" class="rev-dial">
+								<img src="file://core/static/img/rev/rev_needle.png" class="rev-needle" style="transform: rotate({{ width }}deg)">
+								<img src="file://core/static/img/rev/rev_cover.png" class="rev-cover">
+								<div class="rev-text">{{ rev_score }}%</div>
+								<div class="rev-text-subtext" style="font-size: 0.6em;"><strong>ESG SCORE</strong> | SEE PAGE 3</div>
+								<div class="rev-dot" style="transform:rotate(153deg);"><span style="transform:rotate(-153deg)">1</span></div>
+								<div class="rev-dot" style="transform:rotate(137deg)"><span style="transform:rotate(-137deg)">2</span></div>
+								<div class="rev-dot" style="transform:rotate({{ width|add:'2' }}deg)"><span style="transform:rotate(-{{ width }}deg)">3</span></div>
+							</div>
+						{% endif %}
+					</div>
+				</div>
+				<div class="column-mid mt-4">
+					<div class="report-details ml-4">
+						<div class="front-cover-section-heading">
+							Relative country risk <span style="margin-left: 5px; margin-right: 5px; border-left: thin solid #000;"></span>
+							<span style="font-size: 13px;" class="see-page-link-grey" href="#country-risk-page"></soan>
+						</div>
+						<div style="color: #808080; font-size: 12px;">
+							Countries expected to present higher risks based
+							on key risks associated with sectors.
+							<ol style="margin-left: -25px; margin-top: 10px;">
+								{% for record in top_5_countries %}
+									<li>{{ record.name }}</li>
+								{% endfor %}
+							</ol>
+						</div>
+						<a class="btn btn-link" href="#country-risk-page">CLICK HERE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col front-cover-aside">
+			<div class="front-cover-aside-wrapper">
+				<div class="report-details-heading mt-2">Report prepared for:</div>
+				<p class="report-details-item mb-2">{{ assessment.created_by.userprofile.company }}</p>
+
+				<div class="report-details-heading mt-2">Report name:</div>
+				<p class="report-details-item mb-2">{{ assessment.report_name }}</p>
+
+				{% if assessment.company_description %}
+					<div class="report-details-heading mt-2">Company description</div>
+					<p style="border-bottom: 0;" class="report-details-item mb-2">{{ assessment.company_description }}</p>
+				{% endif %}
+
+				{% if assessment.industries %}
+					<div class="report-details-heading mt-2">Sector(s)</div>
+					<p style="border-bottom: 0;" class="report-details-item mb-2">{% for industry in assessment.industries.all %}
+						{{ industry.name }}{% if not forloop.last %},{% endif %}
+					{% endfor %}</p>
+				{% endif %}
+
+				{% if assessment.company_employee_count %}
+					<div class="report-details-heading mt-2">Number of employees</div>
+					<p style="border-bottom: 0;" class="report-details-item mb-2">{{ assessment.company_employee_count }}</p>
+				{% endif %}
+
+				{% if assessment.company_headquarters %}
+					<div class="report-details-heading mt-2">HQ location</div>
+					<p class="report-details-item mb-2">{{ assessment.company_headquarters }}</p>
+				{% endif %}
+
+				{% if assessment.report_reference %}
+					<div class="report-details-heading mt-2">Report reference:</div>
+					<p class="report-details-item mb-2">{{ assessment.report_reference }}</p>
+				{% endif %}
+
+				{% if assessment.client_reference %}
+					<div class="report-details-heading mt-2">Client reference:</div>
+					<p class="report-details-item mb-2">{{ assessment.client_reference }}</p>
+				{% endif %}
+
+				<div class="report-details-heading mt-2" >Date:</div>
+				<p class="report-details-item mb-2"><time datetime="{{ assessment.date_updated|date:'Y-m-d' }}">{{ assessment.date_updated|date:'dS F Y' }}</time></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id="front-cover-footer">
+	<div class="footer-wrapper-front">
+		<img src="file://core/static/img/sasb-icon.png" id='sasb-logo-footer' alt="sasb icon">
+		<div class="contact-details">
+			If you require further information or any assistance contact us on: 0330 036 6115 | esg@landmark.co.uk
+		</div>
+	</div>
+</footer>

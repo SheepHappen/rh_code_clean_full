@@ -1,0 +1,34 @@
+{% extends "staff_base.html" %}
+{% load static crispy_forms_tags %}
+
+{% block main_content %}
+    {% if records %}
+        {% include "includes/preview.html" with update_preview='upload_industry' url='publish_industry_values' %}
+    {% else %}
+        <h1>Upload New Industry Data</h1>
+        <p>All fields marked * are mandatory</p>
+        <a class="download-rick-score-template" type="button" href="{% static "templates/industry_risk_score_template.xlsx" %}" target="_blank" download>
+            <button class="btn btn-secondary">Download Template</button> 
+        </a>
+        <form action="{% url 'upload_industry' %}" method="POST" enctype="multipart/form-data" style="margin-top:55px;">
+            {% crispy form %}
+            <button class="btn btn-primary" name="validate" type="submit">Generate Preview</button>
+        </form>
+    {% endif %}
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/staff_admin_upload.js' %}"></script>
+    <script>
+        $(document).ready(function() {
+            var arr = [];
+            $("#records tr").each(function() {
+                var industry = $.trim($(this).find("td:first").text())
+                if (jQuery.inArray( industry, arr ) == -1 && industry.length > 0) {
+                    arr.push(industry); //put elements into array
+                }
+            });
+            localStorage.setItem("industry_uploads", JSON.stringify(arr));
+        });
+    </script>
+{% endblock %}

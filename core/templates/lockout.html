@@ -1,0 +1,16 @@
+{% extends "account/not_logged_in_base.html" %}
+{% load i18n account crispy_forms_tags static %}
+
+{% block content %}
+	<div class="login-page">
+		<img src="{% static '/img/RiskHorizon-logo.png' %}" class='login-logo' height="40px" width="280.7px" alt="Landmark logo" />
+		<h1 class="login-title mt-4">{% trans "Log In" %}</h1>
+        <div id="toast-container" class="toast-top-center" style="position: relative !important; cursor: default;">
+            <div class="toast toast-error password-email-sent" aria-live="polite">
+                <div class="please-check-email toast-message">
+                    {% trans "Account locked: too many login attempts. Please try again later" %}
+                </div>
+            </div>
+        </div>
+	</div>
+{% endblock %}

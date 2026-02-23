@@ -1,0 +1,42 @@
+<section class="report-page last-page">
+    {% include "includes/main_header.html" with title="Useful contacts" icon='file://core/static/img/contacts_icon.svg' %}
+
+    <div class="container mt-4">
+        <div class="row no-gutters">
+            {% include "includes/sub_section.html" with title="Contact list" %}
+        </div>
+
+        <div class="row no-gutters mt-4">
+            <div class="contacts-area">
+                <ul class="contact-list">
+                    {% for contact in contact_us %}
+                        <li style="font-size:13.333px;  font-family: SourceSansProLight;">
+                            {{ contact.address_line_1 }}
+                            {% if contact.address_line_2 %}
+                                <p class="contact-list-item">{{ contact.address_line_2 }}</p>
+                            {% endif %}
+                            <p class="contact-list-item">{{ contact.address_line_3 }}</p>
+                            <p class="contact-list-item">{{ contact.address_line_4 }}</p>
+                            <p class="contact-list-item">{{ contact.post_code }}</p>
+
+                            <p class="contact-list-item"><span style="color:#EC8621;" style="font-size:13.333px;  font-family: SourceSansProSemiBold !important;">t:</span> {{ contact.phone }}</p>
+                            <p class="contact-list-item"><span style="color:#EC8621;" style="font-size:13.333px;  font-family: SourceSansProSemiBold !important;">e:</span> {{ contact.email }}</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer id="front-cover-footer">
+        <div class="further-contact">
+            <p>If you require further information</p>
+            <p>or any assistance contact us on:</p>
+            <p class="further-contact-num">0330 036 6115</p>
+            <p class="mt-2">or by email at:</p>
+            <p style="font-size: 18px !important;">esg@landmark.co.uk</p>
+        </div>
+        <img src="file://core/static/img/contacts_bottom_right.png"  id='landmark-last-page-logo'  alt="Landmark logo" />
+    </footer>
+
+</section>

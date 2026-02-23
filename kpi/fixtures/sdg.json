@@ -1,0 +1,121 @@
+[
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"09e4d588-876d-449d-a1d0-be128b6acea7",
+       "fields":{
+          "text":"12 Responsible Consumption & Production"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"0e9adb9b-f0fb-4476-8b28-13178781b019",
+       "fields":{
+          "text":"4 Quality Education"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"0f84934d-41d0-4617-9015-da0930e0f87c",
+       "fields":{
+          "text":"11 Sustainable Cities & Communities"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"2048a2b1-ccc9-4bb4-9c7c-56f1e7407d39",
+       "fields":{
+          "text":"3 Good Health & Well-Being"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"2ff78f48-c819-46e5-a481-9fb6145824d1",
+       "fields":{
+          "text":"8 Decent Work & Economic Growth"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"3266b83f-c3a1-4ebd-af5f-76b32d3e836d",
+       "fields":{
+          "text":"5 Gender Equality"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"4255fd11-e790-4f95-8404-67fd291fe290",
+       "fields":{
+          "text":"16 Peace, Justice, & Strong Institutions"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"54fb0ce5-fc93-4de3-80cd-d70cd2bd5183",
+       "fields":{
+          "text":"9 Industry, Innovation & Infrastructure"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"5a32f375-3512-4a83-9549-bb80c58b8360",
+       "fields":{
+          "text":"15 Life On Land"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"5b6cd909-fa81-4719-ac41-f765ca3b26d3",
+       "fields":{
+          "text":"13 Climate Action"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"651f0551-7c2c-42ef-b3ea-f2aec338e562",
+       "fields":{
+          "text":"1 No Poverty"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"7eacf4ee-04d5-4bba-91da-76d8aff2b338",
+       "fields":{
+          "text":"6 Clean Water & Sanitation"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"bd410388-22ce-4da7-9251-aad86318f413",
+       "fields":{
+          "text":"17 Partnerships For The Goals"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"c16c6d6c-f80c-4711-80f1-9ffb11b37f5b",
+       "fields":{
+          "text":"2 Zero Hunger"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"cc74837b-e79f-4c6d-99a0-209522015e76",
+       "fields":{
+          "text":"10 Reduced Inequalities"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"f6887df9-344a-43fa-855f-26f52af49891",
+       "fields":{
+          "text":"14 Life Below Water"
+       }
+    },
+    {
+       "model":"kpi.sustainabledevelopmentgoal",
+       "pk":"fbd4a57f-784d-420b-9b71-87a41ae27abd",
+       "fields":{
+          "text":"7 Affordable & Clean Energy"
+       }
+    }
+ ]

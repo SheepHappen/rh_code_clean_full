@@ -1,0 +1,52 @@
+{% load i18n account crispy_forms_tags %}
+
+
+{% spaceless %}
+{% load compress thumbnail %}
+ 	{% load static %}
+	<!DOCTYPE html>
+	<html lang="en-gb">
+		<head>
+			<meta charset="utf-8" />
+			<title>{% block title %}Landmark{% endblock %}</title>
+			<meta name="description" content="" />
+
+			<!-- mobile settings -->
+			<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+			<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+			<meta name="csrf_token" content="{{ csrf_token }}">
+			<!-- Google Tag Manager -->
+			 <script>
+				(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-KJQ8W4J');
+	        </script>
+			<!-- End Google Tag Manager -->
+			<!-- WEB FONTS : use %7C instead of | (pipe) -->
+			<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+			<link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+{% compress css %}
+			<link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" type="text/css" />
+			<link href="{% static "css/toastr.min.css" %}" rel="stylesheet" type="text/css"  />
+			<link href="{% static "css/main.css" %}" rel="stylesheet" type="text/css" />
+			<link href="{% static "css/mobile.css" %}" rel="stylesheet" type="text/css" />
+{% endcompress %}
+		</head>
+		<body>
+			{% block content %}{% endblock %}
+			{% compress js %}
+				<script>var plugin_path = "{% static "assets/plugins/" %}";</script>
+				<script src="{% static "assets/plugins/jquery/jquery-3.5.1.min.js" %}"></script>
+				<script src="{% static "js/vendor/select2.full.min.js" %}"></script>
+				<script src="{% static "js/main.js" %}"></script>
+			{% endcompress %}
+			{% block js %}{% endblock %}
+			<!-- Google Tag Manager (noscript) -->
+			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJQ8W4J"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<!-- End Google Tag Manager (noscript) -->
+		</body>
+	</html>
+{% endspaceless %}

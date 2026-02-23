@@ -1,0 +1,84 @@
+
+    <section id="key-impact-page" class="report-page">
+        {% include "includes/main_header.html" with title="Risk assessment" icon='file://core/static/img/risk_assessment_1_icon.svg' %}
+
+        <div class="row mb-4 no-gutters">
+            {% include "includes/risk_circle.html" %}
+            <div class="bar-labels mr-2" style="margin-top: 2.5%; margin-left: 40px;">
+                {% for record in top_5_impacts %}
+                    <div class="bar-label">{{ record.name }}</div>
+                {% endfor %}
+            </div>
+            <div style="margin-top: 2%; width: 510px;">
+                <div class="bar-chart">
+                    <div class="bars">
+                        <div class="bar-line"></div>
+                        <div class="bar-line"></div>
+                        <div class="bar-line"></div>
+                        <div class="bar-line"></div>
+                        <div class="bar-line"></div>
+                        <div class="bar-xlabel">0</div>
+                        <div class="bar-xlabel">2</div>
+                        <div class="bar-xlabel">4</div>
+                        <div class="bar-xlabel">6</div>
+                        <div class="bar-xlabel">8</div>
+                        <div class="bar-xlabel">10</div>
+
+                        {% for record in top_5_impacts %}
+                            <div class="bar">
+                                {% widthratio record.score 10 100 as width %}
+                                <div class="bar-value" style="background-color:{{ record.colour }}; width:{{ width }}%"></div>
+                                <span  class="bar-value-score">{{ record.score|floatformat:1 }}</span>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4 no-gutters">
+            <div class="ml-4" style="font-size: 14px; font-family: SourceSansPro;">
+                The inherent risk rating is presented on a scale from Low to High; it is based on the average of the risk scores associated with the top five combined key impacts for that company.
+            </div>
+        </div>
+
+        <div class="row mb-2 no-gutters">
+            {% include "includes/sub_section.html" with title="Combined key impacts" %}
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for record in top_5_impacts %}
+                        <tr class="risk-score-item" style="font-size: 13.333px; font-family: SourceSansPro;">
+                            <td style="padding:10px;">
+                                {% if record.colour != '#ffe72f' %}
+                                    <div class="score-circle" style="background-color:{{ record.colour }};">
+                                        <span>{{ record.score|floatformat:1 }}</span>
+                                    </div>
+                                {% else %}
+                                    <div class="score-circle" style="color:#808080; background-color:{{ record.colour }};">
+                                        <span>{{ record.score|floatformat:1 }}</span>
+                                    </div>
+                                {% endif %}
+                            </td>
+                            <td style="padding:10px;">
+                                <div>{{ record.name }}</div>
+                            </td>
+                            <td style="padding:10px;"></td>
+                            <td style="padding:10px;">
+                                {{ record.description|truncatechars:610 }}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        {% include "includes/page_footer.html" %}
+    </section>

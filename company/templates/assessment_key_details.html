@@ -1,0 +1,236 @@
+{% extends "assessment_base.html" %}
+{% load static crispy_forms_tags %}
+
+{% block main_content %}
+<div class="row" style="margin-top:45px;">
+    <div class="col-12">
+        <div class="card white-card">
+            <div class="card-body">
+                <div class="container mb-4 mt-3">
+                    <div class="row">
+                        <div class="col-9 pl-0">
+                            <h2 class="card-title mb-3">
+                                Key details
+                            </h2>
+                        </div>
+                        <div class="col-3 pr-0">
+                            <div class="float-right">
+                                <span class='form-group col-xs-2 col-md-2 switch-wrapper pr-0'>
+                                    <label class="font-semi-bold">Show optional questions</label>
+                                    <label class="switch ml-3">
+                                        <input type="checkbox">
+                                            <span class="slider round">
+                                        </span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% if assessment.slug %}
+                            {% url 'company_assessment_key_detail' assessment.slug as post_url %}
+                        {% else %}
+                            {% url 'company_assessment_key_detail' as post_url %}
+                        {% endif %}
+                        <form id="keyDataForm" action="{{ post_url }}" method="POST" style="margin-top:55px;">
+                            {% crispy form %}
+                            <div class="buttonHolder" style="margin-top:60px;">
+                                <input type="submit" name="Next" value="Next" class="btn btn-primary btn-medium" id="submit-id-submit">
+                                <a class="btn btn-secondary btn-medium ml-2" href="{{ previous_url }}">Previous</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+            $(".optional").hide();
+            $(".asteriskField").hide();
+            var hasOptional = false;
+            $(".optional").each(function() {
+                $(this).find("label").css("display", "inline-flex");
+                $(this).find("label").append( "<div class='optional-text ml-2'>(Optional)</div>" );
+                var input = $(this).find("input");
+                if(input.val() && input.attr('id') !== 'id_report_reference' && input.attr('id') !== 'id_client_reference') {
+                    hasOptional = true;
+                    return;
+                }
+            });
+
+            if ($('#id_company_description').val()) {
+                hasOptional = true;
+            }
+
+            $('#div_id_company_name').find("label").after(
+                "<div class='help-text-above'>" +
+                    "We will try to find your company in the SASB database in order to prepopulate the primary industry on the next page. If there are no results please complete it manually." +
+                "</div>"
+            )
+
+            if ($( "#id_company_fund" ).val().length > 0 || $('#id_deal_type').val().length > 0 && $('#id_deal_type').val() !== 'N') {
+                hasOptional = true;
+            }
+
+            var showOptionalFields = function () {
+                $('.slider').addClass('slider-on');
+                $(".optional").show();
+                $('.select2').width('290');
+                if ($( "#id_company_fund" ).length > 0 && $('#id_company_fund').select2('data').length == 0) {
+                    $('.select2-search__field').attr("placeholder", "Please select");
+                }
+                $('.select2-search__field').width('100%');
+            }
+
+            if (hasOptional) {
+                $('input:checkbox').prop('checked', true);
+                showOptionalFields();
+            }
+            $('input:checkbox').change(function() {
+                if ($(this).is(':checked')) {
+                    $('.slider').on('transitionend webkitTransitionEnd oTransitionEnd', function () {
+                        showOptionalFields();
+                    })
+                } else {
+                    $('.slider').on('transitionend webkitTransitionEnd oTransitionEnd', function () {
+                        $('.slider').removeClass('slider-on');
+                        $(".optional").hide();
+                    })
+                }
+            });
+            $("#id_company_name").attr("autocomplete", "off");
+
+            var addSkipLink = function () {
+                $('#div_id_company_name').after(
+                    "<div class='skip-to-footprint mt-2 mb-2 btn-tertiary'>" +
+                        'Skip to company footprint' +
+                    "</div>"
+                )
+            }
+
+            addSkipLink();
+
+            var getSasbResults = function (company) {
+                $.ajax({
+                    type: "GET",
+                    url: "{% url 'sasb_company_check' %}",
+                    data: {
+                        'company_name': company
+                    },
+                    success: function(data) {
+                        if (data.companies !== 'No results - please fill in manually') {
+                            if ($('.sasb-results').length == 0) {
+                                $('.sasb-no-results').remove();
+                                $('#id_company_name').after(
+                                    "<div class='sasb-results'>" + "</div>"
+                                )
+                                $(data.companies).each(function(idx, company) {
+                                    $( ".sasb-results" ).append( "<p class='sasb-company-item'>"+ company + "</p>" );
+                                });
+                            }
+                        } else {
+                            if ($('.sasb-no-results').length == 0) {
+                                $(".sasb-results").remove();
+                                $('#id_company_name').after(
+                                    "<div class='sasb-no-results'>" +
+                                        data.companies +
+                                    "</div>"
+                                )
+                            }
+                        }
+                    }
+                });
+            }
+
+            var clearSasbDropDown = function() {
+                $('.sasb-no-results').remove();
+                $(".sasb-results").remove();
+            };
+
+            var getTodaysDate = function () {
+                var today = new Date();
+                var dd = String(today.getDate()).padStart(2, '0');
+                var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                var yyyy = today.getFullYear();
+
+                return dd + '/' + mm + '/' + yyyy;
+            };
+
+            $("#id_company_name").on('keydown', function() {
+                clearSasbDropDown();
+                getSasbResults( $(this).val());
+                $('#id_report_name').val($(this).val() + ' – ' + getTodaysDate());
+            });
+
+            $("#id_company_name").on('change', function() {
+                $('#id_report_name').val($(this).val() + ' – ' + getTodaysDate());
+            });
+
+            $(document).on('click touch', '.sasb-company-item', function() {
+                var text = 'SASB: ' + $(this).text();
+                $('#id_company_name').val(text);
+                clearSasbDropDown();
+                $('#id_report_name').val(text + ' – ' + getTodaysDate());
+            });
+
+            $(document).on('click touch', function() {
+                clearSasbDropDown();
+            });
+
+            var ajaxSubmitForm = function (link) {
+                var form = $('#keyDataForm');
+                $.ajax({
+                    type: "POST",
+                    url: form.attr('action'),
+                    data: form.serialize(),
+                    success: function(response) {
+                        if (response.status == 'FAIL') {
+                            if (response.errors) {
+                                if (response.errors.company_name && $('.id_company_name').length == 0) {
+                                    $('#id_company_name').addClass('is-invalid');
+                                    $('#id_company_name').after( "<span class='form-error-icon id_company_name'></span>" );
+                                    $(".id_company_name").css('margin-left', $( ".is-invalid" ).width() + 20 + 'px');
+                                    $(".id_company_name").after(
+                                        '<span id="error_1_id_company_name" class="invalid-feedback">' +
+                                        '<strong>' +
+                                            response.errors.company_name[0] +
+                                        '</strong></span>'
+                                    )
+                                }
+                                if (response.errors.report_name) {
+                                    $('#id_report_name').addClass('is-invalid');
+                                    $('#id_report_name').after( "<span class='form-error-icon id_report_name'></span>" );
+                                    $(".id_report_name").css('margin-left', $( ".is-invalid" ).width() + 20 + 'px');
+                                    $(".id_report_name").after(
+                                        '<span id="error_1_id_report_name" class="invalid-feedback">' +
+                                        '<strong>' +
+                                            response.errors.report_name[0] +
+                                        '</strong></span>'
+                                    )
+                                }
+                            }
+                        } else {
+                            if (response.footprintLink) {
+                                window.location = response.footprintLink;
+                            }
+                        }
+                    }
+                });
+            }
+
+            $('.progress-link').on('click touch', function (event) {
+                ajaxSubmitForm(undefined)
+            });
+
+            $('.skip-to-footprint').on('click touch', function (event) {
+                ajaxSubmitForm("company-footprint")
+            });
+        });
+    </script>
+{% endblock js %}

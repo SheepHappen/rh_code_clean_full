@@ -1,0 +1,188 @@
+{% extends "assessment_base.html" %}
+{% load static crispy_forms_tags %}
+
+{% block main_content %}
+    <div class="row" style="margin-top:45px;">
+        <div class="col-12">
+            <div class="card white-card">
+                <div class="card-body pb-0">
+                    <div class="container mb-4 mt-3">
+                        <div class="row">
+                            <div class="col-9 pl-0">
+                                <h2 class="card-title mb-3">
+                                    Industries
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <p>Which sectors best describe the company's operation-type to find using industry names or keywords or browse below</p>
+                        </div>
+                        <form id='industrySelectForm' method="POST" action="{% url 'company_assessment_industries' assessment.slug %}" method="POST">
+                            {% crispy form %}
+                        </form>
+                    </div>
+                </div>
+                {% include "includes/industry_dropdown.html" with industry_types=industry_types %}
+                <div class="buttonHolder" style="padding: 64px;">
+                    <a class="btn btn-primary btn-medium ml-2"  href="{% url 'company_assessment_company_footprint' assessment.slug %}">Next</a>
+                    <a class="btn btn-secondary btn-medium ml-2" href="{% url 'company_assessment_key_detail' assessment.slug %}">Previous</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="assessment-slug d-none" data-slug="{{ assessment.slug }}"></div>
+    <div class="total-count d-none">{{ total_count }}</div>
+    <a class="industry-options d-none" href="{% url 'industry_options' %}">{{ total_count }}</a>
+    <a class="toggle-select d-none" href="{% url 'toggle_assessment_industry' %}"></a>
+    {% if sasb_industry %}
+        <div class="sasb_industry d-none" data-sasb_industry="{{ sasb_industry }}"></div>
+    {% endif %}
+{% endblock %}
+
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+            var token = $("input[name='csrfmiddlewaretoken']").prop("value");
+            $('.list-sub-heading').click(function() {
+                $('.list-sub-heading').each(function() {
+                    $(this).find('.list-item-toggle').addClass('fa-chevron-down').removeClass('fa-chevron-up');
+                });
+                if ($(this).hasClass('collapsed')) {
+                    $(this).find('.list-item-toggle').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+                } else {
+                    $(this).find('.list-item-toggle').addClass('fa-chevron-down').removeClass('fa-chevron-up');
+                }
+            });
+
+            $('.industry-popover').on('click tap', function(evt) {
+                evt.stopPropagation();
+                var parent = $(this).parent().attr('data-parent');
+
+                $(this).parent().popover('toggle');
+
+                $('.popover-button').each(function() {
+                    if ($(this).attr('data-parent') !== parent) {
+                        $(this).popover('hide');
+                    }
+                });
+            });
+
+            $(window).click(function() {
+                $('.popover-button').each(function() {
+                    $(this).popover('hide');
+                });
+            });
+
+            $('#id_industries').change(function(e) {
+                var selected_industries = $(this).val();
+                var foundCheckBox = false;
+                $('.industrySelect').each(function() {
+                    var inList = jQuery.inArray( $(this).attr("data-name"), selected_industries )
+                    if (inList !== -1) {
+                        if ($(this).prop("checked") == false) {
+                            foundCheckBox = true;
+                            $(this).parent().parent().trigger('click', [ "updateDropdownFalse" ]);
+                        }
+                    } else {
+                        if ($(this).prop("checked") == true) {
+                            foundCheckBox = true;
+                            $(this).parent().parent().trigger('click', [ "updateDropdownFalse", ]);
+                        }
+                    }
+                });
+
+                if (foundCheckBox == false) {
+                    if($("option:selected:last",this).val()) {
+                        $.ajax({
+                            url: $('.toggle-select').attr('href'),
+                            type: "get",
+                            data: {
+                                'assessment_slug': $('.assessment-slug').attr('data-slug'),
+                                'industry_id': $("option:selected:last",this).val()
+                            }
+                        })
+                    }
+                }
+
+            });
+
+            $('#id_industries').on("select2:unselect", function (e) {
+                $.ajax({
+                    url: $('.toggle-select').attr('href'),
+                    type: "get",
+                    data: {
+                        'assessment_slug': $('.assessment-slug').attr('data-slug'),
+                        'industry_name': e.params.data.text,
+                        'checked': 'false',
+                    }
+                })
+            });
+
+            $('.sublist-item').on('click tap', function(evt, param1) {
+                var self = this;
+                var checkBox = $(this).find('input:checkbox');
+                var totalCount = parseInt($('.total-count').html());
+                // Toggle checkbox
+                checkBox.prop('checked', !checkBox.prop("checked"));
+                if (checkBox.prop("checked") == true && totalCount >= 4) {
+                    checkBox.prop('checked', false);
+                    toastr.error('Cannot select more than 4 industries');
+                    return;
+                }
+                // Add/remove industry from assessment
+                $.ajax({
+                    url: $('.toggle-select').attr('href'),
+                    type: "get",
+                    data: {
+                        'checked': checkBox.prop("checked"),
+                        'assessment_slug': $('.assessment-slug').attr('data-slug'),
+                        'industry_slug': $(this).find('input:checkbox').attr('value')
+                    }
+                }).done(function(data) {
+                    var countTag = checkBox.attr('data-count');
+                    var count = parseInt($(countTag).html());
+                    var numUp = count ;
+                    var industryItems = $('#id_industries').select2('data');
+                    var selectedOption = $(self).attr('data-name');
+                    var itemsList = [];
+                    if (checkBox.prop("checked")) {
+                        numUp += 1;
+                        $(countTag).text(numUp);
+                        $('.total-count').text(totalCount + 1);
+                        if (param1 == undefined) {
+                            $( industryItems ).each(function() {
+                                itemsList.push(this.id);
+                            });
+                            itemsList.push(checkBox.attr('data-name'));
+                            $('#id_industries').val(itemsList).trigger('change.select2');
+                        }
+                    } else {
+                        numUp -= 1;
+                        $(countTag).text(numUp);
+                        $('.total-count').text(totalCount - 1);
+                        if (param1 == undefined) {
+                            $( industryItems ).each(function() {
+                                var newState = this.text.split(",");
+                                if (selectedOption !== newState[0]) {
+                                    itemsList.push(this.id);
+                                }
+                            });
+                            $('#id_industries').val(itemsList).trigger('change.select2');
+                        }
+                    }
+
+                    if (numUp > 0) {
+                        $(checkBox.attr('data-wrapper')).removeClass('d-none');
+                        $(checkBox).parent().parent().parent().parent().find('.industryTypeHeading').addClass('orange');
+                    } else {
+                        $(checkBox.attr('data-wrapper')).addClass('d-none');
+                        $(checkBox).parent().parent().parent().parent().find('.industryTypeHeading').removeClass('orange');
+                    }
+                });
+            });
+
+        });
+    </script>
+    <script src="{% static "js/industry_select.js" %}"></script>
+{% endblock js %}

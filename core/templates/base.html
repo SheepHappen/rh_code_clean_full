@@ -1,0 +1,126 @@
+{% spaceless %}
+{% load compress thumbnail %}
+ 	{% load static %}
+	<!DOCTYPE html>
+	<html lang="en-gb">
+		<head>
+			<meta charset="utf-8" />
+			<title>{% block title %}Landmark{% endblock %}</title>
+			<meta name="description" content="" />
+
+			<!-- mobile settings -->
+			<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+			<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+			<meta name="csrf_token" content="{{ csrf_token }}">
+			<!-- Google Tag Manager -->
+            <script>
+				(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-KJQ8W4J');
+	        </script>
+			<!-- End Google Tag Manager -->
+			<!-- WEB FONTS : use %7C instead of | (pipe) -->
+			<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+			<link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+{% compress css %}
+            <link href="{% static "fonts/OpenSans.css" %}" rel="stylesheet" type="text/css" />
+            <link href="{% static "fonts/Heebo.css" %}" rel="stylesheet">
+            <link href="{% static "fonts/Roboto.css" %}" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+            <link href="{% static "fonts/Poppins.css" %}" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+
+			<link href="{% static "assets/css/layout.css" %}" rel="stylesheet" type="text/css" />
+			<!-- THEME CSS -->
+			<link href="{% static "assets/css/essentials.css" %}" rel="stylesheet" type="text/css" />
+			<!-- CORE CSS -->
+            <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" type="text/css" />
+			<link href="{% static "css/select2.min.css" %}" rel="stylesheet" type="text/css" />
+			<link href="{% static "css/select2-bootstrap.min.css" %}" rel="stylesheet" type="text/css" />
+
+			<!-- PAGE LEVEL SCRIPTS -->
+			<link href="{% static "css/datepicker.min.css" %}" rel="stylesheet" type="text/css" />
+			<link href="{% static "css/fullcalendar.min.css" %}" rel="stylesheet" type="text/css" />
+            <link href="{% static "assets/css/tempusdominus-bootstrap-4.min.css" %}" rel="stylesheet" type="text/css" />
+            <link href="{% static "assets/css/header-5.css" %}" rel="stylesheet" type="text/css" />
+			<link href="{% static "css/toastr.min.css" %}" rel="stylesheet" type="text/css"  />
+			<link rel="stylesheet" type="text/css" href="{% static 'datatables/datatables.min.css' %}"/>
+			<link href="{% static "css/main.css" %}" rel="stylesheet" type="text/css" />
+			<link href="{% static "css/mobile.css" %}" rel="stylesheet" type="text/css" />
+			<link href="{% static "css/select2-custom.css" %}" rel="stylesheet" type="text/css" />
+{% endcompress %}
+			{% block css %}{% endblock %}
+		</head>
+
+		<body>
+			{% include "includes/header.html" %}
+			<div id="page-wrapper" class="container pr-0 pl-0">
+				<div {% if user.is_authenticated %}id="content-wrapper"{% else %} id="content-wrapper-sm"{% endif %}>
+					{% block content %}{% endblock %}
+				</div>
+			</div>
+			<footer style="height:370px"></footer>
+
+			<!-- PRELOADER -->
+			<div id="preloader">
+				<div class="inner">
+					<span class="loader"></span>
+				</div>
+			</div><!-- /PRELOADER -->
+
+			<script type="text/javascript" src="{% static "ckeditor/ckeditor-init.js" %}" data-ckeditor-basepath="/static/ckeditor/ckeditor/" id="ckeditor-init-script"></script>
+{% compress js %}
+			<script>var plugin_path = "{% static "assets/plugins/" %}";</script>
+			<script src="{% static "assets/plugins/jquery/jquery-3.5.1.min.js" %}"></script>
+			<script src="{% static "js/vendor/formset.js" %}"></script>
+			<script src="{% static "js/vendor/jquery-ui.min.js" %}"></script>
+			<script src="{% static "js/vendor/dropzone.js" %}"></script>
+            <script src="{% static "js/vendor/popper.min.js"%}"></script>
+            <script src="{% static "js/vendor/bootstrap.min.js"%}" ></script>
+			<script src="{% static "js/vendor/select2.full.min.js" %}"></script>
+			<script src="{% static "js/vendor/autogrow.min.js" %}"></script>
+			<script src="{% static "js/vendor/datepicker.min.js" %}"></script>
+			<script src="{% static "js/i18n/datepicker.en.js" %}"></script>
+			<script src="{% static "js/vendor/moment.min.js" %}"></script>
+			<script src="{% static "js/vendor/fullcalendar.min.js" %}"></script>
+			<script src="{% static "assets/js/scripts.js" %}"></script>
+			<script src="{% static "js/vendor/toastr.min.js" %}"></script>
+			<script src="{% static "js/vendor/moment-timezone-with-data.min.js" %}"></script>
+			<script src="{% static "js/vendor/js.cookie.min.js" %}"></script>
+			<script src="{% static "js/vendor/debounce.js" %}"></script>
+			<script src="{% static "datatables/datatables.min.js" %}"></script>
+			<script src="{% static "datatables/sort.js" %}"></script>
+			<script src="{% static "js/vendor/plotly.js" %}"></script>
+			<script src="{% static "js/main.js" %}"></script>
+{% endcompress %}
+
+			{% block js %}{% endblock %}
+            <script>
+                $(document).ready(function() {
+                    {% for message in messages %}
+						{% if message.level != DEFAULT_MESSAGE_LEVELS.DEBUG  and 'You have confirmed' not in message.message %}
+							toastr.options.closeButton = true;
+							toastr.{{ message.tags }}("{{ message }}");
+
+							{% if message.level == 40 %}
+								$(".toast-error").each(function() {
+									$(this).find('.toast-close-button').addClass('tost-error');
+								});
+							{% endif %}
+							{% if message.level == 25 %}
+								$(".toast-success").each(function() {
+									$(this).find('.toast-close-button').addClass('tost-success')
+								});
+							{% endif %}
+                        {% endif %}
+                    {% endfor %}
+                });
+			</script>
+			<!-- Google Tag Manager (noscript) -->
+			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJQ8W4J"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<!-- End Google Tag Manager (noscript) -->
+        {% load thumbnail %}
+		</body>
+	</html>
+{% endspaceless %}

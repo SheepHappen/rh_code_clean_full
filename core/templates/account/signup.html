@@ -1,0 +1,75 @@
+{% extends "account/not_logged_in_base.html" %}
+{% load static i18n account crispy_forms_tags %}
+
+
+{% block content %}
+	<header class="header-wrapper">
+		<div class="header-text">
+			<span>
+				<a href="{% url 'home' %}">
+					<img style="margin-top: 25px;" src="{% static '/img/RiskHorizon-logo.png' %}" height="30" alt="Landmark logo" />
+				</a>
+			</span>
+		</div>
+	</header>
+	<div id="page-wrapper" class="container">
+		<div id="content-wrapper">
+			<div class="row">
+				<div class="col-12"  style="margin-top: -10px; margin-bottom: 105px;">
+					<div class="card white-card">
+						<div class="card-body" style="padding-left: 47px !important;">
+							<div class="container mt-3">
+								<div class="row">
+									<div class="col">
+										<h2 class="card-title register-title">
+											Register
+										</h2>
+										<p class='account-log-in-msg' style="margin-top: 45px;">
+											Already have an account? Then please <a class="btn btn-no-decoration  pt-1 pl-0" href="{% url 'home' %}">
+												log in
+											</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="card-text ml-3">
+								<div class="row">
+									<div class="col-6">
+										<p class="details mt-4">Your details</p>
+										<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+											{% csrf_token %}
+											{% for field in form %}
+												{% if field.name == 'password1'%}
+													<div>
+														<div id="div_id_password1" class="form-group ">
+														<label for="id_password1">
+														Password
+														</label>
+														<div class=""><span class="show-hide-password"><a href="javascript:;" style="text-decoration: none;"><i class="far fa-eye toggle-password" aria-hidden="true"></i></a></span><input type="password" name="password1" placeholder="Password" autocomplete="new-password" class="textinput textInput form-control" required="" id="id_password1" aria-autocomplete="list"><small id="hint_id_password1" class="form-text text-muted"><small>Your password can't be too similar to your other personal information.<br>Your password must contain at least 12 characters.<br>Your password can't be a commonly used password.<br>Your password must contain a lower case character, upper case character number and a special character eg @</small></small></div>
+														</div>
+													</div>
+												{% elif field.name == 'password2' %}
+													<div id="div_id_password2" class="form-group ">
+														<label for="id_password2">
+														Password (again)
+														</label>
+														<div class=""><span class="show-hide-password"><a href="javascript:;" style="text-decoration: none;"><i class="far fa-eye toggle-password" aria-hidden="true"></i></a></span><input type="password" name="password2" placeholder="Password" autocomplete="new-password" class="textinput textInput form-control" required="" id="id_password2"></div>
+													</div>
+												{% else %}
+													{{ field|as_crispy_field }}
+												{% endif %}
+											{% endfor %}
+											<button class="btn btn-medium btn-primary " type="submit" style="margin-top: 60px; margin-bottom: 50px;">{% trans "Register" %}</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include "includes/footer.html" %}
+
+{% endblock %}

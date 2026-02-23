@@ -1,0 +1,27 @@
+{% load static crispy_forms_tags tags %}
+<div class="row document-questions">
+    <ul class="nav nav-tabs">
+        <li class="tab-item environmental-tab" onclick="openQuestionSet(event, 'environmental')">
+            <div class="sub-heading-icon">{% svg_icon 'environmental_icon' %}</div>
+            <span class="tab-item-text">
+                Environmental
+                <span class="envQuestionLength"></span>
+            </span>
+        </li>
+        <li class="tab-item social-tab" onclick="openQuestionSet(event, 'social')">
+            <div class="sub-heading-icon">{% svg_icon 'social_icon' %}</div>
+            <div class="tab-item-text" style="margin-left:45px;">
+                Social
+                <span class="socialQuestionLength"></span>
+            </div>
+        </li>
+        <li class="tab-item governance-tab" onclick="openQuestionSet(event, 'governance')">
+            <div class="sub-heading-icon">{% svg_icon 'governance_icon' %}</div>
+            <div class="tab-item-text ml-4">
+                Governance
+                <span class="govQuestionLength"></span>
+            </div>
+        </li>
+    </ul>
+</div>
+

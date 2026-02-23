@@ -1,0 +1,89 @@
+
+<section class="report-page">
+    <div class="container">
+        {% include "includes/main_header.html" with title="Recommendations and next steps" icon="" %}
+        <div class="row no-gutters mb-4 mt-4">
+            <p class="ml-4 pb-0 mb-0">
+                <p class="pb-0 mb-0" style="font-size:16.66px; font-family: SourceSansProBold;">
+                    ESG Management
+                </p>
+                <span class="ml-4 mt-1 pb-0 mb-0" style="font-size:14px; font-family: SourceSansProLight;">
+                    Based on the information obtained on the Company's management of ESG
+                    issues, we would make the following recommendations.
+                </span>
+            </p>
+        </div>
+        <div style="columns: 2; margin: 0; padding: 0; background-clip: content-box; column-gap: 1em;">
+            <div class="row no-gutters mb-2">
+                {% include "includes/sub_section.html" with title='Market Leading ESG Management' %}
+                <div class="issue-wrapper">
+                    <p>Leading practice in ESG management generally requires significantly greater ambition in the targets set for improvements across the range of environmental, social and governance issues facing the Company. Leading practice will typically be more forward looking, drawing ESG consideration into all elements of business decision making and with even greater transparency around both strategy and performance.</p>
+                    {% if market_leading %}
+                        <div style="display:inline-block;vertical-align:top;">
+                            <img src="file://core/static/img/esg-star.png" class="recommendation-icon" alt="star icon">
+                        </div>
+                        <div class="next-step-title" style="display:inline-block;">
+                            <div class="mt-1">Improve your Market Leading scores</div>
+                        </div>
+                        <p>At present, no evidence has been identified of the following ESG policies and systems. These, if relevant to the Company and the specific nature of its business activities, would be considered typical of leading practice, in addition to the best practice policies noted below:</p>
+
+                        {% for question in market_leading %}
+                            {% if question.answer != 'Y' %}
+                                <div>- <span class="ml-1">{{ question.pdf_display_name }}</span></div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="row no-gutters">
+                {% include "includes/sub_section.html" with title='Best Practice ESG Management' %}
+                <div class="issue-wrapper-sm">
+                    <p>Best practice in ESG management combines meeting regulatory requirements and both implementing a series of controls to reduce risk and initiatives designed to reduce the Company’s impact upon the environment and to enhance its benefit to society through its interactions with its employees, customers and the communities in which it operates. Best practice assumes transparency, including some formal reporting to key stakeholders</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="issue-wrapper">
+                    <div style="display:inline-block;vertical-align:top;">
+                        <img src="file://core/static/img/esg-star.png" class="recommendation-icon" alt="star icon">
+                    </div>
+                    <div class="next-step-title" style="display:inline-block;">
+                        <div class="mt-1">Improve your Best Practice scores</div>
+                    </div>
+                    <p>At present, no evidence has been identified of the following ESG policies and systems. These, if relevant to the Company and the specific nature of its business activities, would be considered typical of best practice, in addition to the key policies noted below:</p>
+                    {% if best_practice %}
+                        {% for question in best_practice %}
+                            {% if question.answer != 'Y' %}
+                                <div>- <span class="ml-1">{{ question.pdf_display_name }}</span></div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                    <div class="mt-4 mb-2" style="border-bottom: 1px solid #000;"></div>
+                   {% if is_key %}
+                        <div class="mt-2">
+                            <div style="display:inline-block;vertical-align:top;">
+                                <img src="file://core/static/img/esg-shield.png" class="recommendation-icon" alt="star icon">
+                            </div>
+                            <div class="next-step-title" style="display:inline-block;">
+                                <div class="mt-1">Key Policies required</div>
+                            </div>
+                        </div>
+                        <p>
+                            In addition to the previous sections, at present no evidence has been identified of
+                            the following key ESG policies and systems that would typically be expected to be
+                            held by most Companies:
+                        </p>
+                        {% for question in is_key %}
+                            {% if question.answer != 'Y' %}
+                                <div>- <span class="ml-1">{{ question.pdf_display_name }}</span></div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        {% include "includes/page_footer.html" %}
+    </div>
+
+    {% include "includes/page_footer.html" %}
+</section>

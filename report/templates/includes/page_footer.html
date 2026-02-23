@@ -1,0 +1,17 @@
+<footer class="page-footer">
+    <div class="footer-wrapper">
+        {% if matrix_key %}
+            <p class="list-inline" style="font-size: 10px; margin-left: 40px; margin-top: -30px;">
+                <ul>
+                    <li class="list-inline-item"><strong>Key:</strong></li>
+                    {% for key in threshold_keys %}
+                        <li class="list-inline-item"><div class="color-key" style="background-color:{{ key.colour }};" ></div><span>{{ key.text }}</span></li>
+                    {% endfor %}
+                    <li class="list-inline-item"><div class="color-key matrix-na"></div><span>No data</span></li>
+                </ul>
+            </p>
+        {% endif %}
+        <span class="bgSet">{{ assessment.created_by.userprofile.company }} | {{ assessment.report_reference }}</span>
+        <div class="pageNum bgSet"><strong class="mr-2">ESG Screening Report</strong></div>
+    </div>
+</footer>

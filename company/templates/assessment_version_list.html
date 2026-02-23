@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static  %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-10">
+            <div class="page-heading">
+                <h1>Versions</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card white-card">
+                <div class="card-body" style="padding:0!important;">
+                    <div class="card-text table-responsive">
+                        <table id="records" class="table">
+                            <thead style="background-color: #fff !important;">
+                                <tr>
+                                    <th class="column-header-regular" style="width: 1%"></th>
+                                    <th class="column-header-regular" style="width: 30%">Company</th>
+                                    <th class="column-header-regular" style="width: 20%">Date modified</th>
+                                    <th class="column-header-regular" style="width: 20%">Status</th>
+                                    <th class="column-header-regular" style="width: 20%">PDF</th>
+                                    <th class="column-header-regular" style="width: 20%">Latest?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="row-text-item"></td>
+                                    <td class="row-text-item">
+                                        <a  href="{% url 'assessment_resume' assessment.slug %}">
+                                            {{ assessment.company_name }}
+                                        </a>
+                                    </td>
+                                    <td class="row-text-item">{{ assessment.date_updated }}</td>
+                                    <td class="row-text-item">{{ assessment.get_status_display }}</td>
+                                    <td>
+                                        <a href="{% url 'report_view' assessment.slug %}" class="btn btn-secondary btn-sm" target="_blank">
+                                            View pdf
+                                        </a>
+                                    </td>
+                                    <td>
+                                        {% if assessment.is_latest %}
+                                            <i class="far fa-check"></i>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% for assessment in assessments %}
+                                    <tr>
+                                        <td class="row-text-item"></td>
+                                        <td class="row-text-item">
+                                            <a  href="{% url 'assessment_resume' assessment.slug %}">
+                                                {{ assessment.company_name }}
+                                            </a>
+                                        </td>
+                                        <td class="row-text-item">{{ assessment.date_updated }}</td>
+                                        <td class="row-text-item">{{ assessment.get_status_display }}</td>
+                                        <td>
+                                            <a href="{% url 'report_view' assessment.slug %}" class="btn btn-secondary btn-sm" target="_blank">
+                                                View pdf
+                                            </a>
+                                        </td>
+                                        <td>
+                                            {% if assessment.is_latest %}
+                                                <i class="far fa-check"></i>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

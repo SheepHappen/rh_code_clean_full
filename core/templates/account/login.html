@@ -1,0 +1,37 @@
+{% extends "account/not_logged_in_base.html" %}
+{% load i18n account crispy_forms_tags static %}
+
+
+{% block content %}
+	<div class="login-page">
+		<img src="{% static '/img/RiskHorizon-logo.png' %}" class='login-logo' height="40px" width="280.7px" alt="Landmark logo" />
+		<h1 class="login-title mt-4">{% trans "Log In" %}</h1>
+		<form class="login-form " method="POST" action="{% url 'account_login' %}">
+			<div class="row justify-content-center align-items-center">
+				{% if form.errors %}
+					{% for error in form.non_field_errors %}
+						<div id="toast-container" class="failed-import mb-3" style="position: relative !important; cursor: default;">
+							<div class="toast toast-error password-email-sent"  style="background-color: #fef3f5 !important;"aria-live="polite">
+								<div class="toast-message "><strong>{{ error|escape }}</strong></div>
+							</div>
+						</div>
+					{% endfor %}
+				{% endif %}
+				{% if email_confirmed_message %}
+					<div id="toast-container" class="toast-top-center" style="position: relative !important; cursor: default;">
+						<div class="toast toast-success password-email-sent" aria-live="polite">
+							<div class=" please-check-email toast-message">{{ email_confirmed_message }}</div>
+						</div>
+					</div>
+				{% endif %}
+				{% crispy form %}
+			</div>
+			<p class="ml-4" style="margin-top: -18px;"><a class="btn btn-tertiary ml-1" href="{% url 'account_reset_password' %}">{% trans "Forgot password?" %}</a></p>
+			<p class="ml-4"><button class="btn btn-primary pull-left ml-3" style="width: 318px; height: 52px;" type="submit">{% trans "Continue" %}</button></p>
+		</form>
+		<p class="row justify-content-center align-items-center">
+			No account?
+			<a class="btn btn-tertiary pl-0" href="{% url 'account_signup' %}">Register</a>
+		</p>
+	</div>
+{% endblock %}

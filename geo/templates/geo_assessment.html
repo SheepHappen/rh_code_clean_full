@@ -1,0 +1,408 @@
+{% extends "base.html" %}
+{% load static  %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-10 pl-0">
+            <div class="page-heading">
+                <h1>Geographic assessment</h1>
+                <div class='intro-text'>
+                    At a glance view of geographical ESG risks, with the option to drill down to your company and fund locations.
+                </div>
+            </div>
+        </div>
+        <div class="col-2 pr-0">
+            <form method="GET" id='single-risk-download' class='d-none' action="{% url 'geo_assessment_data_download' %}"  enctype="multipart/form-data">
+                <input id="download_risk_id" type="hidden" name="risk">
+                <input id="download_fund_id" type="hidden" name="fund">
+                <input id="download_company_id" type="hidden" name="company">
+                <input type="submit" name="Download spreadsheet" value="Download spreadsheet" class="btn btn-secondary ml-2 float-right">
+            </form>
+            <form method="GET" id='all-risk-download' action="{% url 'geo_assessment_all_data_download' %}"  enctype="multipart/form-data">
+                <input type="submit" name="Download spreadsheet" value="Download spreadsheet" class="btn btn-secondary ml-2 float-right">
+            </form>
+        </div>
+    </div>
+    <div class="row" style="margin-top:45px;">
+        <div class="input-group my-locations-selector">
+            <span class='form-group switch-wrapper pl-0 pr-0' style='margin-right: 20px;'>
+                <label class="font-semi-bold" style="margin-top: 10px;">My locations</label>
+                <label class="switch ml-3" style="margin-top: 10px;">
+                    <input type="checkbox">
+                        <span class="slider round">
+                    </span>
+                </label>
+            </span>
+            <div class="form-group col-xs-2 col-md-2">
+                <label for="funds" class="font-semi-bold" class="control-label">Fund</label>
+                <select class="fund-select map-update form-control" disabled>
+                    <option value='all_funds'>All funds</option>
+                    {% for fund in funds %}
+                        <option value="{{ fund.slug }}">{{ fund.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group col-xs-2 col-md-2" style="margin-left: 10px;">
+                <label for="companies" class="font-semi-bold" class="control-label">Company</label>
+                <select class="company-select map-update form-control" disabled>
+                    <option value='all_companies'>All companies</option>
+                    {% for slug, company in companies %}
+                        <option value="{{ slug }}">{{ company }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row drop-shadow" style="margin-top:15px;">
+        <form id="geo-risk-selector" action="{% url 'geo_assessment' %}" class="col-md-21-percent list-wrapper">
+            <div class="silver-border font-semi-bold  list-heading">
+                Risk Factors
+            </div>
+            <ul class="hide-dots" id="geoRiskList" style="padding-left:0;">
+                <li class="silver-border">
+                    <button id='environmentalHeading' aria-expanded="false" aria-controls="environmentalList" class="font-semi-bold collapsed list-sub-heading" type="button" data-toggle="collapse" data-target=".EnvironmentalCollapse">
+                        <i class="fal fa-plus list-item-toggle mr-3"></i>
+                        Environmental
+                    </button>
+                    <ul id="environmentalList"  aria-labelledby="environmentalHeading" class="hide-dots collapse EnvironmentalCollapse" style="padding-left:0;" data-parent="#geoRiskList">
+                        {% for environmental_risk in environmental_risks %}
+                            <li class="sublist-item {% if not forloop.last %}silver-border{% endif %}" {% if forloop.first %}style="border-top: 2px solid #f4f4f4;"{% endif %}>
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <i class="fal fa-check-circle not-checked mr-2" style="margin-left: 15px;"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class='sublist-item-text' style="margin-left: 3px;" risk="{{ environmental_risk.slug }}">{{ environmental_risk.name }}</div>
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li class="silver-border">
+                    <button id='socialHeading' aria-expanded="false" aria-controls="socialList"class="font-semi-bold collapsed list-sub-heading" type="button" data-toggle="collapse" data-target=".SocialCollapse">
+                        <i class="fal fa-plus list-item-toggle mr-3"></i>
+                        Social
+                    </button>
+                    <ul id="socialList" aria-labelledby="socialHeading" class="hide-dots collapse SocialCollapse" style="padding-left:0;" data-parent="#geoRiskList">
+                        {% for social_risk in social_risks %}
+                            <li class="sublist-item {% if not forloop.last %}silver-border{% endif %}" {% if forloop.first %}style="border-top: 2px solid #f4f4f4;"{% endif %}>
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <i class="fal fa-check-circle not-checked mr-2" style="margin-left: 15px;"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class='sublist-item-text' style="margin-left: 3px;" risk="{{ social_risk.slug }}">{{ social_risk.name }}</div>
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li class="silver-border">
+                    <button id='governanceHeading' aria-expanded="false" aria-controls="governanceList" class="font-semi-bold collapsed list-sub-heading" type="button" data-toggle="collapse" data-target=".GovernanceCollapse">
+                        <i class="fal fa-plus list-item-toggle mr-3"></i>
+                        Governance
+                    </button>
+                    <ul id="governanceList" aria-labelledby="governanceHeading" class="hide-dots collapse GovernanceCollapse" style="padding-left:0;" data-parent="#geoRiskList">
+                        {% for governance_risk in governance_risks %}
+                            <li class="sublist-item  {% if not forloop.last %}silver-border{% endif %}" {% if forloop.first %}style="border-top: 2px solid #f4f4f4;"{% endif %}>
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <i class="fal fa-check-circle not-checked mr-2" style="margin-left: 15px;"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class='sublist-item-text' style="margin-left: 3px;"  risk="{{ governance_risk.slug }}">{{ governance_risk.name }}</div>
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </ul>
+            <ul class="sticky-element hide-dots">
+                <li><strong>Key:</strong></li>
+                {% for key in keys %}
+                    <li><div class="color-key" style="background-color:{{ key.colour }};" ></div><span>{{ key.text }} risk ({{ key.lower_bound }} - {{ key.upper_bound }})</span></li>
+                {% endfor %}
+                <li ><div class="color-key matrix-na"></div><span>No data</span></li>
+            </ul>
+        </form>
+        <div class="col-md-79-percent map-wrapper" style='padding-left:0 !important; padding-right: 0 !important;'>
+            <div id="map" class="map-gradient"></div>
+        </div>
+    </div>
+    <div id="initial-countries-data" class='d-none'>{{ countries }}</div>
+    <div id="initial-countries-int-data" class='d-none'>{{ numbers }}</div>
+    <div id="initial-countries-name-data" class='d-none'>{{ countryNames }}</div>
+{% endblock content %}
+
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+            var currentRisk = '';
+
+            var mapAjax = function (data) {
+                $.ajax({
+                    type: "GET",
+                    url: $('#geo-risk-selector').attr('action'),
+                    data: data,
+                }).done(function( response ) {
+                    var ids = JSON.parse(response.numbers);
+                    var isAllZero = true;
+                    for(i = 0; i < ids.length; ++i) {
+                        if(ids[i] !== 0) {
+                            isAllZero = false;
+                            break;
+                        }
+                    }
+                    if (!isAllZero) {
+                        buildMap(
+                            JSON.parse(response.countries),
+                            ids,
+                            JSON.parse(response.countryNames),
+                            JSON.parse(response.colourScale),
+                        );
+                    } else {
+                        buildInitialMap(JSON.parse(response.countries), ids, JSON.parse(response.countryNames));
+                    }
+                });
+            }
+            $('.list-sub-heading').click(function() {
+                $('.list-sub-heading').each(function() {
+                    $(this).children().addClass('fa-plus').removeClass('fa-minus');
+                });
+
+                if ($( this ).hasClass('collapsed')) {
+                    $(this).children().removeClass('fa-plus').addClass('fa-minus');
+                } else {
+                    $(this).children().addClass('fa-plus').removeClass('fa-minus');
+                }
+
+            });
+
+            $('.map-update').select2({ width: '180px' });
+
+            $('.map-update').one('select2:open', function(e) {
+                $('input.select2-search__field').prop('placeholder', 'Start typing to search…');
+            });
+
+            $('input:checkbox').change(function() {
+                var self = this;
+                if ($(self).is(':checked')) {
+                    $('.slider').on('transitionend webkitTransitionEnd oTransitionEnd', function () {
+                        $('.slider').addClass('slider-on');
+                        $('.fund-select').prop("disabled", false);
+                        $('.company-select').prop("disabled", false);
+                    });
+                    $('#download_fund_id').val($('.fund-select').val());
+                    $('#download_company_id').val($('.company-select').val());
+                    if (currentRisk !== '') {
+                        mapAjax({
+                            risk: currentRisk,
+                            company_filter:$('.company-select').val(),
+                            fund_filter: $('.fund-select').val()
+                        });
+                    }
+                } else {
+                    $('.slider').on('transitionend webkitTransitionEnd oTransitionEnd', function () {
+                        $('.slider').removeClass('slider-on');
+                        $('.fund-select').prop("disabled", true);
+                        $('.company-select').prop("disabled", true);
+                    })
+                    if (currentRisk !== '') {
+                        mapAjax({
+                            risk: currentRisk
+                        });
+                    }
+                }
+            });
+
+            function htmlDecode(input){
+                var e = document.createElement('textarea');
+                e.innerHTML = input;
+                // handle case of empty input
+                return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+            }
+
+            var layout = {
+                geo: {
+                    showframe: false,
+                    showcoastlines: false,
+                    projection: {
+                        type: 'equirectangular',
+                    },
+                },
+                hoverlabel: {
+                    bgcolor: 'white',
+                    bordercolor: 'darkgrey',
+                    font: {
+                        color: 'black',
+                        family: 'SourceSansPro',
+                        size: 16
+                    }
+                },
+                dragmode: false,
+                plot_bgcolor: 'rgba(0, 0, 0, 0)',
+                paper_bgcolor: 'rgba(0, 0, 0, 0)',
+                margin: {
+                    t: 0,
+                    b: 0,
+                    r: 0,
+                    l: 0
+                },
+                width: $("#map").width(),
+            };
+
+            var buildInitialMap = function(countriesList, numbersList, CountryNameDataList) {
+                for(var i = 0; i < CountryNameDataList.length; i++) {
+                    CountryNameDataList[i] = htmlDecode(CountryNameDataList[i]);
+                }
+                var data  = [
+                    {
+                        type: 'choropleth',
+                        locations: countriesList,
+                        z: numbersList,
+                        text: CountryNameDataList,
+                        showscale: false,
+                        tick0: 0,
+                        zmin: 0,
+                        dtick: 1000,
+                        hoverinfo: "text",
+                        marker: {
+                            line: {
+                                color: 'rgb(189,189,189)',
+                                width: 0.5
+                            }
+                        },
+                        colorscale: [
+                            [0, 'rgb(135,135,135)'],
+                            [1, 'rgb(135,135,135)']
+                        ],
+                    },
+                ];
+                Plotly.newPlot("map", data, layout, {
+                    showLink: false,
+                    responsive: true,
+                    modeBarButtonsToRemove: ['sendDataToCloud','hoverCompareCartesian', 'zoom2d',
+                    'pan2d', 'hoverClosestCartesian', 'hoverCompareCartesian', 'lasso2d', 'zoomIn2d',
+                    'resetScale2d', 'toggleSpikelines', 'autoScale2d', 'select2d', 'zoomOut2d', 'hoverClosest3d', 'hoverClosestGeo', 'hoverClosestPie']
+                });
+                $('#map').addClass('sticky-element');
+            };
+
+            var buildMap = function(countriesList, numbersList, CountryNameDataList, countryScale) {
+                for(var i = 0; i < CountryNameDataList.length; i++) {
+                    CountryNameDataList[i] = htmlDecode(CountryNameDataList[i]);
+                }
+                var data  = [
+                    {
+                        type: 'choropleth',
+                        locations: countriesList,
+                        z: numbersList,
+                        text: CountryNameDataList,
+                        showscale: false,
+                        tick0: 0,
+                        zmin: 0,
+                        dtick: 1000,
+                        hoverinfo: "text",
+                        marker: {
+                            line: {
+                                color: 'rgb(189,189,189)',
+                                width: 0.5
+                            }
+                        },
+                        colorscale: countryScale,
+                    },
+                ];
+                Plotly.newPlot("map", data, layout, {
+                    showLink: false
+                });
+                $('#map').addClass('sticky-element')
+            };
+
+            if ( $( "#initial-countries-data" ).length) {
+                var iniCountryData = JSON.parse(
+                    $( "#initial-countries-data" ).html(),
+                );
+                var initCountryNumData = JSON.parse(
+                    $( "#initial-countries-int-data" ).html(),
+                );
+                var initCountryNameData = JSON.parse(
+                    $( "#initial-countries-name-data" ).html(),
+                );
+                buildInitialMap(iniCountryData, initCountryNumData, initCountryNameData);
+                $( "#initial-countries-data" ).remove();
+                $( "#initial-countries-int-data" ).remove();
+                $( "#initial-countries-name-data" ).remove();
+            }
+
+            var uncheckAll = function(risk) {
+                $('.sublist-item').each(function() {
+                    if ($(this).find('.sublist-item-text').attr('risk') !== risk) {
+                        $(this).find('.fa-check-circle').addClass('not-checked').removeClass('checked');
+                        $(this).find('.sublist-item-text').removeClass('checked');
+                    }
+                });
+            }
+            var checkCurrentRisk = function(self) {
+                $(self).find('.fa-check-circle').toggleClass('not-checked').toggleClass('checked');
+                $(self).find('.sublist-item-text').toggleClass('checked');
+            }
+            $('.sublist-item').click(function() {
+                currentRisk = $(this).find('.sublist-item-text').attr('risk');
+                $('#download_risk_id').val(currentRisk);
+                uncheckAll(currentRisk);
+                checkCurrentRisk(this);
+
+                var isChecked = $(this).find('.sublist-item-text').hasClass('checked');
+                if (isChecked) {
+                    var slider = $('.slider').hasClass('slider-on');
+                    var data = {
+                        risk: currentRisk
+                    }
+                    $('#single-risk-download').removeClass('d-none');
+                    $('#all-risk-download').addClass('d-none');
+                    if (slider) {
+                        data['company_filter'] = $('.company-select').val();
+                        data['fund_filter']  = $('.fund-select').val();
+                        $('#download_fund_id').val($('.fund-select').val())
+                        $('#download_company_id').val($('.company-select').val())
+                    } else {
+                        $('#download_fund_id').val()
+                        $('#download_company_id').val()
+                    }
+                    mapAjax(data)
+                } else {
+                    currentRisk = '';
+                    $('#single-risk-download').addClass('d-none');
+                    $('#all-risk-download').removeClass('d-none');
+                    buildInitialMap(iniCountryData, initCountryNumData, initCountryNameData);
+                }
+            });
+
+            $('.company-select').change(function() {
+                if (currentRisk !== '') {
+                    mapAjax({
+                        risk: currentRisk,
+                        company_filter: $(this).val(),
+                        fund_filter: $('.fund-select').val()
+                    });
+                }
+                $('#download_company_id').val($(this).val())
+            });
+
+            $('.fund-select').change(function() {
+                if (currentRisk !== '') {
+                    mapAjax({
+                        risk: currentRisk,
+                        company_filter: $('.company-select').val(),
+                        fund_filter: $(this).val(),
+                    });
+                }
+                $('#download_fund_id').val($(this).val())
+            });
+        });
+    </script>
+{% endblock js %}

@@ -1,0 +1,81 @@
+
+<section class="report-page">
+    <div class="container" style="margin-top:110px;">
+        <div class="row no-gutters mt-4">
+            <p class="ml-4" style="font-size: 16px; font-family: SourceSansProLight;">The matrix below shows each ESG material risk factor associated with the company as a whole. Each risk is
+                broken down by sector and country of operation. <span style="font-size: 16px; font-family: SourceSansPro;">All references used to produce this matrix are on page 14.</span></p>
+        </div>
+    </div>
+
+    {% for tables in risk_matrix %}
+        {% with forloop.counter as outer_counter %}
+            <table style="font-size: 10px; margin-top: -50px; width: {{ risk_matrix_length }}%;">
+                <thead>
+                    <tr>
+                        <th style="width: 92%; position: absolute; top:0;">
+                            {% include "includes/sub_header.html" with title="Risk assessment" icon='file://core/static/img/risk_assessment_2_icon.svg' class='small-icon' %}
+                        </th>
+                        <th style="height: 110px;"></th>
+                        <th>{% include "includes/page_footer.html" with matrix_key=True  %}</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th class="text-center" colspan="{{ assessment.industries.all|length }}"><strong>Industry(s)</strong></th>
+                        <th class="text-center" colspan="{{ assessment.countries.all|length }}"><strong>Location(s)</strong></th>
+                    </tr>
+                    <tr>
+                        <th style="width:1%;"></th>
+                        <th></th>
+                        {% for record in risk_matrix_headers %}
+                            {% if forloop.counter == outer_counter %}
+                                {% for record in record.industry_headers %}
+                                    <th class="text-center" style="width:5%;" >{{ record }}</th>
+                                {% endfor %}
+                                <th style="width:1%"></th>
+                                {% for record in record.country_headers %}
+                                    <th class="text-center " style="width:5%;" >{{ record }}</th>
+                                {% endfor %}
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for table in tables %}
+                        <tr class="{% if forloop.counter|divisibleby:10 %}page-break {% endif %}matrix_row">
+                            {% if table.side_count %}
+                                <td class="risk-catagory text-center"><strong>{{ table.side_count }}</strong></td>
+                            {% else %}
+                                <td class="risk-catagory text-center"></td>
+                            {% endif  %}
+                            <td class="matrix-risk">{{ table.risk }} <sup> {{ forloop.counter }}</sup></td>
+
+                            {% for item in table.risk_matrix.industry %}
+                                {% if item.threshold == 'matrix-na' %}
+                                    <td class="matrix-item"><div class="risk-score matrix-na">{{ item.score }}</div></td>
+                                {% else %}
+                                    <td class="matrix-item"><div class="risk-score {% if item.threshold  == '#ffe72f' %}risk-black{% endif %}" style="background-color:{{ item.threshold }};">{{ item.score }}</div></td>
+                                {% endif %}
+                            {% endfor %}
+                            <td class="matrix-item"></td>
+                            {% for item in table.risk_matrix.country %}
+                                {% if item.threshold == 'matrix-na' %}
+                                    <td class="matrix-item"><div class="risk-score matrix-na">{{ item.score }}</div></td>
+                                {% else %}
+                                    <td class="matrix-item"><div class="risk-score {% if item.threshold  == '#ffe72f' %}risk-black{% endif %}" style="background-color:{{ item.threshold }};">{{ item.score }}</div></td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endwith %}
+        {% if not forloop.last %}
+            {% include "includes/page_footer.html" with matrix_key=True %}
+            <div class="page-break"></div>
+            <div style="height: 110px;"></div>
+        {% endif %}
+    {% endfor %}
+
+    {% include "includes/page_footer.html"  with matrix_key=True %}
+</section>

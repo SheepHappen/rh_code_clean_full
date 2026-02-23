@@ -1,0 +1,20 @@
+[
+{
+    "model": "riskfactor.riskdatasetsource",
+    "pk": 1,
+    "fields": {
+        "name": "SASB",
+        "slug": "sasb",
+        "colour": "red"
+    }
+},
+{
+    "model": "riskfactor.riskdatasetsource",
+    "pk": 2,
+    "fields": {
+        "name": "Anthesis",
+        "slug": "anthesis",
+        "colour": "green"
+    }
+}
+]

@@ -1,0 +1,2262 @@
+[
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000003",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Does the Company monitor its energy use?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000004",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "If yes, has the Company set a formal energy reduction target?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000003",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000005",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Has the Company calculated its Greenhouse Gas Emissions? ",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 2,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000006",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "If yes, has the Company calculated Scope 1 & 2 emissions?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000005",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000007",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Any Scope 3 emissions?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000005",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 2,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000008",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Has the Company set a formal GHG emissions reduction target?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000005",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 3,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000009",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Is this a science-based target to reduce GHG emissions?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000005",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 4,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000000a",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Has the Company undertaken an assessment of climate change resilience (risks and opportunities) i.e. under different warming scenarios?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 3,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000000b",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "If yes, was this in line with the requirements of the Taskforce on Climate related Financial Disclosures (TCFD)?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000000a",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000000c",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Are there plans in place to mitigate/respond to the risks and/or opportunities identified?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000000a",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 2,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000000d",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Does the Company measure the impact and contribution of it's operations to air pollution (air emissions such as NOx, SOx, and particulates)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 4,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000000e",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "If yes, has the Company set a formal reduction target(s)?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000000d",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000000f",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Does the Company monitor its water use?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 5,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000010",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "If yes, has the Company set a formal water use reduction target?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000000f",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000011",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Does the Company monitor the amount of waste generated?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 6,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000012",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "If yes, has the Company set formal targets for enhancing recycling and the reduction of waste/reduction of waste to landfill?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000011",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000013",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Has the Company sought to reduce the proportion and/or volume of hazardous wastes it produces?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000011",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 2,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000014",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Has the Company established a process to identify and prevent environmental risks such as releases to air, water, soil and groundwater (e.g. improved storage and handling practices, reduction in quantities stored)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 7,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000015",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Has the Company experienced any unauthorised releases to (pollution of) air or water in the last three years?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 0,
+    "no_score": 1,
+    "is_answerable": true,
+    "display_order": 8,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000016",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Has the Company identified any actual or suspected contaminated land in the last three years?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 0,
+    "no_score": 1,
+    "is_answerable": true,
+    "display_order": 9,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000017",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Does the Company take a circular economy approach i.e. seek wherever possible to always purchase of goods designed to last and that can be re-used or recycled at the end of their service life?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 10,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000018",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Responsible sourcing: Does the Company seek wherever possible to always purchase goods which are low impact, and use sustainably sourced materials, including recycled content where possible?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 11,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000019",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Does the Company assess, monitor or control its impact(s) (both direct and indirect drivers) on biodiversity and ecosystem change (e.g. change in land use, impact to IUCN Red List species)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 12,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000001a",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Does the Company hold an environmental management system certification? (e.g. certified to ISO14001 or similar)",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 13,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000001b",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "If yes, does this cover all operating sites?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000001a",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000001c",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Does the Company hold all of the necessary environmental documents which give it a licence to operate (e.g. licences, permits and/or regulatory approvals)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 14,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000001d",
+  "fields": {
+    "category": "ENVIRONMENT",
+    "text": "Is or has the Company been in non-compliance in the last 3 years with the relevant environmental regulations?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 0,
+    "no_score": 1,
+    "is_answerable": true,
+    "display_order": 15,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000001f",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company collate Health & Safety performance statistics?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 17,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000020",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "If yes, do they include monitoring and disclosure of lagging indicators such as injury frequency and severity, recordable injuries, lost workdays and compensation costs?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000001f",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000021",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Monitoring and disclosure of leading indicators such as near misses, safety training and safety audits?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000001f",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 2,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000022",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company hold a health & safety management system certification (e.g. certified to OHSAS 18001 or similar)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 18,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000023",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does this cover all operating sites?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000022",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000024",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company monitor the diversity of its staff? ",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 19,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000025",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "If yes, does it collate information on Gender?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000024",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000026",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Ethnicity",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000024",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 2,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000027",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Disability",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000024",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 3,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000028",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Veterans",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000024",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 4,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000029",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Other indicators of diversity",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000024",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 5,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000002a",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Has the Company set targets and put in place formal initiatives aimed at enhancing diversity in the workforce?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000024",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 6,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000002b",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company monitor gender pay equality?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 20,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000002c",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Has the Company set targets and put in place formal initiatives aimed at reducing the gender pay gap?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000002b",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000002d",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company monitor pay equality with regard to any other diversity factor, for instance ethnicity or disability?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 21,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000002e",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company monitor the annual total compensation for the highest compensated individual compared to the median annual total compensation for all employees (excluding the highest -compensated individual)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 22,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000002f",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company employ any staff on zero hours contracts?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 0,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 23,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000030",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company monitor the net number of jobs created (by a certain reporting period)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 24,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000031",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company monitor its staff turnover rate?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 25,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000032",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "If yes, are there measures/programmes in place to reduce the staff turnover rate?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000031",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000033",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company monitor training provided to staff (such as average hours of training undertaken per staff member and employee category)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 26,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000034",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company monitor the number and percentage of operations and suppliers considered to have a significant risk of incidents of child labour and/or incidents of forced labour?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 27,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000035",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Is there an action plan in place to manage incidents of child labour and/or incidents of forced labour?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000034",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000036",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company's activities involve working with children or other vulnerable groups within the community?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 0,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 28,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000037",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company have defined cybersecurity and data protection practices?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 29,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000038",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "If yes, is this independently verified (e.g. via penetration tests etc.)?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000037",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000039",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Has the Company implemented an IT security management system (e.g. certified to the international standard ISO27001 for information security)?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000037",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 2,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000003a",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Have there been any breaches in cyber security or data protection within the last three years?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 0,
+    "no_score": 1,
+    "is_answerable": true,
+    "display_order": 30,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000003b",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Does the Company have formal systems and procedures in place to monitor customer satisfaction and response to complaints?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 31,
+    "pdf_display_order": 12,
+    "pdf_display_name": "Customer satisfaction",
+    "is_key": false,
+    "is_best_practice": true,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000003c",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Is the Company involved in community actions (such as through charitable giving, community partnerships, time contributions, in-kind contributions)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 32,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000003d",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Is or has the Company been in non-compliance in the last 3 years with the relevant social regulations (such as H&S, incidents of human rights violations or lawsuits)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 0,
+    "no_score": 1,
+    "is_answerable": true,
+    "display_order": 33,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000003e",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Does the Company have a stated purpose linked to societal benefit?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 34,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000003f",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Does the Company undertake activities that are primarily related to or otherwise draw a significant proportion of revenues from:",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": null,
+    "no_score": null,
+    "is_answerable": false,
+    "display_order": 35,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000040",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Alcohol",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000003f",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000041",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Armaments",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000003f",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 2,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000042",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Gambling",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000003f",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 3,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000043",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Pornography",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000003f",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 4,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000044",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Nuclear energy",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000003f",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 5,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000045",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "The extraction, processing, sale or use of coal, oil or gas (hydrocarbons)",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000003f",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 6,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000046",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Operations within the Arctic region",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000003f",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 7,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000047",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Has the Company achieved or is working towards certification as a B-Corp?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 36,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000048",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "With regard to the Composition of the Board:",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": null,
+    "no_score": null,
+    "is_answerable": false,
+    "display_order": 37,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000049",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Are the Chairman and CEO roles separate?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000048",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000004a",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Are there non-executive directors?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000048",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 2,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000004b",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Is Board diversity monitored?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000048",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 3,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000004c",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Is someone at Board level formally assigned responsibility for ESG matters? ",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 38,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000004d",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Are there staff within the Company responsible for managing individual ESG aspects (such as risk, ethics, environmental, H&S, HR)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 39,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000004e",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Environmental Management",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000004d",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000004f",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Health & Safety",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000004d",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 2,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000050",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Human Resources",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000004d",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 3,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000051",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Risk",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000004d",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 4,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000052",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Ethics and compliance",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000004d",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 5,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000053",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Has the Company defined its material ESG impacts and opportunities?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 40,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000054",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Does the Company have written policies or statements of commitment in place that covers the approach and management of the following topics (NB. Could be included in one document or as separate documents):",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": null,
+    "no_score": null,
+    "is_answerable": false,
+    "display_order": 41,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000055",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "An integrated ESG Policy",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": 1,
+    "pdf_display_name": "An integrated ESG Policy",
+    "is_key": true,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000056",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Environmental policy",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 2,
+    "pdf_display_order": 2,
+    "pdf_display_name": "Environmental policy",
+    "is_key": true,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000057",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Health & Safety policy",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 3,
+    "pdf_display_order": 3,
+    "pdf_display_name": "Health & Safety policy",
+    "is_key": true,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000058",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Anti-bribery and corruption",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 4,
+    "pdf_display_order": 7,
+    "pdf_display_name": "Anti-bribery and corruption",
+    "is_key": true,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000059",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Whistleblowing",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 5,
+    "pdf_display_order": 8,
+    "pdf_display_name": "Whistleblowing",
+    "is_key": true,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000005a",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Conflict of interest",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 6,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000005b",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Fraud and money laundering",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 7,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000005c",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Anti-competitive practices",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 8,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000005d",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Information security/data privacy",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 9,
+    "pdf_display_order": 9,
+    "pdf_display_name": "Information security/data privacy",
+    "is_key": false,
+    "is_best_practice": true,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000005e",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Physical security",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 10,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000005f",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Political associations and donations",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 11,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000060",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Code Of Business Ethics",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 12,
+    "pdf_display_order": 6,
+    "pdf_display_name": "Code Of Business Ethics",
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": true,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000061",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Does the Company undertake sustainability/ESG reporting? ",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 42,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000062",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "If yes, are material ESG impacts/opportunities defined?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000061",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000063",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Is ESG and sustainability information included within the Annual Directors' Report (or similar)?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000061",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 2,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000064",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Is a standalone Sustainability Report produced on an annual basis?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000061",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 3,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000065",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Is the Sustainability Report verified by a third party, such as GRI, CDP etc.?",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000061",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 4,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000066",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Are ESG considerations integrated into Company decision making at all levels of the organization (e.g. this could include procurement, research and development, product design, marketing, manufacturing, storage and distribution, sales, and compliance)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 43,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000067",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Does the Company have in place risk management measures to address potential events that could lead to a corporate crisis and impact the Company's business activities (e.g. technical failures, reputational damage, regulatory changes, etc.)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 44,
+    "pdf_display_order": 10,
+    "pdf_display_name": "Risk management measures",
+    "is_key": true,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000068",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Has the Company had any material ESG incidents in the last 3 years (e.g. negative press, H&S incident, major environmental spill or non-compliance, bribery case)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 0,
+    "no_score": 1,
+    "is_answerable": true,
+    "display_order": 45,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000069",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Does the Company provide training on ESG aspects (e.g. environmental issues, H&S, D&I etc.)?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 46,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000006a",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Does the Company have a whistleblowing system that uses a third-party contact?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 47,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000006b",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Supply chain/sustainable procurement: does the Company have actions in place (such as supplier questionnaires, code of conduct, audits etc.) regarding the monitoring and/or integration of ESG factors through the supply chain?",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 48,
+    "pdf_display_order": 11,
+    "pdf_display_name": "Sustainable procurement",
+    "is_key": true,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000006c",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Does the Company have written policies or statements of commitment in place that covers the approach and management of:",
+    "company": null,
+    "trigger_question": null,
+    "yes_score": null,
+    "no_score": null,
+    "is_answerable": false,
+    "display_order": 16,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000006d",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "National Employment Regulations and ILO Standards",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000006c",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 1,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000006e",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Modern Day Slavery, forced labour and child labour",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 2,
+    "pdf_display_order": 4,
+    "pdf_display_name": "Modern Day Slavery, forced labour and child labour",
+    "is_key": true,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-00000000006f",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Health & Safety",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000006c",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 3,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000070",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Grievance procedures",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000006c",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 4,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000071",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Harassment, abuse and bullying",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000006c",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 5,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000072",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Working hours, vacation and leave",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000006c",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 6,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000073",
+  "fields": {
+    "category": "GOVERNANCE",
+    "text": "Diversity and inclusion",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-000000000054",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 7,
+    "pdf_display_order": 5,
+    "pdf_display_name": "Diversity and inclusion",
+    "is_key": false,
+    "is_best_practice": true,
+    "is_market_leading": false,
+    "is_required": true
+  }
+},
+{
+  "model": "core.documentquestion",
+  "pk": "00000000-0000-0000-0000-000000000074",
+  "fields": {
+    "category": "SOCIAL",
+    "text": "Other",
+    "company": null,
+    "trigger_question": "00000000-0000-0000-0000-00000000006c",
+    "yes_score": 1,
+    "no_score": 0,
+    "is_answerable": true,
+    "display_order": 8,
+    "pdf_display_order": null,
+    "pdf_display_name": null,
+    "is_key": false,
+    "is_best_practice": false,
+    "is_market_leading": false,
+    "is_required": false
+  }
+}
+]

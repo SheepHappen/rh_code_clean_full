@@ -1,0 +1,128 @@
+{% load static %}
+<header class="smart-scroll">
+    <nav class="navbar navbar-expand-lg top-nav-bar navbar-light bg-light" style="padding-left: 27px;padding-right:31px">
+        <div class='mobile-header-wrapper'>
+            <div class="mobile-header-column">
+                <button class="navbar-toggler" type="button" data-toggle="custom-collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="mobile-header-column">
+                <div class="navbar-brand">
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'dashboard' %}">
+                            <img src="{% static '/img/RiskHorizon-logo.png' %}" height="30" alt="RiskHorizon logo" />
+                        </a>
+                    {% else %}
+                        <img src="{% static '/img/RiskHorizon-logo.png' %}" height="30" alt="RiskHorizon logo" />
+                    {% endif %}
+                </div>
+            </div>
+            <div class="mobile-header-column">
+                {% if user.is_authenticated %}
+                    <div class="mobile-user-icon">
+                        {{ initials }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                {% if user.is_authenticated %}
+                    <li class="nav-item dropdown">
+                        {% if profile.avatar %}
+                            <span class="user-avatar">
+                                <img class="img-fluid img-rounded" src="{{ profile.avatar.url }}">
+                            </span>
+                        {% else %}
+                            <span class="user-avatar-big">
+                                <span class="no-image-placeholder">
+                                    {{ initials }}
+                                </span>
+                            </span>
+                        {% endif %}
+                        <a class="nav-link user-profile-main dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            {{ request.user.get_full_name }}
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
+                            {% if user.is_superuser or user.is_staff %}
+                                <li><a class="dropdown-item" href="{% url 'staff_admin_base' %}">Admin Panel</a></li>
+                            {% endif %}
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="{% url 'account_logout' %}">Log out</a></li>
+                        </ul>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+    {% if user.is_authenticated %}
+        <nav class="navbar nav-main navbar-expand-lg navbar-dark static-top">
+            <div class="collapse navbar-collapse nav-links" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item" style="margin-left: 15px;">
+                        {% url 'dashboard' as the_url %}
+                        <a class="nav-link-item{% if the_url == current_url %} active-nav-item{% endif %}" href="{{ the_url }}">
+                            Dashboard
+                        </a>
+                    </li>
+                    {% if 'portfolio' in show_items %}
+                        <li class="nav-item">
+                            {% url 'portfolio' as the_url %}
+                            <a class="nav-link-item{% if the_url == current_url %} active-nav-item{% endif %}" href="{{ the_url }}">
+                                Portfolio manager
+                            </a>
+                        </li>
+                    {% endif %}
+                    <li class="nav-item">
+                        {% url 'company_assessment_key_detail' as the_url %}
+                        <a class="nav-link-item{% if company_assessment in current_url %} active-nav-item{% endif %}" href="{{ the_url }}">
+                            Company assessment
+                        </a>
+                    </li>
+                    {% if 'geo_assessment' in show_items %}
+                        <li class="nav-item">
+                            {% url 'geo_assessment' as the_url %}
+                            <a class="nav-link-item{% if the_url == current_url %} active-nav-item{% endif %}" href="{{ the_url }}">
+                                Geographic assessment
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% if 'screening-tool' in show_items %}
+                        <li class="nav-item">
+                            {% url 'screening-tool' as the_url %}
+                            <a class="nav-link-item{% if the_url == current_url %} active-nav-item{% endif %}" href="{{ the_url }}">
+                                Screening tool
+                            </a>
+                        </li>
+                    {% endif %}
+                    <div class="dropdown-divider"></div>
+                    <li class="mobile-link">
+                        {% url 'profile' as the_url %}
+                        <a class="nav-link-item{% if the_url == current_url %} active-nav-item{% endif %}" href="{{ the_url }}">
+                            profile
+                        </a>
+                    </li>
+                    {% if user.is_superuser %}
+                        <li class="mobile-link">
+                            {% url 'staff_admin_base' as the_url %}
+                            <a class="nav-link-item{% if the_url == current_url %} active-nav-item{% endif %}" href="{{ the_url }}">
+                                Admin Panel
+                            </a>
+                        </li>
+                    {% endif %}
+                    <li class="mobile-link">
+                        {% url 'account_logout' as the_url %}
+                        <a class="nav-link-item{% if the_url == current_url %} active-nav-item{% endif %}" href="{{ the_url }}">
+                            Log out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    {% endif %}
+    {% if not user.is_authenticated %}
+        <div class="signed-out-bar"></div>
+    {% endif %}
+</header>

@@ -1,0 +1,126 @@
+{% extends "staff_base.html" %}
+{% load static crispy_forms_tags %}
+
+{% block main_content %}
+    <h1>
+        Risk Factors
+        <a href="{% url 'risk_factor_add' %}" class="float-right btn btn-secondary">Add Risk Factor</a>
+    </h1>
+
+    <div class="form-group ml-2 dataTables_filter" style="margin-top:85px;">
+        <label class="control-label font-semi-bold mr-3">Filter by category:</label>
+        <select class="js-categories">
+            <option value="All">Show All</option>
+            {% for category in categories %}
+                <option value="{{ category }}">{{ category }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <table id="records" class="ManagementQuestion-table table" style="width:100%">
+        <thead>
+            <tr>
+                <th class="column-header">Risk Factor</th>
+                <th class="column-header">Category</th>
+                <th class="column-header">Default recommendation</th>
+                <th class="column-header"></th>
+                <th class="column-header"></th>
+            </tr>
+        </thead>
+    </table>
+    <div id="deleteRiskFactor" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-2 modal-icon-wrapper">
+                            <i class="fal fa-exclamation-circle warning fa-3x modal-icon"></i>
+                        </div>
+                        <div class="col-10">
+                            <h5 class="modal-title">Delete Risk Factor?</h5>
+                            <p class="modal-text">This action cannot be reversed </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
+                    <a href=# type="button" class="btn btn-primary delete-me">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+
+            $('#records').on('click', 'a.editor_remove', function (e) {
+                e.preventDefault();
+                var data = table.row($(this).closest('tr')).data()
+                var url = "{% url 'risk_factor_delete' 123 %}";
+
+                $('#deleteRiskFactor').modal('show');
+                $('#deleteRiskFactor').find('.delete-me').attr('href' , url.replace('123', data.link));
+            });
+
+            $('#deleteRiskFactor').modal({ show: false})
+
+            var table = $('#records').DataTable({
+                dom: 'r',
+                ajax: "{% url 'risk_factor_list_data_table' %}",
+                paging: false,
+                columns: [
+                    {
+                        "data": "name",
+                        render: $.fn.dataTable.render.text(),
+                    },
+                    {
+                        "data": "category",
+                        render: $.fn.dataTable.render.text(),
+                    },
+                    {
+                        "data": "recommendation",
+                        render: $.fn.dataTable.render.text(),
+                    },
+                    {
+                        data: "link",
+                        className: "center",
+                        render: function(data, type) {
+                            return "<a href=# class='btn btn-primary editor_remove'>Delete</a>"
+                        }
+                    },
+                    {
+                        data: 'edit',
+                        className: "center",
+                    }
+                ],
+                columnDefs: [{
+                    "targets": 3,
+                    "orderable": false
+                }],
+                createdRow: function ( row, data, index ) {
+                    $(row).addClass('row-text-item')
+                },
+            });
+
+            $('.js-categories').select2();
+
+            $('.js-categories').on('change', function() {
+                $.ajax({
+                    url: "{% url 'risk_factor_list_data_table' %}",
+                    type: "get",
+                    data: {
+                        'category_value': $(this).val(),
+                    }
+                }).always(function() {
+                }).fail(function(data) {
+                    console.log('failed')
+                }).done(function(data) {
+                    table.clear();
+                    table.rows.add(data.data).draw();
+                });
+            })
+        });
+    </script>
+{% endblock js %}

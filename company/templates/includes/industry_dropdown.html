@@ -1,0 +1,31 @@
+<ul class="list-unstyled" id="industryList" style="width: 97%;">
+    {% for industry_type in industry_types %}
+        <li class="silver-border">
+            <button aria-expanded="false" aria-controls="{{ industry_type.industry_type.slug }}" class="industryTypeHeading  {% if industry_type.count %} orange {% endif %}font-semi-bold collapsed list-sub-heading ml-4" type="button" data-toggle="collapse" data-target=".{{ industry_type.industry_type.slug }}Collapse">
+                <i class="fal fa-chevron-down list-item-toggle mr-3" style="color:#e98320; opacity: 1; font-weight: 400;"></i>
+                {% if industry_type.industry_type.icon %}
+                    <i class="{{ industry_type.industry_type.icon }} mr-3"></i>
+                {% endif %}
+                {{ industry_type.industry_type.name }}
+                <span class="{{ industry_type.industry_type.slug }}-wrapper {% if not industry_type.count %}d-none{% endif %} orange">
+                    <span class="ml-2">(</span><span class="{{ industry_type.industry_type.slug }}-count">{{ industry_type.count }}</span> selected)
+                </span>
+            </button>
+            <ul id="{{ industry_type.industry_type.slug }}" aria-labelledby="industryTypeHeading" class="list-unstyled industryTypeItems collapse {{ industry_type.industry_type.slug }}Collapse" style="padding-left:0;" data-parent="#industryList">
+                {% for option in industry_type.options %}
+                    <li data-name="{{ option.name }}" class="sublist-item {% if not forloop.last %}silver-border{% endif %}" {% if forloop.first %}style="border-top: 2px solid #f4f4f4;"{% endif %}>
+                        <div class="mt-1 ml-4">
+                            <input type="checkbox" data-name="{{ option.id }}" value="{{ option.slug }}" data-wrapper=".{{ industry_type.industry_type.slug }}-wrapper" data-count=".{{ industry_type.industry_type.slug }}-count" class="mr-3 industrySelect" style="margin-left: 10px;" {% if option.checked %}checked{% endif %}>
+                            <label class="industry-checkbox mr-2" for="checkbox_1"></label>
+                            <div class='sublist-item-text' style="margin-left: 3px;">{{ option.name }}</div>
+                            
+                            <button type="button" class="popover-button" data-parent="{{ option.slug }}" data-container="body" data-toggle="popover" data-placement="right" data-content="{{ option.short_description }}">
+                                <i class='industry-popover fal question-mark fa-question-circle'></i>
+                            </button>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+</ul>

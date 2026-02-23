@@ -1,0 +1,57 @@
+[
+{
+  "model": "core.threshold",
+  "pk": "00000000-0000-0000-0000-000000000001",
+  "fields": {
+    "text": "Low to Moderate",
+    "lower_bound": "2.0",
+    "upper_bound": "4.0",
+    "colour": "#62cc2c",
+    "text_in_sentence": "a low to moderate"
+  }
+},
+{
+  "model": "core.threshold",
+  "pk": "00000000-0000-0000-0000-000000000002",
+  "fields": {
+    "text": "Moderate",
+    "lower_bound": "4.0",
+    "upper_bound": "6.0",
+    "colour": "#ffe72f",
+    "text_in_sentence": "a moderate"
+  }
+},
+{
+  "model": "core.threshold",
+  "pk": "00000000-0000-0000-0000-000000000003",
+  "fields": {
+    "text": "Moderate to High",
+    "lower_bound": "6.0",
+    "upper_bound": "8.0",
+    "colour": "#ff9123",
+    "text_in_sentence": "a moderate to high"
+  }
+},
+{
+  "model": "core.threshold",
+  "pk": "00000000-0000-0000-0000-000000000004",
+  "fields": {
+    "text": "High",
+    "lower_bound": "8.0",
+    "upper_bound": "10.0",
+    "colour": "#e31738",
+    "text_in_sentence": "a high"
+  }
+},
+{
+  "model": "core.threshold",
+  "pk": "00000000-0000-0000-0000-000000000005",
+  "fields": {
+    "text": "Low",
+    "lower_bound": "0.0",
+    "upper_bound": "2.0",
+    "colour": "#297b15",
+    "text_in_sentence": "a low"
+  }
+}
+]

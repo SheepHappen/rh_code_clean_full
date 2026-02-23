@@ -1,0 +1,50 @@
+[
+{
+    "model": "riskfactor.riskfactorcategory",
+    "pk": 1,
+    "fields": {
+        "name": "Economic",
+        "slug": "economic"
+    }
+},
+{
+    "model": "riskfactor.riskfactorcategory",
+    "pk": 2,
+    "fields": {
+        "name": "Environmental",
+        "slug": "environmental"
+    }
+},
+{
+    "model": "riskfactor.riskfactorcategory",
+    "pk": 3,
+    "fields": {
+        "name": "Geopolitical",
+        "slug": "geopolitical"
+    }
+},
+{
+    "model": "riskfactor.riskfactorcategory",
+    "pk": 4,
+    "fields": {
+        "name": "Social",
+        "slug": "social"
+    }
+},
+{
+    "model": "riskfactor.riskfactorcategory",
+    "pk": 5,
+    "fields": {
+        "name": "Technological",
+        "slug": "technological"
+    }
+},
+{
+    "model": "riskfactor.riskfactorcategory",
+    "pk": 6,
+    "fields": {
+        "name": "Governance",
+        "slug": "governance"
+    }
+}
+]

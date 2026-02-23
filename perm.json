@@ -1,0 +1,34 @@
+[
+    {
+      "model": "core.permission",
+      "pk": "4fc7386d-7c14-4a4e-bf3f-7eeccfa128dc",
+      "fields": {
+        "name": "Screening tool",
+        "endpoint": "screening-tool"
+      }
+    },
+    {
+      "model": "core.permission",
+      "pk": "56f67a68-011e-4f58-a5ff-0a7c35621294",
+      "fields": {
+        "name": "edit_risk_score",
+        "endpoint": "''"
+      }
+    },
+    {
+      "model": "core.permission",
+      "pk": "5908e703-e729-4b3a-945a-7ed851af6c05",
+      "fields": {
+        "name": "Portfolio manager",
+        "endpoint": "portfolio"
+      }
+    },
+    {
+      "model": "core.permission",
+      "pk": "c9a1c724-810d-45cb-8e60-1cd24a524ef8",
+      "fields": {
+        "name": "Geographic assessment",
+        "endpoint": "geo_assessment"
+      }
+    }
+    ]

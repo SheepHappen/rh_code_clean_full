@@ -1,0 +1,136 @@
+{% extends "staff_base.html" %}
+{% load static  %}
+
+{% block main_content %}
+    <h1>Country Risk Scores</h1>
+
+    {% if has_scores %}
+        <div class="form-group" style="margin-top:55px;">
+            <label>Search:
+                <select class="js-example-basic-single">
+                    <option value="All">Show All</option>
+                    {% for risk in risks %}
+                        <option value="{{ risk }}">{{ risk }}</option>
+                    {% endfor %}
+                </select>
+            </label>
+        </div>
+
+        <table id="records" class="table" style="width:100%">
+            <thead>
+                <tr>
+                    <th class="column-header">Risk Factor</th>
+                    <th class="column-header">Country</th>
+                    <th class="column-header">Exposure</th>
+                    <th class="column-header"></th>
+                </tr>
+            </thead>
+        </table>
+    {% else %}
+        <p>No scores</p>
+    {% endif %}
+{% endblock %}
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+
+            var string_to_slug = function(str) {
+                str = str.replace(/^\s+|\s+$/g, ''); // trim
+                str = str.toLowerCase();
+
+                // remove accents, swap ñ for n, etc
+                var from = "àáãäâèéëêìíïîòóöôùúüûñç·/_,:;";
+                var to   = "aaaaaeeeeiiiioooouuuunc------";
+
+                for (var i=0, l=from.length ; i<l ; i++) {
+                    str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
+                }
+
+                str = str.replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, '_').replace(/-+/g, '_');
+
+                return str;
+            };
+
+            var getExportFileName = function() {
+                var blankSearch = 'All'
+                var today = new Date();
+                var dd = String(today.getDate()).padStart(2, '0');
+                var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                var yyyy = today.getFullYear();
+                var searchMade = $(".js-example-basic-single").select2('val')
+
+                if (searchMade) {
+                    return string_to_slug(searchMade) + '_' + dd + '.' + mm + '.' + yyyy
+                }
+
+                return blankSearch + '_' + dd + '.' + mm + '.' + yyyy
+            }
+
+            var table = $('#records').DataTable({
+                dom: 'Brtip',
+                ajax: "{% url 'risk_factor_values_table' %}",
+                paging: true,
+                pageLength: 255,
+                columns: [
+                    {
+                        "data": "riskfacter",
+                        render: $.fn.dataTable.render.text(),
+                    },
+                    {
+                        "data": "country",
+                        render: $.fn.dataTable.render.text(),
+                    },
+                    {
+                        "data": "exposure",
+                        render: $.fn.dataTable.render.text(),
+                    },
+                    {
+                        data: 'edit',
+                        className: "center",
+                    }
+                ],
+                columnDefs: [
+                    { type: 'natural', targets: 2 }
+                ],
+                createdRow: function ( row, data, index ) {
+                    $(row).addClass('row-text-item')
+                },
+                buttons: [
+                    {
+                        extend: 'csv',
+                        text: 'Save to csv',
+                        filename: function () { return getExportFileName();}
+                    },
+                    {
+                        extend: 'excel',
+                        text: 'Save to excel(xlsx)',
+                        filename: function () { return getExportFileName();},
+                        title: null
+                    },
+                ]
+            });
+
+            $('.js-example-basic-single').select2();
+
+            $('.js-example-basic-single').on('change', function() {
+                var data = $(this).val();
+
+                $.ajax({
+                    url: "{% url 'risk_factor_values_table' %}",
+                    type: "get",
+                    data: {
+                        'filter_value': data,
+                    }
+                }).always(function() {
+                }).fail(function(data) {
+                    console.log('failed')
+                }).done(function(data) {
+
+                    table.clear();
+                    table.rows.add(data.data).draw();
+                });
+            })
+        });
+    </script>
+{% endblock js %}

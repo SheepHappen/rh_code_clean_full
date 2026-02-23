@@ -1,0 +1,52 @@
+[
+{
+    "model": "core.threshold",
+    "pk": 1,
+    "fields": {
+        "text": "Low",
+        "lower_bound": "2.0",
+        "upper_bound": "4.0",
+        "colour": "#62cc2c"
+    }
+},
+{
+    "model": "core.threshold",
+    "pk": 2,
+    "fields": {
+        "text": "Moderate",
+        "lower_bound": "4.0",
+        "upper_bound": "6.0",
+        "colour": "#ffe72f"
+    }
+},
+{
+    "model": "core.threshold",
+    "pk": 3,
+    "fields": {
+        "text": "High",
+        "lower_bound": "6.0",
+        "upper_bound": "8.0",
+        "colour": "#ff9123"
+    }
+},
+{
+    "model": "core.threshold",
+    "pk": 4,
+    "fields": {
+        "text": "Extreme",
+        "lower_bound": "8.0",
+        "upper_bound": "10.0",
+        "colour": "#e31738"
+    }
+},
+{
+    "model": "core.threshold",
+    "pk": 5,
+    "fields": {
+        "text": "Very Low",
+        "lower_bound": "0.0",
+        "upper_bound": "2.0",
+        "colour": "#297b15"
+    }
+}
+]

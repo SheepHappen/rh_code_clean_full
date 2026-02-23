@@ -1,0 +1,80 @@
+<table {% if margin %}style="margin-top: -80px;" {% else %} style="margin-top: -67px;" {% endif %}>
+    <thead>
+        <tr>
+            <th style="width: 93%; position: absolute; top:0;">
+                {% include "includes/sub_header.html" with title="Information review" icon='file://core/static/img/esg_management_icon.svg' class='small-icon' %}
+            </th>
+            {% if margin %}
+                <th style="height: 110px;"></th>
+            {% else %}
+                <th style="height: 100px;"></th>
+            {% endif %}
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="width:100%;">
+            <th style="width: 100%;">
+                {% with questions|length as total %}
+                    <div class="sub-section {% if background %} {{ background }} {% endif %}">
+                        <h2 class="sub-section-title">
+                            <img src="{{ icon }}" class="sub-page-icon-tiny" alt="{{ title }} icon">
+                            {{ title }}
+                            ({{ total }})
+                        </h2>
+                    </div>
+                {% endwith %}
+            </th>
+        </tr>
+        {% for question in questions %}
+            {% if forloop.counter == 1 and not margin %}
+                <tr>
+                    <th style="width: 93%; position: absolute; top:0;">
+                        <header class="page-header">
+                            <h1 class="page-title">Information review</h1>
+                            <img src="file://core/static/img/esg_management_icon_1.svg" class="heading-icon" alt="Management questions page 1 icon">
+                        </header>
+                        <p class="ml-4 mt-4" >
+                            {% if company == 'Landmark' or company == 'Argyll Environmental' %}
+                            Answers have been provided by Argyll Environmental through a review of publicly available web based sources.{% endif %} <span style="background-color:#Feefeb; font-family: SourceSansProBold; padding: 5px;">We are highlighting the questions for the top 5 risk factors</span>
+                        </p>
+                    </th>
+                    <th style="height: 120px;"></th>
+                </tr>
+                <tr style="width:100%;">
+                    <th style="width: 100%;">
+                        {% with questions|length as total %}
+                            <div class="sub-section {% if background %} {{ background }} {% endif %}">
+                                <h2 class="sub-section-title">
+                                    <img src="{{ icon }}" class="sub-page-icon-tiny" alt="{{ title }} icon">
+                                    {{ title }}
+                                    ({{ total }})
+                                </h2>
+                            </div>
+                        {% endwith %}
+                    </th>
+                </tr>
+            {% endif %}
+            <tr>
+                <td>
+                    <div class="management-question-list-record {% if question.hightlight %} light-red {% endif %}">
+                        <span>{{ forloop.counter }}.</span>
+                        <div style="margin-left: 15px; margin-top: -20px;">
+                        <span>{% if forloop.counter > 9 %}.{% endif %} Q: </span><span>{{ question }}</span>
+                            <p>
+                                <span style="font-size:13.333px; font-family: SourceSansPro;">A: </span><span style="font-size:13.333px; font-family: SourceSansProLight;">{% if question.answer %}{{ question.answer }}{% else %} - {% endif %}</span>
+                            </p>
+                            {% if question.priority %}
+                                <span>*Potential concern*</span>
+                            {% endif %}
+                            {% if question.insufficient %}
+                                <span>*Insufficient information*</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </td>
+                <td>{% include "includes/page_footer.html" %}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+

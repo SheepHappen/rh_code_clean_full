@@ -1,0 +1,11 @@
+{% extends "staff_base.html" %}
+{% load static crispy_forms_tags %}
+
+{% block main_content %}
+    <h1>Add Document Question</h1>
+    <p>All fields marked * are mandatory</p>
+
+    <form action="{% url 'document_question_create' %}" method="POST" style="margin-top:55px;">
+        {% crispy form %}
+    </form>
+{% endblock %}

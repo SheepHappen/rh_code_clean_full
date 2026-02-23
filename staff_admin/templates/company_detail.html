@@ -1,0 +1,72 @@
+{% extends "staff_base.html" %}
+{% load static crispy_forms_tags %}
+
+
+{% block main_content %}
+    <br>
+    <br>
+    <form action="{% url 'company_detail' form.instance.id %}" method="POST">
+        {% crispy form %}
+    </form>
+
+    {% if permissions %}
+        <table id="records" class="ManagementQuestion-table table" style="width:100%">
+            <thead>
+                <tr>
+                    <th class="column-header" style="width:30%">Permission</th>
+                    <th class="column-header">Access</th>
+                    <th class="column-header">Grant/Revoke</th>   
+                </tr>
+            </thead>
+            <tbody>
+                {% for permission in permissions %}
+                    <tr>
+                        <td>{{ permission.name }}</td>
+                        {% if permission.access %}
+                            <td><i class="far fa-check"></i></td>
+                            <td><button class="btn btn-primary revoke-access" access="{{ permission.id }}">Revoke?</button></td>
+                        {% else %}
+                            <td><i class="far fa-times"></i></td>
+                            <td><button class="btn btn-primary grant-access" access="{{ permission.id }}">Grant?</button></td>
+                        {% endif %}
+                    </td>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+{% endblock %}
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+            $('.revoke-access').on('click touch', function (event) {
+                $.ajax({
+                    type: "GET",
+                    url: "{% url 'toggle_permission' %}",
+                    data: {
+                        'action': 'revoke',
+                        'permission_id': $(this).attr('access'),
+                        'company_id': "{{ object.id }}"
+                    },
+                    success: function(data) {
+                        location.reload();
+                    }
+                }); 
+            })
+            $('.grant-access').on('click touch', function (event) {
+                $.ajax({
+                    type: "GET",
+                    url: "{% url 'toggle_permission' %}",
+                    data: {
+                        'action': 'grant',
+                        'permission_id': $(this).attr('access'),
+                        'company_id': "{{ object.id }}"
+                    },
+                    success: function(data) {
+                        location.reload();
+                    }
+                }); 
+            })
+        });
+    </script>
+{% endblock js %}

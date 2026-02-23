@@ -1,0 +1,119 @@
+<table {% if rev_score or show_market_leading_list %}style=" margin-top: -100px;"{% else %}style=" margin-top: -150px;" {% endif%}>
+    <thead>
+        <tr>
+            <th style="width: 92%; position: absolute; top:0;">
+                {% include "includes/sub_header.html" with title="ESG maturity" icon='file://core/static/img/esg_management_icon.svg' class='small-icon' %}
+            </th>
+        </tr>
+        <tr>
+            <th style="height: 110px;"></th>
+        </tr>
+        <tr>
+            <th colspan="3">
+                <div class="sub-section">
+                    <h2 class="sub-section-title">
+                        Document checklist
+                    </h2>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th style="height: 20px;"></th>
+        </tr>
+        <tr>
+            <th style="width:50%;">
+                <div>
+                    {% with questions|length as total %}
+                        <div class="sub-section {% if background %} {{ background }} {% endif %}">
+                            <h2 class="sub-section-title">
+                                <img src="{{ icon }}" class="sub-page-icon-tiny" alt="{{ title }} icon">
+                                {{ title }}
+                                ({{ total }})
+                            </h2>
+                        </div>
+                    {% endwith %}
+                </div>
+            </th>
+            <th></th>
+            <th style="width:50%;">
+                <div>
+                    <div class="sub-section {% if background %} {{ background }} {% endif %}">
+                        <h2 class="sub-section-title">
+                            Notes:
+                        </h2>
+                    </div>
+                </div>
+            </th>
+        </tr>
+    </thead>
+    {% for question in questions %}
+        {% if question.is_required or question.answered %}
+            <tr style="width:100%; font-size: 13.333px; height:52px; font-family: SourceSansProLight;" >
+                <td class='risk-summary risk-description'>
+                    <div class="pl-3 pt-3 pb-3">
+                        <div class="row">
+                            <div class="col-10 pr-0" style="font-family: SourceSansProBold;">
+                                {{ forloop.counter }}.
+                                {{ question.question }}
+                            </div>
+                            {%  if question.question.answer  %}
+                                <div class="col pl-0 ml-4 pr-0">
+                                    {% if question.question.answer == 'Y' %}
+                                        <span style="margin-left: 60px; font-weight: bold;">YES</span>
+                                    {% elif question.question.answer == 'N' %}
+                                        <span style="margin-left: 60px; font-weight: bold;">NO</span>
+                                    {% else %}
+                                        <span style="margin-left: 6px; font-weight: bold;">NO EVIDENCE</span>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        {% if question.trigger_questions and question.question.answer == 'Y'  %}
+                            {% for sub_question in question.trigger_questions %}
+                                <div class="row ml-2">
+                                    <div class="col-10 pr-0">
+                                        -&nbsp;&nbsp;{{ sub_question }}
+                                    </div>
+                                    {% if sub_question.answer %}
+                                        <div class="col pl-0 ml-2 pr-0" style="font-weight: bold;">
+                                            {% if sub_question.answer  == 'Y' %}
+                                                <span style="margin-left: 55px; font-weight: bold;">YES</span>
+                                            {% elif sub_question.answer  == 'N' %}
+                                                <span style="margin-left: 55px; font-weight: bold;">NO</span>
+                                            {% else %}
+                                                NO EVIDENCE
+                                            {% endif %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                        {% if question.child_questions %}
+                            {% for sub_question in question.child_questions %}
+                                <div class="row ml-2">
+                                    <div class="col-10 pr-0">
+                                        -&nbsp;&nbsp;{{ sub_question }}
+                                    </div>
+                                    {% if sub_question.answer %}
+                                        <div class="col pl-0 ml-2 pr-0" style="font-weight: bold;">
+                                            {% if sub_question.answer  == 'Y' %}
+                                                <span style="margin-left: 55px; font-weight: bold;">YES</span>
+                                            {% elif sub_question.answer == 'N' %}
+                                                <span style="margin-left: 55px; font-weight: bold;">NO</span>
+                                            {% else %}
+                                                NO EVIDENCE
+                                            {% endif %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </td>
+                <td></td>
+                <td class='risk-summary risk-description'><div class="pl-3 pt-3">{{ question.question.notes }}</div></td>
+                <td>{% include "includes/page_footer.html" %}</td>
+            </tr>
+        {% endif %}
+    {% endfor %}
+</table>

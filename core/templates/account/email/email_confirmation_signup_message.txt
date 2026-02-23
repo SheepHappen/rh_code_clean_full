@@ -1,0 +1,8 @@
+{% load account %}
+RiskHorizon registration
+Thank you for signing up to RiskHorizon, part of the Landmark Information family of products.
+follow the link or paste it to the browser {{ activate_url }} to confirm your email,
+If you have any problems, please call us on 0330 036 6115.
+We are available from 09:00 to 17:30 Monday to Friday.
+Regards,
+The RiskHorizon team.

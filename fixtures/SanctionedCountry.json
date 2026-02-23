@@ -1,0 +1,343 @@
+[
+{
+    "model": "country.sanctionedcountry",
+    "pk": 4,
+    "fields": {
+        "country": 364,
+        "us_sanctions": true,
+        "us_sanction_comments": "Since 4 November 2018, all US sanctions against Iran have been reinstated.",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 5,
+    "fields": {
+        "country": 906,
+        "us_sanctions": false,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 6,
+    "fields": {
+        "country": 112,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 7,
+    "fields": {
+        "country": 56,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 8,
+    "fields": {
+        "country": 108,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 9,
+    "fields": {
+        "country": 140,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 10,
+    "fields": {
+        "country": 156,
+        "us_sanctions": false,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 11,
+    "fields": {
+        "country": 180,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 12,
+    "fields": {
+        "country": 192,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 13,
+    "fields": {
+        "country": 818,
+        "us_sanctions": false,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 14,
+    "fields": {
+        "country": 324,
+        "us_sanctions": false,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 15,
+    "fields": {
+        "country": 624,
+        "us_sanctions": false,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 16,
+    "fields": {
+        "country": 332,
+        "us_sanctions": false,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 17,
+    "fields": {
+        "country": 368,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 18,
+    "fields": {
+        "country": 408,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 19,
+    "fields": {
+        "country": 422,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 20,
+    "fields": {
+        "country": 434,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 21,
+    "fields": {
+        "country": 466,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 22,
+    "fields": {
+        "country": 498,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 23,
+    "fields": {
+        "country": 104,
+        "us_sanctions": false,
+        "us_sanction_comments": "Sanctions of the US lifted in its entirety on October 7th, 2016",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 24,
+    "fields": {
+        "country": 558,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 25,
+    "fields": {
+        "country": 643,
+        "us_sanctions": true,
+        "us_sanction_comments": "See Ukraine & Crimea",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 26,
+    "fields": {
+        "country": 706,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 27,
+    "fields": {
+        "country": 728,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 28,
+    "fields": {
+        "country": 729,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 29,
+    "fields": {
+        "country": 760,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 30,
+    "fields": {
+        "country": 788,
+        "us_sanctions": false,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 31,
+    "fields": {
+        "country": 792,
+        "us_sanctions": false,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 32,
+    "fields": {
+        "country": 862,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 33,
+    "fields": {
+        "country": 887,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+},
+{
+    "model": "country.sanctionedcountry",
+    "pk": 34,
+    "fields": {
+        "country": 716,
+        "us_sanctions": true,
+        "us_sanction_comments": "",
+        "eu_sanctions": true,
+        "eu_sanction_comments": ""
+    }
+}
+]

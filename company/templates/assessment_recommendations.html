@@ -1,0 +1,221 @@
+{% extends "assessment_base.html" %}
+{% load static crispy_forms_tags %}
+
+{% block main_content %}
+    <div class="row" style="margin-top:45px;">
+        <div class="col-12">
+            <div class="card white-card">
+                <div class="card-body">
+                    <div class="container mb-4 mt-3">
+                        <div class="row">
+                            <div class="col-6 pl-0">
+                                <h2 class="card-title mb-3">
+                                    Recommendations
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <form id='recommendationForm' action="{% url 'company_recommendations' assessment.slug %}" method="POST" style="margin-top:55px;">
+                                {% crispy form %}
+                                <div class="buttonHolder" style="margin-top:60px;">
+                                    <input type="submit" name="Next" value="Next" class="btn btn-primary btn-medium" id="submit-id-submit">
+                                    <a class="btn btn-secondary btn-medium ml-2 btn-prev" href="{% url 'company_assessment_document_checklist' assessment.slug %}">Previous</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if issues %}
+        <div class='issue_data d-none'>{{ issues }}</div>
+        <div class='industry_list_data d-none' >{{ industry_data }}</div>
+    {% endif %}
+{% endblock %}
+
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+
+            var htmlEncode = function (str) {
+                if (str) {
+                    return str.replace(/<\/?[^>]+(>|$)/g, "");
+                }
+            };
+
+            var get_recommendations = function (issue) {
+                var data;
+                if (issue) {
+                    data = {
+                        risks: issue
+                    }
+                } else {
+                    data = {
+                        risks: $('#id_issues').val(),
+                        assessment: "{{ assessment.id }}"
+                    }
+                }
+                $.ajax({
+                    type: "GET",
+                    url: "{% url 'get_risk_recommendations' %}",
+                    data: data
+                }).done(function( response ) {
+                    $.each(response.recommendations, function( index, value ) {
+                        var html = "<div class='form-group risk-recommendation-wrapper'>" +
+                            "<label>" + htmlEncode(value.risk) + "</label>" +
+                            "<textarea class='form-control' rows='7' form='recommendationForm' name='"+ htmlEncode(value.risk) + "-recommendation' >" +
+                                htmlEncode(value.reccomendation) +
+                            "</textarea>" +
+                        "</div>"
+                        if ($('.risk-recommendation-wrapper').length > 0) {
+                            $('.risk-recommendation-wrapper').last().after(html)
+                        } else {
+                            $('#div_id_issues').after(
+                                "<label id='recommendation-wrapper'> </label>"
+                            )
+                            $('#recommendation-wrapper').after(html)
+                        }
+                    });
+                });
+            }
+            var initial = true;
+            $('#id_issues').on('select2:select', function (e) {
+                if (!initial) {
+                    var data = e.params.data;
+                    get_recommendations([data.id])
+                }
+            });
+
+            $('#id_issues').on('select2:unselect', function (e) {
+                var data = e.params.data;
+                var text = data.text.split(",");
+                if (text.length > 1) {
+                    text = text[1];
+                } else {
+                    text = text[0];
+                }
+                $("label:contains(" + text +")").parent().remove();
+            });
+
+            $(".optional").each(function() {
+                $(this).find("label").css("display", "inline-flex");
+                $(this).find("label").append( "<div class='optional-text ml-2'>(Optional)</div>" )
+            });
+
+            var data = {
+                selected_risks: $('.issue_data').html(),
+            };
+            if ($('.industry_list_data').html()) {
+                data['selected_industries'] = $('.industry_list_data').html()
+            }
+            $.ajax({
+                type: "GET",
+                url: "{% url 'initial_selected_risk_options' %}",
+                data: data
+            }).done(function( response ) {
+                $.map(response.risks, function(data) {
+                    // Prevent duplicate selected options
+                    if ($('#id_issues').find("option[value='" + data.id + "']").length) {
+                        $("#id_issues option[value=" + data.id + "]").remove();
+                        var newOption = new Option(data.text, data.id, true, true);
+                        $('#id_issues').append(newOption).trigger('change');
+                    }
+                });
+                get_recommendations();
+                initial = false;
+            });
+            function formatSelected(state, container) {
+                state.selected = true;
+                var oldRisk = $('#risk_ids').val() + ','
+                $('#risk_ids').val(oldRisk + state.id);
+                var newState = state.text.split(",");
+                container.attr('data-risk-id', state.id);
+                if (newState.length == 1) {
+                    container.addClass('user-added');
+                    return  $(
+                        '<span>' +
+                            "<i class='fad fa-user-alt white mr-2'></i>" +
+                            htmlEncode(newState[0]) +
+                        '</span>'
+                    );
+                }
+                var title = htmlEncode(newState[1]);
+                var colour = newState[0];
+                container.addClass(colour);
+                state.title = title;
+                return title;
+            };
+            $('#id_issues').select2({
+                placeholder:'Select here',
+                templateSelection: formatSelected,
+                maximumSelectionLength: 10,
+                ajax: {
+                    url: "{% url 'risk_options' %}",
+                    dataType: 'json',
+                    type: "GET",
+                    data: function (params) {
+                        var excludeList = [];
+                        $('.select2-selection__choice').each(function() {
+                            if($(this).attr('data-risk-id')) {
+                                excludeList.push($(this).attr('data-risk-id'));
+                            }
+                        });
+                        return {
+                            p: params.term,
+                            page: params.page,
+                            exclude: excludeList,
+                        };
+                    },
+                    processResults: function (data, params) {
+                        return {
+                            results: data.risks,
+                        };
+                    },
+                },
+            });
+            $('.progress-link').on('click touch', function (event) {
+                var form = $('#recommendationForm');
+                $.ajax({
+                    type: "POST",
+                    url: form.attr('action'),
+                    data: form.serialize(),
+                    success: function(data) {
+
+                    }
+                });
+            });
+
+            $('.btn-prev').on('click touch', function (event) {
+                event.preventDefault();
+                var form = $('#recommendationForm');
+                $.ajax({
+                    type: "POST",
+                    url: form.attr('action'),
+                    data: form.serialize(),
+                    success: function(data) {
+                        window.open($('.btn-prev').attr('href'), '_self');
+                    }
+                });
+            });
+            $('.js-view-report').on('click touch', function (event) {
+                event.preventDefault();
+                var form = $('#recommendationForm');
+                $.ajax({
+                    type: "POST",
+                    url: form.attr('action'),
+                    data: form.serialize(),
+                    success: function(data) {
+                        window.open($( ".js-view-report" ).attr('href'), '_blank');
+                    }
+                });
+            });
+
+            $('.custom-recommendations-title a').click(function () {
+              $(this).parent().hide();
+              $('.custom-recommendations-edit').show();
+            })
+        });
+    </script>
+{% endblock js %}

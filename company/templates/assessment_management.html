@@ -1,0 +1,275 @@
+{% extends "assessment_base.html" %}
+{% load static %}
+
+{% block main_content %}
+<div class="row" style="margin-top:45px;">
+    <div class="col-12">
+        <div class="card white-card">
+            <div class="card-body pb-0">
+                <div class="container  mt-3">
+                    <div class="row">
+                        <div class="col-6 pl-0">
+                            <h2 class="card-title mb-3">
+                                Management questions
+                            </h2>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <div class="float-right" style="margin-top: 14px;">
+                                <span class='form-group pl-0 pr-0 col-xs-2 col-md-2 switch-wrapper'>
+                                    <label class="font-semi-bold">Answer questions via file upload</label>
+                                    <label class="switch ml-3">
+                                        <input type="checkbox" class="toggle-form">
+                                            <span class="slider round">
+                                        </span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 pl-0"></div>
+                        <div class="col-6 pr-0">
+                            <div class="float-right" style="margin-top: 14px;">
+                                <span class='form-group pl-0 pr-0 col-xs-2 col-md-2 switch-wrapper'>
+                                    <label class="font-semi-bold">Use optional questions</label>
+                                    <label class="switch ml-3">
+                                        <input type="checkbox" class="toggle-optional">
+                                            <span class="slider round">
+                                        </span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row manual-questions d-none">
+                        <div class='intro-text highlight-text-red' style="width: 40%;">
+                            We are highlighting the questions for the top 5 risk factors
+                        </div>
+                        {% if add_question_list %}
+                            <form id="addQuestionForm" action="{% url 'company_management_questions' assessment.slug %}" enctype="multipart/form-data"  method="POST">
+                                {% csrf_token %}
+                                <label for="addQuestion" class="control-label font-semi-bold">Add a question</label>
+                                <select id="addQuestion" name="question">
+                                    <option></option>
+                                    {% for question in add_question_list %}
+                                        <option value="{{ question.id }}">{{ question.text }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="hidden" name="company_id" value="{{ company.pk }}">
+                                <input type="submit" name="addQuestion" class="d-none" id="addQuestionSubmit">
+                            </form>
+                        {% endif %}
+                        <form id="managementForm" action="{% url 'company_management_questions' assessment.slug %}" method="POST" style="width:100%">
+                            {% csrf_token %}
+                            {% include "includes/question_section_headers.html" %}
+                            <div class="tab-border"></div>
+                            <p class="no-mandatory-questions-msg d-none">No mandatory questions</p>
+                            {% if environmental_questions %}
+                                {% include "includes/environmental_questions.html" with management_questions=environmental_questions company=company.pk %}
+                            {% endif %}
+                            {% if social_questions %}
+                                {% include "includes/social_questions.html" with management_questions=social_questions company=company.pk %}
+                            {% endif %}
+                            {% if governance_questions %}
+                                {% include "includes/governance_questions.html" with management_questions=governance_questions company=company.pk %}
+                            {% endif %}
+                            <div class="row">
+                                <div id="ReferencesHeader">
+                                    <i class="fal fa-3x fa-info-circle"></i>
+                                    <div id="referenceHeading">References</div>
+                                </div>
+                                <textarea form="managementForm" id="references" placeholder="Enter Text..." class="management_answer_text_box">{% if assessment.references %}{{ assessment.references }}{% endif %}</textarea>
+                            </div>
+                            <div class="buttonHolder" style="margin-top:66px;">
+                                <input type="submit" name="Next" value="Next" class="btn btn-primary btn-medium" id="submit-form">
+                                <a class="btn btn-secondary ml-2 btn-medium" href="{% url 'company_assessment_company_footprint' assessment.slug %}">Previous</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row file-upload d-none">
+                        <div class="col-12 pl-0 pr-0">
+                            <div class='intro-text' style="width:100%;">
+                                <a class="btn btn-secondary ml-2 float-right required-only" href="{% url 'management_csv_download' assessment.slug 'required' %}">Download spreadsheet</a>
+                                <a class="btn btn-secondary ml-2 float-right optional-plus d-none" href="{% url 'management_csv_download' assessment.slug 'optional' %}">Download spreadsheet</a>
+                                Download the spreadsheet. Once you have completed the questions you are going to answer, return to this page and
+                                upload the  file using the section. This can be done multiple times. Each upload will overwrite all questions.
+                                To manually answer the questions, toggle "Answer questions via file upload" to off.
+                            </div>
+                        </div>
+                    </div>
+                    <table id="records" class="table mt-4 mb-4 d-none">
+                        <thead>
+                            <tr>
+                                <th class="column-header" style="width: 20%">Questions Failed to upload</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <form id="fileUpload" action="{% url 'company_management_questions' assessment.slug %}" method="POST" enctype="multipart/form-data" style="margin-top:55px;">
+                        {% csrf_token %}
+                        <div class="row file-upload d-none">
+                            <div id="drop-area">
+                                <div class="card-body" style="margin-top: 40px;">
+                                    <p class="drop-icon">
+                                        <i class="fal fa-2x fa-cloud-upload" style="color:#e98300;"></i>
+                                    </p>
+                                    <div class="card-text">
+                                        <p class="card-sub-heading mb-0" style="opacity: 1;">
+                                            Drop file here or <a class="btn btn-tertiary open-file-dialog pl-0" href="#">
+                                                Browse
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class="upload-management-file-instructions">
+                                        Upload the spreadsheet containing the answered questions.  We can only accept a xlsx file.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dropzone" class="d-none">
+                            <div id="template-preview">
+                                <div class="dz-preview dz-file-preview well" id="dz-preview-template">
+                                    <div class="dz-image">
+                                        <i class="fal fa-file-spreadsheet fa-3x icon"></i>
+                                    </div>
+                                    <div class="dz-details">
+                                        <div class="dz-filename">
+                                            <span data-dz-name></span>
+                                            <div class="dz-size">(<span data-dz-size></span>)</div>
+                                        </div>
+                                    </div>
+                                    <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <input id="file-input" type="file" name="file" class="d-none" />
+                        <input type="submit" class="d-none">
+                    </form>
+                    <div id="toast-container" class="failed-import" style="position: relative !important; cursor: default;">
+                        <div class="toast toast-error password-email-sent"  style="background-color: #fef3f5 !important;"aria-live="polite">
+                            <div class="toast-message ">Upload Failed Please try again</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="assessment-slug d-none">{{ assessment.slug }}</div>
+</div>
+{% endblock %}
+{% block js %}
+    <script src="{% static "js/file_upload.js" %}"></script>
+    <script>
+        $(document).ready(function() {
+            $('.failed-import').hide();
+            $('#addQuestion').select2({
+                placeholder: "Please select",
+                width: "100%"
+            });
+
+            $('.manual-questions').removeClass('d-none');
+            $('#submit-form').click( function(e, link) {
+                e.preventDefault();
+                var output = [];
+                var groupedOutput = [];
+                $('#managementForm').find(':input').each(function() {
+                    var group = $(this).attr('group');
+                    if (group) {
+                        var value = $(this).val()
+                        if ($(this).attr('name').includes("insufficient") || $(this).attr('name').includes("priority")) {
+                            value = $(this).prop("checked")
+                        }
+                        output.push(
+                            {
+                                'group': group,
+                                'name': $(this).attr('name'),
+                                'value': value
+                            }
+                        );
+                    }
+                });
+                output.forEach(function(item) {
+                    var existing = groupedOutput.filter(function(v, i) {
+                        return v.group == item.group;
+                    });
+                    if (existing.length) {
+                        var existingIndex = groupedOutput.indexOf(existing[0]);
+                        groupedOutput[existingIndex].value.push({
+                            'group': item.group,
+                            'name': item.name,
+                            'value': item.value,
+                        });
+                    } else {
+                        groupedOutput.push({
+                            'group': item.group,
+                            'value': [{
+                                'group': item.group,
+                                'name': item.name,
+                                'value': item.value,
+                            }]
+                        });
+                        item.value = [item.group];
+                    }
+                });
+                var token = $("input[name='csrfmiddlewaretoken']").prop("value");
+                $.ajax({
+                    type: "POST",
+                    url: $('#managementForm').attr('action'),
+                    data: {
+                       'form': JSON.stringify(groupedOutput),
+                       'references': $('#references').val()
+                    },
+                    dataType: 'json',
+                    beforeSend : function(jqXHR, settings) {
+                        jqXHR.setRequestHeader("x-csrftoken", token);
+                    },
+                }).done(function(response) {
+                    var url = "{% url 'company_assessment_document_checklist' assessment.slug %}";
+                    if (link) {
+                        url = link;
+                    };
+
+                    window.location.href = url;
+                });
+            });
+            $('#addQuestion').change(function() {
+                $('#addQuestionForm').submit();
+            });
+            $('#managementForm').on('change keyup paste', ':input', function(e) {
+                var token = $("input[name='csrfmiddlewaretoken']").prop("value");
+                data = {
+                    'assessment-slug': $('.assessment-slug').html()
+                };
+                if ($(this).prop('id') == 'references') {
+                    data['references'] = $(this).val();
+                } else if ($(this).hasClass('management_answer_text_box')) {
+                    data['question_id'] = $(this).attr('name');
+                    data['answer'] = $(this).val();
+                } else {
+                    var name = $(this).attr('name');
+                    var slider = 'priority';
+                    if (name.includes("insufficient")) {
+                        slider = 'insufficient';
+                    }
+                    data['slider'] = slider;
+                    data['checked'] = $(this).is(':checked');
+                    data['question_id'] = $(this).attr('group');
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "{% url 'management_partial_saveing' %}",
+                    data: data,
+                    dataType: 'json',
+                    beforeSend : function(jqXHR, settings) {
+                        jqXHR.setRequestHeader("x-csrftoken", token);
+                    },
+                }).done(function(response) {
+                   console.log('saved')
+                });
+            });
+        });
+    </script>
+    <script src="{% static "js/question_header.js" %}"></script>
+    <script src="{% static "js/question_section.js" %}"></script>
+{% endblock js %}

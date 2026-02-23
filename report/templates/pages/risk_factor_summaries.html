@@ -1,0 +1,46 @@
+<section class="report-page" style="font-size: 12px;">
+    <header class="page-header" style="margin-left: 40px; width: 93%; position: absolute; top: 0; left:0; border-bottom:none;">
+        <h1 class="page-title">Risk factor summaries</h1>
+	    <img src='file://core/static/img/risk_factor_summary_icon_1.svg' class="heading-icon" alt="Recommendations page 1 icon">
+    </header>
+    <div class="container mt-2">
+        <table style=" margin-top: 0px;">
+            <thead>
+                <tr>
+                    <th style="width: 93%; position: absolute; top:0;">
+                        <div class="sub-header">
+                            <h1 class="sub-page-title" style="margin-left: 4px;">Risk factor summaries</h1>
+                            <div style="height: 110px;"></div>
+                            <div class="sub-section">
+                                <h2 class="sub-section-title">
+                                    Material risk factor
+                                </h2>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th style="height: 180px;"></th>
+                </tr>
+                <tr>
+                    <td class='risk-name'>
+                        <span style="font-size:13.333px; font-family: SourceSansProBold;">Risk factor</span>
+                    </td>
+                    <td></td>
+                    <td class='risk-name'>
+                        <span style="font-size:13.333px; font-family: SourceSansProBold;">Summary</span>
+                    </td>
+                </tr>
+            </thead>
+                {% for risk in assessment.material_risks.all %}
+                    <tr class="risk-description" style="font-size: 12px; font-family: SourceSansProLight;" >
+                        <td class='risk-name'>{{ risk.name }}</td>
+                        <td></td>
+                        <td class='risk-name'><div>{{ risk.active_version.description }}</div></td>
+                    </tr>
+                {% endfor %}
+        </table>
+    </div>
+
+    {% include "includes/page_footer.html" %}
+</section>

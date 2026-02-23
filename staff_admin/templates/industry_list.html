@@ -1,0 +1,162 @@
+{% extends "staff_base.html" %}
+{% load static crispy_forms_tags %}
+
+{% block main_content %}
+    <div class="row">
+        <div class="col">
+            <div class="page-heading">
+                <h1>
+                    Industries
+                </h1>
+            </div>
+        </div>
+        <div class="col">
+            <div class="float-right">
+                <a href="{% url 'industry_create' %}" class="btn btn-secondary">Add Industry</a>
+                <div class="dropdown d-inline-block">
+                    <button class="btn btn-secondary dropdown-toggle ml-8" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-upload"></span> Bulk Upload Industries
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item import user-invite-dialog" data-action="import" href="javascript:void(0)"><span class="fa fa-fw fa-file-excel"></span> Upload</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{% static "templates/industry_import_template.xlsx" %}" target="_blank"><span class="fa fa-fw fa-download"></span> Download Template</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3 mb-3">
+        <div class="col">
+            <a href="{% url 'sasb_update' %}" class="btn btn-secondary mr-3" target="_blank">Update sasb entries (No delete)</a>
+            <a href="{% url 'sasb_create' %}" class="btn btn-secondary mr-3" target="_blank">Recreate sasb entries (Delete/recreate)</a>
+        </div>
+    </div>
+    <form action="{% url 'industries_list' %}" method="post" id="import-form" class='d-none' enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="spreadsheet">
+        <input type="hidden" name="action" value="">
+    </form>
+
+    <table id="records" class="ManagementQuestion-table table pl-0 pr-0" style="width:100%">
+        <thead>
+            <tr>
+                <th class="column-header">Industry</th>
+                <th class="column-header" style="width:50%">Insight paragraph</th>
+                <th class="column-header" style="width:50%">Description</th>
+                <th class="column-header"></th>
+                <th class="column-header"></th>
+                <th class="column-header" style="width:30%"></th>
+            </tr>
+        </thead>
+    </table>
+
+    <div id="deleteIndustry" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-2 modal-icon-wrapper">
+                            <i class="fal fa-exclamation-circle warning fa-3x modal-icon"></i>
+                        </div>
+                        <div class="col-10">
+                            <h5 class="modal-title">Delete Industry?</h5>
+                            <p class="modal-text">This action cannot be reversed </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
+                    <a href=# type="button" class="btn btn-primary delete-me">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script>
+        $(document).ready(function() {
+
+            $("#import-form input:file").change(function() {
+                $("#import-form").submit();
+            });
+
+            $(".dropdown-item.import").click(function(e) {
+                e.preventDefault();
+                $("#import-form [name=action]").val($(this).attr("data-action"));
+                $("#import-form :file").click();
+            });
+
+            $('#records').on('click', 'a.editor_remove', function (e) {
+                e.preventDefault();
+                var data = table.row($(this).closest('tr')).data()
+                var url = "{% url 'industry_delete' 123 %}";
+
+                $('#deleteIndustry').modal('show');
+                $('#deleteIndustry').find('.delete-me').attr('href' , url.replace('123', data.link));
+            });
+
+            $('#deleteIndustry').modal({ show: false})
+
+            $.fn.dataTable.render.ellipsis = function () {
+                return function ( data, type, row ) {
+                    return type === 'display' && data.length > 10 ? data.substr( 0, 400 ) +'…' : data;
+                }
+            };
+
+            var table = $('#records').DataTable({
+                dom: 'r',
+                ajax: "{% url 'industries_list_table' %}",
+                paging: false,
+                columns: [
+                    {
+                        "data": "text",
+                        render: $.fn.dataTable.render.text(),
+                    },
+                    {
+                        "data": "description",
+                        render: function(data, type, row) {
+                            if (type === 'display' && data) {
+                                return renderedData = $.fn.dataTable.render.ellipsis()(data, type, row);
+                            }
+                            return $.fn.dataTable.render.text();
+                        }
+                    },
+                    {
+                        "data": "short_description",
+                        render: function(data, type, row) {
+                            if ( type === 'display' && data) {
+                                return renderedData = $.fn.dataTable.render.ellipsis()(data, type, row);
+                            }
+                            return $.fn.dataTable.render.text();
+                        }
+                    },
+                    {
+                        data: "link",
+                        className: "center",
+                        render: function(data, type) {
+                            return "<a href=# class='editor_remove'>Delete</a>"
+                        }
+                    },
+                    {
+                        data: 'edit',
+                        className: "center",
+                    },
+                    {
+                        data: 'sasbUpdate',
+                        className: "center",
+                    },
+                ],
+                columnDefs: [{
+                    "targets": 3,
+                    "orderable": false
+                }],
+                createdRow: function ( row, data, index ) {
+                    $(row).addClass('row-text-item')
+                },
+            });
+        });
+    </script>
+{% endblock js %}

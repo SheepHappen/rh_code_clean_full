@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static tags  %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-10">
+            <div class="page-heading">
+                <h1>Profile</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:15px;"></div>
+    <div class="row" style="margin-top:15px;">
+        <div class="col-12">
+            <div class="card white-card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2 class="card-title mb-3">
+                                Details
+                            </h2>
+                         </div>
+                         <div class="col-6">
+                            <a class="float-right btn btn-tertiary" href="{% url 'profile-edit' %}">
+                                Edit
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="hide-dots">
+                        <li>
+                            <label class="font-semi-bold" style="display: block;">Full name</label>
+                            {{ user }}
+                        </li>
+                        <li>
+                            <label class="font-semi-bold mt-3" style="display: block;">Email</label>
+                            {{ user.email }}
+                        </li>
+                        <li>
+                            <label class="font-semi-bold mt-3" style="display: block;">Job title</label>
+                            {{ profile.job_title }}
+                        </li>
+                        <li>
+                            <label class="font-semi-bold mt-3" style="display: block;">Phone number</label>
+                            {{ profile.phone_number }}
+                        </li>
+                        <li>
+                            <label class="font-semi-bold mt-3" style="display: block;">Company</label>
+                            {{ profile.company }}
+                        </li>
+                        <li>
+                            <label class="font-semi-bold mt-3" style="display: block;">Avatar</label>
+                            {% if profile.avatar %}
+                                <span class="user-avatar-big float-left">
+                                    <img class="img-fluid img-rounded" src="{{ profile.avatar.url }}">
+                                </span>
+                            {% else %}
+                                <div class="no-image-placeholder-big">
+                                    {{ initials }}
+                                </div>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

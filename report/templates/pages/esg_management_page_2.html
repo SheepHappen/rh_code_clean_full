@@ -1,0 +1,76 @@
+
+<section id="document-checklist" class="report-page">
+    <div class="container">
+        {% include "includes/main_header.html" with title="ESG maturity" icon='file://core/static/img/maturity_icon.svg' %}
+
+        <div class="row no-gutters ml-4 mt-4">
+            <div class="col-3" style="height: 180px;">
+                <div class="key-answer-count">
+                    <div>
+                        <div class="answer-counter" style="position: relative; margin: 0 0 0 82px;">
+                          <span style="margin-bottom: 5px"><span id="answer-count-text">{{ document_answer_count.0 }}</span>/{{ document_answer_count.1 }}</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size:13px; text-align: center;">Key ESG management indicators</div>
+            </div>
+            {% if rev_score %}
+                <div class="col-4">
+                    <div class="rev-counter" style="width:300px;height:150px;font-size:1em;">
+                        {% widthratio rev_score 100 180 as width %}
+                        <img src="file://core/static/img/rev/rev_counter.png" class="rev-dial">
+                        <img src="file://core/static/img/rev/rev_needle.png" class="rev-needle" style="transform: rotate({{ width }}deg)">
+                        <img src="file://core/static/img/rev/rev_cover.png" class="rev-cover">
+                        <div class="rev-text">{{ rev_score }}%</div>
+                        <div class="rev-text-subtext ml-4"  style="font-size: 0.6em;"><strong class="ml-1">ESG SCORE</strong></div>
+                        <div class="rev-dot" style="transform:rotate(153deg)"><span style="transform:rotate(-153deg)">1</span></div>
+                        <div class="rev-dot" style="transform:rotate(137deg)"><span style="transform:rotate(-137deg)">2</span></div>
+                        <div class="rev-dot" style="transform:rotate({{ width|add:'2' }}deg)"><span style="transform:rotate(-{{ width }}deg)">3</span></div>
+                    </div>
+                </div>
+            {% endif %}
+            <div class="col-5">
+                {% if show_market_leading_list or rev_score %}
+                    <ul class="number-list-wrapper" style="margin-top: -3px;">
+                        <li>
+                            <div style="margin-left: 4px; margin-top: -20px; font-family: SourceSansProBold; font-size: 13.333px;">Market Leading - 85%</div>
+                            <p style="font-family: SourceSansProLight; font-size: 13.333px; margin-top: -2px;  margin-left: 4px;">
+                                Market leading position with regards to ESG management
+                            </p>
+                        </li>
+                        <li style="margin-top: -15px;">
+                            <div style="margin-left: 4px; margin-top: -20px; font-family: SourceSansProBold; font-size: 13.333px;">Best practice – 75%</div>
+                            <p style="font-family: SourceSansProLight; font-size: 13.333px;  margin-top: -2px; margin-left: 4px;">
+                                Anticipated score if key ESG policies
+                                and systems are in place
+                            </p>
+                        </li>
+                        <li style="margin-top: -15px;">
+                            <div style="margin-left: 4px; margin-top: -20px; font-family: SourceSansProBold; font-size: 13.333px;">Based on current due-diligence – {{ rev_score }}%</div>
+                            <p style="font-family: SourceSansProLight; font-size: 13.333px;  margin-top: -2px; margin-left: 4px;">
+                                Current diligence based ({{ document_questions_complete }}% complete)
+                            </p>
+                        </li>
+                    </ul>
+                {% endif %}
+            </div>
+
+        </div>
+
+        {% if document_environmental_show %}
+            {% include "includes/document_questions_table.html" with questions=document_environmental_questions title='Environmental' background="background-green" icon='file://core/static/img/environmental_icon_white.svg' %}
+            <div class="page-break"></div>
+        {% endif %}
+        {% if document_social_show %}
+            {% if document_environmental_show %}<div style="height: 130px;"></div>{% endif %}
+            {% include "includes/document_questions_table.html" with questions=document_social_questions title='Social' background="social-heading" icon='file://core/static/img/social_icon_white.svg' %}
+            <div class="page-break"></div>
+        {% endif %}
+        {% if document_gov_show %}
+            {% if document_environmental_show or document_social_show %}
+                <div style="height: 130px;"></div>
+            {% endif %}
+            {% include "includes/document_questions_table.html" with questions=document_governance_questions title='Governance' background="governance-heading" icon='file://core/static/img/governance_icon_white.svg' %}
+        {% endif %}
+    </div>
+</section>

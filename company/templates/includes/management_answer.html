@@ -1,0 +1,43 @@
+{% load static %}
+
+<div class="{% if not question.hightlight %} is-optional {% endif %} {% if question.answer %} has-answer {% endif %} row management_answer_wrapper no-gutters {{ question.id }}-hide">
+    <div class="col-10">
+    <textarea form="managementForm" 
+        class="management_answer_text_box"
+        style="{% if question.hightlight %} background-color: #fce7e8; {% endif %}"
+        name="{{ question.id }}" group="{{ question.id }}" placeholder="Enter Text...">{% if question.answer %}{{ question.answer }}{% endif %}</textarea>
+    </div>
+    <div class="col-2">
+        <div style="margin-left: 15px;">
+            <span class='form-group col-xs-2 col-md-2 switch-wrapper' style="margin-left: 12px;padding-right: 0px;">
+                <label class="management-toggle">Insufficient</label>
+                <label class="switch ml-3">
+                    <input
+                        type="checkbox"
+                        class="question-toggle"
+                        name="{{ question.id }}insufficient"
+                        group="{{ question.id }}"
+                        {% if question.insufficient %}checked=checked{% endif %}
+                    >
+                        <span slider-name="{{ question.id }}insufficient" class="slider round {% if question.insufficient %}slider-on{% endif %}">
+                    </span>
+                </label>
+            </span>
+            <span class='form-group col-xs-2 col-md-2 switch-wrapper' style="margin-left: 33px;padding-right: 0px;">
+                <label class="management-toggle">Priority</label>
+                <label class="switch ml-3">
+                    <input
+                        type="checkbox"
+                        class="question-toggle"
+                        name="{{ question.id }}priority"
+                        group="{{ question.id }}"
+                        {% if question.priority %}checked=checked{% endif %}
+                    >
+                        <span slider-name="{{ question.id }}priority" name="{{ question.id }}/priority" class="slider round {% if question.priority %}slider-on{% endif %}">
+                    </span>
+                </label>
+            </span>
+            <a class="btn btn-secondary  btn-medium deleteManagementQUestion" href="{% url 'remove_management_question' assessment.slug %}" style="margin-left:47px; margin-top:25px;" hide="{{ question.id }}" company="{{ company }}">Delete</a>
+        </div>
+    </div>
+</div>

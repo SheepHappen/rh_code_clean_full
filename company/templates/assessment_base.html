@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static crispy_forms_tags tags %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <div class="page-heading">
+                <h1>
+                    {% block h1_title %}
+                        Company assessment
+                    {% endblock %}
+                    {% block page_button %}
+                        {% if assessment.slug %}
+                            <a href="{% url 'report_view' assessment.slug %}" class="float-right btn btn-secondary js-view-report" target="_blank">
+                                View report
+                            </a>
+                        {% endif %}
+                    {% endblock %}
+                </h1>
+                <div class='intro-text' style="width: 80%;">
+                    {% block page_intro_text %}
+                        This assessment will return the key ESG risks associated with a particular company profile. As well as outlining the material risks, it will return key management questions and starts a file for you to save documents and start to move through the diligence process.
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:4.375rem;margin-left: -2.75rem;">
+        <div class="col-12 progress-wrapper">
+            <ul class="steps">
+                {% for key, values in progress.items %}
+                    {% if values.report %}
+                        <a href="{% url values.url_name values.report %}" class="step progress-link {% if values.list_class %}{{ values.list_class }}{% endif %}">
+                            <span class="step__icon"></span>
+                            <span class="step__label">
+                                {{ values.name|capfirst|remove_underscores }}
+                            </span>
+                        </a>
+                    {% else %}
+                        <li class="step {% if values.list_class %}{{ values.list_class }}{% endif %}">
+                            <span class="step__icon"></span>
+                            <span class="step__label">{{  values.name|capfirst|remove_underscores }}</span>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    {% block main_content %}
+    {% endblock %}
+
+{% endblock content %}

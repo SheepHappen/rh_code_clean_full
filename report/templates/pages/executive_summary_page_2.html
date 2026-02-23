@@ -1,0 +1,125 @@
+<section id="p{{ page_id }}" class="report-page">
+    {% include "includes/main_header.html" with title="Executive summary" icon='file://core/static/img/executive_summary_icon.svg' %}
+
+    <div class="container mt-4">
+        <div class="row no-gutters">
+            {% include "includes/sub_section.html" with title="ESG management score" %}
+            <p class="ml-4 mt-4" style="font-size: 13.33px; font-family: SourceSansProLight;">
+                This section summarises the current understanding of the Company’s management of ESG issues. Answers
+                have been collated by Argyll Environmental through a review of publicly available web based sources.</p>
+            <div class="container">
+                <div class="row no-gutters leftMargin">
+                    {% if rev_score %}
+                    <div class="col">
+                        <div class="rev-counter mb-2" style="width:300px;height:150px;font-size:1em;">
+                            {% widthratio rev_score 100 180 as width %}
+                            <img src="file://core/static/img/rev/rev_counter.png" class="rev-dial">
+                            <img src="file://core/static/img/rev/rev_needle.png" class="rev-needle" style="transform: rotate({{ width }}deg)">
+                            <img src="file://core/static/img/rev/rev_cover.png" class="rev-cover">
+                            <div class="rev-text">{{ rev_score }}%</div>
+                            <div class="rev-text-subtext ml-4" style="font-size: 0.6em;"><strong class="ml-1">ESG SCORE</strong></div>
+                            <div class="rev-dot" style="transform:rotate(153deg)"><span style="transform:rotate(-153deg)">1</span></div>
+                            <div class="rev-dot" style="transform:rotate(137deg)"><span style="transform:rotate(-137deg)">2</span></div>
+                            <div class="rev-dot" style="transform:rotate({{ width|add:'2' }}deg)"><span style="transform:rotate(-{{ width }}deg)">3</span></div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if show_market_leading_list or rev_score %}
+                    <div class="col">
+                        <ul class="number-list-wrapper" style="margin-top: -3px;">
+                            <li>
+                                <div style="margin-left: 4px; margin-top: -20px; font-family: SourceSansProBold; font-size: 13.333px;">Market Leading - 85%</div>
+                                <p style="font-family: SourceSansProLight; font-size: 13.333px; margin-top: -2px;  margin-left: 4px;">
+                                    Market leading position with regards to ESG management
+                                </p>
+                            </li>
+                            <li style="margin-top: -15px;">
+                                <div style="margin-left: 4px; margin-top: -20px; font-family: SourceSansProBold; font-size: 13.333px;">Best practice – 75%</div>
+                                <p style="font-family: SourceSansProLight; font-size: 13.333px;  margin-top: -2px; margin-left: 4px;">
+                                    Anticipated score if key ESG policies
+                                    and systems are in place
+                                </p>
+                            </li>
+                            <li style="margin-top: -15px;">
+                                <div style="margin-left: 4px; margin-top: -20px; font-family: SourceSansProBold; font-size: 13.333px;">
+                                    {% if rev_score %}Based on current due-diligence – {{ rev_score }}% {% endif %}
+                                </div>
+                                <p style="font-family: SourceSansProLight; font-size: 13.333px;  margin-top: -2px; margin-left: 4px;">
+                                    Current diligence based ({{ document_questions_complete }}% complete)
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    {% endif %}
+                    <div class="col ml-4" style="margin-top: -3px;">
+                        <div class="ml-3" style="font-family: SourceSansProBold; font-size: 13.333px;">Current diligence status</div>
+                        {% if not show_market_leading_list or not rev_score %}
+                        <table class="ml-3 mb-2" style="width: 200px; font-family: SourceSansProLight; font-size: 13.333px;">
+                            {% else %}
+                            <table class="ml-4" style="font-family: SourceSansProLight; font-size: 13.333px;">
+                                {% endif %}
+                                <tr>
+                                <tr>
+                                    <td>Management questions:</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>{{ management_questions_answered }} / {{ management_questions }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Priority:</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>{{ management_priority }} / {{ management_questions }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Insufficient information:</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>{{ management_insufficient }} / {{ management_questions }}</td>
+                                </tr>
+                                </tr>
+                            </table>
+                            {% if management_questions_answered %}
+                            <p class="ml-3" style="font-family: SourceSansPro; font-size: 13.333px;">See full breakdown of issues on page <a class="plain-page-link" href="#management-questions"></a>.</p>
+                            <p class="ml-3"><a class="btn btn-link view-page-link" href="#management-questions"></a></p>
+                            {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if key_impacts or user_added_material_risks or document_questions %}
+        <div class="row no-gutters">
+            {% include "includes/sub_section.html" with title="Key ESG Management Indicators" %}
+            <div class="container">
+                <div class="row no-gutters" style="position:relative;">
+                    <div class="d-inline-block" style="width: 18%">
+                        <div class="key-answer-count" style="text-align: center;">
+                            <div>
+                                <div class="answer-counter" style="position: relative;">
+                                  <span style="margin-bottom: 5px"><span id="answer-count-text">{{ document_answer_count.0 }}</span>/{{ document_answer_count.1 }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="font-size:13px; text-align: center;">Key ESG management indicators</div>
+                        <p style="font-size: 13px; text-align: center; margin-top: 8px;"><span style="font-family: SourceSansProLight;">Full breakdown on</span>
+                            <a class="btn btn-link" style="margin-top: -2px;" href="#document-checklist">page 12</a>
+                        </p>
+                    </div>
+                    <div class="d-inline-block" style="width: 39%; padding-left: 20px;">
+                        {% if document_questions.0 %}
+                        {% include 'includes/document_questions.html' with questions=document_questions.0 heading="Key policies in place" %}
+                        {% endif %}
+                    </div>
+                    <div class="d-inline-block" style="width: 39%; padding-left: 20px;">
+                        {% if document_questions.1 %}
+                        {% include 'includes/document_questions.html' with questions=document_questions.1 heading="Other key indicators" %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    {% include "includes/page_footer.html" %}
+</section>

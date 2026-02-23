@@ -1,0 +1,6 @@
+<div class="sub-header">
+    {% if icon %}
+        <img src="{{ icon }}" class="{% if class == 'small-icon' %} sub-page-icon-small {% else %} sub-page-icon {% endif %}" alt="{{ title }} icon">
+    {% endif %}
+    <h1 class="sub-page-title" {% if pl %}style="{{ pl }}; {% endif %}">{{ title }}</h1>
+</div>

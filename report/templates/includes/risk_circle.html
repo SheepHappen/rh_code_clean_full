@@ -1,0 +1,23 @@
+{% if risk_threshold_colour == '#ffe72f' %}
+    <div class="rounded-circle risk-circle mt-4 ml-4" style="background-color: {{ risk_threshold_colour }}; color:#808080">
+{% else %}
+    <div class="rounded-circle risk-circle mt-4 ml-4" style="background-color: {{ risk_threshold_colour }};">
+{% endif %}
+    {% if 'to' in threshold.text %}
+        <div class="risk-text-wrap">
+            <div class="risk-text-risk ml-1">INHERENT RISK</div>
+            <div class="risk-score-text-sm">{{ threshold.text }}</div>
+            {% if page %}
+                <div style="text-align: center;"><a class="{% if risk_threshold_colour == '#ffe72f' %}see-page-link-grey{% else %}see-page-link{% endif %}"  href="#{{ page }}"></a></div>
+            {% endif %}
+        </div>
+    {% else %}
+        <div class="risk-text">
+            <div class="risk-text-risk ml-1">INHERENT RISK</div>
+            <div class="risk-score-text">{{ threshold.text }}</div>
+            {% if page %}
+                <div style="text-align: center;"><a class="{% if risk_threshold_colour == '#ffe72f' %}see-page-link-grey{% else %}see-page-link{% endif %}"  href="#{{ page }}"></a></div>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>

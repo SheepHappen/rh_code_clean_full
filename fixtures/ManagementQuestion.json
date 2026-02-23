@@ -1,0 +1,1370 @@
+[
+{
+    "model": "core.managementquestion",
+    "pk": 1,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company been affected or been aware of flooding issues at their facilities?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 9,
+        "pdf_display_name": "Food safety",
+        "riskfactors": [
+            29,
+            76
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 2,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company developed and documented contingency plans for water scarce or drought prone regions in which it operates?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            75,
+            76
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 3,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company monitor its greenhouse gas (GHG) emissions? Does it respond to external disclosure requests, e.g. Carbon Disclosure Project?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 13,
+        "pdf_display_name": "GHG Emissions",
+        "riskfactors": [
+            33
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 4,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company monitor number of accidents and/or non-compliance with regulations and voluntary codes concerning the health and safety of employees? Does it report these externally?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 15,
+        "pdf_display_name": "Health & Safety",
+        "riskfactors": [
+            3,
+            37
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 5,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Does the company track and disclose any accident or injury reports?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            3,
+            37
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 6,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Have there been any documented incidents regarding breaches of customer privacy and losses of customer or other proprietary data?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 5,
+        "pdf_display_name": "Data privacy",
+        "riskfactors": [
+            16
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 7,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company have a policy and/or supplier code of conduct which promotes the protection of labour rights, a safe and secure working environments for all workers, including migrant workers, and those in precarious employment?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 18,
+        "pdf_display_name": "Labour rights",
+        "riskfactors": [
+            44
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 8,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company (HQ level) and its subsidiaries, recognise the right to freedom of association and the right of its workers to collectively bargain (e.g., to join any trade union)?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            44
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 9,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company disclose details of the composition of leadership teams/governance bodies? Does it promote equal opportunities for leadership at all levels of decision-making?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            32
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 10,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company provide a breakdown of employees according to gender, age group, minority group membership, and/or other indicators of diversity? Is this done per employee category?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 12,
+        "pdf_display_name": "Gender inequality",
+        "riskfactors": [
+            32
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 11,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company disclose the range of company benefits for different levels of staff? Does it differentiate between permanent vs. part-time contractual workers?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 2,
+        "pdf_display_name": "Compensation and benefits",
+        "riskfactors": [
+            11
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 12,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Is there evidence of any programs and practices that promote development and training of the company's employees?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 24,
+        "pdf_display_name": "Recruitment, development and retention",
+        "riskfactors": [
+            63
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 13,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Is there evidence of any programs and practices that promote diversification, technological upgrading and innovation?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 17,
+        "pdf_display_name": "Innovation",
+        "riskfactors": [
+            40
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 14,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Can the company demonstrate that it has progressively improved packaging efficiency, i.e composition of packaging materials and percentage that are recycled or reclaimed by category?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 22,
+        "pdf_display_name": "Product packaging",
+        "riskfactors": [
+            61
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 15,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Does the company disclose the number of incidents of injury and/or non-compliance with regulations and voluntary codes concerning the health and safety impacts of products and services during their life cycle? Are these statistics categorised by type of outcomes?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 23,
+        "pdf_display_name": "Product quality and safety",
+        "riskfactors": [
+            62
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 16,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Are manufacturing sites or food handling facilities certified by an independent third party according to internationally (or local/regional) recognized food safety management system standards?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 10,
+        "pdf_display_name": "Food safety",
+        "riskfactors": [
+            29
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 17,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company have policies for the fair design and sale of financial products and services?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 4,
+        "pdf_display_name": "Customer welfare",
+        "riskfactors": [
+            15
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 18,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Has the company been accused of any incidents of infringing human rights? Does the company have a formal grievance mechanism for lodging and resolving grievances about human rights impacts?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 16,
+        "pdf_display_name": "Human rights",
+        "riskfactors": [
+            38
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 19,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company established a 'zero tolerance' policy on the unfair acquistion of land? Is this issue discussed and published in company guidelines?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            45
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 20,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company have a policy and/or management systems in place which aim to achieve the environmentally sound management of all wastes through their lifecycle, in accordance with agreed international frameworks, to minimize their adverse impacts on human health and the environment?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 28,
+        "pdf_display_name": "Waste and effluent",
+        "riskfactors": [
+            74
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 21,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Can the company demonstrate that it has progressively improved water efficiency in consumption and production?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 29,
+        "pdf_display_name": "Water stress",
+        "riskfactors": [
+            75,
+            76
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 22,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Are biofuels utilised within the company's operations, and if so, purchased meeting sustainability criteria?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            30
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 23,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company tracked or stated how much fuel it has purchased and consumed during the reporting or fiscal year? If biofuels are utilised within the company's operations, are they purchased meeting sustainability criteria?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 11,
+        "pdf_display_name": "Fuel management",
+        "riskfactors": [
+            30
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 24,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company monitor its energy use? Does it have a corporate energy management program in place, including metrics and targets? Does that extend to calculating the greenhouse gas (GHG) emissions related to its energy use?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 7,
+        "pdf_display_name": "Energy management",
+        "riskfactors": [
+            24
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 25,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company have a policy and/or management systems in place which aim to reduce NOX, SOX, and other significant air emissions, in accordance with agreed international frameworks, to minimize their adverse impacts on human health and the environment?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 1,
+        "pdf_display_name": "Air quality",
+        "riskfactors": [
+            4
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 26,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company have a Corporate Social Responsibility (CSR) strategy?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 27,
+        "pdf_display_name": "Voice and accountability",
+        "riskfactors": [
+            72
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 27,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Does the company have an Anti-Bribery and Corruption policy in place?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 3,
+        "pdf_display_name": "Corruption",
+        "riskfactors": [
+            14
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 28,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company made all necessary provisions to comply with all chemical registration and authorisations both currently and in the future?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            26,
+            65
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 29,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company have any association or record with regard to land holdings and businesses previously owned by the company?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            45
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 30,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Have any prior ESG risk assessments or EHS/ESG due diligence reports been prepared for the company?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            69
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 31,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Are the properties and built structures of the company regularly surveyed in order to identify the presence and significance of deleterious materials such as Asbestos Containing Materials in the building fabric?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            4
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 32,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company ever been fined or prosecuted by the relevant regulatory agency with regard to an environmental non-compliance or pollution incident?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 8,
+        "pdf_display_name": "Environmental Compliance",
+        "riskfactors": [
+            26
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 33,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company been affected or been aware of land or subsurface contamination, damage and/or pollution issues at their facilities?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            74
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 34,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Are certified environmental management systems in place e.g. ISO14001?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            24
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 35,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company monitor its greenhouse gas emissions? Does it report these externally and have a policy and/or management systems in place which aim to reduce these emissions?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            33
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 36,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company have a policy and/or management systems in place which aim to avoid deforestation and/or conversion of natural and/or critical habitats?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 6,
+        "pdf_display_name": "Deforestation / Ecological Impacts",
+        "riskfactors": [
+            17,
+            19
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 37,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company audit its suppliers for compliance with any procurement/ sourcing policies or codes of conduct that may be in place?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 20,
+        "pdf_display_name": "Materials sourcing",
+        "riskfactors": [
+            50,
+            68
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 38,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Has the company adopted a management system for assessing and managing E&S risks in its supply chain?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 25,
+        "pdf_display_name": "Supply chain management",
+        "riskfactors": [
+            68
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 39,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company have a formal health & safety management system or procedures in place? Is this independently certified to a recognised international standard such as ISO 45001? Does it monitor health & Safety incidents and if so, are these reported externally?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            37
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 40,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Has the company been accused of unfairly and/or unlawfully acquiring third party owned or claimed land? Has the company established a 'zero tolerance' policy on land grabbing? Is this issue included in supplier codes of conduct or published company guidelines?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 19,
+        "pdf_display_name": "Land use conflict",
+        "riskfactors": [
+            45
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 41,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Does the company respond to external disclosure requests from customers or investors, e.g. Carbon Disclosure Project?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            72
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 42,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Has responsibility for E&S risk management been formally defined at the operational or board-level?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 26,
+        "pdf_display_name": "Systemic risk management",
+        "riskfactors": [
+            69
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 43,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company have a policy and/or supplier code of conduct which explicitly prevents or prohibits modern slavery?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": 21,
+        "pdf_display_name": "Modern Day Slavery",
+        "riskfactors": [
+            52
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 44,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Is there evidence that the company has breached relevant ILO conventions, on prevention of trafficking or forced labour?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            44
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 45,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Does the company report against the Global Reporting Initiative (GRI) or other 3rd party reporting frameworks or guidelines?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            72
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 46,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Does the company have its own set of corporate business principles or code of conduct?",
+        "company": null,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            14
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 50,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company been affected or been aware of flooding issues at their facilities?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            29,
+            76
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 51,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Is there evidence of any programs and practices that promote development and training of the company's employees?",
+        "company": 2,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": []
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 52,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company ever been fined or prosecuted by the relevant regulatory agency with regard to an environmental non-compliance or pollution incident?",
+        "company": 2,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            26
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 53,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company been affected or been aware of land or subsurface contamination, damage and/or pollution issues at their facilities?",
+        "company": 2,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            74
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 54,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company developed and documented contingency plans for water scarce or drought prone regions in which it operates?",
+        "company": 2,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            75,
+            76
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 56,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company monitor its greenhouse gas (GHG) emissions? Does it respond to external disclosure requests, e.g. Carbon Disclosure Project?",
+        "company": 2,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            33
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 57,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company monitor number of accidents and/or non-compliance with regulations and voluntary codes concerning the health and safety of employees? Does it report these externally?",
+        "company": 2,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            3,
+            37
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 58,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Have there been any documented incidents regarding breaches of customer privacy and losses of customer or other proprietary data?",
+        "company": 2,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            16
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 59,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Does the company track and disclose any accident or injury reports?",
+        "company": 2,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            3,
+            37
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 60,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company have a policy and/or supplier code of conduct which promotes the protection of labour rights, a safe and secure working environments for all workers, including migrant workers, and those in precarious employment?",
+        "company": 2,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            44
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 61,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company disclose the range of company benefits for different levels of staff? Does it differentiate between permanent vs. part-time contractual workers?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            11
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 62,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Does the company have its own set of corporate business principles or code of conduct?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            14
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 63,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Does the company disclose the number of incidents of injury and/or non-compliance with regulations and voluntary codes concerning the health and safety impacts of products and services during their life cycle? Are these statistics categorised by type of outcomes?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            62
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 64,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Have there been any documented incidents regarding breaches of customer privacy and losses of customer or other proprietary data?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            16
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 65,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Does the company have an Anti-Bribery and Corruption policy in place?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            14
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 66,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Have any prior ESG risk assessments or EHS/ESG due diligence reports been prepared for the company?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            69
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 67,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Has responsibility for E&S risk management been formally defined at the operational or board-level?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            69
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 68,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Is there evidence of any programs and practices that promote diversification, technological upgrading and innovation?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            40
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 69,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company ever been fined or prosecuted by the relevant regulatory agency with regard to an environmental non-compliance or pollution incident?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            26
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 70,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company developed and documented contingency plans for water scarce or drought prone regions in which it operates?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            75,
+            76
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 71,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company have a policy and/or management systems in place which aim to avoid deforestation and/or conversion of natural and/or critical habitats?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            17,
+            19
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 72,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company audit its suppliers for compliance with any procurement/ sourcing policies or codes of conduct that may be in place?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            50,
+            68
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 73,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Can the company demonstrate that it has progressively improved packaging efficiency, i.e composition of packaging materials and percentage that are recycled or reclaimed by category?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            61
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 74,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Can the company demonstrate that it has progressively improved water efficiency in consumption and production?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            75,
+            76
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 75,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Are biofuels utilised within the company's operations, and if so, purchased meeting sustainability criteria?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            30
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 76,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company tracked or stated how much fuel it has purchased and consumed during the reporting or fiscal year? If biofuels are utilised within the company's operations, are they purchased meeting sustainability criteria?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            30
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 77,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company monitor its energy use? Does it have a corporate energy management program in place, including metrics and targets? Does that extend to calculating the greenhouse gas (GHG) emissions related to its energy use?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            24
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 78,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Has the company made all necessary provisions to comply with all chemical registration and authorisations both currently and in the future?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            26,
+            65
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 79,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company monitor number of accidents and/or non-compliance with regulations and voluntary codes concerning the health and safety of employees? Does it report these externally?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            3,
+            37
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 80,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company have a formal health & safety management system or procedures in place? Is this independently certified to a recognised international standard such as ISO 45001? Does it monitor health & Safety incidents and if so, are these reported externally?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            37
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 81,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company have policies for the fair design and sale of financial products and services?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            15
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 82,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Has the company been accused of any incidents of infringing human rights? Does the company have a formal grievance mechanism for lodging and resolving grievances about human rights impacts?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            38
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 83,
+    "fields": {
+        "category": "SOCIAL",
+        "text": "Does the company have a Corporate Social Responsibility (CSR) strategy?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            72
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 84,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Are certified environmental management systems in place e.g. ISO14001?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            24
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 85,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Does the company track and disclose any accident or injury reports?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            3,
+            37
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 86,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Has the company adopted a management system for assessing and managing E&S risks in its supply chain?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            68
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 87,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Does the company respond to external disclosure requests from customers or investors, e.g. Carbon Disclosure Project?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            72
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 88,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Does the company report against the Global Reporting Initiative (GRI) or other 3rd party reporting frameworks or guidelines?",
+        "company": 1,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            72
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 89,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company monitor its greenhouse gas (GHG) emissions? Does it respond to external disclosure requests, e.g. Carbon Disclosure Project?",
+        "company": 1,
+        "enabled": true,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            33
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 90,
+    "fields": {
+        "category": "ENVIRONMENT",
+        "text": "Does the company audit its suppliers for compliance with any procurement/ sourcing policies or codes of conduct that may be in place?",
+        "company": 2,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            50,
+            68
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 91,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Have any prior ESG risk assessments or EHS/ESG due diligence reports been prepared for the company?",
+        "company": 2,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            69
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 92,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Are certified environmental management systems in place e.g. ISO14001?",
+        "company": 2,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            24
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 93,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Has responsibility for E&S risk management been formally defined at the operational or board-level?",
+        "company": 2,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            69
+        ]
+    }
+},
+{
+    "model": "core.managementquestion",
+    "pk": 94,
+    "fields": {
+        "category": "GOVERNANCE",
+        "text": "Is there evidence of any programs and practices that promote diversification, technological upgrading and innovation?",
+        "company": 2,
+        "enabled": false,
+        "pdf_display_order": null,
+        "pdf_display_name": null,
+        "riskfactors": [
+            40
+        ]
+    }
+}
+]

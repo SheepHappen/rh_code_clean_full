@@ -1,0 +1,22 @@
+<div class="card white-card initial-display">
+    <div class="card-body" style="padding:0!important;">
+        <h2 class="card-title text-center">
+            {{ info.heading }}
+        </h2>
+        <div class="card-sub-text" style="margin-top:30px">
+            {{ info.text }}
+        </div>
+        <div class="text-center">
+            {% if btn_url %}
+                {% url btn_url as btn_link_url %}
+                <a href="{{ btn_link_url }}" class="btn btn-secondary btn-medium" style="margin-top:40px">
+                    {{ info.button_text }}
+                </a>
+            {% else %}
+                <a href="#" class="btn btn-secondary btn-medium" style="margin-top:40px">
+                    {{ info.button_text }}
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</div>

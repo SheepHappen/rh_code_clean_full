@@ -1,0 +1,58 @@
+
+<section class="report-page reference-page">
+    <header class="page-header" style="margin-left: 40px; width: 93%; position: absolute; top:-110px; left:0; border-bottom:none;">
+        <h1 class="page-title">References</h1>
+	    <img src="file://core/static/img/references_icon_1.svg" class="heading-icon" alt="Recommendations page 1 icon">
+    </header>
+    <div class='ml-2 intro-text mt-2 mb-2' style="font-size: 16px; font-family: SourceSansPro;">
+        The sources are either directly relevant to the country level situation related to that core risk factor, or where such data set does not exist, a relevant proxy data set has been identified.
+        All data was then normalised to a 1-10 scale to allow comparability between risk factors.
+    </div>
+    <div class="mt-4">
+        {% include "includes/sub_section.html" with title="References" %}
+    </div>
+    <div class="container mt-4">
+        {% if assessment.material_risks.all %}
+            <div class="ml-4" style="font-size: 13.333px; font-family: SourceSansProLight; columns: 2; margin: 0; padding: 0; background-clip: content-box; column-gap: 1em;">
+                The web-based tool brings together analysis from world class authoritative
+                sources; full references are supplied below. The scope of issues covered are
+                aligned with International Corporation (IFC) Performance Standards, Equator
+                Principles, the Global Reporting Initiative (GRI) guidelines and the US
+                Sustainability Accounting Standards Board.
+
+                {% if assessment.references %}
+                    <div class="text-bold mt-2">Additional references</div>
+                    <div><textarea style="font-size: 13.333px; font-family: SourceSansProLight;">{{ assessment.references }}</textarea></div>
+                {% endif %}
+                <div class="text-bold mb-2">Source references: core risk factors</div>
+
+                {% for risk in assessment.material_risks.all %}
+                    <div class="mb-2 bgSet">{{forloop.counter}}. {{risk.name}}: {{ risk.active_version.reference }}</div>
+                    <header class="sub-header bgSet" style="position: absolute; top:-110px; left:0; border-bottom:none;">
+                        <div style="margin-left: 60px; margin-top: 40px; padding-bottom: 40px;">
+                            <img src="file://core/static/img/references_icon.svg" class="sub-page-icon-small  bgSet" alt="References icon">
+                            <h1 class="sub-page-title bgSet">References</h1>
+                        </div>
+                        <div style="width:92%; margin-left:40px; border-bottom: 5px solid #000;"></div>
+                    </header>
+                    {% include "includes/page_footer.html" %}
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="ml-4" style="font-size: 13.333px; font-family: SourceSansProLight; margin: 0; padding: 0; background-clip: content-box;">
+                The web-based tool brings together analysis from world class authoritative
+                sources; full references are supplied below. The scope of issues covered are
+                aligned with International Corporation (IFC) Performance Standards, Equator
+                Principles, the Global Reporting Initiative (GRI) guidelines and the US
+                Sustainability Accounting Standards Board.
+
+                {% if assessment.references %}
+                    <div class="text-bold mt-2">Additional references</div>
+                    <div><textarea style="font-size: 13.333px; font-family: SourceSansProLight;">{{ assessment.references }}</textarea></div>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+
+    {% include "includes/page_footer.html" %}
+</section>

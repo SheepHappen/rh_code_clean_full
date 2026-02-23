@@ -1,0 +1,29 @@
+[
+{
+    "model": "company.companyemaildomain",
+    "pk": 1,
+    "fields": {
+        "company": 1,
+        "domain": "anthesisgroup.co.uk",
+        "enabled": true
+    }
+},
+{
+    "model": "company.companyemaildomain",
+    "pk": 2,
+    "fields": {
+        "company": 2,
+        "domain": "landmark.co.uk",
+        "enabled": true
+    }
+},
+{
+    "model": "company.companyemaildomain",
+    "pk": 3,
+    "fields": {
+        "company": 1,
+        "domain": "anthesisgroup.com",
+        "enabled": true
+    }
+}
+]

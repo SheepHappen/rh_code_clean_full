@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static  %}
+
+{% block content %}
+        <div class="row">
+            <div class="col-2 br-muted p-0">
+                <ul class="tree nav flex-column nav-pills">
+                    {% if request.user.is_staff %}
+                        <li class="nav-item horizontal-nav">
+                            <a href="{% url 'admin:index' %}">Django Admin</a></li>
+                        </li>
+                    {% endif %}
+                    <li class="nav-item horizontal-nav">
+                        <a href="{% url 'company_list' %}">Companies</a></li>
+                    </li>
+                    <li class="nav-item">
+                        <p data-toggle="collapse" class="expand-list horizontal-nav" data-target="#collapseIndustryList" aria-expanded="false" aria-controls="collapseIndustryList">Industry</p>
+                        <ul class="collapse" id="collapseIndustryList">
+                            <li class="nav-item horizontal-nav">
+                                <a href="{% url 'industries_list' %}">Industries</a></li>
+                            </li>
+                            <li class="nav-item horizontal-nav">
+                                <a href="{% url 'upload_industry' %}">Upload new industry data</a></li>
+                            </li>
+                            <li class="nav-item horizontal-nav">
+                                <a href="{% url 'industry_risk_factor_values' %}">View Industry Scores</a></li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p data-toggle="collapse" class="expand-list horizontal-nav" data-target="#collapseRiskList" aria-expanded="false" aria-controls="collapseRiskList">Risk Factor</p>
+                        <ul class="collapse" id="collapseRiskList">
+                            <li class="nav-item horizontal-nav">
+                                <a href="{% url 'riskfactors_list' %}">Risk factors</a></li>
+                            </li>
+                            <li class="nav-item horizontal-nav">
+                                <a href="{% url 'upload' %}">Upload new risk factor data</a></li>
+                            </li>
+                            <li class="nav-item horizontal-nav">
+                                <a href="{% url 'risk_factor_values' %}">View risk factor scores</a></li>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <p data-toggle="collapse" class="expand-list horizontal-nav" data-target="#collapseQuestionList" aria-expanded="false" aria-controls="collapseQuestionList">Questions</p>
+                        <ul class="collapse" id="collapseQuestionList">
+                            <li class="nav-item horizontal-nav">
+                                <a href="{% url 'management_questions_list' %}">Management Questions</a></li>
+                            </li>
+                            <li class="nav-item horizontal-nav">
+                                <a href="{% url 'document_questions_list' %}">Document checklist questions</a></li>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-10">
+                {% block main_content %}
+                {% endblock %}
+            </div>
+        </div>
+{% endblock content %}

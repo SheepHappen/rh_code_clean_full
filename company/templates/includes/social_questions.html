@@ -1,0 +1,12 @@
+<div id="social" class="question-set">
+    <ul class="hide-dots" style="padding-left: 0px !important;">
+        {% if management_questions %}
+            {% for question in management_questions %}
+                <li style="margin-top:30px;" class="social-question {% if not question.hightlight %} is-optional {% endif %} {% if question.answer %} has-answer {% endif %} font-semi-bold-question-text {{ question.id }}-hide">{{ question.text }}</li>
+                {% include "includes/management_answer.html" with question=question  company=company %}
+            {% endfor %}
+        {% else %}
+            {% include "includes/document_question_loop.html" with questions=questions question_set='social-question' %}
+        {% endif %}
+    </ul>
+</div>

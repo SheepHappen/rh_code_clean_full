@@ -1,0 +1,45 @@
+{% for question in questions %}
+    {% if not question.question.trigger_question %}
+        <li class="{{ question_set }}
+          {% if not question.is_required %} is-optional {% endif %}
+          {% if question.question.answer %} has-answer {% endif %}
+          {% if not question.question.is_answerable %} empty-question {% endif %}
+        " style="margin-top:60px;">
+            {{ question.question }}
+            {% if question.question.is_answerable %}
+                <div class="form-group notes-wrapper">
+                    <label for="{{ question.question.id }}Notes">Notes</label>
+                    <textarea id="{{ question.question.id }}Notes" name="{{ question.question.id }}Notes" class="form-control notes-area">{{ question.question.notes }}</textarea>
+                </div>
+            {% endif %}
+        </li>
+        {% if question.question.is_answerable %}
+            {% for answer in answers %}
+                {% include "includes/document_answer.html" with question=question.question value=answer is_required=question.is_required %}
+            {% endfor %}
+            {% include 'includes/reset_answers.html' with answer=question.question.answer %}
+        {% endif %}
+        {% if question.trigger_questions %}
+            <ul style="margin-top:30px; margin-left:50px;" data-trigger-id="{{ question.question.id }}" class="{% if not question.is_required %} is-optional {% endif %}  {% if question.question.answer %} has-answer {% endif %} hide-dots trigger-questions {% if not question.question.answer == 'Y' %}d-none{% endif %}">
+                {% for sub_question in question.trigger_questions %}
+                    <li class=" {{ question_set }} {% if not sub_question.is_required %} is-optional {% endif %}  {% if sub_question.answer %} has-answer {% endif %}">{{ sub_question }}</li>
+                    {% for answer in answers %}
+                        {% include "includes/document_answer.html" with question=sub_question value=answer is_required=sub_question.is_required %}
+                    {% endfor %}
+                    {% include 'includes/reset_answers.html' with answer=sub_question.answer %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% if question.child_questions %}
+            <ul style="margin-top:30px; margin-left:50px;" class="hide-dots {% if question.question.answer %} has-answer {% endif %} {% if not question.is_required %} is-optional {% endif %}">
+                {% for sub_question in question.child_questions %}
+                    <li class="{{ question_set }} {% if not sub_question.is_required %} is-optional {% endif %}  {% if sub_question.answer %} has-answer {% endif %}">{{ sub_question }}</li>
+                    {% for answer in answers %}
+                        {% include "includes/document_answer.html" with question=sub_question value=answer is_required=sub_question.is_required %}
+                    {% endfor %}
+                    {% include 'includes/reset_answers.html' with answer=sub_question.answer %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endif %}
+{% endfor %}

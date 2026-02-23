@@ -1,0 +1,135 @@
+
+{% load static tags %}
+
+<section class="report-page reference-page">
+    <header class="page-header" style="margin-left: 40px; width: 93%; position: absolute; top:-110px; left:0; border-bottom:none;">
+        <h1 class="page-title">Report detail</h1>
+	    <img src="file://core/static/img/report_icon.svg" class="heading-icon" alt="report page 1 icon">
+    </header>
+
+    <div class="container mt-4">
+        <div class="row no-gutters">
+            <div class="col mr-4">
+                <div style="width:97%;">
+                    <div class="sub-section">
+                        <h2 class="sub-section-title ml-3">
+                            Company overview
+                        </h2>
+                    </div>
+                </div>
+                <ul class='left-section mt-4'>
+                    <li>
+                        <span style="font-family: SourceSansProBold; font-size: 13.333px;">Company name: </span><span  style="font-family: SourceSansProLight; font-size: 13.333px;">{{ company_name }}</span>
+                    </li>
+                    {% if assessment.company_description %}
+                        <li>
+                            <span style="font-family: SourceSansProBold; font-size: 13.333px;">Company description: </span><span style="font-family: SourceSansProLight; font-size: 13.333px;">{{ assessment.company_description }}</span>
+                        </li>
+                    {% endif %}
+                    <li>
+                        <span style="font-family: SourceSansProBold; font-size: 13.333px;">Industry(s): </span><span style="font-family: SourceSansProLight; font-size: 13.333px;">{% for industry in assessment.industries.all %}
+                            {{ industry.name }}{% if not forloop.last %},{% endif %}
+                        {% endfor %}
+                        </span>
+                    </li>
+                    {% if assessment.company_employee_count %}
+                        <li>
+                            <span style="font-family: SourceSansProBold; font-size: 13.333px;">Number of employees: </span><span style="font-family: SourceSansProLight; font-size: 13.333px;">{{ assessment.company_employee_count }}</span>
+                        </li>
+                    {% endif %}
+                    {% if assessment.company_headquarters %}
+                        <li>
+                            <span style="font-family: SourceSansProBold; font-size: 13.333px;">HQ location: </span><span style="font-family: SourceSansProLight; font-size: 13.333px;"> {{ assessment.company_headquarters }}</span>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div style="width: 97%;">
+                        <div class="sub-section">
+                            <h2 class="sub-section-title ml-3">
+                                Sanctioned countries
+                            </h2>
+                        </div>
+
+                        <div class='left-section ml-4 mt-4'>
+                            {% if sanctioned_countries %}
+                                <ul style="font-family: SourceSansProLight; font-size: 13.333px;">
+                                    {% for country in sanctioned_countries %}
+                                        <li>
+                                            {{ country }}
+                                            {% if country.us_sanction_comments or country.eu_sanction_comments %}
+                                                :
+                                            {% endif %}
+                                            {% if country.us_sanction_comments %}
+                                                {{ country.us_sanction_comments }}
+                                            {% endif %}
+                                            {% if country.eu_sanction_comments %}
+                                                {{ country.eu_sanction_comments }}
+                                            {% endif %}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% else %}
+                                <span class=" pl-4 ml-3" style="font-family: SourceSansProLight; font-size: 13.333px;">
+                                    None identified
+                                </span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div style="width: 97%;">
+                        <div class="sub-section">
+                            <h2 class="sub-section-title ml-3">
+                                Pandemic preparedness
+                            </h2>
+                        </div>
+                        <ul class='left-section mt-4 ml-4'>
+                            {% for key, values in country_preparedness.items %}
+                                <li>
+                                    <span style="font-family: SourceSansProBold; font-size: 13.333px;">{{ key|remove_underscores|capfirst }}:</span>
+                                    <span style="font-family: SourceSansProLight; font-size: 13.333px;">{{ values }}</span>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters mt-4">
+            {% include "includes/sub_section.html" with title="Operating locations" %}
+
+            <div class="container mt-4">
+                <header class="sub-header bgSet" style="position: absolute; top:-110px; left:0; border-bottom:none;">
+                    <div style="margin-left: 60px; margin-top: 40px; padding-bottom: 40px;">
+                        <img src="file://core/static/img/report_icon_2.svg" class="sub-page-icon-small  bgSet" alt="report detail icon">
+                        <h1 class="sub-page-title bgSet">Report detail</h1>
+                    </div>
+                    <div style="width:92%; margin-left:40px; border-bottom: 5px solid #000;"></div>
+                </header>
+                <div class="row no-gutters">
+                    <div class="col">
+                        <img src="{{ data_uri }}">
+                    </div>
+                    <div class="col">
+                        <div class="ml-4">
+                            <div class="ml-4">
+                                <span style="font-family: SourceSansProBold; font-size: 13.333px;">Operation locations:</span>
+                                <span style="font-family: SourceSansProLight; font-size: 13.333px;">
+                                    {% for country in assessment.countries.all %}
+                                        {{ country.name }}{% if not forloop.last %},{% endif %}
+                                    {% endfor %}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    {% include "includes/page_footer.html" %}
+</section>

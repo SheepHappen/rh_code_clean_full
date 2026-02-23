@@ -1,0 +1,49 @@
+{% extends "staff_base.html" %}
+{% load static crispy_forms_tags %}
+
+
+{% block main_content %}
+    <br>
+    <br>
+    <form action="{% url 'industry_detail' form.instance.id %}" method="POST">
+        {% crispy form %}
+    </form>
+    <p>Active version: {{ version }}</p>
+    {% if file_obj %}
+        Uploaded dataset file: 
+        <a href="{% url 'download_file' version.pk %}">
+            {{  version.filename }}
+        </a>
+    {% endif %}
+    <p class="pb-0 mb-0">Skew: {{ version.skew }}</p>
+    <p class="pt-o mt-0">Data order: {{ version.data_order }}</p>
+    <p class="pt-o mt-0">Data normalised: {{ version.normalised_data }}</p>
+    <table id="records" class="table table-striped table-bordered"  style="width:100%">
+        <thead>
+            <tr>
+                <th>Risk Factor</th>
+                <th>Score</th>
+                <th>Source</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in current_data %}
+                <tr>
+                    <td>
+                        {{ record.risk_factor }}
+                    </td>
+                    <td>
+                        {% if record.materiality or record.materiality == 0.0 %}
+                            {{ record.materiality }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {{ record.source }}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

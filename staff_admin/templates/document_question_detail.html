@@ -1,0 +1,11 @@
+{% extends "staff_base.html" %}
+{% load static crispy_forms_tags %}
+
+
+{% block main_content %}
+    <br>
+    <br>
+    <form action="{% url 'document_question_detail' form.instance.id %}" method="POST">
+        {% crispy form %}
+    </form>
+{% endblock %}

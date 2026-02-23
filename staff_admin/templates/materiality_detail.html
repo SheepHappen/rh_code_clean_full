@@ -1,0 +1,12 @@
+{% extends "staff_base.html" %}
+{% load static crispy_forms_tags %}
+
+
+{% block main_content %}
+    <br>
+    <br>
+    <form action="{% url 'industry_risk_factor_values_detail' form.instance.id %}" method="POST">
+        {% crispy form %}
+        <a href="{{request.META.HTTP_REFERER}}" class="btn btn-link">Cancel</a>
+    </form>
+{% endblock %}
